@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hack The North Demo Website</title>
+    <meta name="author" content="Geekhaven" />
+    <meta name="description" content="HAck The North Hackaton placeholder site" />
+    <meta name="keywords"  content="IIIT-Allahabad, Hackathon" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="jquery.easings.min.js"></script>
+
+    <script type="text/javascript" src="jquery.fullPage.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#C63D0F', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+                anchors: ['Home', 'About', 'FAQ', 'Sponsors', 'Contact'],
+                menu: '#menu',
+                continuousVertical: true,
+                css3: true,
+                scrollingSpeed: 1000
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+	<div id = "header">
+		<ul id="menu">
+    		<li data-menuanchor="Home" class="active"><a href="#Home"><b>Home</b></a></li>
+    		<li data-menuanchor="About"><a href="#About"><b>About</b></a></li>
+  		  	<li data-menuanchor="FAQ"><a href="#FAQ"><b>FAQ</b></a></li>
+    		<li data-menuanchor="Sponsors"><a href="#Sponsors"><b>Sponsors</b></a></li>
+    		<li data-menuanchor="Contact"><a href="#Contact"><b>Contact Us</b></a></li>
+    		<li data-menuanchor="Register" id="Login/Register">
+
+    		</li>
+    	</ul>
+	</div>
+	</header>
+	<div id="rocket"> <img src="rocket.png"></div>
+<div id="fullpage">
+
+    <div class="section active" id="section0">
+    
+    </div>
+    <div class="section" id="section1">
+        <div class="slide active">
+            
+        </div>
+        <div class="slide">
+            
+        </div>
+        <div class="slide">
+            
+        </div>
+        <div class="slide">
+            
+        </div>
+    </div>
+    <div class="section" id="section2">
+        
+    </div>
+    <div class="section" id="section3">
+        
+    </div>
+    <div class="section" id="section4" >
+    	
+    
+    </div>
+</div>
+
+</body>
+</html>

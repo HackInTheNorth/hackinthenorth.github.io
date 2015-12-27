@@ -1,0 +1,402 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+* --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+	border-spacing: 0;
+}
+fieldset,img {
+	border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-weight: normal;
+	font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+caption,th {
+	text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+	font-size: 100%;
+	margin:0;
+	padding:0;
+	color:#444;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+* --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.section{
+	text-align:center;
+	position: relative;
+}
+
+#rocket {
+	position: fixed;
+	top: 50%;
+	left: 10%;
+	z-index:100;
+}
+
+/*#header, #footer{
+	position:fixed;
+	height: 50px;
+	display:block;
+	width: 100%;
+	background: whitesmoke;
+	z-index:9;;
+	color: #f2f2f2;
+	padding: 20px 0 0 0;
+}
+
+#header{
+	top:0px;
+}
+#footer{
+	bottom:0px;
+}*/
+
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	text-align: center;
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+#section0 img,
+#section1 img{
+	margin: 20px 0 0 0;
+}
+#section2 img{
+	margin: 20px 0 0 52px;
+}
+#section3 img{
+	bottom: 0px;
+	position:absolute;
+	margin-left: -420px;
+}
+
+#fullPage-nav{
+	position: absolute;
+	z-index: 100;
+	margin-top: -32px;
+	top: 50%;
+	opacity: 1;
+}
+#fullPage-nav li{
+	display: block;
+	width: 14px;
+	height: 13px;
+	margin: 7px;
+}
+#fullPage-nav li a{
+	display: block;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	text-decoration: none;
+}
+#fullPage-nav li .active span{
+	background: #333;
+}
+#fullPage-nav span{
+	top: 2px;
+	left: 2px;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #000;
+	background: rgba(0, 0, 0, 0);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+}
+#infoMenu{
+	height: 20px;
+	color: #f2f2f2;
+	position:fixed;
+	z-index:70;
+	bottom:0;
+	width:100%;
+	text-align:right;
+	font-size:0.9em;
+	padding:8px 0 8px 0;
+}
+
+/* Smaller than 770px height */
+@media screen and (max-height: 770px){
+	#section0 #logo{
+		max-width: 250px !important;
+		height: auto !important
+	}
+	#section0 #usedBy{
+		padding: 10px 0 0 0;
+		height: 60px;
+		width: 398px;
+		margin-top: 40px;
+		background-size: cover;
+	}
+	#section3 img{
+		bottom: -67px;
+	}
+}
+
+/* Smaller than 680px height */
+@media screen and (max-height: 680px){
+	#section0 #usedBy{
+		margin-top: 15px;
+		height: 41px;
+		width: 308px;
+		background-size: cover;
+	}
+	#section0 #logo{
+		max-width: 200px !important;
+		height: auto !important
+	}
+	#section3 img{
+		bottom: -100px;
+	}
+}
+
+/* Smaller than 580px height */
+@media screen and (max-height: 580px){
+	#section0 #logo{
+		max-width: 150px !important;
+		height: auto !important
+	}
+	h1{
+		font-size: 4.5em;
+	}
+	#donations a{
+		font-size: 57%;
+	}
+	#section3 img{
+		bottom: -180px;
+	}
+	.intro p{
+		font-size: 1.1em;
+	}
+}
+
+/* Smaller than 480px height */
+@media screen and (max-height: 480px){
+	#usedBy{
+		display: none;
+	}
+}
+
+/*creen resolutions smaller than 620px width */
+@media all and (max-width: 900px){
+	#usedBy{
+		padding: 0 0 0 0;
+	}
+}
+/*creen resolutions smaller than 620px  width*/
+@media all and (max-width: 890px){
+	#twitter-widget-0{
+		left: 20px;
+		top: 63px;
+	}
+	#section3 img{
+		margin: 0 auto;
+		left: 0;
+		max-width: 600px;
+		height: auto !important;
+		right: 0px;
+	}
+	#section1 #slidersImg{
+		max-width: 462px;
+		height: auto !important;
+	}
+	#menu li {
+		margin: 5px;
+	}
+	#menu li a,
+	#menu li.active a{
+		padding: 9px 12px;
+	}
+}
+/*creen resolutions smaller than 620px  width*/
+@media all and (max-width: 650px){
+	#menu{
+		z-index: 9999;
+	}
+	#menu li {
+		margin: 3px;
+	}
+	#menu li a,
+	#menu li.active a{
+		padding: 9px 12px;
+
+	}
+	#section3 img{
+		margin: 0 auto;
+		left: 0;
+		max-width: 450px;
+		height: auto !important;
+		right: 0px;
+	}
+	#section2 img{
+		margin: 20px 0 0 0;
+	}
+	.intro p{
+		font-size: 1.1em;
+	}
+	#usedBy{
+		width: 310px !important;
+		height: 46px !important;
+		background-size: cover !important;
+		background-repeat: no-repeat;
+	}
+}
+/*creen resolutions smaller than 620px  width*/
+@media all and (max-width: 580px){
+	#menu li a,
+	#menu li.active a{
+		padding: 8px 11px;
+		font-size: 13px;
+	}
+	#supportedBy{
+		display: none;
+	}
+	#section1 #slidersImg{
+		max-width: 350px;
+		height: auto !important;
+	}
+	#section2 #easyToUse{
+		max-width: 350px;
+		height: auto !important;
+	}
+	.intro p{
+		width: 75%;
+	}
+	h1 {
+		font-size: 2.7em;
+	}
+	#infoMenu{
+		text-align: center;
+	}
+	#infoMenu ul{
+		display: inline-block;
+		padding: 0;
+	}
+	#infoMenu li a{
+		margin: 0 10px 0 0;
+	}
+}
+
+/*creen resolutions smaller than 620px  width*/
+@media all and (max-width: 480px){
+	#section3 img{
+		margin: 0 auto;
+		left: 0;
+		max-width: 300px;
+		height: auto !important;
+		right: 0px;
+	}
+	#twitter-widget-0{
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 890px)  and (max-height: 680px) {
+	#section3 img{
+		bottom: -50px;
+	}
+}
+
+@media screen and (max-width: 650px)  and (max-height: 680px) {
+	#section3 img{
+		bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 580px) and (max-height: 580px) {
+	#section3 img{
+		bottom: -50px;
+	}
+}
+
+@media screen and (max-width: 500px) and (max-height: 500px) {
+	#section3 img{
+		bottom: 0px;
+	}
+}
