@@ -15,8 +15,6 @@ Tasks Left:
   (http://www.freepik.com/free-vector/flat-vector-illustration-web-design-concept_713103.htm)
   for buttons
 
--site loading gif
-
 -animations
 
 -better buttons (use flat designs)
