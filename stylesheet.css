@@ -210,6 +210,11 @@ p{
 	z-index: 9999;
 	background: url(images/loader.GIF) center no-repeat #fff;
 }
+#section0-name-div{
+	color: white;
+	font-size: 30px;
+	font-family: 'Source Code Pro', ;
+}
 
 /* Smaller than 770px height */
 @media screen and (max-height: 770px){

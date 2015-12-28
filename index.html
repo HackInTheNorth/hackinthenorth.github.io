@@ -9,7 +9,7 @@
     <meta name="keywords"  content="IIIT-Allahabad, Hackathon" />
     <meta name="Resource-type" content="Document" />
 
-
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
@@ -24,8 +24,17 @@
 
     <script type="text/javascript" src="jquery.fullPage.min.js"></script>
     <script type="text/javascript">
+        var showText = function (target, message, index, interval) {    
+                if (index < message.length) {
+                    $(target).append(message[index++]); 
+                    setTimeout(function () { showText(target, message, index, interval); }, interval); 
+                }
+            }
         $(window).load(function() {
-            $("#loader").fadeOut("slow");;
+            $("#loader").fadeOut("slow");
+            setTimeout(function(){showText("#section0-name", "{ Hack in the North ", 0, 30);}, 800);
+            setTimeout(function(){showText("#section0-name-1", "}", 0, 30);}, 800);
+
         });
         $(document).ready(function() {
             $('#fullpage').fullpage({
@@ -36,8 +45,6 @@
                 css3: true,
                 scrollingSpeed: 1000
             });
-
-
         });
     </script>
 </head>
@@ -61,8 +68,12 @@
 <div id="fullpage">
 
     <div class="section active" id="section0">
-    	LOGO and write hack in the north work by word {Hack in the North}
-        <br>A fixed registration button at the bottom.
+        <div id="section0-name-div">
+            <span id="section0-name">
+            </span>
+            <span id="section0-name-1">
+            </span>
+        </div>
     </div>
     <div class="section" id="section1">
         <div class="slide active">
