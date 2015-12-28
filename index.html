@@ -24,6 +24,9 @@
 
     <script type="text/javascript" src="jquery.fullPage.min.js"></script>
     <script type="text/javascript">
+        $(window).load(function() {
+            $("#loader").fadeOut("slow");;
+        });
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 sectionsColor: ['#C63D0F', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
@@ -39,6 +42,8 @@
     </script>
 </head>
 <body>
+    <div id="loader">
+    </div>
 	<div id = "header">
 		<ul id="menu">
     		<li data-menuanchor="Home" class="active"><a href="#Home"><b>Home</b></a></li>

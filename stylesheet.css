@@ -200,6 +200,17 @@ p{
 	padding:8px 0 8px 0;
 }
 
+#loader{
+	position: fixed;
+	opacity: 0.8;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/loader.GIF) center no-repeat #fff;
+}
+
 /* Smaller than 770px height */
 @media screen and (max-height: 770px){
 	#section0 #logo{
@@ -400,3 +411,4 @@ p{
 		bottom: 0px;
 	}
 }
+
