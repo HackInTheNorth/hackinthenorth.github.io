@@ -123,9 +123,6 @@ p{
 	animation-duration: 0.5s;
 }
 
-#menu a.active:hover  {
-	animation: none;
-}
 
 #menu a.active::before,
 #menu a.active::after {
@@ -239,6 +236,7 @@ p{
 @media all and (max-width: 480px){
 	
 }
+
 
 @media screen and (max-width: 890px)  and (max-height: 680px) {
 	
