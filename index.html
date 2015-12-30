@@ -22,7 +22,19 @@
     <script src="js/jquery.easings.min.js"></script>
     <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript">
+        function initialize() {
+            var mapCanvas = document.getElementById('map-canvas');
+            var mapOptions = {
+                center: new google.maps.LatLng(25.429988100000000000, 81.772549900000060000),
+                zoom: 17,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions)
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+
         var showText = function (target, message, index, interval) {    
             if (index < message.length) {
                 $(target).append(message[index++]); 
@@ -123,7 +135,13 @@
     </div>
     
     <div class="section" id="section_contact" >
-           
+        <div class="map-home">
+            <div id="map-canvas"></div>
+        </div>
+        <div class="contact-details">
+        	<p>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY, ALLAHABAD</p>
+            <p>Anonymous:9999999999</p>
+        </div>           
     </div>
    </div>
 
