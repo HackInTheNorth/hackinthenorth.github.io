@@ -9,20 +9,18 @@
     <meta name="keywords"  content="IIIT-Allahabad, Hackathon" />
     <meta name="Resource-type" content="Document" />
 
-    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 
-        <!--[if IE]>
+    <!--[if IE]>
         <script type="text/javascript">
              var console = { log: function() {} };
         </script>
         <![endif]-->
-
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script src="js/jquery.easings.min.js"></script>
-
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
     <script type="text/javascript">
         var showText = function (target, message, index, interval) {    
@@ -40,12 +38,15 @@
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 // sectionsColor: ['#1D4D84','#1381BE','#8B5499','#D93E3B','#4BECC9'],
-                sectionsColor: ['#2C3E50', '#4BBFC3', '#7BAABE', '#D93E3B', '#336E7B'],
+                sectionsColor: ['#2C3E50', '#D93E3B', '#7BAABE', '#D93E3B', '#2C3E50'],
                 anchors: ['Home', 'About', 'FAQ', 'Sponsors', 'Contact'],
                 menu: '#menu',
+                scrollOverflow: true,            
                 continuousVertical: true,
                 css3: true,
-                scrollingSpeed: 1000
+                scrollingSpeed: 1000,
+                easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
+            
             });
         });
     </script>
@@ -54,41 +55,78 @@
     <div id="loader">
     </div>
     <nav id = "menu" >
-      <a data-menuanchor="Home" class="active" href="#Home"><b>Home</b></a>
-      <a data-menuanchor="About" href="#About"><b>About</b></a>
-      <a data-menuanchor="FAQ" href="#FAQ"><b>FAQ</b></a>
-      <a data-menuanchor="Sponsors" href="#Sponsors"><b>Sponsors</b></a>
-      <a data-menuanchor="Contact" href="#Contact"><b>Contact Us</b></a>
-      <a data-menuanchor="Register" id="Login/Register">
-      </a>
-  </nav>
-  <div id="rocket"> 
-    <img src="images/rocket.png"></img>
-</div>
-<div id="fullpage">
+        <a data-menuanchor="Home" class="active" href="#Home"><b>Home</b></a>
+        <a data-menuanchor="About" href="#About"><b>About</b></a>
+        <a data-menuanchor="FAQ" href="#FAQ"><b>FAQ</b></a>
+        <a data-menuanchor="Sponsors" href="#Sponsors"><b>Sponsors</b></a>
+        <a data-menuanchor="Contact" href="#Contact"><b>Contact Us</b></a>
+        <a data-menuanchor="Register" id="Login/Register">
+        </a>
+    </nav>
+  
+  
+    <div id="fullpage">
 
-    <div class="section active" id="home">
-        <div id="section0-name-div">
-            <span id="section0-name">
-            </span>
-            <span id="section0-name-1">
-            </span>
+        <div class="section active" id="section_home">
+            <center><div id="section0-name-div">
+                <span id="section0-name">
+                </span>
+                <span id="section0-name-1">
+                </span>
+            </div>
+            <center>
+        </div>
+        
+        <div class="section" id="section_about">
+            
+            <div class="content">
+                <center><h1>ABOUT HACK IN THE NORTH</h1></center>
+                <div class="description">
+                    <h2>A Hackathon? What's that?</h2>
+                    <p class = "content_text_normal">
+                      A Hackathon is a collaboration of programmers and designers to code, design and build innovative solutions to real life problems, through extensive coding in a short time duration. Hackathons are the biggest thing to happen to education since the rise of the Internet. See <a href="https://medium.com/hackathons-anonymous/wtf-is-a-hackathon-92668579601" target="_blank">this</a> for a good explanation.
+                      <br/>
+                      <br/>
+                      Your only constraint is: <b>You only have 30 hours</b>.
+                    </p>
+
+                    <h2>India's Premier Hackathon.</h2>
+                    <p class="content_text_normal">
+                          Hackathons provide a venue for self-expression and creativity through technology. People with technical backgrounds come together, form teams around a problem or idea, and collaboratively code a unique solution from scratch - these generally take shape in the form of websites, mobile apps, and robots. So prepare yourself for a weekend filled with learning new technologies, building amazing products and making new friends all within the span of 30 hours.
+                    </p>
+
+                  <h2>Everyone is welcome.</h2>
+                  <p class = "content_text_normal">
+                    Whether you're making your first website, hacking Oculus Rift to censor real world ads, or creating something fun; InOut is for you. We'll have great workshops, mentors, and more! We will allow you to show your coding skills without getting worried about any mortal needs. We will take care of everything.
+                </p>
+            </div>
         </div>
     </div>
-    <div class="section" id="section1">
-        
-    </div>
-    <div class="section" id="section2">
 
+    <div class="section" id="section_faq">
+            <div class="content">
+            <div class="col-left">
+                <h3>Question: who am I?</h3>
+                <p class="answer">Answer: I am a Hacker</p>
+            </div>
+            <div class="col-right">
+                <h3>Question: who is a Hacker?</h3>
+                <p class="answer">Answer: Hacker? I am. :P</p>
+            </div>   
+            </div>
     </div>
-    <div class="section" id="section3">
-
+    
+    <div class="section" id="section_sposors">
+            <div class="sponsors">
+                <center>Oops!! No sponsors right now!! Will have To develop website fast!</center>
+            </div>
     </div>
-    <div class="section" id="section4" >
-       top 3/4 th map .... then address, contact details etc.
-
+    
+    <div class="section" id="section_contact" >
+           
+    </div>
    </div>
-</div>
+
 
 </body>
 </html>

@@ -15,34 +15,30 @@ table {
 fieldset,img {
 	border: 0;
 }
-address,caption,cite,code,dfn,em,strong,th,var {
-	font-weight: normal;
-	font-style: normal;
-}
-strong{
-	font-weight: bold;
-}
-ol,ul {
-	list-style: none;
-	margin:0;
-	padding:0;
-}
 caption,th {
 	text-align: left;
 
 }
-h1,h2,h3,h4,h5,h6 {
+h1 {
+	font-size: 50px;
+	color:#444;
+}
+h2 {
+	font-weight: 1000;
+	font-size: 1.35em;
+}
+h3 {
+	font-size: 1.35em;
+	
+}
+h4,h5,h6 {
 	font-weight: normal;
-	font-size: 100%;
+	font-size: 10px;
 	margin:0;
 	padding:0;
 	color:#444;
 }
-q:before,q:after {
-	content:'';
-}
-abbr,acronym { border: 0;
-}
+
 
 /* Custom CSS
 * --------------------------------------- */
@@ -57,15 +53,8 @@ body{
 	width: 960px;
 	position: relative;
 }
-h1{
-	font-size: 6em;
-}
-p{
-	font-size: 2em;
-}
 
 .section{
-	text-align:center;
 	position: relative;
 }
 
@@ -75,6 +64,9 @@ p{
 	left: 10%;
 	z-index:100;
 }
+
+/* navigation menu */
+
 #menu{
 	text-align: center;
 	position:fixed;
@@ -91,15 +83,14 @@ p{
 	position: relative;
 	display: inline-block;
 	margin: 15px 25px;
-	outline: white;
 	color: #fff;
-	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 400;
-	text-shadow: 0 0 1px rgba(255,255,255,0.3);
 	font-size: 1.35em;
 	padding: 10px;
+	/*background-color: #000;*/
+	/*border-radius: 100px;*/
 	-webkit-transition: color 0.3s;
 	-moz-transition: color 0.3s;
 	transition: color 0.3s;
@@ -142,7 +133,6 @@ p{
 	-moz-transform: translateY(-10px);
 	transform: translateY(-10px);
 }
-
 #menu a.active::before {
 	top: 0;
 	-webkit-transform: translateY(-10px);
@@ -156,6 +146,17 @@ p{
 	transform: translateY(10px);
 }
 
+.content {
+	position: relative;
+	text-align: center;
+	margin: auto;
+}
+
+.content_text_normal {
+	padding-left: 10%;
+	max-width: 80%;
+	font-size: 1.30em;
+}
 
 #loader{
 	position: fixed;
