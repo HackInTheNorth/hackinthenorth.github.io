@@ -2,18 +2,18 @@
 
 Tasks Left:
 
--registration form
+-registration and login form 
 
--include signin using google/facebook
+-about section
+	can be presented in form of four questions: what? when? who? how? each one in different slide
 
--schedule (present in this folder) 
-  http://tympanus.net/Tutorials/InteractiveSVG/
+-schedule 
+	we can keep each day's schedule on a different slide and use following design 
+  	
+  	http://tympanus.net/Tutorials/InteractiveSVG/
+
 
 -maillist for queries
-
--links to facebook and twitter handles
-  (http://www.freepik.com/free-vector/flat-vector-illustration-web-design-concept_713103.htm)
-  for buttons
 
 -animations
 
