@@ -48,17 +48,24 @@
 
         });
         $(document).ready(function() {
-            $('#fullpage').fullpage({
+            $('#display-content').fullpage({
                 // sectionsColor: ['#1D4D84','#1381BE','#8B5499','#D93E3B','#4BECC9'],
                 sectionsColor: ['#2C3E50', '#D93E3B', '#7BAABE', '#D93E3B', '#2C3E50'],
-                anchors: ['Home', 'About', 'FAQ', 'Sponsors', 'Contact'],
+                anchors: ['home', 'about', 'faq', 'sponsors', 'contact'],
                 menu: '#menu',
                 scrollOverflow: true,            
                 continuousVertical: true,
                 css3: true,
                 scrollingSpeed: 1000,
-                easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
-            
+                easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',
+                navigation: true,
+                navigationTooltips: ['Home', 'About Hack In The North', 'FAQ', 'Our sponsors', 'Contact Us'],
+                showActiveToolTip: true,            
+            });
+            $('#menu').hide();
+            $('#menubtn').on('click', function() {
+                    $('#menubtn').toggleClass('on');
+                    $('#menu').toggle('10');
             });
         });
     </script>
@@ -66,18 +73,29 @@
 <body>
     <div id="loader">
     </div>
-    <nav id = "menu" >
-        <a data-menuanchor="Home" class="active" href="#Home"><b>Home</b></a>
-        <a data-menuanchor="About" href="#About"><b>About</b></a>
-        <a data-menuanchor="FAQ" href="#FAQ"><b>FAQ</b></a>
-        <a data-menuanchor="Sponsors" href="#Sponsors"><b>Sponsors</b></a>
-        <a data-menuanchor="Contact" href="#Contact"><b>Contact Us</b></a>
-        <a data-menuanchor="Register" id="Login/Register">
-        </a>
-    </nav>
-  
-  
-    <div id="fullpage">
+        <header>
+        <div class="header-top">
+            <a href="#" id="menubtn">
+                <i></i>
+                <i></i>
+                <i></i>
+            </a>
+        </div>
+        <nav id = "menu" >
+            <a data-menuanchor="home" class="active" href="#home"><b>Home</b></a>
+            <a data-menuanchor="about" href="#about"><b>About</b></a>
+            <a data-menuanchor="faq" href="#faq"><b>FAQ</b></a>
+            <a data-menuanchor="sponsors" href="#sponsors"><b>Sponsors</b></a>
+            <a data-menuanchor="contact" href="#contact"><b>Contact</b></a>
+        </nav>
+        <div id="social-media-details">
+                <a href="#facebook"><img width="40px" src="images/facebook.svg"></a>
+                <a href="#twitter"><img width="40px" src="images/twitter.svg"></a>
+                <a href="#mailto"><img width="40px" src="images/mail.svg"></a>
+        </div>
+    </header>
+
+    <div id="display-content">
 
         <div class="section active" id="section_home">
             <center><div id="section0-name-div">
@@ -172,11 +190,6 @@
             <div id="contact-details-3" class="contact-details-common">
                 <span class="contact-details-header">Sponsorship Head</span>
                 <span>Sanjeev S. Nair : 7682183561</span>
-            </div>
-            <div id="contact-details-4" class="contact-details-common">
-                <a href="#"><img src="images/facebook.png"></a>
-                <a href="#"><img src="images/twitter.png"></a>
-                <a href="#"><img src="images/email.png"></a>
             </div>
         </div>           
     </div>

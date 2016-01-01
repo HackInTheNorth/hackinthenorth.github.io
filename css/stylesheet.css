@@ -65,26 +65,160 @@ body{
 	z-index:100;
 }
 
-/* navigation menu */
+/*modification in fullpage css for navigation Dots*/
+#fp-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+#fp-nav ul li a span {
+    background: white;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+}
+      
+#fp-nav ul li a.active span, 
+#fp-nav ul li:hover a.active span {
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    background: transparent;
+    box-sizing: border-box;
+    border: 1px solid #24221F;
+}
+
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -2px;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 225px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    width: 0;
+}
+
+/*have to modify this part for tooltips*/
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    width: auto;
+    opacity: 1;
+}
+
+#fp-nav ul li .fp-tooltip.right {
+    right: 20px;
+}
+
+#fp-nav ul li .fp-tooltip.left {
+    left: 20px;
+}
+
+/*css for menu, login/register buttons, social media accounts*/
+.header-top {
+	background: transparent;
+	height: 70px;
+	padding: 0 10px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 20%;
+	z-index: 12;
+}
+
+h1 {
+	line-height: 70px;
+	height: 70px;
+}
+
+h1 a {
+	display: block;
+	padding: 0 10px;
+}
+
+	
+#menubtn {
+	width: 50px;
+	float: right;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	padding: 0 10px;
+	/*top: 10px;*/
+	-webkit-transform: translateY(35px);
+	-moz-transform: translateY(30px);
+	transform: translateY(30px);
+
+}
+
+#menubtn i {
+	position: absolute;
+	display: block;
+	height: 2px;
+	background: white;
+	width: 30px;
+	left: 10px;
+	-webkit-transition: all .3s;
+	        transition: all .3s;
+}
+
+#menubtn i:nth-child(1) {
+	top: 16px;
+}
+
+#menubtn i:nth-child(2) {
+	top: 24px;
+}
+
+#menubtn i:nth-child(3) {
+	top: 32px;
+}
+
+#menubtn.on i:nth-child(1) {
+	top: 25px;
+	-webkit-transform: rotateZ(45deg);
+	        transform: rotateZ(45deg);
+}
+
+#menubtn.on i:nth-child(2) {
+	background: transparent;
+}
+
+#menubtn.on i:nth-child(3) {
+	top: 25px;
+	-webkit-transform: rotateZ(-45deg);
+	        transform: rotateZ(-45deg);
+}
 
 #menu{
-	text-align: center;
-	position:fixed;
+	position:absolute;
 	top:0;
 	left:0;
-	height: 40px;
+	height: 80%;
 	z-index: 70;
-	width: 100%;
-	padding: 0;
+	height: 100%;
+	width: 200px;
+	padding: 0; 
 	margin:0;
+	background: rgba(255,255,255,0.5);	
 }
 
 #menu a {
+	text-align: right;
 	position: relative;
-	display: inline-block;
+	display: block;
+	background: rgba(255,255,255,0.5);
 	margin: 15px 25px;
 	color: #fff;
-	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 400;
 	font-size: 1.35em;
@@ -94,58 +228,26 @@ body{
 	-webkit-transition: color 0.3s;
 	-moz-transition: color 0.3s;
 	transition: color 0.3s;
-
 }
 
-@keyframes rock {
-  0% {
-    transform: rotate(-2deg);
-  }
-  50% {
-    transform: rotate(4deg);
-  }
-  100% {
-    transform: rotate(-2deg);
-  }
+#social-media-details {
+	position: fixed;
+	bottom: 10px;
+	right: 	10px;
+	max-width: 40px;
+	background: transparent;
+	z-index: 70;
 }
-#menu a:hover  {
-	animation: rock;
-	animation-iteration-count: infinite;
-	animation-duration: 0.5s;
-}
-
-#menu a.active:hover  {
-	animation: none;
+#social-media-details a {
+	float: right;
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-bottom: 20px;
 }
 
-#menu a.active::before,
-#menu a.active::after {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	background: #fff;
-	content: '';
-	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
-	transition: opacity 0.3s, transform 0.3s;
-	-webkit-transform: translateY(-10px);
-	-moz-transform: translateY(-10px);
-	transform: translateY(-10px);
-}
-#menu a.active::before {
-	top: 0;
-	-webkit-transform: translateY(-10px);
-	-moz-transform: translateY(-10px);
-	transform: translateY(-10px);
-}
-#menu a.active::after{
-	bottom: 0;
-	-webkit-transform: translateY(10px);
-	-moz-transform: translateY(10px);
-	transform: translateY(10px);
-}
-
+/*css for text content in different sections*/
 .content {
 	position: relative;
 	text-align: center;
@@ -158,6 +260,13 @@ body{
 	font-size: 1.30em;
 }
 
+#section0-name-div{
+	color: white;
+	font-size: 2em;
+	font-family: 'Source Code Pro', ;
+}
+
+/*loader in the start*/
 #loader{
 	position: fixed;
 	opacity: 0.8;
@@ -168,11 +277,8 @@ body{
 	z-index: 9999;
 	background: url(images/loader.GIF) center no-repeat #fff;
 }
-#section0-name-div{
-	color: white;
-	font-size: 2em;
-	font-family: 'Source Code Pro', ;
-}
+
+/*contact section*/
 #map-canvas {
 	margin-top:7%;
 	height:70%;
@@ -217,17 +323,7 @@ body{
 	align-items: center;
 	font-size: 0.9em;
 }
-#contact-details-4{
-	display: flex;
-	flex-direction:row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	
-}
-#contact-details-4>a{
-	margin: 10px;
-}
+
 .contact-details-header{
 	font-size: 1.3em;
 	margin-bottom: 10px;
@@ -235,6 +331,11 @@ body{
 .answer{
 	margin-top:5px;
 }
+
+
+
+
+/*==================templates for making site responsive====================*/
 /* Smaller than 770px height */
 @media screen and (max-height: 770px){
 	
@@ -263,38 +364,15 @@ body{
 }
 /*screen resolutions smaller than 620px  width*/
 @media all and (max-width: 890px){
-	#menu a {
-		margin: 5px;
-		padding: 9px 12px;
-	}
-	#menu a.active {
-		padding: 9px 12px;
-	}
+	
 }
 /*screen resolutions smaller than 620px  width*/
 @media all and (max-width: 650px){
-	#menu{
-		z-index: 9999;
-	}
-	#menu a {
-		margin: 3px;
-		padding: 9px 12px;
-	}
-	#menu a.active {
-		padding: 9px 12px;
-
-	}
+	
 }
 /*screen resolutions smaller than 620px  width*/
 @media all and (max-width: 580px){
-	#menu a,
-	#menu a.active {
-		padding: 8px 11px;
-		font-size: 13px;
-	}
-	h1 {
-		font-size: 2.7em;
-	}
+	
 }
 
 /*screen resolutions smaller than 620px  width*/
