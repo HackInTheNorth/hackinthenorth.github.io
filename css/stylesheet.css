@@ -19,7 +19,11 @@ caption,th {
 	text-align: left;
 
 }
+h1, h2 {
+	padding: 0 10%; 
+}
 h1 {
+	text-align: center;
 	font-size: 50px;
 	color:#444;
 }
@@ -46,16 +50,6 @@ body{
 	font-family: arial,helvetica;
 	color: #333;
 	color: rgba(0,0,0,0.5);
-}
-.wrap{
-	margin-left: auto;
-	margin-right: auto;
-	width: 960px;
-	position: relative;
-}
-
-.section{
-	position: relative;
 }
 
 #rocket {
@@ -92,6 +86,8 @@ body{
     border: 1px solid #24221F;
 }
 
+/*have to modify this part for tooltips*/
+
 #fp-nav ul li .fp-tooltip {
     position: absolute;
     top: -2px;
@@ -106,7 +102,6 @@ body{
     width: 0;
 }
 
-/*have to modify this part for tooltips*/
 #fp-nav ul li:hover .fp-tooltip,
 #fp-nav.fp-show-active a.active + .fp-tooltip {
     -webkit-transition: opacity 0.2s ease-in;
@@ -127,7 +122,6 @@ body{
 .header-top {
 	background: transparent;
 	height: 70px;
-	padding: 0 10px;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -135,25 +129,16 @@ body{
 	z-index: 12;
 }
 
-h1 {
-	line-height: 70px;
-	height: 70px;
-}
 
-h1 a {
-	display: block;
-	padding: 0 10px;
-}
 
 	
 #menubtn {
+	position: relative;
 	width: 50px;
 	float: right;
+	right: 7px;
 	height: 50px;
 	display: inline-block;
-	position: relative;
-	padding: 0 10px;
-	/*top: 10px;*/
 	-webkit-transform: translateY(35px);
 	-moz-transform: translateY(30px);
 	transform: translateY(30px);
@@ -185,8 +170,8 @@ h1 a {
 
 #menubtn.on i:nth-child(1) {
 	top: 25px;
-	-webkit-transform: rotateZ(45deg);
-	        transform: rotateZ(45deg);
+	-webkit-transform: rotateZ(135deg);
+	        transform: rotateZ(135deg);
 }
 
 #menubtn.on i:nth-child(2) {
@@ -195,27 +180,29 @@ h1 a {
 
 #menubtn.on i:nth-child(3) {
 	top: 25px;
-	-webkit-transform: rotateZ(-45deg);
-	        transform: rotateZ(-45deg);
+	-webkit-transform: rotateZ(-135deg);
+	        transform: rotateZ(-135deg);
 }
 
 #menu{
-	position:absolute;
-	top:0;
-	left:0;
-	height: 80%;
+	position: fixed;
+	top: 0;
+	right: 57px;
+	left: 0;
 	z-index: 70;
 	height: 100%;
-	width: 200px;
+	max-height: auto;
 	padding: 0; 
-	margin:0;
-	background: rgba(255,255,255,0.5);	
+	margin: 0;
+	background: rgba(50,50,50,0.5);	
 }
 
 #menu a {
-	text-align: right;
+	text-align: center;
 	position: relative;
-	display: block;
+	display: inline;
+	top: 0;
+	
 	background: rgba(255,255,255,0.5);
 	margin: 15px 25px;
 	color: #fff;
@@ -223,8 +210,8 @@ h1 a {
 	font-weight: 400;
 	font-size: 1.35em;
 	padding: 10px;
-	/*background-color: #000;*/
-	/*border-radius: 100px;*/
+	width: 200px;
+	max-width: 400px;
 	-webkit-transition: color 0.3s;
 	-moz-transition: color 0.3s;
 	transition: color 0.3s;
@@ -232,9 +219,9 @@ h1 a {
 
 #social-media-details {
 	position: fixed;
-	bottom: 10px;
-	right: 	10px;
-	max-width: 40px;
+	bottom: 0px;
+	right: 	17px;
+	max-width: 30px;
 	background: transparent;
 	z-index: 70;
 }
@@ -242,22 +229,41 @@ h1 a {
 	float: right;
 	position: relative;
 	display: inline-block;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	margin-bottom: 20px;
+	vertical-align: top;
+    text-align: center;
+	-webkit-font-smoothing: antialiased;
+    speak: none;
+}
+
+.genericon::before{
+        position: relative;
+        font-size: 30px;
+        overflow: visible;
+        display: block;
+        font-family: "Genericons";
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        line-height: 1;
+        text-decoration: inherit;
+        text-transform: none;
+        color: white;
 }
 
 /*css for text content in different sections*/
 .content {
 	position: relative;
-	text-align: center;
-	margin: auto;
+	margin: 47px;
+	/*text-align: ;*/
 }
 
 .content_text_normal {
-	padding-left: 10%;
-	max-width: 80%;
 	font-size: 1.30em;
+	max-width: 80%;
+	padding: 0 10%;
 }
 
 #section0-name-div{
@@ -265,7 +271,18 @@ h1 a {
 	font-size: 2em;
 	font-family: 'Source Code Pro', ;
 }
+.col-left,
+.col-right {
+	position: relative;
+	width: 520px;
+}
 
+.col-left {
+	float: left;
+}
+.col-right {
+	float: right;
+}
 /*loader in the start*/
 #loader{
 	position: fixed;
@@ -328,9 +345,7 @@ h1 a {
 	font-size: 1.3em;
 	margin-bottom: 10px;
 }
-.answer{
-	margin-top:5px;
-}
+
 
 
 

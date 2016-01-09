@@ -2,197 +2,193 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Hack The North Demo Website</title>
-    <meta name="author" content="Geekhaven" />
-    <meta name="description" content="HAck The North Hackaton placeholder site" />
-    <meta name="keywords"  content="IIIT-Allahabad, Hackathon" />
-    <meta name="Resource-type" content="Document" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Hack The North Demo Website</title>
+	<meta name="author" content="Geekhaven" />
+	<meta name="description" content="HAck The North Hackaton placeholder site" />
+	<meta name="keywords"  content="IIIT-Allahabad, Hackathon" />
+	<meta name="Resource-type" content="Document" />
 
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="genericons/genericons.css">
 
-    <!--[if IE]>
-        <script type="text/javascript">
-             var console = { log: function() {} };
-        </script>
-        <![endif]-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script src="js/jquery.easings.min.js"></script>
-    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script type="text/javascript">
-        function initialize() {
-            var mapCanvas = document.getElementById('map-canvas');
-            var mapOptions = {
-                center: new google.maps.LatLng(25.429988100000000000, 81.772549900000060000),
-                zoom: 17,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
-            var map = new google.maps.Map(mapCanvas, mapOptions)
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+		<![endif]-->
+	<script src="js/jquery.js"></script>
+	<!-- // <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> -->
+	<script src="js/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<!-- // <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+	<script type="text/javascript">
+		// function initialize() {
+		//     var mapCanvas = document.getElementById('map-canvas');
+		//     var mapOptions = {
+		//         center: new google.maps.LatLng(25.429988100000000000, 81.772549900000060000),
+		//         zoom: 17,
+		//         mapTypeId: google.maps.MapTypeId.ROADMAP
+		//     }
+		//     var map = new google.maps.Map(mapCanvas, mapOptions)
+		// }
+		// google.maps.event.addDomListener(window, 'load', initialize);
 
-        var showText = function (target, message, index, interval) {    
-            if (index < message.length) {
-                $(target).append(message[index++]); 
-                setTimeout(function () { showText(target, message, index, interval); }, interval); 
-            }
-        }
-        $(window).load(function() {
-            $("#loader").fadeOut("slow");
-            setTimeout(function(){showText("#section0-name", "{ Hack in the North ", 0, 50);}, 800);
-            setTimeout(function(){showText("#section0-name-1", "}", 0, 50);}, 800);
+		var showText = function (target, message, index, interval) {    
+			if (index < message.length) {
+				$(target).append(message[index++]); 
+				setTimeout(function () { showText(target, message, index, interval); }, interval); 
+			}
+		}
+		$(window).load(function() {
+			$("#loader").fadeOut("slow");
+			setTimeout(function(){showText("#section0-name", "{ Hack in the North ", 0, 50);}, 800);
+			setTimeout(function(){showText("#section0-name-1", "}", 0, 50);}, 800);
 
-        });
-        $(document).ready(function() {
-            $('#display-content').fullpage({
-                // sectionsColor: ['#1D4D84','#1381BE','#8B5499','#D93E3B','#4BECC9'],
-                sectionsColor: ['#2C3E50', '#D93E3B', '#7BAABE', '#D93E3B', '#2C3E50'],
-                anchors: ['home', 'about', 'faq', 'sponsors', 'contact'],
-                menu: '#menu',
-                scrollOverflow: true,            
-                continuousVertical: true,
-                css3: true,
-                scrollingSpeed: 1000,
-                easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',
-                navigation: true,
-                navigationTooltips: ['Home', 'About Hack In The North', 'FAQ', 'Our sponsors', 'Contact Us'],
-                showActiveToolTip: true,            
-            });
-            $('#menu').hide();
-            $('#menubtn').on('click', function() {
-                    $('#menubtn').toggleClass('on');
-                    $('#menu').toggle('10');
-            });
-        });
-    </script>
+		});
+		$(document).ready(function() {
+			$('#display-content').fullpage({
+				// sectionsColor: ['#1D4D84','#1381BE','#8B5499','#D93E3B','#4BECC9'],
+				sectionsColor: ['#2C3E50', '#D93E3B', '#7BAABE', '#D93E3B', '#2C3E50'],
+				anchors: ['home', 'about', 'faq', 'sponsors', 'contact'],
+				menu: '#menu',
+				scrollOverflow: true,            
+				continuousVertical: true,
+				css3: true,
+				scrollingSpeed: 1000,
+				easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',
+				navigation: true,
+				navigationTooltips: ['Home', 'About Hack In The North', 'FAQ', 'Our sponsors', 'Contact Us'],
+				showActiveToolTip: true,
+			});
+			$('#menu').hide();
+			$('#menubtn').on('click', function() {
+					$('#menubtn').toggleClass('on');
+					$('#menu').fadeToggle('400');
+			});
+		});
+	</script>
 </head>
 <body>
-    <div id="loader">
-    </div>
-        <header>
-        <div class="header-top">
-            <a href="#" id="menubtn">
-                <i></i>
-                <i></i>
-                <i></i>
-            </a>
-        </div>
-        <nav id = "menu" >
-            <a data-menuanchor="home" class="active" href="#home"><b>Home</b></a>
-            <a data-menuanchor="about" href="#about"><b>About</b></a>
-            <a data-menuanchor="faq" href="#faq"><b>FAQ</b></a>
-            <a data-menuanchor="sponsors" href="#sponsors"><b>Sponsors</b></a>
-            <a data-menuanchor="contact" href="#contact"><b>Contact</b></a>
-        </nav>
-        <div id="social-media-details">
-                <a href="#facebook"><img width="40px" src="images/facebook.svg"></a>
-                <a href="#twitter"><img width="40px" src="images/twitter.svg"></a>
-                <a href="#mailto"><img width="40px" src="images/mail.svg"></a>
-        </div>
-    </header>
+	
+	<div id="loader">
+	</div>
+	
+	<header>
+		<div class="header-top">
+			<a href="#" id="menubtn">
+				<i></i>
+				<i></i>
+				<i></i>
+			</a>
+		</div>
+		<nav id = "menu" >
+			<a data-menuanchor="home" class="active" href="#home"><b>Home</b></a>
+			<a data-menuanchor="about" href="#about"><b>About</b></a>
+			<a data-menuanchor="faq" href="#faq"><b>FAQ</b></a>
+			<a data-menuanchor="sponsors" href="#sponsors"><b>Sponsors</b></a>
+			<a data-menuanchor="contact" href="#contact"><b>Contact</b></a>
+		</nav>
+		<div id = "social-media-details">
+			<a class = "genericon genericon-facebook-alt" href="#facebook"></a>
+			<a class = "genericon genericon-twitter" href="#twitter"></a>
+			<a class = "genericon genericon-mail" href="#mail"></a>
+		</div>
+	</header>
 
-    <div id="display-content">
+	<div id="display-content">
 
-        <div class="section active" id="section_home">
-            <center><div id="section0-name-div">
-                <span id="section0-name">
-                </span>
-                <span id="section0-name-1">
-                </span>
-            </div>
-            <center>
-        </div>
-        
-        <div class="section" id="section_about">
-            
-            <div class="content">
-                <center><h1>ABOUT HACK IN THE NORTH</h1></center>
-                <div class="description">
-                    <h2>A Hackathon? What's that?</h2>
-                    <p class = "content_text_normal">
-                      A Hackathon is a collaboration of programmers and designers to code, design and build innovative solutions to real life problems, through extensive coding in a short time duration. Hackathons are the biggest thing to happen to education since the rise of the Internet. See <a href="https://medium.com/hackathons-anonymous/wtf-is-a-hackathon-92668579601" target="_blank">this</a> for a good explanation.
-                      <br/>
-                      <br/>
-                      Your only constraint is: <b>You only have 30 hours</b>.
-                    </p>
+		<div class="section active" id="section_home">
+			<center><div id="section0-name-div">
+				<span id="section0-name">
+				</span>
+				<span id="section0-name-1">
+				</span>
+				 </div>
+			</center>
+		</div>
+		
+		<div class="section" id="section_about">
+			
+			<div class="content">
+				<h1>ABOUT HACK IN THE NORTH</h1>
+				<br>
+				<div class="description">
+					<h2>A Hackathon? What's that?</h2>
+					<p class = "content_text_normal">
+					  A Hackathon is a collaboration of programmers and designers to code, design and build innovative solutions to real life problems, through extensive coding in a short time duration. Hackathons are the biggest thing to happen to education since the rise of the Internet. See <a href="https://medium.com/hackathons-anonymous/wtf-is-a-hackathon-92668579601" target="_blank">this</a> for a good explanation.
+					  <br/>
+					  <br/>
+					  Your only constraint is: <b>You only have 30 hours</b>.
+					</p>
 
-                    <h2>India's Premier Hackathon.</h2>
-                    <p class="content_text_normal">
-                          Hackathons provide a venue for self-expression and creativity through technology. People with technical backgrounds come together, form teams around a problem or idea, and collaboratively code a unique solution from scratch - these generally take shape in the form of websites, mobile apps, and robots. So prepare yourself for a weekend filled with learning new technologies, building amazing products and making new friends all within the span of 30 hours.
-                    </p>
+					<h2>India's Premier Hackathon.</h2>
+					<p class="content_text_normal">
+						  Hackathons provide a venue for self-expression and creativity through technology. People with technical backgrounds come together, form teams around a problem or idea, and collaboratively code a unique solution from scratch - these generally take shape in the form of websites, mobile apps, and robots. So prepare yourself for a weekend filled with learning new technologies, building amazing products and making new friends all within the span of 30 hours.
+					</p>
 
-                  <h2>Everyone is welcome.</h2>
-                  <p class = "content_text_normal">
-                    Whether you're making your first website, hacking Oculus Rift to censor real world ads, or creating something fun; InOut is for you. We'll have great workshops, mentors, and more! We will allow you to show your coding skills without getting worried about any mortal needs. We will take care of everything.
-                </p>
-            </div>
-        </div>
-    </div>
+				  <h2>Everyone is welcome.</h2>
+				  <p class = "content_text_normal">
+					Whether you're making your first website, hacking Oculus Rift to censor real world ads, or creating something fun; InOut is for you. We'll have great workshops, mentors, and more! We will allow you to show your coding skills without getting worried about any mortal needs. We will take care of everything.
+				</p>
+			</div>
+		</div>
+	</div>
 
-    <div class="section" id="section_faq">
-            <div class="content">
-            <div class="col-left">
-                <h3>Do I have to bring my own laptop?</h3>
-                <p class="answer">It is upon your choice. We provide systems with a variety of free and open-source softwares preinstalled.</p>
-            </div>
-            <br>
-            <br>  
-            <div class="col-right">
-                <h3>What if the software I require is not on your system?</h3>
-                <p class="answer">If that software is open-source or free to download from the internet, then you can download it as all the systems have internet connectivity.</p>
-            </div>
-            <br>
-            <br>
-            <div class="col-right">
-                <h3>What if I don’t know how to program?</h3>
-                <p class="answer"> If you come willing to learn and full of ideas,  there will be people eager to teach you what you need to know and put you to work.</p>
-            </div>
-            <br>
-            <br>
-            <div class="col-left">
-                <h3>Do I have to develop something all by myself or can I be part of a team?</h3>
-                <p class="answer"> You can go either way: by yourself or part of a team. Work on your own or put together an All Star team with a back-end developer, a database whiz, and a front-end designer. Whichever way works best for you! However, building a great team allows you to divide responsibilities and spend more time on your strongest areas. We would definitely recommend having a developer/designer combination. You must have a great solution, and if your project is also visually appealing, you maximize your odds of getting noticed.</p>
-            </div>
-            <br>
-            <br>  
-            <div class="col-right">
-                <h3>OMG hacking !!</h3>
-                <p class="answer">Please note that this hackathon is aimed at getting the input of developers as a positive force and not in the sense of any security breach.</p>
-            </div>
-            </div>
-    </div>
-    
-    <div class="section" id="section_sposors">
-            <div class="sponsors">
-                <center>Oops!! No sponsors right now!! Will have To develop website fast!</center>
-            </div>
-    </div>
-    
-    <div class="section" id="section_contact" >
-        <div id="map-canvas"></div>
-        <div id="contact-details">
-        	<div id="contact-details-1" class="contact-details-common">
-                <span>
-                    Indian Institute of Information Technology-Allahabad<br>
-                    Allahabad, Uttar Pradesh<br>
-                    Pin code: 211012
-                </span>
-            </div>
-            <div id="contact-details-2" class="contact-details-common">
-                <span class="contact-details-header">Event Coordinators</span>
-                <span>Vishnu KS : 9872633145</span>
-                <span>Abhishek Menon : 9872633145</span>
-            </div>
-            <div id="contact-details-3" class="contact-details-common">
-                <span class="contact-details-header">Sponsorship Head</span>
-                <span>Sanjeev S. Nair : 7682183561</span>
-            </div>
-        </div>           
-    </div>
+	<div class="section" id="section_faq">
+			<h1>FAQ</h1>
+			<br>
+			<div class="content_text_normal">
+				<div class="col-left">
+					<h3>Do I have to bring my own laptop?</h3>
+					<p class="answer">It is upon your choice. We provide systems with a variety of free and open-source softwares preinstalled.</p>
+					<br>
+					<h3>Do I have to develop something all by myself or can I be part of a team?</h3>
+					<p class="answer"> You can go either way: by yourself or part of a team. Work on your own or put together an All Star team with a back-end developer, a database whiz, and a front-end designer. Whichever way works best for you! However, building a great team allows you to divide responsibilities and spend more time on your strongest areas. We would definitely recommend having a developer/designer combination. You must have a great solution, and if your project is also visually appealing, you maximize your odds of getting noticed.</p>
+					<br>
+				</div>
+				<div class="col-right">
+					<h3>What if the software I require is not on your system?</h3>
+					<p class="answer">If that software is open-source or free to download from the internet, then you can download it as all the systems have internet connectivity.</p>
+					<br>
+					<h3>What if I don’t know how to program?</h3>
+					<p class="answer"> If you come willing to learn and full of ideas,  there will be people eager to teach you what you need to know and put you to work.</p>
+					<br>
+					<h3>OMG hacking !!</h3>
+					<p class="answer">Please note that this hackathon is aimed at getting the input of developers as a positive force and not in the sense of any security breach.</p>
+				</div>
+			</div>			
+	</div>
+	
+	<div class="section" id="section_sposors">
+			<div class="sponsors">
+				<center>Oops!! No sponsors right now!! Will have To develop website fast!</center>
+			</div>
+	</div>
+	
+	<div class="section" id="section_contact" >
+		<div id="map-canvas"></div>
+		<div id="contact-details">
+			<div id="contact-details-1" class="contact-details-common">
+				<span>
+					Indian Institute of Information Technology-Allahabad<br>
+					Allahabad, Uttar Pradesh<br>
+					Pin code: 211012
+				</span>
+			</div>
+			<div id="contact-details-2" class="contact-details-common">
+				<span class="contact-details-header">Event Coordinators</span>
+				<span>Vishnu KS : 9872633145</span>
+				<span>Abhishek Menon : 9872633145</span>
+			</div>
+			<div id="contact-details-3" class="contact-details-common">
+				<span class="contact-details-header">Sponsorship Head</span>
+				<span>Sanjeev S. Nair : 7682183561</span>
+			</div>
+		</div>           
+	</div>
    </div>
 
 
