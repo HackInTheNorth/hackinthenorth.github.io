@@ -72,12 +72,10 @@
 	<div id="loader">
 	</div>
 	
-	<div class="header-top">
-		<a href="#menu" id="menubtn">
-			<i></i>
-			<i></i>
-			<i></i>
-		</a>
+	<div id="menubtn">
+		<i></i>
+		<i></i>
+		<i></i>
 	</div>
 	<nav class="menu-right" id="menu">
 		<h3>Menu</h3>
@@ -192,12 +190,31 @@
    <script>
 			var menu = document.getElementById( 'menu' ),
 				menubtn = document.getElementById( 'menubtn' ),
-				body = document.body;
+				body = document.body,
+				content = document.getElementById('display-content');
+
+
 
 			menubtn.onclick = function() {
 				classie.toggle( this, 'on' );
 				classie.toggle( body, 'menu-push-toleft' );
 				classie.toggle( menu, 'menu-open' );
+			};
+			
+			content.onclick = function() {
+				if(classie.has(body, 'menu-push-toleft')) {
+					classie.toggle( menubtn, 'on' );
+					classie.toggle( body, 'menu-push-toleft' );
+					classie.toggle( menu, 'menu-open' );		
+				}
+			};
+
+			menu.onclick = function() {
+				if(classie.has(body, 'menu-push-toleft')) {
+					classie.toggle( menubtn, 'on' );
+					classie.toggle( body, 'menu-push-toleft' );
+					classie.toggle( menu, 'menu-open' );		
+				}	
 			};
 		</script>
 
