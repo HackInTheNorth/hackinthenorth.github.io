@@ -19,6 +19,7 @@
 		</script>
 		<![endif]-->
 	<script src="js/jquery.js"></script>
+	<script src="js/modernizr.custom.js"></script>
 	<!-- // <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> -->
 	<script src="js/jquery.easings.min.js"></script>
 	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
@@ -37,16 +38,16 @@
 		// google.maps.event.addDomListener(window, 'load', initialize);
 
 		var showText = function (target, message, index, interval) {    
-			if (index < message.length) {
-				$(target).append(message[index++]); 
-				setTimeout(function () { showText(target, message, index, interval); }, interval); 
-			}
+				if (index < message.length) {
+					$(target).append(message[index++]); 
+					setTimeout(function () { showText(target, message, index, interval); }, interval); 
+				}
 		}
+		
 		$(window).load(function() {
 			$("#loader").fadeOut("slow");
 			setTimeout(function(){showText("#section0-name", "{ Hack in the North ", 0, 50);}, 800);
 			setTimeout(function(){showText("#section0-name-1", "}", 0, 50);}, 800);
-
 		});
 		$(document).ready(function() {
 			$('#display-content').fullpage({
@@ -63,40 +64,35 @@
 				navigationTooltips: ['Home', 'About Hack In The North', 'FAQ', 'Our sponsors', 'Contact Us'],
 				showActiveToolTip: true,
 			});
-			$('#menu').hide();
-			$('#menubtn').on('click', function() {
-					$('#menubtn').toggleClass('on');
-					$('#menu').fadeToggle('400');
-			});
 		});
 	</script>
 </head>
-<body>
+<body class="menu-push">
 	
 	<div id="loader">
 	</div>
 	
-	<header>
-		<div class="header-top">
-			<a href="#" id="menubtn">
-				<i></i>
-				<i></i>
-				<i></i>
-			</a>
-		</div>
-		<nav id = "menu" >
-			<a data-menuanchor="home" class="active" href="#home"><b>Home</b></a>
-			<a data-menuanchor="about" href="#about"><b>About</b></a>
-			<a data-menuanchor="faq" href="#faq"><b>FAQ</b></a>
-			<a data-menuanchor="sponsors" href="#sponsors"><b>Sponsors</b></a>
-			<a data-menuanchor="contact" href="#contact"><b>Contact</b></a>
-		</nav>
-		<div id = "social-media-details">
-			<a class = "genericon genericon-facebook-alt" href="#facebook"></a>
-			<a class = "genericon genericon-twitter" href="#twitter"></a>
-			<a class = "genericon genericon-mail" href="#mail"></a>
-		</div>
-	</header>
+	<div class="header-top">
+		<a href="#menu" id="menubtn">
+			<i></i>
+			<i></i>
+			<i></i>
+		</a>
+	</div>
+	<nav class="menu-right" id="menu">
+		<h3>Menu</h3>
+		<a data-menuanchor="home" class="active" href="#home"><b>Home</b></a>
+		<a data-menuanchor="about" href="#about"><b>About</b></a>
+		<a data-menuanchor="faq" href="#faq"><b>FAQ</b></a>
+		<a data-menuanchor="sponsors" href="#sponsors"><b>Sponsors</b></a>
+		<a data-menuanchor="contact" href="#contact"><b>Contact</b></a>
+	</nav>
+		
+	<div id = "social-media-details">
+		<a class = "genericon genericon-facebook-alt" href="#facebook"></a>
+		<a class = "genericon genericon-twitter" href="#twitter"></a>
+		<a class = "genericon genericon-mail" href="#mail"></a>
+	</div>
 
 	<div id="display-content">
 
@@ -190,6 +186,20 @@
 		</div>           
 	</div>
    </div>
+
+   <script src="js/classie.js"></script>	
+	
+   <script>
+			var menu = document.getElementById( 'menu' ),
+				menubtn = document.getElementById( 'menubtn' ),
+				body = document.body;
+
+			menubtn.onclick = function() {
+				classie.toggle( this, 'on' );
+				classie.toggle( body, 'menu-push-toleft' );
+				classie.toggle( menu, 'menu-open' );
+			};
+		</script>
 
 
 </body>

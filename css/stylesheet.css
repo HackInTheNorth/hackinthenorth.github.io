@@ -133,7 +133,7 @@ body{
 
 	
 #menubtn {
-	position: relative;
+	position: fixed;
 	width: 50px;
 	float: right;
 	right: 7px;
@@ -142,7 +142,8 @@ body{
 	-webkit-transform: translateY(35px);
 	-moz-transform: translateY(30px);
 	transform: translateY(30px);
-
+	-webkit-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 
 #menubtn i {
@@ -168,53 +169,84 @@ body{
 	top: 32px;
 }
 
+#menubtn.on {
+	-webkit-transform: translate(-240px, 35px);
+	-moz-transform: translate(-240px, 30px);
+	transform: translate(-240px, 30px);
+}
 #menubtn.on i:nth-child(1) {
 	top: 25px;
 	-webkit-transform: rotateZ(135deg);
 	        transform: rotateZ(135deg);
 }
-
 #menubtn.on i:nth-child(2) {
 	background: transparent;
 }
-
 #menubtn.on i:nth-child(3) {
 	top: 25px;
 	-webkit-transform: rotateZ(-135deg);
 	        transform: rotateZ(-135deg);
 }
 
-#menu{
+#menu {
+	background: #47a3da;
 	position: fixed;
-	top: 0;
-	right: 57px;
-	left: 0;
-	z-index: 70;
+	width: 240px;
 	height: 100%;
-	max-height: auto;
-	padding: 0; 
+	top: 0;
+	z-index: 1000;
+}
+
+#menu h3 {
+	color: #afdefa;
+	font-size: 1.9em;
+	padding: 20px;
 	margin: 0;
-	background: rgba(50,50,50,0.5);	
+	font-weight: 300;
+	background: #0d77b6;
 }
 
 #menu a {
-	text-align: center;
-	position: relative;
-	display: inline;
-	top: 0;
-	
-	background: rgba(255,255,255,0.5);
-	margin: 15px 25px;
+	display: block;
 	color: #fff;
-	letter-spacing: 1px;
-	font-weight: 400;
-	font-size: 1.35em;
-	padding: 10px;
-	width: 200px;
-	max-width: 400px;
-	-webkit-transition: color 0.3s;
-	-moz-transition: color 0.3s;
-	transition: color 0.3s;
+	font-size: 1.1em;
+	font-weight: 300;
+	border-bottom: 1px solid #258ecd;
+	padding: 1em;
+}
+
+#menu a:hover {
+	background: #258ecd;
+}
+
+#menu a.active {
+	background: #afdefa;
+	color: #47a3da;
+}
+
+.menu-right {
+	right: -240px;
+}
+
+.menu-right.menu-open {
+	right: 0px;
+}
+
+.menu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.menu-push-toleft {
+	left: -240px;
+}
+
+#menu,
+.menu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 #social-media-details {
