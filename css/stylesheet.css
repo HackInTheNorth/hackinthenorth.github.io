@@ -119,19 +119,7 @@ body{
 }
 
 /*css for menu, login/register buttons, social media accounts*/
-.header-top {
-	background: transparent;
-	height: 70px;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: 20%;
-	z-index: 12;
-}
 
-
-
-	
 #menubtn {
 	position: fixed;
 	width: 50px;
@@ -139,10 +127,13 @@ body{
 	right: 7px;
 	height: 50px;
 	display: inline-block;
+	cursor: pointer;
+	z-index: 12;
 	-webkit-transform: translateY(35px);
 	-moz-transform: translateY(30px);
 	transform: translateY(30px);
 	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
 	        transition: all .3s ease;
 }
 
@@ -153,8 +144,6 @@ body{
 	background: white;
 	width: 30px;
 	left: 10px;
-	-webkit-transition: all .3s;
-	        transition: all .3s;
 }
 
 #menubtn i:nth-child(1) {
@@ -174,14 +163,17 @@ body{
 	-moz-transform: translate(-240px, 30px);
 	transform: translate(-240px, 30px);
 }
+
 #menubtn.on i:nth-child(1) {
 	top: 25px;
 	-webkit-transform: rotateZ(135deg);
 	        transform: rotateZ(135deg);
 }
+
 #menubtn.on i:nth-child(2) {
 	background: transparent;
 }
+
 #menubtn.on i:nth-child(3) {
 	top: 25px;
 	-webkit-transform: rotateZ(-135deg);
