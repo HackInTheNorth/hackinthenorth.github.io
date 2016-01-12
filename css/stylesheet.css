@@ -5,7 +5,14 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
 form,fieldset,input,textarea,p,blockquote,th,td {
 	padding: 0;
 	margin: 0;
+	font-family: hackin;
 }
+
+@font-face {
+    font-family: hackin;
+    src: url(fonts/big_noodle_titling.ttf);
+}
+
 a{
 	text-decoration:none;
 }
@@ -26,14 +33,16 @@ h1 {
 	text-align: center;
 	font-size: 50px;
 	color:#444;
+	font-family: hackin;
 }
 h2 {
 	font-weight: 1000;
 	font-size: 1.35em;
+	font-family: hackin;
 }
 h3 {
 	font-size: 1.35em;
-	
+	font-family: hackin;
 }
 h4,h5,h6 {
 	font-weight: normal;
@@ -41,13 +50,14 @@ h4,h5,h6 {
 	margin:0;
 	padding:0;
 	color:#444;
+	font-family: hackin;
 }
 
 
 /* Custom CSS
 * --------------------------------------- */
 body{
-	font-family: arial,helvetica;
+	font-family: hackin;
 	color: #333;
 	color: rgba(0,0,0,0.5);
 }
