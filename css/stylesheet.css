@@ -80,7 +80,7 @@ body{
 }
 
 #fp-nav ul li a span {
-    background: white;
+    background: #c0392b;
     width: 8px;
     height: 8px;
     margin: -4px 0 0 -4px;
@@ -91,7 +91,7 @@ body{
     width: 16px;
     height: 16px;
     margin: -8px 0 0 -8px;
-    background: transparent;
+    background: #e74c3c;
     box-sizing: border-box;
     border: 1px solid #24221F;
 }
@@ -101,7 +101,7 @@ body{
 #fp-nav ul li .fp-tooltip {
     position: absolute;
     top: -2px;
-    color: #fff;
+    color: #3498db;
     font-size: 14px;
     font-family: arial, helvetica, sans-serif;
     white-space: nowrap;
@@ -151,7 +151,7 @@ body{
 	position: absolute;
 	display: block;
 	height: 2px;
-	background: white;
+	background: #e74c3c;
 	width: 30px;
 	left: 10px;
 }
@@ -284,7 +284,7 @@ body{
         line-height: 1;
         text-decoration: inherit;
         text-transform: none;
-        color: white;
+        color: #e74c3c;
 }
 
 /*css for text content in different sections*/
@@ -328,6 +328,31 @@ body{
 	width: 40%;
 	height: 20%
 }
+
+.logo {
+	width: 400px;
+	margin: auto;
+}
+
+.logo img {
+	position: relative;
+	width: 400px;
+	height: 400px;
+}
+
+.section:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/logo.png); 
+    width: 100%;
+    height: 100%;
+    opacity : 0.7;
+    z-index: -1;
+}
+
 /*loader in the start*/
 #loader{
 	position: fixed;
@@ -337,7 +362,7 @@ body{
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(images/loader.GIF) center no-repeat #fff;
+	background: url(../images/loader.GIF) center no-repeat #fff;
 }
 
 /*contact section*/
