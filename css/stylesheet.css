@@ -290,6 +290,12 @@ body{
 	padding: 0 10%;
 }
 
+.left-gap{
+	margin-left: 4%;
+}
+.rigth-gap{
+	margin-right: 1%;
+}
 #section0-name-div{
 	color: white;
 	font-size: 2em;
@@ -306,6 +312,11 @@ body{
 }
 .col-right {
 	float: right;
+}
+
+.img-size{
+	width: 40%;
+	height: 20%
 }
 /*loader in the start*/
 #loader{
