@@ -420,12 +420,24 @@ body{
 	margin-bottom: 10px;
 }
 
+.thumbnail-height{
+	height: 380px;
+	
+}
 .thumbnail{
-	width:100%;
-	height:100%;
+	background-color: #81CFE0;	
+	transition:all ease 1s;
+
 }
 
+.thumbnail:hover{
+}
 
+.thumbnail-text{
+}
+.panel-height{
+	height: 285px;
+}
 
 /*==================templates for making site responsive====================*/
 /* Smaller than 770px height */
