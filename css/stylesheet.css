@@ -191,7 +191,7 @@ body{
 }
 
 #menu {
-	background: #47a3da;
+	background: #7F8C8D;
 	position: fixed;
 	width: 240px;
 	height: 100%;
@@ -200,12 +200,12 @@ body{
 }
 
 #menu h3 {
-	color: #afdefa;
+	color: white;
 	font-size: 1.9em;
 	padding: 20px;
 	margin: 0;
 	font-weight: 300;
-	background: #0d77b6;
+	background: #cbd0d3;
 }
 
 #menu a {
@@ -213,17 +213,17 @@ body{
 	color: #fff;
 	font-size: 1.1em;
 	font-weight: 300;
-	border-bottom: 1px solid #258ecd;
+	border-bottom: 1px solid #2ecc71;
 	padding: 1em;
 }
 
 #menu a:hover {
-	background: #258ecd;
+	background: #27ae60;
 }
 
 #menu a.active {
-	background: #afdefa;
-	color: #47a3da;
+	background: #2ecc71;
+	color: white;
 }
 
 .menu-right {
