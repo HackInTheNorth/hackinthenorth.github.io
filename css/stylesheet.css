@@ -294,6 +294,10 @@ body{
 	/*text-align: ;*/
 }
 
+.hide{
+	visibility: hidden;
+}
+
 .content_text_normal {
 	font-size: 1.30em;
 	max-width: 80%;
