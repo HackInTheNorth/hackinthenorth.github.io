@@ -374,6 +374,8 @@ body{
 .footer {
 	position: absolute;
 	bottom: 20px;
+	width: 100vw;
+	padding: 20px;
 }
 
 .thumbnail-height{
