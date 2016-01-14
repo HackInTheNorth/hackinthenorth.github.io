@@ -288,6 +288,8 @@ body{
 }
 
 /*css for text content in different sections*/
+
+
 .content {
 	position: relative;
 	margin: 47px;
@@ -811,3 +813,11 @@ body{
 		font-size: 27px;
 		padding: 10px;
 	}
+#section_home1{
+	background: url("../images/fnl.jpg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+
+}
