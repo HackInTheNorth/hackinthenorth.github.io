@@ -359,6 +359,46 @@ body{
 	z-index: -1;
 }
 
+.collage {
+	height: 100%;
+	max-width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 37px;
+}
+
+.coll-word {
+	float: left;
+	padding: 0px 5px;
+	width: auto;
+	height: auto;
+}
+.w1, .w9 {
+	font-size: 3em;
+}
+.w2, .w8 {
+	font-size: 4em;
+}
+.w3, .w7 {
+	font-size: 4.5em;
+}
+.w5, .w6 {
+	font-size: 5em; 
+
+}
+.w4 {
+	font-size: 5.5em;
+}
+
+.vertical {
+	writing-mode: tb-rl;
+	/*transform: rotate(90deg);
+	transform-origin: 0% 0%;*/
+}
+
+
+
 /*loader in the start*/
 #loader{
 	position: fixed;
@@ -813,11 +853,11 @@ body{
 		font-size: 27px;
 		padding: 10px;
 	}
-#section_home1{
-	background: url("../images/fnl.jpg") no-repeat center center fixed; 
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+	#section_home1{
+		background: url("../images/fnl.jpg") no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 
-}
+	}

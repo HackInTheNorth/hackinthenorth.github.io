@@ -3,11 +3,12 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Hack The North Demo Website</title>
+	<title>Hack In The North @ Aparoksha</title>
 	<meta name="author" content="Geekhaven" />
-	<meta name="description" content="HAck The North Hackaton placeholder site" />
+	<meta name="description" content="Hack In The North Hackaton" />
 	<meta name="keywords"  content="IIIT-Allahabad, Hackathon" />
 	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
@@ -25,6 +26,8 @@
 	<script src="js/jquery.easings.min.js"></script>
 	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.js"></script>
+	<script type="text/javascript" src="js/packery-mode.pkgd.js"></script>
 	<script type="text/javascript" src="js/cbpFWTabs"></script>
 	<script type="text/javascript">
 		// function initialize() {
@@ -67,9 +70,17 @@
 				showActiveToolTip: true,
 				verticalCentered: true
 			});
-		    $('[data-toggle="tooltip"]').tooltip(); 
-	
+			// $('[data-toggle="tooltip"]').tooltip(); 
+			// $('.vertical').each(function() {
+			// 	var wid = (this).width;
+			// });
+			$('.collage').isotope({
+				itemSelector: '.coll-word',
+				layoutMode: 'packery',
+			});
 		});
+		setInterval(function() {$('.collage').isotope('shuffle')}, 3000);
+		
 	</script>
 </head>
 <body class="menu-push">
@@ -102,15 +113,63 @@
 
 		<div class="section active" id="section_home">
 			<div class="section_home1">
-				<div class="logo">
-					<img src="images/logo.png">
+				<div class="collage">
+					<!-- <div class="coll-word row"></div> -->
+					<div class="coll-word w1">C++</div>
+					<div class="coll-word w1">php</div>
+					<div class="coll-word w2">code</div>
+					<div class="coll-word w2">java</div>
+					<div class="coll-word w2">apis</div>
+					<div class="coll-word w2">swag</div>
+					<div class="coll-word w3">python</div>
+					<div class="coll-word w3">goodies</div>
+					<div class="coll-word w3">network</div>
+					<div class="coll-word w4">learning</div>
+					<div class="coll-word w4">sponsors</div>
+					<div class="coll-word w5">hackathon</div>
+					<div class="coll-word w5">allahabad</div>
+					<div class="coll-word w5">April</div>
+					<div class="coll-word w6">internship</div>
+					<div class="coll-word w6">innovation</div>
+					<div class="coll-word w7">imagination</div>
+					<div class="coll-word w7">inspiration</div>
+					<div class="coll-word w7">thinkSmart</div>
+					<div class="coll-word w8">digitalIndia</div>
+					<div class="coll-word w8">collaboration</div>
+					<div class="coll-word w9">thinkDifferent</div>
+					<div class="coll-word w9">creativityIdea</div>
+					
+					<div class="coll-word w1 vertical">C++</div>
+					<div class="coll-word w1 vertical">php</div>
+					<div class="coll-word w2 vertical">code</div>
+					<div class="coll-word w3 vertical">python</div>
+					<div class="coll-word w3 vertical">goodies</div>
+					<div class="coll-word w3 vertical">network</div>
+					<div class="coll-word w4 vertical">learning</div>
+					<div class="coll-word w4 vertical">sponsors</div>
+					<div class="coll-word w5 vertical">hackathon</div>
+					<div class="coll-word w5 vertical">allahabad</div>
+					<div class="coll-word w5 vertical">April</div>
+					<div class="coll-word w6 vertical">internship</div>
+					<div class="coll-word w6 vertical">innovation</div>
+					<div class="coll-word w7 vertical">imagination</div>
+					<div class="coll-word w7 vertical">inspiration</div>
+					<div class="coll-word w7 vertical">thinkSmart</div>
+					<div class="coll-word w8 vertical">digitalIndia</div>
+					<div class="coll-word w8 vertical">collaboration</div>
+					<div class="coll-word w9 vertical">thinkDifferent</div>
+					<div class="coll-word w9 vertical">creativityIdea</div>
+					
 				</div>
+				<!-- <div class="logo">
+					<img src="images/logo.png">
+				</div> -->
 			</div>
 
 		</div>
 
 		<div class="section" id="section_about">
-			<div class="left-gap right-gap">
+			<div class="container left-gap right-gap">
 				<div class="row">
 					<h1>ABOUT HACK IN THE NORTH</h1>
 					<br>
@@ -166,79 +225,82 @@
 		</div>
 
 		<div class="section" id="section_faq">
-			<div class="row">
-				<h1>FAQ</h1>
-				<br>
-
-				<div class="col-md-6 col-lg-6">	
-					<div class="left-gap right-gap">			
-						<p class="lead"><strong>What is HackInTheNorth?</strong></p>
-						<blockquote>
-							<p>HackInTheNorth is the annual Hackathon run at Indian Institute of Information Technology, Allahabad. It is one of the largest student held hackathons in India</p>
-						</blockquote>
-						<br>
-						<p class="lead"><strong>How is HackInThenorth run?</strong></p>
-						<blockquote>
-							<p>HackInTheNorth is run by Aproksha team and GeekHaven(Technical Society of IIIT Allahabad)</p>
-						</blockquote>
-						<br>
-						<p class="lead"><strong>Can we apply as a team?</strong></p>
-						<blockquote>
-							<p> Not quite — you and your intended teammates should all submit individual applications. But if you get an invitation and some of your teammates don’t, shoot us an email at geekhaven@iiita.ac.in and we’ll try to sort things out.</p>
-						</blockquote>
-						<br>
-						<p class="lead"><strong>What should I bring?</strong></p>
-						<blockquote>
-							<p>We’ll send you a comprehensive list once it’s closer to showtime, but it’ll be basically what you’d need for any sleepover: laptop, charger, deodorant (!), change of clothes. You won’t need food or drinks; we’ve got you covered there.</p>
-						</blockquote>
-						<br>
-						<p class="lead"><strong>How and when will I hear back?</strong></p>
-						<blockquote>
-							<p>We’ll be releasing decisions weekly — if you’ve submitted your application by a Friday, you’ll be getting an email back by the next Friday!.</p>
-						</blockquote>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-					</div>
+			
+			<div class="container">
+				<div class="row">
+					<h1>FAQ</h1>
 					<br>
-				</div>
-				<div class="col-md-6 col-lg-6">
-					<div class="left-gap right-gap">
-						<p class="lead"><strong>Who can apply?</strong></p>
-						<blockquote>
-							<p> If you’re enrolled in a high school, college, or university, or if you left school during the current school year, you’re good to go!.</p>
-						</blockquote>
+
+					<div class="col-md-6 col-lg-6">	
+						<div class="left-gap right-gap">			
+							<p class="lead"><strong>What is HackInTheNorth?</strong></p>
+							<blockquote>
+								<p>HackInTheNorth is the annual Hackathon run at Indian Institute of Information Technology, Allahabad. It is one of the largest student held hackathons in India</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>How is HackInThenorth run?</strong></p>
+							<blockquote>
+								<p>HackInTheNorth is run by Aproksha team and GeekHaven(Technical Society of IIIT Allahabad)</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>Can we apply as a team?</strong></p>
+							<blockquote>
+								<p> Not quite — you and your intended teammates should all submit individual applications. But if you get an invitation and some of your teammates don’t, shoot us an email at geekhaven@iiita.ac.in and we’ll try to sort things out.</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>What should I bring?</strong></p>
+							<blockquote>
+								<p>We’ll send you a comprehensive list once it’s closer to showtime, but it’ll be basically what you’d need for any sleepover: laptop, charger, deodorant (!), change of clothes. You won’t need food or drinks; we’ve got you covered there.</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>How and when will I hear back?</strong></p>
+							<blockquote>
+								<p>We’ll be releasing decisions weekly — if you’ve submitted your application by a Friday, you’ll be getting an email back by the next Friday!.</p>
+							</blockquote>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+						</div>
 						<br>
-						<p class="lead"><strong>What do people normally make?</strong></p>
-						<blockquote>
-							<p> You can make anything you like. Most of the hacks revolve around web or phone apps, or working with hardware.</p>
-						</blockquote>
-						<br>
-						<p class="lead"><strong>What are you looking for in an application?</strong></p>
-						<blockquote>
-							<p> Above anything else—passion. Tell us what you care about, what excites you. We want to know what’ll drive you to start and continue hacking, whether it’s your first time or your fifteenth. If there’s something about you that stands out from the “typical” hacker, we’d love to hear about that, too!.</p>
-						</blockquote>
-						<br>
-						<p class="lead"><strong>How much does it cost to attend?</strong></p>
-						<blockquote>
-							<p> Zero. HackInTheNorth is free for everyone.</p>
-						</blockquote>
-						<br>
-						<p class="lead"><strong>Will you be offering travel reimbursements?</strong></p>
-						<blockquote>
-							<p> We would support you if you can't afford to travel to HackInTheNorth. Shoot us a mail if you need reimbursements.</p>
-						</blockquote>
-						<br>
-						<p class="lead"><strong>When are the application closing?</strong></p>
-						<blockquote>
-							<p> Applications close March 20! If you haven’t submitted by then, we’ll review whatever’s there..</p>
-						</blockquote>
-						<br><br><br><br><br>
 					</div>
-				</div>
-			</div>		
+					<div class="col-md-6 col-lg-6">
+						<div class="left-gap right-gap">
+							<p class="lead"><strong>Who can apply?</strong></p>
+							<blockquote>
+								<p> If you’re enrolled in a high school, college, or university, or if you left school during the current school year, you’re good to go!.</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>What do people normally make?</strong></p>
+							<blockquote>
+								<p> You can make anything you like. Most of the hacks revolve around web or phone apps, or working with hardware.</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>What are you looking for in an application?</strong></p>
+							<blockquote>
+								<p> Above anything else—passion. Tell us what you care about, what excites you. We want to know what’ll drive you to start and continue hacking, whether it’s your first time or your fifteenth. If there’s something about you that stands out from the “typical” hacker, we’d love to hear about that, too!.</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>How much does it cost to attend?</strong></p>
+							<blockquote>
+								<p> Zero. HackInTheNorth is free for everyone.</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>Will you be offering travel reimbursements?</strong></p>
+							<blockquote>
+								<p> We would support you if you can't afford to travel to HackInTheNorth. Shoot us a mail if you need reimbursements.</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>When are the application closing?</strong></p>
+							<blockquote>
+								<p> Applications close March 20! If you haven’t submitted by then, we’ll review whatever’s there..</p>
+							</blockquote>
+							<br><br><br><br><br>
+						</div>
+					</div>
+				</div>		
+			</div>
 		</div>
 
 		<div class="section" id="section_schedule">
@@ -427,7 +489,7 @@
 		<div class="section" id="section_contact" >
 			<br>
 			<br>
-			
+
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -479,7 +541,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<a data-toggle="tooltip" title="Get Directions To Us!!" href="https://www.google.com/maps/dir/Current+Location/IIIT-Allahabad">
-						<div class="hatch icon icon-pin">
+							<div class="hatch icon icon-pin">
 							</div>
 						</a>
 					</div>
