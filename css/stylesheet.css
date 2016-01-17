@@ -5,13 +5,18 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
 form,fieldset,input,textarea,p,blockquote,th,td {
 	padding: 0;
 	margin: 0;
-	font-family: hackin;
 }
 
 @font-face {
-	font-family: hackin;
-	src: url(fonts/big_noodle_titling.ttf);
+	font-family:"edelsans UltraLight";
+	src:url("../fonts/edel_sans_light.eot?")format("eot"),
+	url("../fonts/edel_sans_light.woff")format("woff"),
+	url("../fonts/edel_sans_light.ttf")format("truetype"),
+	url("../fonts/edel_sans_light.svg#edelsans-UltraLight")format("svg");
+	font-weight:normal;
+	font-style:normal;
 }
+
 
 a{
 	text-decoration:none;
@@ -26,23 +31,23 @@ caption,th {
 	text-align: left;
 
 }
-h1, h2 {
+h1 {
 	padding: 0 10%; 
 }
 h1 {
 	text-align: center;
 	font-size: 50px;
 	color:#444;
-	font-family: hackin;
+	font-family: edelsans UltraLight;
 }
 h2 {
 	font-weight: 1000;
-	font-size: 1.35em;
-	font-family: hackin;
+	font-size: 40px;
+	font-family: edelsans UltraLight;
 }
 h3 {
 	font-size: 1.35em;
-	font-family: hackin;
+	font-family: edelsans UltraLight;
 }
 h4,h5,h6 {
 	font-weight: normal;
@@ -50,14 +55,14 @@ h4,h5,h6 {
 	margin:0;
 	padding:0;
 	color:#444;
-	font-family: hackin;
+	font-family: edelsans UltraLight;
 }
 
 
 /* Custom CSS
 * --------------------------------------- */
 body{
-	font-family: hackin;
+	font-family: edelsans UltraLight;
 	color: #333;
 	color: rgba(0,0,0,0.5);
 }
@@ -299,7 +304,11 @@ body{
 .hide{
 	visibility: hidden;
 }
-
+.section {
+	font-family: edelsans UltraLight;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
 .content_text_normal {
 	font-size: 1.30em;
 	max-width: 80%;
@@ -330,11 +339,15 @@ body{
 	float: right;
 }
 
+blockquote {
+	padding: 10px 5px;
+	border-left: 0px;
+	border-bottom: 2px solid white ;
+}
 .img-size{
 	width: 40%;
 	height: 20%
 }
-
 .logo {
 	width: 400px;
 	margin: auto;
@@ -370,12 +383,14 @@ body{
 
 .coll-word {
 	float: left;
-	padding: 0px 5px;
+	font-weight: 700;
+	padding: 0 10px;
 	width: auto;
 	height: auto;
 }
 .w1, .w9 {
 	font-size: 3em;
+	color: #F22613;
 }
 .w2, .w8 {
 	font-size: 4em;
@@ -413,8 +428,28 @@ body{
 
 /*contact section*/
 
-#section_contact {
-	background-color: rgba(241, 196, 15,0.8);
+#section_contact,
+#section_schedule,
+#section_faq,
+#section_about  {
+	background-color: rgba(44, 62, 80, 1.0);
+	color: white;
+
+}
+#section_about > div > div > div:nth-child(2) {
+	padding: 30px 0;
+}
+#section_about p {
+	font-size: 17.5px;
+}
+#section_contact h1,
+#section_schedule h1,
+#section_faq h1,
+#section_about h1  {
+	color: white;
+}
+#section_about hr {
+	margin: 0px;
 }
 .contact-details {
 	border-style: dashed;
@@ -424,7 +459,8 @@ body{
 	text-align: center;
 	font-size: 1.3em;
 	min-height: 300px;
-	background-color: #2ecc71;
+	background-color: rgba(25, 181, 254, 0.4);
+	color: white;
 }
 
 .icon {

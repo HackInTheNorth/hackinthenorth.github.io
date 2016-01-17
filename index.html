@@ -70,15 +70,18 @@
 				showActiveToolTip: true,
 				verticalCentered: true
 			});
-			// $('[data-toggle="tooltip"]').tooltip(); 
 			// $('.vertical').each(function() {
-			// 	var wid = (this).width;
+			// 	var wid = (this).width(),
+			// 		hei = (this).height();
+
 			// });
-			$('.collage').isotope({
-				itemSelector: '.coll-word',
-				layoutMode: 'packery',
-			});
+		$('.collage').isotope({
+			itemSelector: '.coll-word',
+			layoutMode: 'packery',
+			transitionDuration: '1s'
 		});
+		$('.collage').isotope('shuffle')
+	});
 		setInterval(function() {$('.collage').isotope('shuffle')}, 3000);
 		
 	</script>
@@ -125,10 +128,7 @@
 					<div class="coll-word w3">goodies</div>
 					<div class="coll-word w3">network</div>
 					<div class="coll-word w4">learning</div>
-					<div class="coll-word w4">sponsors</div>
 					<div class="coll-word w5">hackathon</div>
-					<div class="coll-word w5">allahabad</div>
-					<div class="coll-word w5">April</div>
 					<div class="coll-word w6">internship</div>
 					<div class="coll-word w6">innovation</div>
 					<div class="coll-word w7">imagination</div>
@@ -138,28 +138,6 @@
 					<div class="coll-word w8">collaboration</div>
 					<div class="coll-word w9">thinkDifferent</div>
 					<div class="coll-word w9">creativityIdea</div>
-					
-					<div class="coll-word w1 vertical">C++</div>
-					<div class="coll-word w1 vertical">php</div>
-					<div class="coll-word w2 vertical">code</div>
-					<div class="coll-word w3 vertical">python</div>
-					<div class="coll-word w3 vertical">goodies</div>
-					<div class="coll-word w3 vertical">network</div>
-					<div class="coll-word w4 vertical">learning</div>
-					<div class="coll-word w4 vertical">sponsors</div>
-					<div class="coll-word w5 vertical">hackathon</div>
-					<div class="coll-word w5 vertical">allahabad</div>
-					<div class="coll-word w5 vertical">April</div>
-					<div class="coll-word w6 vertical">internship</div>
-					<div class="coll-word w6 vertical">innovation</div>
-					<div class="coll-word w7 vertical">imagination</div>
-					<div class="coll-word w7 vertical">inspiration</div>
-					<div class="coll-word w7 vertical">thinkSmart</div>
-					<div class="coll-word w8 vertical">digitalIndia</div>
-					<div class="coll-word w8 vertical">collaboration</div>
-					<div class="coll-word w9 vertical">thinkDifferent</div>
-					<div class="coll-word w9 vertical">creativityIdea</div>
-					
 				</div>
 				<!-- <div class="logo">
 					<img src="images/logo.png">
@@ -169,65 +147,81 @@
 		</div>
 
 		<div class="section" id="section_about">
-			<div class="container left-gap right-gap">
+			<div class="container">
+				<!-- 
 				<div class="row">
-					<h1>ABOUT HACK IN THE NORTH</h1>
+					<div class="col-md-8">
+						<h2>Hack In the North</h2>
+						<p>
+							Hack In The North is one of the largest hackathon in India being organized completely by students.
+							<br>
+							We, the technical society of IIIT-Allahabad
+							invite you to be a part of this event and showcase your technical skills in front of the world.
+						</p>
+						<h2>Umm.. but what is a Hackathon?</h2>
+					</div>
+					<div class="col-md-4">
+						<img src="images/bald.png">
+					</div>
+				</div>
+				<div class="row">
+					
+					<div class="col-md-4">
+					
+					</div>
+
+					<div class="col-md-8">
+						
+					</div>
+				</div> -->
+				<div class="row">
+					<h1>About Hack In The North</h1>
+				</div>
+				<div class="row">
+					<h2>Hackathons: what and why?</h2>
+					<hr>
 					<br>
-					<div class="description">
+					<p>Hackathon is an event in which people gather together to create new and innovative solutions to real world problems using multiple technologies. <br>
+					The solutions range in platform and application, including elements of web development, mobile applications, drones, and more.
+					<br>Hackathon are one of the best ways to educate people about technology. Inexperienced hackers may often learn some new skills by participating in a hackathon.
+					</p>
+				</div>
+				<div class="row">
+					<h2>Hack In the North: What's different?</h2>
+					<hr>
+					<br>
+					<p>Hack In the North is one of the largest student-organized hackathon of India, aimed at the budding hackers who are yet to have a taste of production-oriented design environment<br>
+					 There will be food, internet, guides, power and anything else that will be needed; participants just need to do one thing: Brainstorm ideas and implement them. 
 
-						<div class="col-md-4 col-lg-4">
-							<div class="content thumbnail-text">
-								<div class="panel panel-primary panel-height">
-									<div class="panel-heading">
-										<h2 class="panel-title">A Hackathon? What's that?</h2>
-									</div>
-									<div class="panel-body">
-										A Hackathon is a collaboration of programmers and designers to code, design and build innovative solutions to real life problems, through extensive coding in a short time duration. Hackathons are the biggest thing to happen to education since the rise of the Internet. See <a href="https://medium.com/hackathons-anonymous/wtf-is-a-hackathon-92668579601" target="_blank">this</a> for a good explanation.
-										<br/>
-										<br/>
-										Your only constraint is: <b>You only have 30 hours</b>.
-									</div>
-								</div>
-							</div>
+					</p>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-lg-4">
+						<div class="ab1">	
+						</div>	
+					</div>
 
+					<div class="col-md-4 col-lg-4">
+						<div class="ab2">
 						</div>
-						<div class="col-md-4 col-lg-4">
+					</div>
 
-							<div class="content thumbnail-text">
-								<div class="panel panel-primary panel-height">
-									<div class="panel-heading">	
-										<h2 class="panel-title">India's Premier Hackathon</h2>
-									</div>
-									<div class="panel-body">
-										Hackathons provide a venue for self-expression and creativity through technology. People with technical backgrounds come together, form teams around a problem or idea, and collaboratively code a unique solution from scratch - these generally take shape in the form of websites, mobile apps, and robots. So prepare yourself for a weekend filled with learning new technologies, building amazing products and making new friends all within the span of 30 hours.
-									</div>
-								</div>
-							</div>
-
-						</div>
-						<div class="col-md-4 col-lg-4">
-
-							<div class="content thumbnail-text">
-								<div class="panel panel-primary panel-height">
-									<div class="panel-heading">
-										<h2 class="panel-title">Everyone is Welcome</h2>
-									</div>
-									<div class="panel-body">
-										Whether you're making your first website, hacking Oculus Rift to censor real world ads, or creating something fun; InOut is for you. We'll have great workshops, mentors, and more! We will allow you to show your coding skills without getting worried about any mortal needs. We will take care of everything.
-									</div>
-								</div>
-							</div>	
-
-						</div>
+					<div class="col-md-4 col-lg-4">
+					<div class="ab3">
+					</div>
+						
 					</div>
 				</div>
 			</div>
+
 		</div>
 
 		<div class="section" id="section_faq">
-			
+
 			<div class="container">
 				<div class="row">
+					<br>
+					<br>
 					<h1>FAQ</h1>
 					<br>
 
@@ -235,12 +229,12 @@
 						<div class="left-gap right-gap">			
 							<p class="lead"><strong>What is HackInTheNorth?</strong></p>
 							<blockquote>
-								<p>HackInTheNorth is the annual Hackathon run at Indian Institute of Information Technology, Allahabad. It is one of the largest student held hackathons in India</p>
+								<p> HackInTheNorth is the annual Hackathon run at Indian Institute of Information Technology, Allahabad. It is one of the largest student held hackathons in India</p>
 							</blockquote>
 							<br>
 							<p class="lead"><strong>How is HackInThenorth run?</strong></p>
 							<blockquote>
-								<p>HackInTheNorth is run by Aproksha team and GeekHaven(Technical Society of IIIT Allahabad)</p>
+								<p> HackInTheNorth is run by Aproksha team and GeekHaven(Technical Society of IIIT Allahabad)</p>
 							</blockquote>
 							<br>
 							<p class="lead"><strong>Can we apply as a team?</strong></p>
@@ -305,6 +299,9 @@
 
 		<div class="section" id="section_schedule">
 			<div class="row">
+
+				<br>
+				<br>
 				<h1>Schedule</h1>
 				<br>
 				<br>
@@ -479,9 +476,9 @@
 					</div>
 					<br>
 					<br>
-					<center>
+					<!-- <center>
 						<a class="btn btn-default" href="#" role="button">More >></a>
-					</center>
+					</center> -->
 				</div>
 			</div>
 		</div>
