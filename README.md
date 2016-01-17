@@ -30,7 +30,7 @@ Now browse to http://localhost:8000
 
 ###Better buttons (use flat designs)
  
-###sponsors pages
+###Sponsors pages
 * [ideas](https://www.hackerearth.com/getstarted-opensource/)
 
 ###Random links to remember
