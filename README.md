@@ -1,35 +1,43 @@
-# hackInNorth-website
+#Hack In The North Website
 
-Tasks Left:
+##Contributing
+Feel free to send a pull request that you think makes the website better. We are always open to ideas and innovations. 
 
--registration and login form 
+##How to run the website
+```bash
+git clone https://github.com/HackInTheNorth/HackInTheNorth.github.io
+cd HackInTheNorth.github.io
+python -m SimpleHTTPServer
+```
 
--about section
-	can be presented in form of four questions: what? when? who? how? each one in different slide
+Now browse to http://localhost:8000
 
--schedule 
-	we can keep each day's schedule on a different slide and use following design 
-  	
-  	http://tympanus.net/Tutorials/InteractiveSVG/
+##Tasks Left
 
+###Registration and Login form 
 
--maillist for queries
+###About section
+* Can be presented in form of four questions: what? when? who? how? each one in different slide
 
--animations
-
--better buttons (use flat designs)
-
--sponsors pages (ideas https://www.hackerearth.com/getstarted-opensource/)
+###Schedule 
+* we can keep each day's schedule on a different slide and use following design 
+* http://tympanus.net/Tutorials/InteractiveSVG/
 
 
-==> random links to remember
+###Maillist for queries
 
-http://justinaguilar.com/animations/scrolling.html
+###Animations
 
-http://2016s.pennapps.com/
+###Better buttons (use flat designs)
+ 
+###sponsors pages
+* [ideas](https://www.hackerearth.com/getstarted-opensource/)
 
-https://dolox.com/ 
+###Random links to remember
 
-http://product.voxmedia.com/2013/11/25/5426880/polygon-feature-design-svg-animations-for-fun-and-profit
+* http://justinaguilar.com/animations/scrolling.html
+* http://2016s.pennapps.com/
+* https://dolox.com/ 
+* http://product.voxmedia.com/2013/11/25/5426880/polygon-feature-design-svg-animations-for-fun-and-profit
 
 
