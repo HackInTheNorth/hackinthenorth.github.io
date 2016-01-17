@@ -68,7 +68,6 @@
 				navigation: true,
 				navigationTooltips: ['Home', 'About Hack In The North', 'FAQ', 'Schedule', 'Our sponsors', 'Contact Us'],
 				showActiveToolTip: true,
-				verticalCentered: true
 			});
 			// $('.vertical').each(function() {
 			// 	var wid = (this).width(),
@@ -78,7 +77,8 @@
 		$('.collage').isotope({
 			itemSelector: '.coll-word',
 			layoutMode: 'packery',
-			transitionDuration: '1s'
+			transitionDuration: '1s',
+			stamp: '.stamp'
 		});
 		$('.collage').isotope('shuffle')
 	});
@@ -117,7 +117,11 @@
 		<div class="section active" id="section_home">
 			<div class="section_home1">
 				<div class="collage">
-					<!-- <div class="coll-word row"></div> -->
+					<div class="stamp">
+						<div class="coll-word col-md-8">
+							
+						</div>
+					</div>
 					<div class="coll-word w1">C++</div>
 					<div class="coll-word w1">php</div>
 					<div class="coll-word w2">code</div>
@@ -174,6 +178,8 @@
 						
 					</div>
 				</div> -->
+				<div class="row header">
+				</div>
 				<div class="row">
 					<h1>About Hack In The North</h1>
 				</div>
@@ -182,8 +188,8 @@
 					<hr>
 					<br>
 					<p>Hackathon is an event in which people gather together to create new and innovative solutions to real world problems using multiple technologies. <br>
-					The solutions range in platform and application, including elements of web development, mobile applications, drones, and more.
-					<br>Hackathon are one of the best ways to educate people about technology. Inexperienced hackers may often learn some new skills by participating in a hackathon.
+						The solutions range in platform and application, including elements of web development, mobile applications, drones, and more.
+						<br>Hackathon are one of the best ways to educate people about technology. Inexperienced hackers may often learn some new skills by participating in a hackathon.
 					</p>
 				</div>
 				<div class="row">
@@ -191,26 +197,46 @@
 					<hr>
 					<br>
 					<p>Hack In the North is one of the largest student-organized hackathon of India, aimed at the budding hackers who are yet to have a taste of production-oriented design environment<br>
-					 There will be food, internet, guides, power and anything else that will be needed; participants just need to do one thing: Brainstorm ideas and implement them. 
+						There will be food, internet, guides, power and anything else that will be needed; participants just need to do one thing: Brainstorm ideas and implement them. 
 
 					</p>
 				</div>
 				<div class="row">
 					<div class="col-md-4 col-lg-4">
 						<div class="ab1">	
+							<div class="icon2 icon-participants">
+								
+							</div>
+							<div class="aboutdetails">
+								300 hackers
+							</div>
 						</div>	
 					</div>
 
 					<div class="col-md-4 col-lg-4">
 						<div class="ab2">
+							<div class="icon2 icon-clock">
+								
+							</div>
+							<div class="aboutdetails">
+								36 hours
+							</div>
 						</div>
 					</div>
 
 					<div class="col-md-4 col-lg-4">
-					<div class="ab3">
-					</div>
+						<div class="ab3">
+							<div class="icon2 icon-prize">
+								
+							</div>
+							<div class="aboutdetails">
+								Lots of prizes
+							</div>
+						</div>
 						
 					</div>
+				</div>
+				<div class="row footer">
 				</div>
 			</div>
 
@@ -219,6 +245,10 @@
 		<div class="section" id="section_faq">
 
 			<div class="container">
+				
+				<div class="row header">
+				</div>
+
 				<div class="row">
 					<br>
 					<br>
@@ -293,161 +323,155 @@
 							<br><br><br><br><br>
 						</div>
 					</div>
-				</div>		
+				</div>
+
+				<div class="row footer">
+				</div>
+
 			</div>
 		</div>
 
 		<div class="section" id="section_schedule">
-			<div class="row">
-
-				<br>
-				<br>
-				<h1>Schedule</h1>
-				<br>
-				<br>
-				<div class="col-lg-1 col-md-1 col-sm-1"></div>
-
-				<div class="col-lg-10 col-md-10 col-sm-10">
-					<ul class="cbp_tmtimeline">
-						<li>
-							<time class="cbp_tmtime" datetime="2016-03-10 19:00"><span>10/3/16</span> <span>19:00</span></time>
-							<div class="cbp_tmicon cbp_tmicon-phone"></div>
-							<div class="cbp_tmlabel">
-								<h2>Registration</h2>
-								<p>Upto 21:00</p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2016-03-10 21:00"><span>10/3/16</span> <span>21:00</span></time>
-							<div class="cbp_tmicon cbp_tmicon-screen"></div>
-							<div class="cbp_tmlabel">
-								<h2>Opening Ceremony</h2>
-								<p>At Admin Auditorium</p>
-								<p>Upto 23:00</p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2016-03-10 23:00"><span>10/03/16</span> <span>23:00</span></time>
-							<div class="cbp_tmicon cbp_tmicon-mail"></div>
-							<div class="cbp_tmlabel">
-								<h2>Dinner</h2>
-								<p></p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2016-03-11 00:00"><span>11/03/16</span> <span>00:00</span></time>
-							<div class="cbp_tmicon cbp_tmicon-phone"></div>
-							<div class="cbp_tmlabel">
-								<h2>Hacking Begins</h2>
-								<p></p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2016-03-11 08:00"><span>11/03/16</span> <span>08:00</span></time>
-							<div class="cbp_tmicon cbp_tmicon-phone"></div>
-							<div class="cbp_tmlabel">
-								<h2>Breakfast</h2>
-								<p>Upto 10:00</p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2016-03-11 10:00"><span>11/03/16</span> <span>10:00</span></time>
-							<div class="cbp_tmicon cbp_tmicon-earth"></div>
-							<div class="cbp_tmlabel">
-								<h2>Tech Talks</h2>
-								<p>Upto 21:00</p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2016-03-11 13:00"><span>11/03/16</span> <span>13:00</span></time>
-							<div class="cbp_tmicon cbp_tmicon-earth"></div>
-							<div class="cbp_tmlabel">
-								<h2>Lunch</h2>
-								<p>Upto 15:00</p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2016-03-11 19:00"><span>11/03/16</span> <span>19:00</span></time>
-							<div class="cbp_tmicon cbp_tmicon-earth"></div>
-							<div class="cbp_tmlabel">
-								<h2>Workshops / Fun Events</h2>
-								<p>Upto 22:00</p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2016-03-11 20:00"><span>11/03/16</span> <span>20:00</span></time>
-							<div class="cbp_tmicon cbp_tmicon-earth"></div>
-							<div class="cbp_tmlabel">
-								<h2>Dinner</h2>
-								<p>Upto 21:00</p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2016-03-12 00:00"><span>12/03/16</span> <span>00:00</span></time>
-							<div class="cbp_tmicon cbp_tmicon-earth"></div>
-							<div class="cbp_tmlabel">
-								<h2>Late Night Food</h2>
-								<p>Upto 01:00</p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2016-03-12 11:00"><span>12/03/16</span> <span>11:00</span></time>
-							<div class="cbp_tmicon cbp_tmicon-earth"></div>
-							<div class="cbp_tmlabel">
-								<h2>Hacking Ends</h2>
-								<p></p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2016-03-12 12:00"><span>12/03/16</span> <span>12:00</span></time>
-							<div class="cbp_tmicon cbp_tmicon-earth"></div>
-							<div class="cbp_tmlabel">
-								<h2>Hack Submission Deadline</h2>
-								<p></p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2016-03-12 12:00"><span>12/03/16</span> <span>12:00</span></time>
-							<div class="cbp_tmicon cbp_tmicon-earth"></div>
-							<div class="cbp_tmlabel">
-								<h2>First Round Judging</h2>
-								<p>Upto 14:00</p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2016-03-12 14:00"><span>12/03/16</span> <span>14:00</span></time>
-							<div class="cbp_tmicon cbp_tmicon-earth"></div>
-							<div class="cbp_tmlabel">
-								<h2>Final ROund Demos</h2>
-								<p>Upto 14:30</p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2016-03-12 15:30"><span>12/03/16</span> <span>15:30</span></time>
-							<div class="cbp_tmicon cbp_tmicon-earth"></div>
-							<div class="cbp_tmlabel">
-								<h2>Departure</h2>
-								<p>Upto 17:00</p>
-							</div>
-						</li>
-					</ul>
-
-
+			<div class="container">
+				<div class="row header">
 				</div>
-				<div class="col-lg-1 col-md-1 col-sm-1"></div>
+				<div class="row">
+
+					<h1>Schedule</h1>
+					<div class="col-lg-1 col-md-1 col-sm-1"></div>
+
+					<div class="col-lg-10 col-md-10 col-sm-10">
+						<ul class="cbp_tmtimeline">
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-10 19:00"><span>10/3/16</span> <span>19:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-phone"></div>
+								<div class="cbp_tmlabel">
+									<h2>Registration</h2>
+									<p>Upto 21:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-10 21:00"><span>10/3/16</span> <span>21:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-screen"></div>
+								<div class="cbp_tmlabel">
+									<h2>Opening Ceremony</h2>
+									<p>At Admin Auditorium</p>
+									<p>Upto 23:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-10 23:00"><span>10/03/16</span> <span>23:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-mail"></div>
+								<div class="cbp_tmlabel">
+									<h2>Dinner</h2>
+									<p></p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-11 00:00"><span>11/03/16</span> <span>00:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-phone"></div>
+								<div class="cbp_tmlabel">
+									<h2>Hacking Begins</h2>
+									<p></p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-11 08:00"><span>11/03/16</span> <span>08:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-phone"></div>
+								<div class="cbp_tmlabel">
+									<h2>Breakfast</h2>
+									<p>Upto 10:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-11 10:00"><span>11/03/16</span> <span>10:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Tech Talks</h2>
+									<p>Upto 21:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-11 13:00"><span>11/03/16</span> <span>13:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Lunch</h2>
+									<p>Upto 15:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-11 19:00"><span>11/03/16</span> <span>19:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Workshops / Fun Events</h2>
+									<p>Upto 22:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-11 20:00"><span>11/03/16</span> <span>20:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Dinner</h2>
+									<p>Upto 21:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-12 00:00"><span>12/03/16</span> <span>00:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Late Night Food</h2>
+									<p>Upto 01:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-12 11:00"><span>12/03/16</span> <span>11:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Hacking Ends</h2>
+									<p></p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-12 12:00"><span>12/03/16</span> <span>12:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Hack Submission Deadline</h2>
+									<p></p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-12 12:00"><span>12/03/16</span> <span>12:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>First Round Judging</h2>
+									<p>Upto 14:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-12 14:00"><span>12/03/16</span> <span>14:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Final ROund Demos</h2>
+									<p>Upto 14:30</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-12 15:30"><span>12/03/16</span> <span>15:30</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Departure</h2>
+									<p>Upto 17:00</p>
+								</div>
+							</li>
+						</ul>
+
+
+					</div>
+					<div class="col-lg-1 col-md-1 col-sm-1"></div>
+				</div>
+				<div class="footer">
+				</div>
 			</div>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
 		</div>
 
 		<div class="section" id="section_sposors">
@@ -542,6 +566,8 @@
 							</div>
 						</a>
 					</div>
+				</div>
+				<div class="row footer">
 				</div>
 			</div>
 			<script src="js/classie.js"></script>	

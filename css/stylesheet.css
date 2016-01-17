@@ -86,16 +86,16 @@ body{
 
 #fp-nav ul li a span {
 	background: #c0392b;
-	width: 8px;
-	height: 8px;
-	margin: -4px 0 0 -4px;
+	width: 10px;
+	height: 10px;
+	margin: -5px 0 0 -5px;
 }
 
 #fp-nav ul li a.active span, 
 #fp-nav ul li:hover a.active span {
-	width: 16px;
-	height: 16px;
-	margin: -8px 0 0 -8px;
+	width: 20px;
+	height: 20px;
+	margin: -10px 0 0 -10px;
 	background: #e74c3c;
 	box-sizing: border-box;
 	border: 1px solid #24221F;
@@ -106,15 +106,19 @@ body{
 #fp-nav ul li .fp-tooltip {
 	position: absolute;
 	top: -2px;
-	color: #3498db;
-	font-size: 14px;
-	font-family: arial, helvetica, sans-serif;
+	color: rgba(44, 62, 80, 1.0);
+	font-size: 20px;
+	font-weight: 10000;
+	font-family: edelsans UltraLight;
 	white-space: nowrap;
-	max-width: 225px;
+	max-width: 300px;
 	overflow: hidden;
 	display: block;
 	opacity: 0;
 	width: 0;
+	background-color: #FA5656;
+	border-radius: 5px;
+	padding: 5px 10px;
 }
 
 #fp-nav ul li:hover .fp-tooltip,
@@ -156,7 +160,7 @@ body{
 	position: absolute;
 	display: block;
 	height: 2px;
-	background: #e74c3c;
+	background: #FA5656;
 	width: 30px;
 	left: 10px;
 }
@@ -289,7 +293,7 @@ body{
 	line-height: 1;
 	text-decoration: inherit;
 	text-transform: none;
-	color: #e74c3c;
+	color: #FA5656;
 }
 
 /*css for text content in different sections*/
@@ -426,8 +430,6 @@ blockquote {
 	background: url(../images/loader.GIF) center no-repeat #fff;
 }
 
-/*contact section*/
-
 #section_contact,
 #section_schedule,
 #section_faq,
@@ -436,10 +438,20 @@ blockquote {
 	color: white;
 
 }
-#section_about > div > div > div:nth-child(2) {
-	padding: 30px 0;
+#section_about .row {
+	padding: 15px;
 }
+ 
+.aboutdetails {
+	padding: 15px 0;
+	text-align: center;
+	font-size: 20px;
+}
+
+
 #section_about p {
+	padding-left: 15px;
+	padding-right: 15px;
 	font-size: 17.5px;
 }
 #section_contact h1,
@@ -451,7 +463,10 @@ blockquote {
 #section_about hr {
 	margin: 0px;
 }
-.contact-details {
+.contact-details,
+.ab1,
+.ab2,
+.ab3 {
 	border-style: dashed;
 	border-spacing: 5px;
 	padding: 5px;
@@ -470,6 +485,13 @@ blockquote {
 	background-position: center center;
 	background-size: contain;	
 }
+.icon2 {
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	background-position: center center;
+	background-size: contain;		
+}
 .icon-pin {
 	background-image: url(../images/pin.png);
 }
@@ -482,12 +504,22 @@ blockquote {
 .icon-email {
 	background-image: url(../images/mail2.png);
 }
+.icon-clock {
+	background-image: url(../images/icon-clock.png);
+}
+.icon-participants {
+	background-image: url(../images/icon-participant.png);
+}
+.icon-prize {
+	background-image: url(../images/icon-prize.png);
+}
 
 
+
+.header,
 .footer {
-	position: absolute;
-	width: 100%;
-	margin-top: 4%;
+	background-color: transparent;
+	height: 75px;
 }
 
 .thumbnail-height{
@@ -882,13 +914,7 @@ blockquote {
 		height: 100%;
 	}
 
-	.header {
-		background-color: #F5F5F5;
-		color: #36A0FF;
-		height: 70px;
-		font-size: 27px;
-		padding: 10px;
-	}
+	
 	#section_home1{
 		background: url("../images/fnl.jpg") no-repeat center center fixed; 
 		-webkit-background-size: cover;
