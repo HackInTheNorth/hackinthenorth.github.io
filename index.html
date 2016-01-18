@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Hack In The North @ Aparoksha</title>
+	<meta name="author" content="Geekhaven" />
+	<meta name="description" content="Hack In The North Hackaton" />
+	<meta name="keywords"  content="IIIT-Allahabad, Hackathon" />
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="genericons/genericons.css">
+	<link rel="stylesheet" type="text/css" href="genericons/component2.css">
+	
+
+	<!--[if IE]-->
+	<!-- gh pages-->
+	<script type="text/javascript">
+		var console = { log: function() {} };
+	</script>
+	<!-- [endif] -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.js"></script>
+	<script type="text/javascript" src="js/packery-mode.pkgd.js"></script>
+	<script type="text/javascript" src="js/cbpFWTabs"></script>
+	<script type="text/javascript">
+		// function initialize() {
+		//     var mapCanvas = document.getElementById('map-canvas');
+		//     var mapOptions = {
+		//         center: new google.maps.LatLng(25.429988100000000000, 81.772549900000060000),
+		//         zoom: 17,
+		//         mapTypeId: google.maps.MapTypeId.ROADMAP
+		//     }
+		//     var map = new google.maps.Map(mapCanvas, mapOptions)
+		// }
+		// google.maps.event.addDomListener(window, 'load', initialize);
+
+		
+		var showText = function (target, message, index, interval) {    
+			if (index < message.length) {
+				$(target).append(message[index++]); 
+				setTimeout(function () { showText(target, message, index, interval); }, interval); 
+			}
+		}
+		
+		$(window).load(function() {
+			$("#loader").fadeOut("slow");
+			setTimeout(function(){showText("#section0-name", "{ Hack in the North ", 0, 50);}, 800);
+			setTimeout(function(){showText("#section0-name-1", "}", 0, 50);}, 800);
+		});
+		$(document).ready(function() {
+			$('#display-content').fullpage({
+				// sectionsColor: ['#1D4D84','#1381BE','#8B5499','#D93E3B','#4BECC9'],
+				// sectionsColor: ['#2C3E50', '#D93E3B', '#7BAABE', '#FFFFF0', '#2C3E50'],
+				anchors: ['home', 'about', 'faq', 'schedule', 'sponsors', 'contact'],
+				menu: '#menu',
+				scrollOverflow: true,            
+				continuousVertical: true,
+				css3: true,
+				scrollingSpeed: 1000,
+				easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',
+				navigation: true,
+				navigationTooltips: ['Home', 'About Hack In The North', 'FAQ', 'Schedule', 'Our sponsors', 'Contact Us'],
+				showActiveToolTip: true,
+			});
+			// $('.vertical').each(function() {
+			// 	var wid = (this).width(),
+			// 		hei = (this).height();
+
+			// });
+		$('.collage').isotope({
+			itemSelector: '.coll-word',
+			layoutMode: 'packery',
+			transitionDuration: '1s',
+			stamp: '.stamp'
+		});
+		$('.collage').isotope('shuffle')
+	});
+		setInterval(function() {$('.collage').isotope('shuffle')}, 3000);
+		
+	</script>
+</head>
+<body class="menu-push">
+	
+	<div id="loader">
+	</div>
+	
+	<div id="menubtn">
+		<i></i>
+		<i></i>
+		<i></i>
+	</div>
+	<nav class="menu-right" id="menu">
+		<h3>Menu</h3>
+		<a data-menuanchor="home" class="active" href="#home"><b>Home</b></a>
+		<a data-menuanchor="about" href="#about"><b>About</b></a>
+		<a data-menuanchor="faq" href="#faq"><b>FAQ</b></a>
+		<a data-menuanchor="schedule" href="#schedule"><b>Schedule</b></a>
+		<a data-menuanchor="sponsors" href="#sponsors"><b>Sponsors</b></a>
+		<a data-menuanchor="contact" href="#contact"><b>Contact</b></a>
+	</nav>
+
+	<div id = "social-media-details">
+		<a class = "genericon genericon-facebook-alt" href="https://www.facebook.com/HackInTheNorth/"></a>
+		<a class = "genericon genericon-twitter" href="#twitter"></a>
+		<a class = "genericon genericon-mail" href="#mail"></a>
+	</div>
+
+	<div id="">
+
+		<div class="section_home">
+			<!--<div class="section_home1">
+				<div class="collage">
+					<div class="stamp">
+						<div class="coll-word col-md-8">
+							
+						</div>
+					</div>
+					<br>
+					<br>
+					<div class="coll-word w1">C++</div>
+					<div class="coll-word w1">php</div>
+					<div class="coll-word w2">code</div>
+					<div class="coll-word w2">java</div>
+					<div class="coll-word w2">apis</div>
+					<div class="coll-word w2">swag</div>
+					<div class="coll-word w3">python</div>
+					<div class="coll-word w3">goodies</div>
+					<div class="coll-word w3">network</div>
+					<div class="coll-word w4">learning</div>
+					<div class="coll-word w5">hackathon</div>
+					<div class="coll-word w6">internship</div>
+					<div class="coll-word w6">innovation</div>
+					<div class="coll-word w7">imagination</div>
+					<div class="coll-word w7">inspiration</div>
+					<div class="coll-word w7">thinkSmart</div>
+					<div class="coll-word w8">digitalIndia</div>
+					<div class="coll-word w8">collaboration</div>
+					<div class="coll-word w9">thinkDifferent</div>
+					<div class="coll-word w9">creativityIdea</div>
+					<br>
+					<br>
+				</div>
+			</div> -->
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="logo">
+				<img src="images/logo.png">
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+
+
+		</div>
+
+		<div class="" id="section_about">
+			<div class="container">
+				<!-- 
+				<div class="row">
+					<div class="col-md-8">
+						<h2>Hack In the North</h2>
+						<p>
+							Hack In The North is one of the largest hackathon in India being organized completely by students.
+							<br>
+							We, the technical society of IIIT-Allahabad
+							invite you to be a part of this event and showcase your technical skills in front of the world.
+						</p>
+						<h2>Umm.. but what is a Hackathon?</h2>
+					</div>
+					<div class="col-md-4">
+						<img src="images/bald.png">
+					</div>
+				</div>
+				<div class="row">
+					
+					<div class="col-md-4">
+					
+					</div>
+
+					<div class="col-md-8">
+						
+					</div>
+				</div> -->
+				<div class="row header">
+				</div>
+				<div class="row">
+					<h1>About Hack In The North</h1>
+				</div>
+				<div class="row">
+					<h2>Hackathons: what and why?</h2>
+					<hr>
+					<br>
+					<p>Hackathon is an event in which people gather together to create new and innovative solutions to real world problems using multiple technologies. <br>
+						The solutions range in platform and application, including elements of web development, mobile applications, drones, and more.
+						<br>Hackathon are one of the best ways to educate people about technology. Inexperienced hackers may often learn some new skills by participating in a hackathon.
+					</p>
+				</div>
+				<div class="row">
+					<h2>Hack In the North: What's different?</h2>
+					<hr>
+					<br>
+					<p>Hack In the North is one of the largest student-organized hackathon of India, aimed at the budding hackers who are yet to have a taste of production-oriented design environment<br>
+						There will be food, internet, guides, power and anything else that will be needed; participants just need to do one thing: Brainstorm ideas and implement them. 
+
+					</p>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-lg-4">
+						<div class="ab1">	
+							<div class="icon2 icon-participants">
+								
+							</div>
+							<div class="aboutdetails">
+								300 hackers
+							</div>
+						</div>	
+					</div>
+
+					<div class="col-md-4 col-lg-4">
+						<div class="ab2">
+							<div class="icon2 icon-clock">
+								
+							</div>
+							<div class="aboutdetails">
+								36 hours
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-lg-4">
+						<div class="ab3">
+							<div class="icon2 icon-prize">
+								
+							</div>
+							<div class="aboutdetails">
+								Lots of prizes
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="row footer">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="" id="section_faq">
+
+			<div class="container">
+				
+				<div class="row header">
+				</div>
+
+				<div class="row">
+					<br>
+					<br>
+					<h1>FAQ</h1>
+					<br>
+
+					<div class="col-md-6 col-lg-6">	
+						<div class="left-gap right-gap">			
+							<p class="lead"><strong>What is HackInTheNorth?</strong></p>
+							<blockquote>
+								<p> HackInTheNorth is the annual Hackathon run at Indian Institute of Information Technology, Allahabad. It is one of the largest student held hackathons in India</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>How is HackInThenorth run?</strong></p>
+							<blockquote>
+								<p> HackInTheNorth is run by Aproksha team and GeekHaven(Technical Society of IIIT Allahabad)</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>Can we apply as a team?</strong></p>
+							<blockquote>
+								<p> Not quite — you and your intended teammates should all submit individual applications. But if you get an invitation and some of your teammates don’t, shoot us an email at geekhaven@iiita.ac.in and we’ll try to sort things out.</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>What should I bring?</strong></p>
+							<blockquote>
+								<p>We’ll send you a comprehensive list once it’s closer to showtime, but it’ll be basically what you’d need for any sleepover: laptop, charger, deodorant (!), change of clothes. You won’t need food or drinks; we’ve got you covered there.</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>How and when will I hear back?</strong></p>
+							<blockquote>
+								<p>We’ll be releasing decisions weekly — if you’ve submitted your application by a Friday, you’ll be getting an email back by the next Friday!.</p>
+							</blockquote>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+						</div>
+						<br>
+					</div>
+					<div class="col-md-6 col-lg-6">
+						<div class="left-gap right-gap">
+							<p class="lead"><strong>Who can apply?</strong></p>
+							<blockquote>
+								<p> If you’re enrolled in a high school, college, or university, or if you left school during the current school year, you’re good to go!.</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>What do people normally make?</strong></p>
+							<blockquote>
+								<p> You can make anything you like. Most of the hacks revolve around web or phone apps, or working with hardware.</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>What are you looking for in an application?</strong></p>
+							<blockquote>
+								<p> Above anything else—passion. Tell us what you care about, what excites you. We want to know what’ll drive you to start and continue hacking, whether it’s your first time or your fifteenth. If there’s something about you that stands out from the “typical” hacker, we’d love to hear about that, too!.</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>How much does it cost to attend?</strong></p>
+							<blockquote>
+								<p> Zero. HackInTheNorth is free for everyone.</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>Will you be offering travel reimbursements?</strong></p>
+							<blockquote>
+								<p> We would support you if you can't afford to travel to HackInTheNorth. Shoot us a mail if you need reimbursements.</p>
+							</blockquote>
+							<br>
+							<p class="lead"><strong>When are the application closing?</strong></p>
+							<blockquote>
+								<p> Applications close March 20! If you haven’t submitted by then, we’ll review whatever’s there..</p>
+							</blockquote>
+							<br><br><br><br><br>
+						</div>
+					</div>
+				</div>
+
+				<div class="row footer">
+				</div>
+
+			</div>
+		</div>
+
+		<div class="" id="section_schedule">
+			<div class="container">
+				<div class="row header">
+				</div>
+				<div class="row">
+
+					<h1>Schedule</h1>
+					<div class="col-lg-1 col-md-1 col-sm-1"></div>
+
+					<div class="col-lg-10 col-md-10 col-sm-10">
+						<ul class="cbp_tmtimeline">
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-10 19:00"><span>10/3/16</span> <span>19:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-phone"></div>
+								<div class="cbp_tmlabel">
+									<h2>Registration</h2>
+									<p>Upto 21:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-10 21:00"><span>10/3/16</span> <span>21:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-screen"></div>
+								<div class="cbp_tmlabel">
+									<h2>Opening Ceremony</h2>
+									<p>At Main Auditorium</p>
+									<p>Upto 23:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-10 23:00"><span>10/03/16</span> <span>23:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-mail"></div>
+								<div class="cbp_tmlabel">
+									<h2>Dinner</h2>
+									<p></p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-11 00:00"><span>11/03/16</span> <span>00:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-phone"></div>
+								<div class="cbp_tmlabel">
+									<h2>Hacking Begins</h2>
+									<p></p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-11 08:00"><span>11/03/16</span> <span>08:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-phone"></div>
+								<div class="cbp_tmlabel">
+									<h2>Breakfast</h2>
+									<p>Upto 10:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-11 10:00"><span>11/03/16</span> <span>10:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Tech Talks</h2>
+									<p>Upto 21:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-11 13:00"><span>11/03/16</span> <span>13:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Lunch</h2>
+									<p>Upto 15:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-11 19:00"><span>11/03/16</span> <span>19:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Workshops / Fun Events</h2>
+									<p>Upto 22:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-11 20:00"><span>11/03/16</span> <span>20:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Dinner</h2>
+									<p>Upto 21:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-12 00:00"><span>12/03/16</span> <span>00:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Late Night Food</h2>
+									<p>Upto 01:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-12 11:00"><span>12/03/16</span> <span>11:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Hacking Ends</h2>
+									<p></p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-12 12:00"><span>12/03/16</span> <span>12:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Hack Submission Deadline</h2>
+									<p></p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-12 12:00"><span>12/03/16</span> <span>12:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>First Round Judging</h2>
+									<p>Upto 14:00</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-12 14:00"><span>12/03/16</span> <span>14:00</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Final ROund Demos</h2>
+									<p>Upto 14:30</p>
+								</div>
+							</li>
+							<li>
+								<time class="cbp_tmtime" datetime="2016-03-12 15:30"><span>12/03/16</span> <span>15:30</span></time>
+								<div class="cbp_tmicon cbp_tmicon-earth"></div>
+								<div class="cbp_tmlabel">
+									<h2>Departure</h2>
+									<p>Upto 17:00</p>
+								</div>
+							</li>
+						</ul>
+
+
+					</div>
+					<div class="col-lg-1 col-md-1 col-sm-1"></div>
+				</div>
+				<div class="footer">
+				</div>
+			</div>
+		</div>
+
+		<div class="" id="section_sposors">
+			<div class="row">
+				<br>
+				<br>
+				<br>
+				<h1>Sponsors</h1>
+				<br>
+				<br>
+				<center><h3>Intrested in becoming sponsor <a href="geekhaven@iiita.ac.in">Contact here</a></h3></center>
+				<div class="sponsors">
+					<div class="row">
+						<center><img class = "img-size" src="images/logo_google.png"></center>
+					</div>
+					<br>
+					<br>
+					<!--center><img  style="display: none;"  class = "img-size" src="images/mozilla_wordmark.png"></center -->
+					<div class="row hide" >
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<center>
+								<img class = "img-size" src="images/mozilla_wordmark.png">
+							</center>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<center>	
+								<img class = "img-size" src="images/logo_exotel.png">
+							</center>
+						</div>
+					</div>
+					<br>
+					<br>
+					<!-- <center>
+						<a class="btn btn-default" href="#" role="button">More >></a>
+					</center> -->
+				</div>
+			</div>
+		</div>
+
+		<div class="" id="section_contact" >
+			<br>
+			<br>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<center><h1>Have questions? Contact Us</h1></center>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row">
+					<div class=" col-md-4">
+						<div class = "contact-details">
+							<div class="icon-mail icon tossing">
+							</div>
+							<div class="contact-details-address">
+								<br>
+								Address
+								<br>
+								Indian Institute of Information Technology
+								<br>
+								Allahabad, Uttar Pradesh
+								<br>
+								211012
+							</div>
+						</div>
+					</div>
+					<div class=" col-md-4">
+						<div class = "contact-details ">
+							<div class="icon-call icon tossing">
+							</div>
+
+							<div class="contact-details-call">
+								<br><br>Event Coordinators<br>Vishnu KS : 9872633145<br>Abhishek Menon : 9872633145<br>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class = "contact-details">
+							<div class="icon-email icon  tossing">
+
+							</div>
+							<div class="contact-details-email">
+								<br><br><br>write mail at:<br> <a href="mailto:">email address</a> <br>
+							</div>
+						</div>
+					</div>
+				</div>			
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-md-12">
+						<a data-toggle="tooltip" title="Get Directions To Us!!" href="https://www.google.com/maps/dir/Current+Location/IIIT-Allahabad">
+							<div class="hatch icon icon-pin">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="row footer">
+				</div>
+			</div>
+			<script src="js/classie.js"></script>	
+
+			<script>
+				var menu = document.getElementById( 'menu' ),
+				menubtn = document.getElementById( 'menubtn' ),
+				body = document.body,
+				content = document.getElementById('display-content');
+
+
+
+				menubtn.onclick = function() {
+					classie.toggle( this, 'on' );
+					classie.toggle( body, 'menu-push-toleft' );
+					classie.toggle( menu, 'menu-open' );
+				};
+
+				content.onclick = function() {
+					if(classie.has(body, 'menu-push-toleft')) {
+						classie.toggle( menubtn, 'on' );
+						classie.toggle( body, 'menu-push-toleft' );
+						classie.toggle( menu, 'menu-open' );		
+					}
+				};
+
+				menu.onclick = function() {
+					if(classie.has(body, 'menu-push-toleft')) {
+						classie.toggle( menubtn, 'on' );
+						classie.toggle( body, 'menu-push-toleft' );
+						classie.toggle( menu, 'menu-open' );		
+					}	
+				};
+			</script>
+
+
+		</body>
+		</html>
