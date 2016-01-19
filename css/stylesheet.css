@@ -907,21 +907,4 @@ blockquote {
 			margin: -55px 5px 0 0px;
 		}	
 	}
-	.map {
-		min-width: 300px;
-		min-height: 300px;
-		width: 100%;
-		height: 100%;
-	}
-
 	
-	#section_home{
-		background: url("../images/fnl.jpg") no-repeat center center fixed; 
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		height: 100%;
-		width: 100%;
-
-	}
