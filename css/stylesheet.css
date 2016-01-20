@@ -478,6 +478,10 @@ blockquote {
 	color: white;
 }
 
+.contact-details-email a:link {
+	color: #80D9FF;
+}
+
 .icon {
 	width: 120px;
 	height: 120px;
