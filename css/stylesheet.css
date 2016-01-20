@@ -787,6 +787,7 @@ blockquote {
 
 	.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
 		background: #6cbfee;
+		color: #2C3E50;
 	}
 
 	.cbp_tmtimeline > li .cbp_tmlabel h2 { 
