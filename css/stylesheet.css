@@ -742,6 +742,11 @@ blockquote {
 	border-bottom: 1px solid rgba(255,255,255,0.4);
 }
 
+/* p in .cbp_tmlabel */
+.cbp_tmlabel p {
+	padding-top: 4px;
+}
+
 /* The triangle */
 .cbp_tmtimeline > li .cbp_tmlabel:after {
 	right: 100%;
