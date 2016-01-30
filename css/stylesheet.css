@@ -441,7 +441,7 @@ blockquote {
 .icon {
 	width: 120px;
 	height: 120px;
-	margin: auto;
+	margin: 7px auto;
 	background-position: center center;
 	background-size: contain;	
 }
