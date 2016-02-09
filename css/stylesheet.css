@@ -165,6 +165,21 @@ body{
 
 /*css for menu, login/register buttons, social media accounts*/
 
+#regBtn {
+    border: none;
+	background: rgba(44, 62, 80, 1.0);
+	color: #fff;
+    font-style: bariol_regularregular;
+    font-size: 3em; 
+	padding: 0.5em;
+	display: block;
+	width: 400px;
+	cursor: pointer;
+	margin: auto;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
 #menubtn {
 	position: fixed;
 	width: 50px;
