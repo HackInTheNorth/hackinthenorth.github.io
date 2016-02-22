@@ -74,7 +74,7 @@ h2 {
 	font-family: bariol_regularregular;
 }
 h3 {
-	font-size: 1.35em;
+	font-size: 1.5em;
 	font-family: bariol_regularregular;
 }
 h4,h5,h6 {
@@ -501,7 +501,7 @@ blockquote {
 #section_about p {
 	padding-left: 15px;
 	padding-right: 15px;
-	font-size: 17.5px;
+	font-size: 20px;
 }
 #section_contact h1,
 #section_schedule h1,
