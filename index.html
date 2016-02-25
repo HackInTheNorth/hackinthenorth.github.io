@@ -60,9 +60,29 @@
 		ga('send', 'pageview');
 
 	</script>
+	<style>
+	#curtains{
+		width:100%;
+		transition: all .3s;
+	}
+	.sho{
+		
+		background-color: rgba(44,62,80,.3);
+		position:fixed;
+		height:100vh;
+		z-index: 10;
+		transition: all .3s ease-in;
+	}
+	#menubtn{
+		z-index:15;
+	}
+	</style>
 </head>
-<body class="menu-push">
+<body class="menu-push" style="position: static;">
 	
+	<div id="curtains" class="hid">
+	</div>
+
 	<div id="loader">
 	</div>
 	
@@ -509,12 +529,13 @@
 			menubtn = document.getElementById( 'menubtn' ),
 			body = document.body,
 			content = document.getElementById('display-content');
-
+			body.style.position = 'static';
 
 
 			menubtn.onclick = function() {
 				classie.toggle( this, 'on' );
 				classie.toggle( body, 'menu-push-toleft' );
+				classie.toggle( curtains, 'sho')
 				classie.toggle( menu, 'menu-open' );
 			};
 
@@ -522,6 +543,7 @@
 				if(classie.has(body, 'menu-push-toleft')) {
 					classie.toggle( menubtn, 'on' );
 					classie.toggle( body, 'menu-push-toleft' );
+					classie.toggle( curtains, 'sho')
 					classie.toggle( menu, 'menu-open' );		
 				}
 			};
@@ -530,6 +552,7 @@
 				if(classie.has(body, 'menu-push-toleft')) {
 					classie.toggle( menubtn, 'on' );
 					classie.toggle( body, 'menu-push-toleft' );
+					classie.toggle( curtains, 'sho')
 					classie.toggle( menu, 'menu-open' );		
 				}	
 			};
