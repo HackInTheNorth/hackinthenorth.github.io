@@ -335,8 +335,23 @@ body{
 
 .menu-push {
 	overflow-x: hidden;
-	position: relative;
+	position: static;
 	left: 0;
+}
+#curtains{
+	width:100%;
+	transition: all .3s;
+}
+.sho{
+
+	background-color: rgba(44,62,80,.3);
+	position:fixed;
+	height:100vh;
+	z-index: 10;
+	transition: all .3s ease-in;
+}
+#menubtn{
+	z-index:15;
 }
 
 .menu-push-toleft {

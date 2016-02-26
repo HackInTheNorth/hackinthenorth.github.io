@@ -60,9 +60,15 @@
 		ga('send', 'pageview');
 
 	</script>
-</head>
-<body class="menu-push">
+	<style>
 	
+	</style>
+</head>
+<body class="menu-push" style="position: static;">
+	
+	<div id="curtains" class="hid">
+	</div>
+
 	<div id="loader">
 	</div>
 	
@@ -511,10 +517,10 @@
 			content = document.getElementById('display-content');
 
 
-
 			menubtn.onclick = function() {
 				classie.toggle( this, 'on' );
 				classie.toggle( body, 'menu-push-toleft' );
+				classie.toggle( curtains, 'sho')
 				classie.toggle( menu, 'menu-open' );
 			};
 
@@ -522,6 +528,7 @@
 				if(classie.has(body, 'menu-push-toleft')) {
 					classie.toggle( menubtn, 'on' );
 					classie.toggle( body, 'menu-push-toleft' );
+					classie.toggle( curtains, 'sho')
 					classie.toggle( menu, 'menu-open' );		
 				}
 			};
@@ -530,6 +537,7 @@
 				if(classie.has(body, 'menu-push-toleft')) {
 					classie.toggle( menubtn, 'on' );
 					classie.toggle( body, 'menu-push-toleft' );
+					classie.toggle( curtains, 'sho')
 					classie.toggle( menu, 'menu-open' );		
 				}	
 			};
