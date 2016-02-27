@@ -440,11 +440,14 @@ blockquote {
 	height: 20%
 }
 .logo {
-	width: 400px;
+	padding: 50px;
+	padding-left: 40px;
+	width: 500px;
 	margin: auto;
 }
 
 .logo img {
+	
 	position: relative;
 	width: 400px;
 	height: 400px;
