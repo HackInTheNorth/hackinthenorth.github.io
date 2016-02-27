@@ -5,6 +5,9 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 	padding: 0;
 	margin: 0;
 }
+body{
+	overflow-x: hidden;
+}
 
 @font-face {
 	font-family:"edelsans UltraLight";
@@ -215,6 +218,7 @@ body{
 }
 
 #regBtn {
+	padding-right: 30%;
     border: none;
 	background: rgba(44, 62, 80, 1.0);
 	color: #fff;
@@ -222,9 +226,8 @@ body{
     font-size: 3em; 
 	padding: 0.5em;
 	display: block;
-	width: 400px;
+	width: 60%;
 	cursor: pointer;
-	margin: auto;
     border-radius: 10px;
     text-decoration: none;
 }
@@ -947,3 +950,21 @@ blockquote {
 	}	
 }
 
+.logoimage1{
+	padding: 5px;
+	width: 30%;
+	height: 30%;
+}
+
+.logoimage2{
+	padding: 5px;
+	width: 60%;
+	height: 60%;
+}
+.logoimage3{
+	padding: 5px;
+	margin-right: 10px;
+	padding-right: 10px;
+	width: 80%;
+	height: 80%;
+}
