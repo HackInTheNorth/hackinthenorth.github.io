@@ -232,6 +232,13 @@ body{
     text-decoration: none;
 }
 
+#disc {
+	font-size: 1.5em;
+	position: absolute;
+	left: 110px;
+	color: black;
+}
+
 #menubtn {
 	position: fixed;
 	width: 50px;
