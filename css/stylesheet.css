@@ -5,6 +5,9 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 	padding: 0;
 	margin: 0;
 }
+body{
+	overflow-x: hidden;
+}
 
 @font-face {
 	font-family:"edelsans UltraLight";
@@ -71,7 +74,7 @@ h2 {
 	font-family: bariol_regularregular;
 }
 h3 {
-	font-size: 1.35em;
+	font-size: 1.5em;
 	font-family: bariol_regularregular;
 }
 h4,h5,h6 {
@@ -215,18 +218,25 @@ body{
 }
 
 #regBtn {
+	padding-right: 30%;
     border: none;
-	background: rgba(44, 62, 80, 1.0);
-	color: #fff;
+	background: white;
+	color: black;
     font-style: bariol_regularregular;
     font-size: 3em; 
 	padding: 0.5em;
 	display: block;
-	width: 400px;
+	width: 60%;
 	cursor: pointer;
-	margin: auto;
     border-radius: 10px;
     text-decoration: none;
+}
+
+#disc {
+	font-size: 1.5em;
+	position: absolute;
+	left: 110px;
+	color: black;
 }
 
 #menubtn {
@@ -335,8 +345,23 @@ body{
 
 .menu-push {
 	overflow-x: hidden;
-	position: relative;
+	position: static;
 	left: 0;
+}
+#curtains{
+	width:100%;
+	transition: all .3s;
+}
+.sho{
+
+	background-color: rgba(44,62,80,.3);
+	position:fixed;
+	height:100vh;
+	z-index: 10;
+	transition: all .3s ease-in;
+}
+#menubtn{
+	z-index:15;
 }
 
 .menu-push-toleft {
@@ -476,7 +501,7 @@ blockquote {
 #section_about p {
 	padding-left: 15px;
 	padding-right: 15px;
-	font-size: 17.5px;
+	font-size: 20px;
 }
 #section_contact h1,
 #section_schedule h1,
@@ -932,3 +957,21 @@ blockquote {
 	}	
 }
 
+.logoimage1{
+	padding: 5px;
+	width: 18%;
+	height: 18%;
+}
+
+.logoimage2{
+	padding: 5px;
+	width: 60%;
+	height: 60%;
+}
+.logoimage3{
+	padding: 5px;
+	margin-right: 10px;
+	padding-right: 10px;
+	width: 80%;
+	height: 80%;
+}

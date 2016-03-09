@@ -60,9 +60,15 @@
 		ga('send', 'pageview');
 
 	</script>
-</head>
-<body class="menu-push">
+	<style>
 	
+	</style>
+</head>
+<body class="menu-push" style="position: static;">
+	
+	<div id="curtains" class="hid">
+	</div>
+
 	<div id="loader">
 	</div>
 	
@@ -84,29 +90,40 @@
 	<div id = "social-media-details">
 		<a class = "genericon genericon-facebook-alt" href="https://www.facebook.com/HackInTheNorth/"></a>
 		<a class = "genericon genericon-twitter" href="#twitter"></a>
-		<a class = "genericon genericon-mail" href="mailto:geekhaven@iiita.ac.in"></a>
+		<a class = "genericon genericon-mail" href="mailto:team@hackinthenorth.com"></a>
 	</div>
 
 	<div id="display-content">
 		<div class="section" id="section_home">
 			<a name="home"></a>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<div class="logo">
-				<img src="images/logo.png">
+			<div class="left">
+				<div class="row">
+				<table style="margin-top: 15px;">
+					
+					<th width="20%">
+						
+						<img src="images/iiita.jpg" style="width:40%; padding: 5%; margin:10%">
+						<br>
+						<img src="images/f1.png" style="width:40%; padding: 5%; margin:10%">
+						
+						<br>
+						<img src="images/logo-ras.png" style="width:50%;  padding: 5%; margin:10%">
+						<br>
+						</center>
+					</th>
+						
+					<th width="80%" style="border-right: 2px solid grey;">
+						
+						<img src="images/logo.png" style="width:55%;margin-left: 10%; padding: 40px; padding-top: 10px;padding-bottom: 5px;">
+						<p style="padding: 0px margin:0px; font-size: 2em; position: relative; margin-left: 20%;"> &nbsp;&nbsp;&nbsp;	April 1 - 3 At IIIT Allahabad </p>
+						</center>
+					</th>
+					
+				</table>
+				<br>
+				<br>
 			</div>
-			<br>
-			<br>
-            <a href = "https://my.mlh.io/oauth/authorize?client_id=3d1656e81832a870e0b3119072387f88a9f567a5b4a5d1a59ecb898b4611e880&redirect_uri=http%3A%2F%2Fwww.hackinthenorth.com%2Fthanks.html&response_type=token" id="regBtn">
-                <center> REGISTER </center>
-            </a>
-            <br>
-			<br>
-			<br>
+			
 		</div>
 
 		<div class="section" id="section_about">
@@ -163,14 +180,21 @@
 
 								</div>
 								<div class="aboutdetails">
-									Lots of prizes
+									Cash prize worth Rs 1,00,000 and lots of goodies
 								</div>
 							</div>
 
 						</div>
+
+
 					</div>
+
 					<div class="row footer">
+					
 					</div>
+					<center>
+					<a href = "https://my.mlh.io/oauth/authorize?client_id=3d1656e81832a870e0b3119072387f88a9f567a5b4a5d1a59ecb898b4611e880&redirect_uri=http%3A%2F%2Fwww.hackinthenorth.com%2Fthanks.html&response_type=token" id="regBtn"><center>REGISTER NOW</center></a>
+					</center>
 				</div>
 			</div>
 
@@ -198,7 +222,7 @@
 								<br>
 								<p class="lead"><strong>Can we apply as a team?</strong></p>
 								<blockquote>
-									<p> Not quite — you and your intended teammates should all submit individual applications. But if you get an invitation and some of your teammates don’t, shoot us an email at geekhaven@iiita.ac.in and we’ll try to sort things out.</p>
+									<p> Not quite — you and your intended teammates should all submit individual applications. But if you get an invitation and some of your teammates don’t, shoot us an email at team@hackinthenorth.com and we’ll try to sort things out.</p>
 								</blockquote>
 								<br>
 								<p class="lead"><strong>What should I bring?</strong></p>
@@ -264,6 +288,7 @@
 					<div class="row">
 
 						<h1>Schedule</h1>
+						<center><h3>  April 1 - 3 At IIIT Allahabad </h3></center>
 						<div class="col-lg-1 col-md-1 col-sm-1"></div>
 
 						<div class="col-lg-10 col-md-10 col-sm-10">
@@ -417,6 +442,7 @@
 						<br>
 						<br>
 						<center><img  class = "img-size" src="images/mozilla_wordmark.png"></center>
+						<center><img  class = "img-size" src="images/ieee.jpg"></center>
 						<div class="row hide" >
 							<div class="col-lg-6 col-md-6 col-sm-6">
 								<center>
@@ -481,7 +507,7 @@
 
 								</div>
 								<div class="contact-details-email">
-									<br><br><br>Send us Email at:<br> <a href="mailto:geekhaven@iiita.ac.in">geekhaven@iiita.ac.in</a><br>
+									<br><br><br>Send us Email at:<br> <a href="mailto:team@hackinthenorth.com">team@hackinthenorth.com</a><br>
 								</div>
 							</div>
 						</div>
@@ -511,10 +537,10 @@
 			content = document.getElementById('display-content');
 
 
-
 			menubtn.onclick = function() {
 				classie.toggle( this, 'on' );
 				classie.toggle( body, 'menu-push-toleft' );
+				classie.toggle( curtains, 'sho')
 				classie.toggle( menu, 'menu-open' );
 			};
 
@@ -522,6 +548,7 @@
 				if(classie.has(body, 'menu-push-toleft')) {
 					classie.toggle( menubtn, 'on' );
 					classie.toggle( body, 'menu-push-toleft' );
+					classie.toggle( curtains, 'sho')
 					classie.toggle( menu, 'menu-open' );		
 				}
 			};
@@ -530,6 +557,7 @@
 				if(classie.has(body, 'menu-push-toleft')) {
 					classie.toggle( menubtn, 'on' );
 					classie.toggle( body, 'menu-push-toleft' );
+					classie.toggle( curtains, 'sho')
 					classie.toggle( menu, 'menu-open' );		
 				}	
 			};
