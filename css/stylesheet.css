@@ -509,7 +509,7 @@ blockquote {
 #section_about h1,
 #section_thanks h1,
 #section_thanks a {
-	color: white;
+    color: white;
     text-decoration: none;
 }
 
@@ -526,11 +526,11 @@ blockquote {
 .ab3 {
 	border-style: dashed;
 	border-spacing: 5px;
-	padding: 5px;
+	padding-top: 12px;
 	margin: 5px 0 0 0;
 	text-align: center;
 	font-size: 1.3em;
-	min-height: 300px;
+	min-height: 310px;
 	background-color: rgba(25, 181, 254, 0.4);
 	color: white;
 }
