@@ -263,6 +263,7 @@ body{
 	background: #FA5656;
 	width: 30px;
 	left: 10px;
+	transition: all .3s
 }
 
 #menubtn i:nth-child(1) {
@@ -461,7 +462,7 @@ body{
 
 #hitn-logo {
 	height: 100%;
-	width: 100%;
+	width: 90%;
 	
 }
 
