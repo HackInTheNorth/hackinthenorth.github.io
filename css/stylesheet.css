@@ -410,6 +410,70 @@ body{
 	color: #FA5656;
 }
 
+/* CSS for logo layout in home */
+
+.logos {
+	position: relative;
+	background-color: #FFFFFF;
+	top: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+#iiita-logo {
+	float: left;
+	clear: left;
+	height: 10%;
+	width: 10%;
+	margin-bottom: 6%;
+	margin-top: 8%;
+}
+
+#f1-logo {
+	float: left;
+	clear: both;
+	height: 10%;
+	width: 10%;
+	margin-bottom: 6%;
+}
+
+#ras-logo {
+	float: left;
+	clear: both;
+	height: 10%;
+	width: 15%;
+	margin-bottom: 12%;
+}
+
+.hitn-logo-date {
+	position: absolute;
+	float: left;
+	clear: right;
+	top: 0;
+	height: 35%;
+	width: 45%;
+	margin-left: 28%;
+	margin-top: 2%;
+	margin-bottom: 0;
+}
+
+#hitn-logo {
+	height: 100%;
+	width: 100%;
+	
+}
+
+#hitn-date {
+	font-size: 2.8em;
+	font-size: 2.8vw;
+	padding-left: 8%;
+	height: 100%;
+	width: 100%;
+}
+
+
 /*css for text content in different sections*/
 
 
@@ -579,6 +643,7 @@ blockquote {
 
 .header,
 .footer {
+	clear: both;
 	background-color: transparent;
 	height: 75px;
 }
