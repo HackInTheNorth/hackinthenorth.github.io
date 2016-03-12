@@ -61,6 +61,9 @@
 
 <body class="menu-push">
 
+    <div id="curtains" class="hid">
+    </div>
+
     <div id="loader">
     </div>
 
@@ -126,35 +129,37 @@
     <script src="js/classie.js"></script>
 
     <script>
-        var menu = document.getElementById( 'menu' ),
-			menubtn = document.getElementById( 'menubtn' ),
-			body = document.body,
-			content = document.getElementById('display-content');
+            var menu = document.getElementById( 'menu' ),
+            menubtn = document.getElementById( 'menubtn' ),
+            body = document.body,
+            content = document.getElementById('display-content');
 
 
+            menubtn.onclick = function() {
+                classie.toggle( this, 'on' );
+                classie.toggle( body, 'menu-push-toleft' );
+                classie.toggle( curtains, 'sho')
+                classie.toggle( menu, 'menu-open' );
+            };
 
-			menubtn.onclick = function() {
-				classie.toggle( this, 'on' );
-				classie.toggle( body, 'menu-push-toleft' );
-				classie.toggle( menu, 'menu-open' );
-			};
+            content.onclick = function() {
+                if(classie.has(body, 'menu-push-toleft')) {
+                    classie.toggle( menubtn, 'on' );
+                    classie.toggle( body, 'menu-push-toleft' );
+                    classie.toggle( curtains, 'sho')
+                    classie.toggle( menu, 'menu-open' );        
+                }
+            };
 
-			content.onclick = function() {
-				if(classie.has(body, 'menu-push-toleft')) {
-					classie.toggle( menubtn, 'on' );
-					classie.toggle( body, 'menu-push-toleft' );
-					classie.toggle( menu, 'menu-open' );		
-				}
-			};
-
-			menu.onclick = function() {
-				if(classie.has(body, 'menu-push-toleft')) {
-					classie.toggle( menubtn, 'on' );
-					classie.toggle( body, 'menu-push-toleft' );
-					classie.toggle( menu, 'menu-open' );		
-				}	
-			};
-    </script>
+            menu.onclick = function() {
+                if(classie.has(body, 'menu-push-toleft')) {
+                    classie.toggle( menubtn, 'on' );
+                    classie.toggle( body, 'menu-push-toleft' );
+                    classie.toggle( curtains, 'sho')
+                    classie.toggle( menu, 'menu-open' );        
+                }   
+            };
+        </script>
 
 
 </body>
