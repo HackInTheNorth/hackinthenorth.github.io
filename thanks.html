@@ -14,6 +14,8 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
     <link rel="stylesheet" type="text/css" href="genericons/genericons.css">
 
+    <link rel="shortcut icon" href="favicon32.png" sizes="16x16" type="image/x-icon" />
+    
 
     <!--[if IE]-->
     <!-- gh pages-->
@@ -59,6 +61,9 @@
 
 <body class="menu-push">
 
+    <div id="curtains" class="hid">
+    </div>
+
     <div id="loader">
     </div>
 
@@ -97,14 +102,23 @@
                         <h1 class="show_text">
                             
                         </h1>
-                        <h2>
+                        <h2 class="hide">
                             <br>We will be mailing you further instructions within 2-3 days.
+                        </h2>
+                        <h2 >
+                            <center>Just one step more!! Please fill this form<br>
+                            </center>
                         </h2>
                     </div>
                 </div>
                 <br>
                 <br>
                 <div class="row">
+                    <center>
+                    <a href="https://docs.google.com/forms/d/1Rs6pWW9Bl_8LJOGvCRkPr5DyY89k8RifxeRLv2PhJuc/viewform?c=0&w=1">Complete The Final Step</a>
+                    </center>
+                </div>
+                <div class="row hide">
                     <center>
                         <a href=index.html>Home</a>
                     </center>
@@ -117,35 +131,37 @@
     <script src="js/classie.js"></script>
 
     <script>
-        var menu = document.getElementById( 'menu' ),
-			menubtn = document.getElementById( 'menubtn' ),
-			body = document.body,
-			content = document.getElementById('display-content');
+            var menu = document.getElementById( 'menu' ),
+            menubtn = document.getElementById( 'menubtn' ),
+            body = document.body,
+            content = document.getElementById('display-content');
 
 
+            menubtn.onclick = function() {
+                classie.toggle( this, 'on' );
+                classie.toggle( body, 'menu-push-toleft' );
+                classie.toggle( curtains, 'sho')
+                classie.toggle( menu, 'menu-open' );
+            };
 
-			menubtn.onclick = function() {
-				classie.toggle( this, 'on' );
-				classie.toggle( body, 'menu-push-toleft' );
-				classie.toggle( menu, 'menu-open' );
-			};
+            content.onclick = function() {
+                if(classie.has(body, 'menu-push-toleft')) {
+                    classie.toggle( menubtn, 'on' );
+                    classie.toggle( body, 'menu-push-toleft' );
+                    classie.toggle( curtains, 'sho')
+                    classie.toggle( menu, 'menu-open' );        
+                }
+            };
 
-			content.onclick = function() {
-				if(classie.has(body, 'menu-push-toleft')) {
-					classie.toggle( menubtn, 'on' );
-					classie.toggle( body, 'menu-push-toleft' );
-					classie.toggle( menu, 'menu-open' );		
-				}
-			};
-
-			menu.onclick = function() {
-				if(classie.has(body, 'menu-push-toleft')) {
-					classie.toggle( menubtn, 'on' );
-					classie.toggle( body, 'menu-push-toleft' );
-					classie.toggle( menu, 'menu-open' );		
-				}	
-			};
-    </script>
+            menu.onclick = function() {
+                if(classie.has(body, 'menu-push-toleft')) {
+                    classie.toggle( menubtn, 'on' );
+                    classie.toggle( body, 'menu-push-toleft' );
+                    classie.toggle( curtains, 'sho')
+                    classie.toggle( menu, 'menu-open' );        
+                }   
+            };
+        </script>
 
 
 </body>

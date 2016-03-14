@@ -24,6 +24,7 @@
 	</script>
 	<!-- [endif] -->
 	<script src="js/jquery.js"></script>
+	<script src="js/materialize.js"></script>
 	<script type="text/javascript" src="js/isotope.pkgd.js"></script>
 	<script type="text/javascript" src="js/packery-mode.pkgd.js"></script>
 	<script type="text/javascript">
@@ -48,6 +49,10 @@
 				stamp: '.stamp'
 			});
 		});
+
+		$(document).ready(function(){
+    		$('.scrollspy').scrollSpy();
+  		});
 		
 	</script>
 	<script>
@@ -79,22 +84,22 @@
 	</div>
 	<nav class="menu-right" id="menu">
 		<h3>Menu</h3>
-		<a data-menuanchor="home"  href="#home"><b>Home</b></a>
-		<a data-menuanchor="about" href="#about"><b>About</b></a>
-		<a data-menuanchor="faq" href="#faq"><b>FAQ</b></a>
-		<a data-menuanchor="schedule" href="#schedule"><b>Schedule</b></a>
-		<a data-menuanchor="sponsors" href="#sponsors"><b>Sponsors</b></a>
-		<a data-menuanchor="contact" href="#contact"><b>Contact</b></a>
+		<a data-menuanchor="home" title="home"  href="#section_home"><b>Home</b></a>
+		<a data-menuanchor="about" href="#section_about"><b>About</b></a>
+		<a data-menuanchor="faq" href="#section_faq"><b>FAQ</b></a>
+		<a data-menuanchor="schedule" href="#section_schedule"><b>Schedule</b></a>
+		<a data-menuanchor="sponsors" href="#section_sponsors"><b>Sponsors</b></a>
+		<a data-menuanchor="contact" href="#section_contact"><b>Contact</b></a>
+		
 	</nav>
 
 	<div id = "social-media-details">
-		<a class = "genericon genericon-facebook-alt" href="https://www.facebook.com/HackInTheNorth/"></a>
-		<a class = "genericon genericon-twitter" href="#twitter"></a>
-		<a class = "genericon genericon-mail" href="mailto:team@hackinthenorth.com"></a>
+		<a class = "genericon genericon-facebook-alt" title = "follow us on Facebook!" href="https://www.facebook.com/HackInTheNorth/"></a>
+		<a class = "genericon genericon-mail" title = "send a mail!" href="mailto:team@hackinthenorth.com"></a>
 	</div>
 
 	<div id="display-content">
-		<div class="section" id="section_home">
+		<div class="section scrollspy" id="section_home">
 			<a name="home"></a>
 			<div class="logos col-md-12 col-sm-12 col-lg-12">
 				<div class="row">
@@ -106,7 +111,7 @@
 							<img id="f1-logo" src="images/f1.png">
 						</div>
 						<div id="col-md-3 col-lg-3 col-sm-3">
-							<img id="ras-logo" src="images/logo-ras.png">
+							<img id="ras-logo" src="img/HE_logo.png">
 						</div>
 						<center>
 						<div class="hitn-logo-date col-md-6 col-lg-6 col-sm-6">
@@ -123,11 +128,11 @@
 			</div>
 		</div>
 
-		<div class="section" id="section_about">
+		<div class="scrollspy section " id="section_about">
 			<div class="container">
 				<div class="row header">
 				</div>
-				<a name="about"></a>
+				<a name="about" ></a>
 				<div class="row">
 					<h1>About Hack In The North</h1>
 				</div>
@@ -195,7 +200,7 @@
 				</div>
 			</div>
 
-			<div class="section" id="section_faq">
+			<div class="section scrollspy" id="section_faq">
 				<div class="container">
 					<div class="row header">
 					</div>
@@ -277,7 +282,7 @@
 				</div>
 			</div>
 
-			<div class="section" id="section_schedule">
+			<div class="section scrollspy" id="section_schedule">
 				<div class="container">
 					<div class="row header">
 					</div>
@@ -422,7 +427,7 @@
 				</div>
 			</div>
 
-			<div class="section" id="section_sponsors">
+			<div class="section scrollspy" id="section_sponsors">
 				<div class="row">
 					<br>
 					<br>
@@ -439,7 +444,7 @@
 						<br>
 						<br>
 						<center><img  class = "img-size" src="images/mozilla_wordmark.png"></center>
-						<center><img  class = "img-size" src="images/ieee.jpg"></center>
+						<center><img  class = "img-size" src="img/hackerearth.png"></center>
 						<div class="row hide" >
 							<div class="col-lg-6 col-md-6 col-sm-6">
 								<center>
@@ -458,7 +463,7 @@
 				</div>
 			</div>
 
-			<div class="section" id="section_contact" >
+			<div class="section scrollspy" id="section_contact" >
 				<br>
 				<br>
 
@@ -494,7 +499,7 @@
 								</div>
 
 								<div class="contact-details-call">
-									<br><br>Event Coordinators<br>Vishnu KS : 9559386146<br>Abhishek Menon : 9872633145<br>
+									<br><br>Event Coordinators<br>Vishnu KS : 9559386146<br>Abhishek Menon : 7752965396<br>
 								</div>
 							</div>
 						</div>
