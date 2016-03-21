@@ -599,6 +599,10 @@ blockquote {
 	color: white;
 }
 
+.contact-details-call a{
+	color: #FFF;
+}
+
 .contact-details-email  a {
 	color: #fff;
 }
