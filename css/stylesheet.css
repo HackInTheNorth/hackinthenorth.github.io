@@ -167,7 +167,9 @@ body{
 }
 
 /*css for menu, login/register buttons, social media accounts*/
-
+#section_home{
+	overflow:hidden;
+}
 #section_thanks a {
     position: relative;
 	display: inline-block;
