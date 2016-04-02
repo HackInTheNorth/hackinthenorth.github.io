@@ -1,7 +1,7 @@
 var projects = {
-	"demo":{
-		"image":"images/1.png",
-		"team":"hitn team",
-		"link":"https://github.com/HackInTheNorth/hackinthenorth.github.io"
+	"Sports API":{
+		"image":"images/PyRAG.jpg",
+		"team":"PyAG",
+		"link":"https://github.com/npcoder2k14/HackInTheNorth-PYRAG"
 	}
 }
