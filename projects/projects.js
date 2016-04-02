@@ -1,5 +1,4 @@
-var projects = {
-	
+var projects = {	
 	"undefined":{
 		"image":"images/404",
 		"team":"undefined",
@@ -14,5 +13,10 @@ var projects = {
 		"image":"images/Impression.JPG",
 		"team" : "Harmony",
 		"link" : "https://github.com/HackInTheNorth-2016"
-		}
+		},
+	"Sports API":{
+		"image":"images/PyRAG.jpg",
+		"team":"PyAG",
+		"link":"https://github.com/npcoder2k14/HackInTheNorth-PYRAG"
+	}
 }
