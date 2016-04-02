@@ -8,7 +8,7 @@ var projects = {
 		"image":"images/404",
 		"team":"undefined",
 		"link":"https://github.com/fitrnsit/caht-app"
-	}
+	},
 	"Tracks":{
 		"image":" ",
 		"team":"We-The_Beer",
