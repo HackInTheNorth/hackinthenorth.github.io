@@ -41,13 +41,15 @@
 			for (project in projects) {
 				var content = '<div class=" col-md-4">\
 							<div class = "contact-details">\
-								<div class="icon tossing" style="background-image:url('+projects[project]["image"]+');border-radius:50%;">\
+								<div class="icon tossing" style="background-image:url('+projects[project]["image"]+');border-radius:50%;background-size:cover; ">\
 								</div>\
 								<div class="contact-details-address">\
 									<br>\
 									<h3>'+project+'</h3>\
 									<br>\
 									<a href="'+projects[project]["link"]+'" style="color:rgb(8, 23, 37);">Github Link</a>\
+									<br>\
+									<h5>by Team: '+projects[project]["team"]+'</h5>\
 									<br>\
 								</div>\
 							</div>\
