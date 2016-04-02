@@ -11,7 +11,7 @@ var projects = {
 		"link":"https://github.com/srajat/Tracks/"
 	},
 	"Impression": {
-		"image":"images/Impression.jpg",
+		"image":"images/Impression.JPG",
 		"team" : "Harmony",
 		"link" : "https://github.com/HackInTheNorth-2016"
 		}
