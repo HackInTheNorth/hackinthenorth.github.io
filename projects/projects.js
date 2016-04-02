@@ -18,5 +18,10 @@ var projects = {
 		"image":"images/PyRAG.jpg",
 		"team":"PyAG",
 		"link":"https://github.com/npcoder2k14/HackInTheNorth-PYRAG"
+	},	
+	"Multinetwork":{
+		"image":"images/",
+		"team":"Singularity",
+		"link":"https://github.com/krishnak9/Multinetwork.git"
 	}
 }
