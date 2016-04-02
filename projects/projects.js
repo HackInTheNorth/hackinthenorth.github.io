@@ -15,4 +15,9 @@ var projects = {
 		"team" : "Harmony",
 		"link" : "https://github.com/HackInTheNorth-2016"
 		}
+	"Subtitles downloader": {
+		"image":"images/subtitles-downloader.JPG",
+		"team" : "Deadly Noobes",
+		"link" : "https://github.com/sadviramana"
+		}
 }
