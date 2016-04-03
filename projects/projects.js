@@ -23,5 +23,10 @@ var projects = {
 		"image":"images/",
 		"team":"Singularity",
 		"link":"https://github.com/krishnak9/Multinetwork.git"
+	},
+	"openClassroom":{
+		"image":"images/yoda.jpg",
+		"team":"NullSec",
+		"link":"https://github.com/NullSec-Hackathons/openClassroom.git"
 	}
 }
