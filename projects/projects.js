@@ -1,4 +1,9 @@
 var projects = {
+	"suspicionizer":{
+		"image":"images/xkcd.png",
+		"team":"xkcd",
+		"link":"https://github.com/manojpandey/hackinthenorth"
+	},
 	"Third-Eye":{
 		"image":"images/12939512_1173695385976877_1255439274_n.png",
 		"team":"APPic",
