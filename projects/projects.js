@@ -53,5 +53,10 @@ var projects = {
 		"image" : "",
 		"team" : "Gallifreyans",
 		"link" : "https://github.com/betterclever/Get-It-Back"
+	},
+	"Central Perk":{
+		"image":"images/central-perk.png",
+		"team":"codecaine",
+		"link":"https://github.com/Maa-Ka-Code/Central-Perk"
 	}
 }
