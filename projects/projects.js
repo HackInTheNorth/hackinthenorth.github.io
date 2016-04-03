@@ -73,5 +73,10 @@ var projects = {
 		"image":"images/scr3.png",
 		"team":"NOOBIES",
 		"link":"https://github.com/himanshushekharb16/wikipedia-js"
+	},
+	"tuts_robo":{
+		"image":"images/404",
+		"team":"dev_clan",
+		"link":"https://github.com/sahil865gupta/Tuts-Robo"
 	}
 }
