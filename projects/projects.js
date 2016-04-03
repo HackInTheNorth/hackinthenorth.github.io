@@ -65,7 +65,7 @@ var projects = {
 		"link" : "https://github.com/Strategist-Roy/Hackathon.git"
 	},
 	"Get It Back!":{
-		"image" : "",
+		"image" : "images/getitback.png",
 		"team" : "Gallifreyans",
 		"link" : "https://github.com/betterclever/Get-It-Back"
 	},
