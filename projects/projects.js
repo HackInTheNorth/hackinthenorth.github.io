@@ -69,4 +69,10 @@ var projects = {
 		"team":"codecaine",
 		"link":"https://github.com/Maa-Ka-Code/Central-Perk"
 	}
+	
+	"Wikilinks":{
+		"image":"images/scr3.png",
+		"team":"NOOBIES",
+		"link":"https://github.com/himanshushekharb16/wikipedia-js"
+	}
 }
