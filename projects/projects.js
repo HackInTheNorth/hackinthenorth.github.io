@@ -88,5 +88,10 @@ var projects = {
 		"image":"images/RailwayStats.png",
 		"team":"technotastic",
 		"link":"https://github.com/yatingupta10/Hack-in-the-North"
+	},
+	"tuts_robo":{
+		"image":"images/404",
+		"team":"dev_clan",
+		"link":"https://github.com/sahil865gupta/Tuts-Robo"
 	}
 }
