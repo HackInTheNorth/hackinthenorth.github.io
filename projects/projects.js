@@ -39,5 +39,10 @@ var projects = {
 		"image":"",
 		"team":"softvokers",
 		"link":"https://github.com/utk3995/mediquik-"
+	},
+	"WeConnect":{
+		"image":"",
+		"team":"WeConnect",
+		"link":"https://github.com/Aviral190694/HackInTheNorth-WeConnect.git"
 	}
 }
