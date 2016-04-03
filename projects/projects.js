@@ -23,7 +23,7 @@ var projects = {
 		"image":"images/PyRAG.jpg",
 		"team":"PyAG",
 		"link":"https://github.com/npcoder2k14/HackInTheNorth-PYRAG"
-	},	
+	},
 	"Multinetwork":{
 		"image":"images/",
 		"team":"Singularity",
@@ -33,6 +33,11 @@ var projects = {
 		"image":"images/yoda.jpg",
 		"team":"NullSec",
 		"link":"https://github.com/NullSec-Hackathons/openClassroom.git"
+	},
+	"Castle Defence": {
+		"image": "images/castledefence.png",
+		"team": "tooSleepy",
+		"link": "https://github.com/pakhandi/castle-defence"
 	},
 	"Mediquik":{
 		"image":"images/mediquik.png",
