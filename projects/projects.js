@@ -78,5 +78,10 @@ var projects = {
 		"image":"images/scr3.png",
 		"team":"NOOBIES",
 		"link":"https://github.com/himanshushekharb16/wikipedia-js"
+	},
+	"Insight Street":{
+		"image":"",
+		"team":"Delhi-Black-hawks",
+		"link":"https://github.com/Delhi-Black-Hawks"
 	}
 }
