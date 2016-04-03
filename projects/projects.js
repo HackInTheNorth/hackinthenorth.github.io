@@ -25,7 +25,7 @@ var projects = {
 		"link":"https://github.com/krishnak9/Multinetwork.git"
 	},
 	"openClassroom":{
-		"image":"images/",
+		"image":"images/yoda.jpg",
 		"team":"NullSec",
 		"link":"https://github.com/NullSec-Hackathons/openClassroom.git"
 	}
