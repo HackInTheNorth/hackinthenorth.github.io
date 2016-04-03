@@ -74,4 +74,9 @@ var projects = {
 		"team":"NOOBIES",
 		"link":"https://github.com/himanshushekharb16/wikipedia-js"
 	}
+	"Railway Stats":{
+		"image":"images/RailwayStats.png",
+		"team":"technotastic",
+		"link":"https://github.com/yatingupta10/Hack-in-the-North"
+	}
 }
