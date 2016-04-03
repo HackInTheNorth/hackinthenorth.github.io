@@ -1,4 +1,9 @@
-var projects = {	
+var projects = {
+	"Third-Eye":{
+		"image":"images/12939512_1173695385976877_1255439274_n.png",
+		"team":"APPic",
+		"link":"https://github.com/manisoni28/Third-Eye"
+	},
 	"undefined":{
 		"image":"images/404",
 		"team":"undefined",
