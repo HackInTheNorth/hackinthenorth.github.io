@@ -93,5 +93,10 @@ var projects = {
 		"image":"images/404",
 		"team":"dev_clan",
 		"link":"https://github.com/sahil865gupta/Tuts-Robo"
+	},
+	"Clippy":{
+		"image":"clippy.png",
+		"team":"TheTuringMachine",
+		"link":"https://github.com/The-Turing-Machine/Clippy"
 	}
 }
