@@ -29,4 +29,9 @@ var projects = {
 		"team":"NullSec",
 		"link":"https://github.com/NullSec-Hackathons/openClassroom.git"
 	}
+	"Mediquik":{
+		"image":"images/mediquik.png",
+		"team":"Softvokers",
+		"link":"https://github.com/utk3995/mediquik"
+	}
 }
