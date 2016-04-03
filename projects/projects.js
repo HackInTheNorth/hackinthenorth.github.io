@@ -48,7 +48,7 @@ var projects = {
 		"image" : "images/medicaround.png",
 		"team" : "Fusion",
 		"link" : "https://github.com/Strategist-Roy/Hackathon.git"
-	}
+	},
 	"Get It Back!":{
 		"image" : "",
 		"team" : "Gallifreyans",
