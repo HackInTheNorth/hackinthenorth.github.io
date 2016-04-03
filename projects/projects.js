@@ -28,22 +28,11 @@ var projects = {
 		"image":"images/yoda.jpg",
 		"team":"NullSec",
 		"link":"https://github.com/NullSec-Hackathons/openClassroom.git"
-	}
-	"Mediquik":{
-		"image":"images/mediquik.png",
-		"team":"Softvokers",
-		"link":"https://github.com/utk3995/mediquik"
-	}
-	
-	"mediquik":{
-		"image":"",
-		"team":"softvokers",
-		"link":"https://github.com/utk3995/mediquik-"
 	},
-	"WeConnect":{
-		"image":"",
-		"team":"WeConnect",
-		"link":"https://github.com/Aviral190694/HackInTheNorth-WeConnect.git"
+	"MedicAround":{
+		"image" : "images/medicaround.png",
+		"team" : "Fusion",
+		"link" : "https://github.com/Strategist-Roy/Hackathon.git"
 	}
 	"no_ones":{
 		"image":"images/no_ones.jpg",
