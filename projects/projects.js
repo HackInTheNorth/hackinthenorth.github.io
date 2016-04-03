@@ -34,4 +34,10 @@ var projects = {
 		"team":"Softvokers",
 		"link":"https://github.com/utk3995/mediquik"
 	}
+	
+	"mediquik":{
+		"image":"",
+		"team":"softvokers",
+		"link":"https://github.com/utk3995/mediquik-"
+	}
 }
