@@ -40,4 +40,10 @@ var projects = {
 		"team":"softvokers",
 		"link":"https://github.com/utk3995/mediquik-"
 	}
+	
+	"Wikilinks":{
+		"image":"images/scr3.png",
+		"team":"NOOBIES",
+		"link":"https://github.com/himanshushekharb16/wikipedia-js"
+	}
 }
