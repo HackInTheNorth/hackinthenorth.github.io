@@ -28,16 +28,22 @@ var projects = {
 		"image":"images/yoda.jpg",
 		"team":"NullSec",
 		"link":"https://github.com/NullSec-Hackathons/openClassroom.git"
-	}
+	},
 	"Mediquik":{
 		"image":"images/mediquik.png",
 		"team":"Softvokers",
 		"link":"https://github.com/utk3995/mediquik"
-	}
+	},
 	
 	"mediquik":{
 		"image":"",
 		"team":"softvokers",
 		"link":"https://github.com/utk3995/mediquik-"
+	},
+
+	"Central Perk":{
+		"image":"images/central-perk.png",
+		"team":"codecaine",
+		"link":"https://github.com/Maa-Ka-Code/Central-Perk"
 	}
 }
