@@ -1,4 +1,4 @@
-var projects = {	
+var projects = {
 	"undefined":{
 		"image":"images/404",
 		"team":"undefined",
@@ -18,7 +18,7 @@ var projects = {
 		"image":"images/PyRAG.jpg",
 		"team":"PyAG",
 		"link":"https://github.com/npcoder2k14/HackInTheNorth-PYRAG"
-	},	
+	},
 	"Multinetwork":{
 		"image":"images/",
 		"team":"Singularity",
@@ -33,5 +33,25 @@ var projects = {
     "image": "images/castledefence.png",
     "team": "tooSleepy",
     "link": "https://github.com/pakhandi/castle-defence"
-  }
+  },
+	"Mediquik":{
+		"image":"images/mediquik.png",
+		"team":"Softvokers",
+		"link":"https://github.com/utk3995/mediquik"
+	},
+	"WeConnect":{
+		"image":"",
+		"team":"WeConnect",
+		"link":"https://github.com/Aviral190694/HackInTheNorth-WeConnect.git"
+	},
+	"no_ones":{
+		"image":"images/no_ones.jpg",
+		"team":"no_ones",
+		"link":"https://github.com/baishalis/person_search"
+	},
+	"MedicAround":{
+		"image" : "images/medicaround.png",
+		"team" : "Fusion",
+		"link" : "https://github.com/Strategist-Roy/Hackathon.git"
+	}
 }
