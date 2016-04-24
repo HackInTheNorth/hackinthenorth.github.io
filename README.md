@@ -1,5 +1,6 @@
 #Hack In The North Website
 > Brace yourselves. Hack In The North 2 is coming !!
+
 ##Contributing
 Feel free to send a pull request that you think makes the website better. We are always open to ideas and innovations. 
 
