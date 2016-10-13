@@ -174,8 +174,7 @@ strong {
     text-align: justify;
 }
 
-.question {
-}
+.question {}
 
 .answer {
     padding-bottom: 2vh;
@@ -210,7 +209,10 @@ strong {
     text-align: center;
 }
 
-.sponsors-section-2, .contact-section-1, .contact-section-2, .contact-section-3 {
+.sponsors-section-2,
+.contact-section-1,
+.contact-section-2,
+.contact-section-3 {
     border: solid 2px #c22e5e;
 }
 
@@ -237,7 +239,6 @@ strong {
 .contact .number {
     position: relative;
     display: inline-block;
-    padding: 0 auto;
     text-align: right;
 }
 
