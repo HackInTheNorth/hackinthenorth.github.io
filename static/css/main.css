@@ -202,7 +202,6 @@ strong {
     margin: auto;
 }
 
-
 .contact-section {
     position: static;
     padding: 10vh;
@@ -211,36 +210,36 @@ strong {
     text-align: center;
 }
 
-.sponsors-section-2,
-.contact-section-1,
-.contact-section-2,
-.contact-section-3 {
-	border: solid 2px #c22e5e;
+.sponsors-section-2, .contact-section-1, .contact-section-2, .contact-section-3 {
+    border: solid 2px #c22e5e;
 }
+
 .contacts {
     position: relative;
     max-width: 40%;
     margin: 2vh auto;
     text-align: -webkit-auto;
 }
+
 .contact {
-	position: relative;
-	padding: 0 10%;
-}
-.contact .name {
-	position: relative;
-	display: inline-block;
-	width: 50%;
-	padding: 2% 5%;
-	text-align: left; 
-}
-.contact .number {
-	position: relative;
-	display: inline-block;
-	padding: 0 auto;
-	text-align: right;
+    position: relative;
+    padding: 0 10%;
 }
 
+.contact .name {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    padding: 2% 5%;
+    text-align: left;
+}
+
+.contact .number {
+    position: relative;
+    display: inline-block;
+    padding: 0 auto;
+    text-align: right;
+}
 
 .footer {
     text-align: center;
