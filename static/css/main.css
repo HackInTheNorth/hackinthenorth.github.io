@@ -53,7 +53,7 @@ strong {
     height: 4vh;
     width: 50%;
     margin: auto;
-    font-size: 4vh;
+    font-size: 1.7vw;
 }
 
 .location-date .partition {
@@ -160,8 +160,9 @@ strong {
     width: 70%;
     margin: auto;
     margin-top: 7vh;
-    font-size: 3vh;
+    font-size: 1.3vw;
 }
+
 
 .faq-section {
     position: static;
@@ -171,13 +172,23 @@ strong {
 }
 
 .faq-section-1 {
-    text-align: justify;
+    text-align: left;
 }
 
 .question {}
 
 .answer {
     padding-bottom: 2vh;
+}
+
+.faq-content:not(:last-child){
+    float:left;
+}
+
+
+.faq-content {
+    width:25%;
+    margin-left:5%;
 }
 
 .sponsors-section {
