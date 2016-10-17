@@ -2,6 +2,8 @@
 <html>
 
 <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="static/js/index.js"></script>
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
     <link rel="icon" href="static/images/favicon.jpg">
@@ -9,13 +11,27 @@
 </head>
 
 <body>
-    <div class="main-header" visibility="hidden">
-        <div class="button">Apply</div>
-        <div class="button">About</div>
-        <div class="button">FAQ</div>
-        <div class="button">Sponsor</div>
-        <div claass="button">Contact</div>
+    <div class="main-header">
+    <div class="dropdownbutton"><hr>
+                                <hr>
+                                <hr>
     </div>
+     <ul class="form">
+             <li class="parallelogram"><a class="abt-side" href="#about"><div class=" button-sidemenu btn1 active">
+                        <div class="reverse-parallelogram">About</div>
+                    </div></a></li>
+             <li class="parallelogram"><a class="faq-side" href="#faq"><div class=" button-sidemenu btn2">
+                        <div class="reverse-parallelogram">FAQ</div>
+                    </div></a></li>
+            <li class="parallelogram"><a class="sponsors-side" href="#sponsors"><div class=" button-sidemenu btn3">
+                        <div class="reverse-parallelogram">Sponsors</div>
+                    </div></a></li>
+            <li class="parallelogram"><a class="contacts-side" href="#contacts"><div class=" button-sidemenu btn1">
+                        <div class="reverse-parallelogram">Contact Us</div>
+                    </div></a></li>
+    </ul>
+    </div>
+    <div class = "main-body">
     <div class="landing-section">
         <div class="centre-box">
             <div class="logo-box">
@@ -210,7 +226,7 @@
         <!-- for future
             <div class="schedule-section"></div>-->
     </div>
-    <div class="sponsors-section">
+    <div class="sponsors-section" id="sponsors">
         <div class="section-title parallelogram">
             <div class="reverse-parallelogram">Sponsors!!</div>
         </div>
@@ -266,7 +282,7 @@
 			</p> -->
         </div>
     </div>
-    <div class="contact-section">
+    <div class="contact-section" id="contacts">
         <div class="section-title parallelogram">
             <div class="reverse-parallelogram">Contact Us</div>
         </div>
@@ -313,6 +329,7 @@
             </div>
         </div>
     </div>
+</div>
     <div class="footer">
         <div class="footer-content">
             <p>
