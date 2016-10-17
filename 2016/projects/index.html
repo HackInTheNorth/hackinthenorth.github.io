@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Hack In The North | Projects</title>
+		<meta name="author" content="Geekhaven" />
+		<meta name="description" content="Hack In The North: India's biggest student held Hackathon" />
+		<meta name="keywords"  content="IIIT-Allahabad, Hackathon, Projects HITN, HITN" />
+		<meta name="Resource-type" content="Document" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+		<link rel="stylesheet" type="text/css" href="../genericons/genericons.css">
+
+		<link rel="shortcut icon" href="images/favicon32.png" sizes="16x16" type="../image/x-icon" />
+		<!--<link rel="stylesheet" text="text/css" href="team.css"/>-->
+	</head>
+	<body>
+
+		<div class="section scrollspy" id="section_contact" >
+				<br>
+				<br>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<center><h1>Hack In The North Projects</h1></center>
+						</div>
+					</div>
+					<br><br><br>					
+					<div class="row" id="content">
+																			
+					</div>
+					<br><br><br>
+				</div>
+		</div>
+		<script src="projects.js"></script>
+		<script src="../js/jquery.js"></script>
+		<script type="text/javascript">
+			for (project in projects) {
+				var content = '<div class=" col-md-4">\
+							<div class = "contact-details">\
+								<div class="icon tossing" style="background-image:url('+projects[project]["image"]+');border-radius:50%;background-size:cover; ">\
+								</div>\
+								<div class="contact-details-address">\
+									<br>\
+									<h3>'+project+'</h3>\
+									<br>\
+									<a href="'+projects[project]["link"]+'" style="color:rgb(8, 23, 37);">Github Link</a>\
+									<br>\
+									<h5 style="font-size: 1.75rem;color: wheat;">by Team: '+projects[project]["team"]+'</h5>\
+									<br>\
+								</div>\
+							</div>\
+						</div>';
+				$('#content').append(content);
+			}
+		</script>	
+
+	</body>
+</html>

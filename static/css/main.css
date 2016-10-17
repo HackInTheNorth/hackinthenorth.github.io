@@ -1,0 +1,295 @@
+body {
+    margin: 0px;
+    font-family: Calibri;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    color: #444;
+}
+
+strong {
+    color: #333;
+}
+
+.landing-section {
+    position: static;
+    height: 80vh;
+    padding: 10vh;
+    background-color: #fff;
+}
+
+.landing-section .centre-box {
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+
+.logo-box {
+    position: relative;
+}
+
+.logo-box .year {
+    font-size: 10vh;
+    font-weight: 100;
+    margin: auto;
+    text-align: center;
+    color: #333;
+}
+
+.logo-box .logo {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.location-date {
+    position: relative;
+    text-align: center;
+    height: 4vh;
+    width: 50%;
+    margin: auto;
+    font-size: 1.7vw;
+}
+
+.location-date .partition {
+    float: left;
+    border-right: 1px solid #333;
+    height: 7vh;
+    margin-left: 1vh;
+}
+
+.location-date .date {
+    float: left;
+    margin-top: 0.5vh;
+    color: #333;
+}
+
+.location-date .location {
+    float: left;
+    margin-top: 0.5vh;
+    margin-left: 1vh;
+    color: #333;
+}
+
+.landing-footer {
+    position: absolute;
+    bottom: 0px;
+    width: 90%;
+    font-size: 3.5vh;
+}
+
+.nav-buttons {
+    position: relative;
+    width: 45%;
+    height: 10vh;
+    margin: auto;
+    padding-left: 5vh;
+}
+
+.button {
+    position: relative;
+    background-color: white;
+    color: #333;
+    float: left;
+    text-align: center;
+    margin: 0vh 5vh;
+    padding: 2vh 3vh;
+}
+
+.btn1 {
+    border: solid 2px #c22e5e;
+}
+
+.btn1:hover {
+    background-color: #c22e5e;
+    color: white;
+}
+
+.btn2 {
+    border: solid 2px #e13f2a;
+}
+
+.btn2:hover {
+    background-color: #e13f2a;
+    color: white;
+}
+
+.btn3 {
+    border: solid 2px #f5a71f;
+}
+
+.btn3:hover {
+    background-color: #f5a71f;
+    color: white;
+}
+
+.main-header {
+    position: fixed;
+    height: 10vw;
+    left: 25%;
+    font-size: 3.5vh;
+    visibility: hidden;
+}
+
+.about-section {
+    position: static;
+    padding: 10vh;
+    padding-bottom: 0vh;
+    padding-top: 15vh;
+}
+
+.section-title {
+    position: relative;
+    background-color: #c22e5e;
+    max-width: 15em;
+    margin: auto;
+    margin-bottom: 10vh;
+    text-align: center;
+    font-size: 5vh;
+    color: white;
+    font-weight: 100;
+}
+
+.sub-section {
+    position: relative;
+    width: 70%;
+    margin: auto;
+    margin-top: 7vh;
+    font-size: 1.3vw;
+}
+
+
+.faq-section {
+    position: static;
+    padding: 10vh;
+    padding-bottom: 0vh;
+    padding-top: 15vh;
+}
+
+.faq-section-1 {
+    text-align: left;
+}
+
+.question {}
+
+.answer {
+    padding-bottom: 2vh;
+}
+
+.faq-content:not(:last-child){
+    float:left;
+}
+
+
+.faq-content {
+    width:25%;
+    margin-left:5%;
+}
+
+.sponsors-section {
+    position: static;
+    padding: 10vh;
+    padding-bottom: 0vh;
+    padding-top: 15vh;
+}
+
+.sponsors-section-1 .sub-section-title {
+    text-align: center;
+    font-size: 4vh;
+}
+
+.sponsors-section-2 {
+    text-align: center;
+}
+
+#brochure_link {
+    max-width: 30vh;
+    margin: auto;
+}
+
+.contact-section {
+    position: static;
+    padding: 10vh;
+    padding-bottom: 0vh;
+    padding-top: 15vh;
+    text-align: center;
+}
+
+.sponsors-section-2,
+.contact-section-1,
+.contact-section-2,
+.contact-section-3 {
+    border: solid 2px #c22e5e;
+}
+
+.contacts {
+    position: relative;
+    max-width: 40%;
+    margin: 2vh auto;
+    text-align: -webkit-auto;
+}
+
+.contact {
+    position: relative;
+    padding: 0 10%;
+}
+
+.contact .name {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    padding: 2% 5%;
+    text-align: left;
+}
+
+.contact .number {
+    position: relative;
+    display: inline-block;
+    text-align: right;
+}
+
+.footer {
+    text-align: center;
+    position: static;
+    margin-top: 15vh;
+}
+
+.footer-content {
+    position: relative;
+    width: 70%;
+    margin: auto;
+    font-size: 3vh;
+}
+
+.parallelogram {
+    /*background-color: #c9584b;*/
+    /*background-color: #c22e5e;*/
+    position: relative;
+    transform: skewX(-30deg) scaleY(1.2);
+}
+
+.reverse-parallelogram {
+    position: relative;
+    transform: scaleY(0.833) skewX(30deg);
+}
+
+#team-link {
+    font-size: 5vh;
+    font-weight: 100;
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 3vh;
+}
+
+#love-icon {
+    height: 4vh;
+}
+
+.justify-text {
+    text-align: justify;
+}
