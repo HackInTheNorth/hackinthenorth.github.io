@@ -48,7 +48,7 @@ strong {
     width: 100%;
 }
 
-.location-date {
+.location-date {w
     position: relative;
     text-align: center;
     height: 4vh;
@@ -76,6 +76,48 @@ strong {
     margin-left: 1vh;
     color: #333;
 }
+
+/*
+    Subscribe and College Ambassador Buttons start
+*/
+
+.subscribe-box{
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+    display: table;
+    overflow: hidden;
+}
+
+.subscribe-box .sub-btn1,
+.subscribe-box .sub-btn2{
+    position: relative;
+    background-color: white;
+    color: #333;
+    text-align: center;
+    padding: 2vh 3vh;
+    border: solid 2px #c22e5e;
+    margin:auto;
+}
+
+.subscribe-box .sub-btn1:hover,
+.subscribe-box .sub-btn2:hover{
+    background-color: #c22e5e;
+    color: #ffffff;
+}
+
+.subscribe-box .sub-btn1{
+    float: left;
+}
+
+.subscribe-box .sub-btn2{
+    float: right;
+}
+
+/*
+    Subscribe and College Ambassador Buttons end
+*/
+
 
 .landing-footer {
     position: absolute;
