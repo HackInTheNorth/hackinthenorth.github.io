@@ -64,4 +64,32 @@ function onScroll(event){
 
 });
 
+
+/* 
+        Modals start 
+*/
+
+var collegeAmbassadorModal = document.getElementById('college-ambassador-modal');
+var collegeAmbassadorButton = document.getElementById('college-ambassador-button');
+var collegeAmbassadorClose = document.getElementsByClassName("close")[0];
+
+collegeAmbassadorButton.onclick = function() {
+    collegeAmbassadorModal.style.display = "block";
+}
+
+collegeAmbassadorClose.onclick = function() {
+    collegeAmbassadorModal.style.display = "none";
+}
+
+window.onclick = function(event){
+    if(event.target == collegeAmbassadorModal){
+        collegeAmbassadorModal.style.display = "none";
+    }
+}
+
+/* 
+        Modals end 
+*/
+
+
 });
