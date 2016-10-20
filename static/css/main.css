@@ -18,8 +18,9 @@ strong {
 
 .landing-section {
     position: static;
-    max-height: 80vh;
-    padding-top: 10vh;
+    height: 80vh;
+    padding: 40vh;
+    padding-top: 0vh;
     background-color: #fff;
 }
 
@@ -27,12 +28,10 @@ strong {
     position: relative;
     width: 70%;
     margin: auto;
-    text-align: center;
 }
 
 .logo-box {
     position: relative;
-    max-width: 100%;
 }
 
 .logo-box .year {
@@ -56,10 +55,6 @@ strong {
     width: 75%;
     margin: auto;
     font-size: 1.7vw;
-}
-.location-date .date-content{
-    margin:auto;
-    padding-left: 45vh;
 }
 
 .location-date .partition {
@@ -85,17 +80,17 @@ strong {
 .landing-footer {
     position: absolute;
     bottom: 0px;
-    width: 90%;
-    margin-left: 8%;
+    width: 100%;
+    padding-left: 0%;
     font-size: 3.5vh;
 }
 
 .nav-buttons {
-    position: relative;
-    width: 45%;
+
+    width: 100%;
     height: 10vh;
-    margin-left: 0px;
-    padding-left: 10vh;
+    margin-left: 0%;
+    padding-left: 15%;
 }
 
 .button {
@@ -158,7 +153,7 @@ strong {
     position: static;
     padding: 10vh;
     padding-bottom: 0vh;
-    padding-top: 15vh;
+    padding-top: 5vh;
 }
 
 .section-title {
@@ -399,7 +394,6 @@ strong {
     }
 
     .main-header{
-        display:inline;
         float:left;
         position:fixed;
     }
@@ -441,4 +435,14 @@ strong {
     .contacts-side.active div{
          background-color: #c22e5e;
           color: white;   
+    }
+
+    .navbuttonFixed{
+        top:0px;
+        transition:top 1s linear;
+        position:fixed;
+        background-color:white;
+        width:100%;
+        z-index:1;
+
     }
