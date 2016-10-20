@@ -18,9 +18,8 @@ strong {
 
 .landing-section {
     position: static;
-    height: 80vh;
-    padding: 40vh;
-    padding-top: 0vh;
+    max-height: 80vh;
+    padding-top: 10vh;
     background-color: #fff;
 }
 
@@ -28,10 +27,12 @@ strong {
     position: relative;
     width: 70%;
     margin: auto;
+    text-align: center;
 }
 
 .logo-box {
     position: relative;
+    max-width: 100%;
 }
 
 .logo-box .year {
@@ -55,6 +56,10 @@ strong {
     width: 75%;
     margin: auto;
     font-size: 1.7vw;
+}
+.location-date .date-content{
+    margin:auto;
+    padding-left: 45vh;
 }
 
 .location-date .partition {
