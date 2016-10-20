@@ -7,7 +7,7 @@ $(".dropdownbutton").click(function(){
 	}
 	else
 	{
-		$(".main-body").css("padding-left","30px");
+		$(".main-body").css("padding-left","0px");
 		$("ul.form").addClass("active");	
 	}
 	console.log("hello world");
