@@ -77,14 +77,12 @@ collegeAmbassadorButton.onclick = function() {
     collegeAmbassadorModal.style.display = "block";
     $('body').css('overflow','hidden');
     $('body').css('position','fixed');
-    // disableScroll();
 }
 
 collegeAmbassadorClose.onclick = function() {
     collegeAmbassadorModal.style.display = "none";
     $('body').css('overflow','visible');
     $('body').css('position','static');
-    // enableScroll();
 }
 
 window.onclick = function(event){
@@ -92,7 +90,6 @@ window.onclick = function(event){
         collegeAmbassadorModal.style.display = "none";
         $('body').css('overflow','visible');
         $('body').css('position','static');
-        // enableScroll();
     }
 }
 
