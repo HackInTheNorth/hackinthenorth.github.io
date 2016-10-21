@@ -75,15 +75,21 @@ var collegeAmbassadorClose = document.getElementsByClassName("close")[0];
 
 collegeAmbassadorButton.onclick = function() {
     collegeAmbassadorModal.style.display = "block";
+    $('body').css('overflow','hidden');
+    $('body').css('position','fixed');
 }
 
 collegeAmbassadorClose.onclick = function() {
     collegeAmbassadorModal.style.display = "none";
+    $('body').css('overflow','visible');
+    $('body').css('position','static');
 }
 
 window.onclick = function(event){
     if(event.target == collegeAmbassadorModal){
         collegeAmbassadorModal.style.display = "none";
+        $('body').css('overflow','visible');
+        $('body').css('position','static');
     }
 }
 
