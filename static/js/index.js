@@ -60,4 +60,10 @@ $(document).ready(function() {
     });
 
 
+    $('body').css('overflow','hidden');
+    $('body').css('position','fixed');
+    $('body').css('overflow','visible');
+    $('body').css('position','static');
+        $('body').css('overflow','visible');
+        $('body').css('position','static');
 });
