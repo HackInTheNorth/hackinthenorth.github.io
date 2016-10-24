@@ -68,6 +68,7 @@ li a {
     height: 80vh;
     padding: 10vh;
     padding-bottom: 0vh;
+    padding-bottom: 0;
     background-color: #fff;
 }
 
@@ -382,4 +383,19 @@ footer {
 
 .justify-text {
     text-align: justify;
+}
+
+body {
+  margin-top: 35px;
+}
+#countdown {
+  width: 100%;
+  margin: auto;  
+  text-align: center;
+  color: #3d3d3d;
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 4em;
+  border-top: .1em solid;
+  border-bottom: .1em solid;
 }
