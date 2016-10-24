@@ -1,6 +1,8 @@
+/*All rules related to independent tags*/
+
 body {
     margin: 0px;
-    font-family: Calibri;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -16,11 +18,56 @@ strong {
     color: #333;
 }
 
+
+/*header*/
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 80%;
+    padding: 0 10%;
+    background-color: #fff;
+    z-index: 3;
+    padding-top: 10px;
+    font-size: 1.3vw;
+}
+
+.nav-bar ul {
+    position: relative;
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.not-landing {
+    border-bottom: 1px solid #ccc;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 10px 16px;
+}
+
+.active {
+    color: #c22e5e;
+    font-size: 1.2em;
+    transform: translateY(-0.25em);
+}
+
+
+/*all rules related to landing section and further descendants*/
+
 .landing-section {
     position: static;
     height: 80vh;
-    padding: 40vh;
-    padding-top: 0vh;
+    padding: 10vh;
+    padding-bottom: 0vh;
     background-color: #fff;
 }
 
@@ -32,10 +79,11 @@ strong {
 
 .logo-box {
     position: relative;
+    margin: 0 5%;
 }
 
 .logo-box .year {
-    font-size: 10vh;
+    font-size: 4vw;
     font-weight: 100;
     margin: auto;
     text-align: center;
@@ -49,32 +97,40 @@ strong {
 }
 
 .location-date {
-    w position: relative;
+    position: relative;
     text-align: center;
     height: 4vh;
-    width: 75%;
+    width: 100%;
     margin: auto;
     font-size: 1.7vw;
 }
 
 .location-date .partition {
-    float: left;
+    position: relative;
+    display: inline;
     border-right: 1px solid #333;
-    height: 7vh;
-    margin-left: 1vh;
+    height: 200%;
 }
 
 .location-date .date {
-    float: left;
+    position: relative;
+    display: inline;
     margin-top: 0.5vh;
     color: #333;
+    width: 49.5%;
 }
 
 .location-date .location {
-    float: left;
+    position: relative;
+    display: inline;
     margin-top: 0.5vh;
     margin-left: 1vh;
     color: #333;
+    width: 49.5%;
+}
+
+.dotted-underline:hover {
+    border-bottom: 1px dotted #222;
 }
 
 
@@ -83,156 +139,30 @@ strong {
 */
 
 .subscribe-box {
-    height: 20vh;
+    position: relative;
     width: 100%;
     text-align: center;
-    display: table;
+    margin: auto;
+    margin-top: 5vh;
     overflow: hidden;
-}
-
-.subscribe-box .sub-btn1,
-.subscribe-box .sub-btn2 {
-    position: relative;
-    background-color: white;
-    color: #333;
-    text-align: center;
-    padding: 2vh 3vh;
-    border: solid 2px #c22e5e;
-    margin: auto;
-}
-
-.subscribe-box .sub-btn1:hover,
-.subscribe-box .sub-btn2:hover {
-    background-color: #c22e5e;
-    color: #ffffff;
-}
-
-.subscribe-box .sub-btn1 {
-    float: left;
-}
-
-.subscribe-box .sub-btn2 {
-    float: right;
-}
-
-
-/* The Modal (background) */
-
-/*.modal {*/
-    /*display: none;*/
-    /* Hidden by default */
-    /*position: fixed;*/
-    /* Stay in place */
-    /*z-index: 1;*/
-    /* Sit on top */
-    /*left: 0;*/
-    /*top: 0;*/
-    /*width: 100%;*/
-    /* Full width */
-    /*height: 100%;*/
-    /* Full height */
-    /*overflow: auto;*/
-    /* Enable scroll if needed */
-    /*background-color: rgb(0, 0, 0);*/
-    /* Fallback color */
-    /*background-color: rgba(0, 0, 0, 0.4);*/
-    /* Black w/ opacity */
-/*}*/
-
-
-/* Modal Header */
-
-/*.modal-header {
-    padding: 2px 16px;
-    background-color: #c22e5e;
-    color: white;
-}*/
-
-
-/* Modal Body */
-
-/*.modal-body {
-    padding: 2px 16px;
-}*/
-
-
-/* Modal Content */
-
-/*.modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}*/
-
-
-/* The Close Button */
-
-/*.modal .close1,
-.modal .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.modal .close:hover,
-.modal .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}*/
-
-
-/*
-    Subscribe Box ends
-*/
-
-.landing-footer {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    padding-left: 0%;
-    font-size: 3.5vh;
-}
-
-.nav-buttons {
-    width: 100%;
-    height: 10vh;
-    margin-left: 0%;
-    padding-left: 15%;
+    font-size: 1.2vw;
 }
 
 .button {
     position: relative;
     background-color: white;
     color: #333;
-    float: left;
     text-align: center;
-    margin: 0vh 5vh;
+    margin: 0vh 5px;
     padding: 2vh 3vh;
 }
-
-.button-sidemenu {
-    position: relative;
-    background-color: white;
-    color: #333;
-    float: left;
-    width: 90%;
-    height: 20px;
-    text-align: center;
-    margin: 0vh -5vh;
-    padding: 2vh 3vh;
+.button a {
+    display: block;
 }
-
 .btn1 {
+    position: relative;
+    display: inline-block;
+    width: 30%;
     border: solid 2px #c22e5e;
 }
 
@@ -247,6 +177,8 @@ strong {
 }
 
 .btn2 {
+    position: relative;
+    display: inline-block;
     border: solid 2px #e13f2a;
 }
 
@@ -256,6 +188,9 @@ strong {
 }
 
 .btn3 {
+    position: relative;
+    display: inline-block;
+    width: 30%;
     border: solid 2px #f5a71f;
 }
 
@@ -264,11 +199,14 @@ strong {
     color: white;
 }
 
+
+/*all rules related to about section and further descendants*/
+
 .about-section {
     position: static;
     padding: 10vh;
     padding-bottom: 0vh;
-    padding-top: 5vh;
+    padding-top: 15vh;
 }
 
 .section-title {
@@ -290,6 +228,9 @@ strong {
     margin-top: 7vh;
     font-size: 1.3vw;
 }
+
+
+/*all rules related to faq section and further descendants*/
 
 .faq-section {
     position: static;
@@ -317,6 +258,9 @@ strong {
     margin-left: 5%;
 }
 
+
+/*all rules related to sponsors section and further descendants*/
+
 .sponsors-section {
     position: static;
     padding: 10vh;
@@ -338,6 +282,9 @@ strong {
     margin: auto;
 }
 
+
+/*all rules related to contacts section and further descendants*/
+
 .contact-section {
     position: static;
     padding: 10vh;
@@ -355,34 +302,40 @@ strong {
 
 .contacts {
     position: relative;
-    max-width: 40%;
+    /*max-width: 40%;*/
     margin: 2vh auto;
     text-align: -webkit-auto;
 }
 
 .contact {
     position: relative;
+    margin: auto;
     padding: 0 10%;
+    text-align: center;
 }
 
 .contact .name {
     position: relative;
     display: inline-block;
-    width: 50%;
-    padding: 2% 5%;
+    width: 8em;
+    padding: 2% 1%;
     text-align: left;
 }
 
 .contact .number {
     position: relative;
     display: inline-block;
-    text-align: right;
+    /*text-align: right;*/
 }
 
-.footer {
+
+/*all rules related to footer and further descendants*/
+
+footer {
     text-align: center;
     position: static;
     margin-top: 15vh;
+    padding-bottom: 50px;
 }
 
 .footer-content {
@@ -390,6 +343,25 @@ strong {
     width: 70%;
     margin: auto;
     font-size: 3vh;
+}
+
+#team-link {
+    font-size: 5vh;
+    font-weight: 100;
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 3vh;
+    border: solid 2px #c22e5e;
+}
+
+#team-link:hover {
+    background-color: #c22e5e;
+    color: white;
+}
+
+#team-link:active {
+    background-color: #c22e5e;
+    color: white;
 }
 
 .parallelogram {
@@ -404,14 +376,6 @@ strong {
     transform: scaleY(0.833) skewX(30deg);
 }
 
-#team-link {
-    font-size: 5vh;
-    font-weight: 100;
-    max-width: 40%;
-    margin: auto;
-    margin-bottom: 3vh;
-}
-
 #love-icon {
     height: 4vh;
 }
@@ -419,143 +383,3 @@ strong {
 .justify-text {
     text-align: justify;
 }
-
-
-/* header section */
-
-/*ul.form {
-    position: relative;
-    width: 250px;
-    margin: 0px -250px;
-    padding: 0;
-    overflow: hidden;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    transition: margin-left 1s;
-}
-
-.form li {
-    margin-bottom: 25px;
-    margin-top: 50px;
-}
-
-.form li a {
-    width: 225px;
-    padding-left: 20px;
-    height: 50px;
-    background: transparent;
-    line-height: 50px;
-    display: block;
-    overflow: hidden;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #686868;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-}
-
-.form li:first-child a:hover,
-.form li:first-child a {
-    -webkit-border-radius: 5px 5px 0 0;
-    -moz-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-}
-
-.form li:last-child a:hover,
-.form li:last-child a {
-    -webkit-border-radius: 0 0 5px 5px;
-    -moz-border-radius: 0 0 5px 5px;
-    border-radius: 0 0 5px 5px;
-}
-
-.form li a:hover i {
-    color: #ea4f35;
-}
-
-.form i {
-    margin-right: 15px;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-}
-
-.form em {
-    font-size: 10px;
-    background: #ea4f35;
-    padding: 3px 5px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    font-style: normal;
-    color: #fff;
-    margin-top: 17px;
-    margin-right: 15px;
-    line-height: 10px;
-    height: 10px;
-    float: right;
-}
-
-.form li.selected a {
-    background: #efefef;
-}
-
-.main-header {
-    float: left;
-    position: fixed;
-}
-
-.main-body {
-    padding-left: 0px;
-    margin-left: 0px;
-}
-
-.dropdownbutton {
-    width: 30px;
-    float: right;
-    margin-left: 5px;
-}
-
-ul.form.active {
-    margin-left: -10px;
-    transition: margin-left 1s;
-}
-
-hr {
-    border: 2px solid black;
-}
-
-.abt-side.active div {
-    background-color: #c22e5e;
-    color: white;
-}
-
-.faq-side.active div {
-    background-color: #e13f2a;
-    color: white;
-}
-
-.sponsors-side.active div {
-    background-color: #f5a71f;
-    color: white;
-}
-
-.contacts-side.active div {
-    background-color: #c22e5e;
-    color: white;
-}
-
-.navbuttonFixed {
-    top: 0px;
-    transition: top 1s linear;
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    z-index: 1;
-}
-*/
