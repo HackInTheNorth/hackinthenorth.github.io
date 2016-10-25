@@ -2,19 +2,30 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="static/js/jquery.js"></script>
     <script src="static/js/jquery.modal.js"></script>
     <script src="static/js/index.js"></script>
-    
+    <link rel="stylesheet" type="text/css" href="static/css/typicons.css">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="static/css/jquery.modal.css">
-    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Oswald:700'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="icon" href="static/images/favicon.jpg">
     <title>Hack In The North 2.0</title>
 </head>
 
 <body>
-    <div class="landing-section">
+    <nav class="nav-bar">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#faq">Faq</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="landing-section section" id="home">
         <div class="centre-box">
             <div class="logo-box">
                 <img class="logo" src="static/images/logo.png">
@@ -22,156 +33,127 @@
                 </p>
             </div>
             <div class="location-date">
-                <!--TODO: add to calender-->
-                <div class="date">27-29 January, 2017
+                <div class="date">
+                    <a class="dotted-underline" href="https://www.timeanddate.com/countdown/generic?iso=20170128T00&p0=2408&msg=Hack+In+The+North+Begins+in&font=sanserif&csz=1" target="_blank"><span class="typcn typcn-calendar"></span>
+                    27-29 January
+                    </a>
                 </div>
                 <div class="partition"></div>
-                <!--TODO: give link to google maps-->
-                <div class="location">IIIT Allahabad, India
+                <div class="location">
+                    <a class="dotted-underline" href="https://www.google.com/maps/dir/Current+Location/IIIT-Allahabad" target="_blank">
+                        <span class="typcn typcn-location"></span>IIIT Allahabad, India
+                    </a>
                 </div>
             </div>
-            <br/>
-            <br/>
-            <h1 id="countdown"></h1>
-
             <!-- Subscribe Box Starts -->
-            
             <div class="subscribe-box">
-                <a class="sub-btn1" href="#modal1" rel="modal:open">
-                    Subscribe for latest updates
+                <div class="button btn1">
+                    <a href="#modal1" rel="modal:open">
+                        Subscribe for latest updates
+                    </a>
+                </div>
+                <div class="button btn2">
+                    <a id="sponsor-link2" href="#sponsors">
+                    Sponsor Us
                 </a>
-                <a class="sub-btn2" href="#modal2" rel="modal:open">
+                </div>
+                <div class="button btn3">
+                    <a href="#modal2" rel="modal:open">
                     Become a college ambassador
                 </a>
-            </div>
-            <div id="modal1" class="modal" style="display: none">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <!-- Begin MailChimp Signup Form -->
-                        <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-                        <!-- TODO move this to css file-->
-                        <style type="text/css">
-                        #mc_embed_signup {
-                            background: #fff;
-                            clear: left;
-                            font: 14px Helvetica, Arial, sans-serif;
-                        }
-                        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-                         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                        </style>
-                        <div id="mc_embed_signup">
-                            <form action="https://hackinthenorth.us14.list-manage.com/subscribe/post?u=8c6ab58ace4511d9d78fb26de&amp;id=125994c01c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                <div id="mc_embed_signup_scroll">
-                                    <h2>Subscribe to our mailing list</h2>
-                                    <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                                    <div class="mc-field-group">
-                                        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
-                                        </label>
-                                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                                    </div>
-                                    <div class="mc-field-group">
-                                        <label for="mce-FNAME">First Name </label>
-                                        <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                                    </div>
-                                    <div class="mc-field-group">
-                                        <label for="mce-LNAME">Last Name </label>
-                                        <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-                                    </div>
-                                    <div id="mce-responses" class="clear">
-                                        <div class="response" id="mce-error-response" style="display:none"></div>
-                                        <div class="response" id="mce-success-response" style="display:none"></div>
-                                    </div>
-                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                        <input type="text" name="b_8c6ab58ace4511d9d78fb26de_125994c01c" tabindex="-1" value="">
-                                    </div>
-                                    <div class="clear">
-                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-                        <script type='text/javascript'>
-                        (function($) {
-                            window.fnames = new Array();
-                            window.ftypes = new Array();
-                            fnames[0] = 'EMAIL';
-                            ftypes[0] = 'email';
-                            fnames[1] = 'FNAME';
-                            ftypes[1] = 'text';
-                            fnames[2] = 'LNAME';
-                            ftypes[2] = 'text';
-                        }(jQuery));
-                        var $mcj = jQuery.noConflict(true);
-                        </script>
-                        <!--End mc_embed_signup-->
-                    </div>
                 </div>
             </div>
+            <div id="modal1" class="modal" style="display: none">
+                <!-- Begin MailChimp Signup Form -->
+                <!-- TODO move this to css file-->
+                <style>
+                /*mailchimps css*/
+                
+                #mc_embed_signup {
+                    background: #fff;
+                    clear: left;
+                    font: 14px Helvetica, Arial, sans-serif;
+                }
+                </style>
+                <div id="mc_embed_signup">
+                    <form action="https://hackinthenorth.us14.list-manage.com/subscribe/post?u=8c6ab58ace4511d9d78fb26de&amp;id=125994c01c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <h2>Subscribe to our mailing list</h2>
+                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                            <div class="mc-field-group">
+                                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                                </label>
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-FNAME">First Name </label>
+                                <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-LNAME">Last Name </label>
+                                <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b_8c6ab58ace4511d9d78fb26de_125994c01c" tabindex="-1" value="">
+                            </div>
+                            <div class="clear">
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                <script type='text/javascript'>
+                (function($) {
+                    window.fnames = new Array();
+                    window.ftypes = new Array();
+                    fnames[0] = 'EMAIL';
+                    ftypes[0] = 'email';
+                    fnames[1] = 'FNAME';
+                    ftypes[1] = 'text';
+                    fnames[2] = 'LNAME';
+                    ftypes[2] = 'text';
+                }(jQuery));
+                var $mcj = jQuery.noConflict(true);
+                </script>
+                <!--End mc_embed_signup-->
+            </div>
             <div id="modal2" class="modal" style="display: none">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2>Apply for College Ambassador</h2>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Change the width and height values to suit you best -->
-                        <div class="typeform-widget" data-url="https://hackinthenorth1.typeform.com/to/Aw0tM2" data-text="Campus Ambassador HITN 2.0" style="width:100%;height:500px;"></div>
-                        <script>
-                        (function() {
-                            var qs, js, q, s, d = document,
-                                gi = d.getElementById,
-                                ce = d.createElement,
-                                gt = d.getElementsByTagName,
-                                id = 'typef_orm',
-                                b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
-                            if (!gi.call(d, id)) {
-                                js = ce.call(d, 'script');
-                                js.id = id;
-                                js.src = b + 'widget.js';
-                                q = gt.call(d, 'script')[0];
-                                q.parentNode.insertBefore(js, q)
-                            }
-                        })()
-                        </script>
-                        <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by<a href="https://www.typeform.com/examples/?utm_campaign=Aw0tM2&amp;utm_source=typeform.com-5096595-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a></div>
-                    </div>
+                <div class="modal-header">
+                    <h2>Apply for College Ambassador Program</h2>
+                </div>
+                <div class="modal-body">
+                    <!-- Change the width and height values to suit you best -->
+                    <div class="typeform-widget" data-url="https://hackinthenorth1.typeform.com/to/Aw0tM2" data-text="Campus Ambassador HITN 2.0" style="width:100%;height:100vh;"></div>
+                    <script>
+                    (function() {
+                        var qs, js, q, s, d = document,
+                            gi = d.getElementById,
+                            ce = d.createElement,
+                            gt = d.getElementsByTagName,
+                            id = 'typef_orm',
+                            b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+                        if (!gi.call(d, id)) {
+                            js = ce.call(d, 'script');
+                            js.id = id;
+                            js.src = b + 'widget.js';
+                            q = gt.call(d, 'script')[0];
+                            q.parentNode.insertBefore(js, q)
+                        }
+                    })()
+                    </script>
+                    <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by<a href="https://www.typeform.com/examples/?utm_campaign=Aw0tM2&amp;utm_source=typeform.com-5096595-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a></div>
                 </div>
             </div>
             <!-- Subscribe Box Ends -->
         </div>
     </div>
-    </div>
-    <div class="landing-footer">
-        <div class="nav-buttons">
-            <a href="#about" class="abt-side">
-                <div class="parallelogram button btn1">
-                    <div class="reverse-parallelogram">About</div>
-                </div>
-            </a>
-            <a href="#faq" class="faq-side">
-                <div class="parallelogram button btn2">
-                    <div class="reverse-parallelogram">FAQ</div>
-                </div>
-            </a>
-            <a href="#sponsors" class="sponsors-side">
-                <div class="parallelogram button btn2">
-                    <div class="reverse-parallelogram">Sponsors</div>
-                </div>
-            </a>
-            <a href="#contacts" class="contacts-side">
-                <div class="parallelogram button btn2">
-                    <div class="reverse-parallelogram">Contacts</div>
-                </div>
-            </a>
-            <div class="parallelogram button btn3" class="news-side">
-                <div class="reverse-parallelogram">
-                    <a href="https://www.facebook.com/HackInTheNorth/">News</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="about-section" id="about">
+    <div class="about-section section" id="about">
         <div class="section-title parallelogram">
             <div class="reverse-parallelogram">About Hack In The North
             </div>
@@ -213,7 +195,7 @@
             </div>
         </div>
     </div>
-    <div class="faq-section" id="faq">
+    <div class="faq-section section" id="faq">
         <div class="section-title parallelogram">
             <div class="reverse-parallelogram">FAQ
             </div>
@@ -328,7 +310,7 @@
         <!-- for future
             <div class="schedule-section"></div>-->
     </div>
-    <div class="sponsors-section" id="sponsors">
+    <div class="sponsors-section section" id="sponsors">
         <div class="section-title parallelogram">
             <div class="reverse-parallelogram">Sponsors!!</div>
         </div>
@@ -345,21 +327,17 @@
         <div class="sub-section sponsors-section-2">
             <div class="sub-section-content">
                 <p>Interested in sponsoring us? Here is our Sponsorship Brochure:</p>
-                <div id="brochure_link" class="parallelogram btn1">
-                    <div class="reverse-parallelogram">
-                        <a href="static/SponsorshipBrochure.pdf" target="_blank">Sponsorship Brochure</a>
-                    </div>
-                </div>
+                <a id="#brochure_link" class="dotted-underline" href="static/SponsorshipBrochure.pdf" target="_blank"><span class="typcn typcn-download"></span>Sponsorship Brochure</a>
                 <p>
                     Just drop us a mail at
                     <strong>
-                                <a href="mailto:team@hackinthenorth.com">team@hackinthenorth.com.</a>
+                                <a class="dotted-underline" href="mailto:team@hackinthenorth.com">team@hackinthenorth.com.</a>
                             </strong>
                 </p>
             </div>
         </div>
     </div>
-    <div class="contact-section" id="contacts">
+    <div class="contact-section section" id="contacts">
         <div class="section-title parallelogram">
             <div class="reverse-parallelogram">Contact Us</div>
         </div>
@@ -367,7 +345,7 @@
             <p>Our email address:</p>
             <p>
                 <strong>
-                    <a href="mailto:team@hackinthenorth.com">team@hackinthenorth.com</a>
+                    <a class="dotted-underline" href="mailto:team@hackinthenorth.com">team@hackinthenorth.com</a>
                 </strong>
             </p>
         </div>
@@ -377,13 +355,13 @@
                 <div class="contact">
                     <div class="name">Vishnu KS
                     </div>
-                    <div class="number">9559386146
+                    <div class="number"><span class="typcn typcn-phone"></span>+91-9559386146
                     </div>
                 </div>
                 <div class="contact">
                     <div class="name">Saptak Sengupta
                     </div>
-                    <div class="number">9748368303
+                    <div class="number"><span class="typcn typcn-phone"></span>+91-9748368303
                     </div>
                 </div>
             </div>
@@ -393,7 +371,7 @@
                 <p>Here are the directions (thanks Google!!) to reach us:</p>
                 <p>
                     <strong>
-                        <a href="https://www.google.com/maps/dir/Current+Location/IIIT-Allahabad" target="_blank">
+                        <a class="dotted-underline" href="https://www.google.com/maps/dir/Current+Location/IIIT-Allahabad" target="_blank">
                             Indian Institute of Information Technology
                             <br>
                             Allahabad, Uttar Pradesh
@@ -406,23 +384,20 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <!--<div class="footer-content">
+    <footer>
+        <div class="footer-content">
             <p>
                 Brought with
                 <img id="love-icon" src="static/images/love-emoji.png">to you by
             </p>
-            <div id="team-link" class="parallelogram btn1">
+            <div id="team-link" class="parallelogram">
                 <div class="reverse-parallelogram">
                     <a href="team-hitn.html">Team Hack In The North!</a>
                 </div>
             </div>
-        </div>-->
-        Copyright &copy;<a href="https://github.com/HackInTheNorth">Team Hack In The North</a> 2016-17
-    </div>
-
-    <script src="static/js/countdown.js"></script>
-    
+        </div>
+        Copyright &copy;<a class="dotted-underline" href="https://github.com/HackInTheNorth">Team Hack In The North</a> 2016-17
+    </footer>
 </body>
 
 </html>
