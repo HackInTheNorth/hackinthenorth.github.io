@@ -157,9 +157,11 @@ li a {
     margin: 0vh 5px;
     padding: 2vh 3vh;
 }
+
 .button a {
     display: block;
 }
+
 .btn1 {
     position: relative;
     display: inline-block;
@@ -269,16 +271,46 @@ li a {
     padding-top: 15vh;
 }
 
-.sponsors-section-1 .sub-section-title {
+.sponsors-section-2 .sub-section-title {
     text-align: center;
     font-size: 4vh;
 }
 
-.sponsors-section-2 {
+.sponsors-section-3 {
     text-align: center;
 }
 
-#brochure_link {
+.hackerearth {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+.restdb {
+    position: relative;
+    width: 70%;
+    margin: auto;
+    background-color: #1E92CB;
+}
+.codacy {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+.jetbrains {
+    position: relative;
+    display: inline-block;
+    width: 50%;    
+}
+.sponsorLink {
+    display: block;
+}
+.sponsorLogo {
+    position: relative;
+    width: 100%;
+}
+
+#brochure_link1,
+#brochure_link2 {
     max-width: 30vh;
     margin: auto;
 }
@@ -294,7 +326,7 @@ li a {
     text-align: center;
 }
 
-.sponsors-section-2,
+.sponsors-section-3,
 .contact-section-1,
 .contact-section-2,
 .contact-section-3 {
@@ -303,9 +335,7 @@ li a {
 
 .contacts {
     position: relative;
-    /*max-width: 40%;*/
     margin: 2vh auto;
-    text-align: -webkit-auto;
 }
 
 .contact {
@@ -347,10 +377,13 @@ footer {
 }
 
 #team-link {
-    font-size: 5vh;
-    font-weight: 100;
-    max-width: 40%;
+    position: relative;
+    max-width: 15em;
     margin: auto;
+    text-align: center;
+    font-size: 5vh;
+    color: #444;
+    font-weight: 100;
     margin-bottom: 3vh;
     border: solid 2px #c22e5e;
 }
@@ -386,16 +419,17 @@ footer {
 }
 
 body {
-  margin-top: 35px;
+    margin-top: 35px;
 }
+
 #countdown {
-  width: 100%;
-  margin: auto;  
-  text-align: center;
-  color: #3d3d3d;
-  font-family: "Oswald";
-  font-weight: 700;
-  font-size: 4em;
-  border-top: .1em solid;
-  border-bottom: .1em solid;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #3d3d3d;
+    font-family: "Oswald";
+    font-weight: 700;
+    font-size: 4em;
+    border-top: .1em solid;
+    border-bottom: .1em solid;
 }
