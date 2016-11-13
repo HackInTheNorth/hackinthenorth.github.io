@@ -264,19 +264,19 @@ li a {
 
 /*all rules related to sponsors section and further descendants*/
 
-.sponsors-section {
+.spnsrs-section {
     position: static;
     padding: 10vh;
     padding-bottom: 0vh;
     padding-top: 15vh;
 }
 
-.sponsors-section-2 .sub-section-title {
+.spnsrs-section-2 .sub-section-title {
     text-align: center;
     font-size: 4vh;
 }
 
-.sponsors-section-3 {
+.spnsrs-section-3 {
     text-align: center;
 }
 
@@ -295,10 +295,10 @@ li a {
 .jetbrains {
     position: relative;
 }
-.sponsorLink {
+.spnsrLink {
     display: block;
 }
-.sponsorLogo {
+.spnsrLogo {
     position: relative;
     width: 100%;
 }
@@ -320,7 +320,7 @@ li a {
     text-align: center;
 }
 
-.sponsors-section-3,
+.spnsrs-section-3,
 .contact-section-1,
 .contact-section-2,
 .contact-section-3 {
