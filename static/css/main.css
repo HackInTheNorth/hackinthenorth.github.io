@@ -282,24 +282,18 @@ li a {
 
 .hackerearth {
     position: relative;
-    width: 80%;
-    margin: auto;
+    margin-bottom: 40%;
 }
 .restdb {
     position: relative;
-    width: 70%;
-    margin: auto;
-    background-color: #1E92CB;
+    margin-bottom: 45%;
 }
 .codacy {
     position: relative;
-    display: inline-block;
     width: 50%;
 }
 .jetbrains {
     position: relative;
-    display: inline-block;
-    width: 50%;    
 }
 .sponsorLink {
     display: block;
@@ -432,4 +426,10 @@ body {
     font-size: 4em;
     border-top: .1em solid;
     border-bottom: .1em solid;
+}
+
+.four .elem {
+    width: 11vw;
+    display: inline-block;
+    margin: 0 2vw;
 }
