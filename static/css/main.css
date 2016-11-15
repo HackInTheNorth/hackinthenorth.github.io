@@ -162,6 +162,16 @@ li a {
     display: block;
 }
 
+.apply-button {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    color: #333;
+    text-align: center;
+    font-size: 1.2vw;
+    margin-top: 30px;
+}
 .btn1 {
     position: relative;
     display: inline-block;
@@ -412,9 +422,6 @@ footer {
     text-align: justify;
 }
 
-body {
-    margin-top: 35px;
-}
 
 #countdown {
     width: 100%;
