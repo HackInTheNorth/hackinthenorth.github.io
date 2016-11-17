@@ -105,11 +105,11 @@ body{
 
 .landing-section {
     position: static;
-    height: 80vh;
+    height: 90vh;
     padding: 10vh;
-    margin-top: -12vh;
+    margin-top: -5vh;
     padding-bottom: 0vh;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     background-color: #fff;
 }
 
@@ -198,10 +198,11 @@ body{
   display: block;
   width: 100%;
   text-align: center;
-  margin: auto;
+  margin: 5vh auto 0vh auto;
   overflow: hidden;
   font-size: 1.2vw;
   clear:both;
+  /*border:1px solid black;*/
 }
 
 .button {
@@ -276,7 +277,7 @@ body{
   text-align: justify;
   margin-left:5%;
   margin-right:5%;
-  margin-top:12vw;
+  /*margin-top:12vw;*/
 }
 
 #cardframe .card,
@@ -292,12 +293,14 @@ body{
 
 #cardframe .card {
   text-align: left;
-  background: #f2f2f2;
+  /*background: #7FDBFF;*/
   margin-bottom: 2%;
   border-radius: 0.5%;
-  height:20vw;
+  height:50vh;
   text-align: center;
-  padding-top: 2vw;
+  overflow: hidden;
+  position: relative;
+  /*border: 1px solid black;*/
 }
 
 #cardframe .mix{
@@ -305,9 +308,14 @@ body{
 }
 
 .card .card-image{
-    border-radius: 100%;
+    /*border-radius: 50%;*/
     position: relative;
-    height: 10vw;
+    height: 50vh;
+    /*position: absolute;*/
+    /*min-height: 20%;*/
+    /*float: right;*/
+    /*height: auto;*/
+    margin: auto;
 }
 
 .card p{
