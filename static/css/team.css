@@ -111,6 +111,7 @@ body{
     padding-bottom: 0vh;
     margin-bottom: 5vh;
     background-color: #fff;
+    /*border: 1px solid black;*/
 }
 
 .landing-section .centre-box {
@@ -202,7 +203,22 @@ body{
   overflow: hidden;
   font-size: 1.2vw;
   clear:both;
+  margin:auto;
   /*border:1px solid black;*/
+}
+
+#nav_bar{
+    width: 100%;
+    background-color: #fff;
+    /*border: 1px solid blue;*/
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    margin-left: -5vw;
+    /*width: 100%;*/
 }
 
 .button {
@@ -285,6 +301,7 @@ body{
   display: inline-block;
   width: 23.5%;
   margin-left: 1%;
+  height:50vh;
 }
 
 /*
@@ -296,7 +313,7 @@ body{
   /*background: #7FDBFF;*/
   margin-bottom: 2%;
   border-radius: 0.5%;
-  height:50vh;
+/*  height:50vh;*/
   text-align: center;
   overflow: hidden;
   position: relative;
