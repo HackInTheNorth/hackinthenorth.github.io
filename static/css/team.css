@@ -107,7 +107,7 @@ body{
     position: static;
     height: 80vh;
     padding: 10vh;
-    margin-top: -12vh;
+    margin-top: -5vh;
     padding-bottom: 0vh;
     margin-bottom: 10vh;
     background-color: #fff;
@@ -276,7 +276,7 @@ body{
   text-align: justify;
   margin-left:5%;
   margin-right:5%;
-  margin-top:12vw;
+  /*margin-top:12vw;*/
 }
 
 #cardframe .card,
