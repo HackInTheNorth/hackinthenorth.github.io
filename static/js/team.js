@@ -1,6 +1,9 @@
 $(document).ready(function() {
+
+    // Mix It Up Plugin for JQuery
     $('#cardframe').mixItUp();
 
+    
     $(".button").click(function() {
         $('html,body').animate({
                 scrollTop: $("#cardframe").offset().top - 60
@@ -16,6 +19,12 @@ $(document).ready(function() {
         if ($(window).scrollTop() < navBarPosition) {
             $('#nav_bar').removeClass('navbar-fixed');
         }
+    });
+
+
+    // Lazy Load plugin for JQuery
+    $("div.lazy").lazyload({
+        effect : "fadeIn"
     });
 
 });
