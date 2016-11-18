@@ -298,7 +298,33 @@ body{
   width: 23%
   margin-left: 0%;
   height:50vh;
+  /*padding-top: 0;*/
   /*border:1px solid black;*/
+}
+
+.card-overlay{
+  background-color: rgba(0, 31, 63, 0.4);
+  opacity: 0;
+  height:100%;
+  width: 100%;
+  padding-top: 30%;
+  color: #fff;
+  font-size: 2.5em;
+  -webkit-transition: opacity 0.5s;
+}
+
+.card-overlay .card-name{
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  color: #fff;
+  /*border:1px solid black;*/
+  margin-bottom:0vh;
+}
+
+
+.card:hover .card-overlay{
+  opacity: 1;
 }
 
 /*
@@ -314,6 +340,7 @@ body{
   text-align: center;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
   /*border: 1px solid black;*/
 }
 
