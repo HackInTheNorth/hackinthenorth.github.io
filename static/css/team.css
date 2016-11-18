@@ -111,7 +111,6 @@ body{
     padding-bottom: 0vh;
     margin-bottom: 5vh;
     background-color: #fff;
-    /*border: 1px solid black;*/
 }
 
 .landing-section .centre-box {
@@ -204,13 +203,11 @@ body{
   font-size: 1.2vw;
   clear:both;
   margin:auto;
-  /*border:1px solid black;*/
 }
 
 #nav_bar{
     width: 100%;
     background-color: #fff;
-    /*border: 1px solid blue;*/
 }
 
 .navbar-fixed {
@@ -218,7 +215,6 @@ body{
     z-index: 100;
     position: fixed;
     margin-left: -5vw;
-    /*width: 100%;*/
 }
 
 .button {
@@ -299,9 +295,10 @@ body{
 #cardframe .card,
 #cardframe .gap {
   display: inline-block;
-  width: 23.5%;
-  margin-left: 1%;
+  width: 23%
+  margin-left: 0%;
   height:50vh;
+  /*border:1px solid black;*/
 }
 
 /*
@@ -312,7 +309,7 @@ body{
   text-align: left;
   /*background: #7FDBFF;*/
   margin-bottom: 2%;
-  border-radius: 0.5%;
+  border-radius: 1%;
 /*  height:50vh;*/
   text-align: center;
   overflow: hidden;
@@ -346,6 +343,21 @@ body{
    Media Queries
    ========================================================================== */
 
+@media all and (max-width: 2560px){
+  #cardframe .card,
+  #cardframe .gap{
+    width: 23%;
+    margin-left: 1%;
+  }
+}
+
+@media all and (max-width: 1024px){
+  #cardframe .card,
+  #cardframe .gap{
+    width: 32%;
+    margin-left: 0%;
+  }
+}
 
 @media all and (max-width: 979px){
   #cardframe .card,
@@ -364,7 +376,7 @@ body{
 @media all and (max-width: 639px){
   #cardframe .card,
   #cardframe .gap{
-    width: 80%;
+    width: 45%;
   }
 }
 
