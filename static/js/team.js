@@ -10,7 +10,6 @@ $(document).ready(function() {
     var navBar = $('#nav_bar');
     var navBarPosition = navBar.offset().top;
     $(window).scroll(function() {
-        console.log($(window).scrollTop())
         if ($(window).scrollTop() > navBarPosition) {
             $('#nav_bar').addClass('navbar-fixed');
         }
