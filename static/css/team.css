@@ -333,30 +333,21 @@ body{
 
 #cardframe .card {
   text-align: left;
-  /*background: #7FDBFF;*/
   margin-bottom: 2%;
   border-radius: 1%;
-/*  height:50vh;*/
   text-align: center;
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  /*border: 1px solid black;*/
 }
 
 #cardframe .mix{
   display: none;
 }
 
-.card .card-image{
-    /*border-radius: 50%;*/
-    position: relative;
-    height: 50vh;
-    /*position: absolute;*/
-    /*min-height: 20%;*/
-    /*float: right;*/
-    /*height: auto;*/
-    margin: auto;
+div.card.lazy {
+  background-image:url(../images/grey.gif);
+  background-size: cover;
 }
 
 .card p{
