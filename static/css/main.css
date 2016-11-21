@@ -292,7 +292,7 @@ li a {
 
 .hackerearth {
     position: relative;
-    margin-bottom: 40%;
+    /*margin-bottom: 40%;*/
 }
 .restdb {
     position: relative;
@@ -303,6 +303,12 @@ li a {
     width: 50%;
 }
 .jetbrains {
+    position: relative;
+}
+.temboo {
+    position: relative;
+}
+.kpt {
     position: relative;
 }
 .spnsrLink {
