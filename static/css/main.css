@@ -175,7 +175,7 @@ li a {
 .btn1 {
     position: relative;
     display: inline-block;
-    width: 30%;
+    width: 8em;
     border: solid 2px #c22e5e;
 }
 
@@ -192,11 +192,12 @@ li a {
 .btn2 {
     position: relative;
     display: inline-block;
-    border: solid 2px #e13f2a;
+    width: 8em;
+    border: solid 2px #f5a71f;
 }
 
 .btn2:hover {
-    background-color: #e13f2a;
+    background-color: #f5a71f;
     color: white;
 }
 
@@ -204,11 +205,11 @@ li a {
     position: relative;
     display: inline-block;
     width: 30%;
-    border: solid 2px #f5a71f;
+    border: solid 2px #e13f2a;
 }
 
 .btn3:hover {
-    background-color: #f5a71f;
+    background-color: #e13f2a;
     color: white;
 }
 
