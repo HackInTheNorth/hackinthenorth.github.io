@@ -297,11 +297,11 @@ li a {
 }
 .restdb {
     position: relative;
-    margin-bottom: 45%;
+    margin-bottom: 40%;
 }
 .codacy {
     position: relative;
-    width: 50%;
+    width: 75% !important;
 }
 .jetbrains {
     position: relative;
