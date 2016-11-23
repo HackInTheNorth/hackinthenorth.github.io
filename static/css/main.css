@@ -312,6 +312,9 @@ li a {
 .kpt {
     position: relative;
 }
+.codeanywhere {
+    width: 150% !important;
+}
 .spnsrLink {
     display: block;
 }
