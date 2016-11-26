@@ -322,6 +322,15 @@ li a {
     position: relative;
     width: 100%;
 }
+.titlespnsr {
+    position: relative;
+    width: 40%;
+    margin: auto;
+}
+.titlespnsr .logo {
+    position: relative;
+    width: 100%;
+}
 
 #brochure_link1,
 #brochure_link2 {
