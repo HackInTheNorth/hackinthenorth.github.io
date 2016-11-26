@@ -184,8 +184,8 @@ body{
   font-family: "Oswald";
   font-weight: 700;
   font-size: 2em;
-  border-top: .1em solid;
-  border-bottom: .1em solid;
+  /*border-top: .1em solid;*/
+  /*border-bottom: .1em solid;*/
 }
 
 
