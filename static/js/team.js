@@ -1,9 +1,16 @@
 $(document).ready(function() {
 
     // Mix It Up Plugin for JQuery
-    $('#cardframe').mixItUp();
+    var images = $("div.lazy");
+    $('#cardframe').mixItUp({
+        callbacks: {
+            onMixEnd: function() {
+                $("div.lazy").trigger('scroll');
+            }
+        }
+    });
 
-    
+
     $(".button").click(function() {
         $('html,body').animate({
                 scrollTop: $("#cardframe").offset().top - 60
@@ -23,8 +30,8 @@ $(document).ready(function() {
 
 
     // Lazy Load plugin for JQuery
-    $("div.lazy").lazyload({
-        effect : "fadeIn"
+    images.lazyload({
+        effect: "fadeIn"
     });
 
 });
