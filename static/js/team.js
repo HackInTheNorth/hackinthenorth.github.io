@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
     // Mix It Up Plugin for JQuery
-    var images = $("div.lazy");
     $('#cardframe').mixItUp({
         callbacks: {
-            onMixEnd: function() {
-                $("div.lazy").trigger('scroll');
+            onMixEnd: function(state) {
+                //trigger 'scroll' event only on the images shown after current mix
+                state.$show.trigger('scroll');
             }
         }
     });
@@ -30,6 +30,7 @@ $(document).ready(function() {
 
 
     // Lazy Load plugin for JQuery
+    var images = $("div.lazy");
     images.lazyload({
         effect: "fadeIn"
     });
