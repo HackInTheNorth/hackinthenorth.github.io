@@ -1,4 +1,4 @@
-![Hack In The North](https://github.com/HackInTheNorth/hackinthenorth.github.io/raw/master/static/images/logo.png)
+![Hack In The North](static/images/logo-with-gh.png)
 
 ##Contributing
 Feel free to send a pull request that you think makes the website better. We are always open to ideas. Only static files.
