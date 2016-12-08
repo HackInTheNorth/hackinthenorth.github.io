@@ -459,3 +459,21 @@ footer {
     display: inline-block;
     margin: 5vh 2vw;
 }
+
+.platspnsr {
+    position: relative;
+    width: 35% !important;
+    margin: auto;
+}
+.platspnsr .logo {
+    position: relative;
+    width: 100%;
+}
+
+.hackster {
+    margin-bottom: 4vh;
+}
+
+.meteor {
+    margin-bottom: 3vh;
+}
