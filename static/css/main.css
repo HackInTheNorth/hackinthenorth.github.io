@@ -471,9 +471,16 @@ footer {
 }
 
 .hackster {
+    margin-top: 5vh;
     margin-bottom: 4vh;
 }
 
 .meteor {
     margin-bottom: 3vh;
 }
+
+.twilio {
+    margin-bottom: 5vh;
+    margin-left: 5vh;
+}
+
