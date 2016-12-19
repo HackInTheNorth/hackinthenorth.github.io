@@ -347,6 +347,10 @@ li a {
     max-height: 20vh;
 }
 
+.silverSponsor, .platformSponsor {
+    padding-bottom: 2vh;
+} 
+
 .temboo, .gitlab {
     top: -4vh;
 }
