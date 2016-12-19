@@ -290,10 +290,89 @@ li a {
 .spnsrs-section-3 {
     text-align: center;
 }
+/*
+.four .elem {
+    width: 11vw;
+    display: inline-block;
+    margin: 5vh 2vw;
+}
+
+.platspnsr {
+    position: relative;
+    width: 35% !important;
+    margin: auto;
+}
+.platspnsr .logo {
+    position: relative;
+    width: 100%;
+}*/
+
+.four{
+    border: 1px solid black;
+    position: relative;
+}
+.sponsorType h2 {
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid blue;
+    display: table;
+}
+.sponsorType {
+    padding: 1vh;
+}
+.sponsorContainer{
+    border: 1px dotted red;
+    text-align: center;
+    width: 100%;
+}
+.spnsrLink {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid yellow;
+}
+.spnsrLogo {
+    position: relative;
+    width: 100%;
+}
+.titleSponsor .spnsrLink {
+    width: 40%;
+}
+.platinumSponsor .spnsrLink {
+    width: 40%;
+}
+.goldSponsor .spnsrLink {
+    width: 30%;
+}
+.sponsorContainer .sponsorLogo {
+    position: relative;
+    width: 100%;
+}   
+
+/*.hackster {
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+}
+
+.meteor {
+    margin-bottom: 3vh;
+}
+
+.twilio {
+    margin-bottom: 5vh;
+    margin-left: 5vh;
+}
+
+.skillshare{
+    position: relative;
+}
+
+.namecheap {
+    margin-bottom: -3vh;
+}
 
 .hackerearth {
     position: relative;
-    /*margin-bottom: 40%;*/
 }
 .restdb {
     position: relative;
@@ -314,23 +393,8 @@ li a {
 }
 .codeanywhere {
     width: 150% !important;
-}
-.spnsrLink {
-    display: block;
-}
-.spnsrLogo {
-    position: relative;
-    width: 100%;
-}
-.titlespnsr {
-    position: relative;
-    width: 40%;
-    margin: auto;
-}
-.titlespnsr .logo {
-    position: relative;
-    width: 100%;
-}
+}*/
+
 
 #brochure_link1,
 #brochure_link2 {
@@ -441,53 +505,3 @@ footer {
     text-align: justify;
 }
 
-
-#countdown {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    color: #3d3d3d;
-    font-family: "Oswald";
-    font-weight: 700;
-    font-size: 4em;
-    border-top: .1em solid;
-    border-bottom: .1em solid;
-}
-
-.four .elem {
-    width: 11vw;
-    display: inline-block;
-    margin: 5vh 2vw;
-}
-
-.platspnsr {
-    position: relative;
-    width: 35% !important;
-    margin: auto;
-}
-.platspnsr .logo {
-    position: relative;
-    width: 100%;
-}
-
-.hackster {
-    margin-top: 5vh;
-    margin-bottom: 4vh;
-}
-
-.meteor {
-    margin-bottom: 3vh;
-}
-
-.twilio {
-    margin-bottom: 5vh;
-    margin-left: 5vh;
-}
-
-.skillshare{
-    position: relative;
-}
-
-.namecheap {
-    margin-bottom: -3vh;
-}
