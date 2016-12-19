@@ -325,19 +325,13 @@ li a {
     position: relative;
     width: 100%;
 }
-.titleSponsor .spnsrLink {
+.titleSponsor .spnsrLink, .platinumSponsor .spnsrLink {
     width: 40%;
 }
-.platinumSponsor .spnsrLink {
-    width: 40%;
-}
-.goldSponsor .spnsrLink {
+.goldSponsor .spnsrLink, .silverSponsor .spnsrLink {
     width: 30%;
 }
-.silverSponsor .spnsrLink {
-    width: 30%;
-}
-.platformSponsor .spnsrLink {
+.platformSponsor .spnsrLink, .mediaPartner .sponsorLink {
     margin-top: 5vh;
     width: 30%;
 }
