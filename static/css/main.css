@@ -290,38 +290,27 @@ li a {
 .spnsrs-section-3 {
     text-align: center;
 }
-/*
-.four .elem {
-    width: 11vw;
-    display: inline-block;
-    margin: 5vh 2vw;
-}
-
-.platspnsr {
-    position: relative;
-    width: 35% !important;
-    margin: auto;
-}
-.platspnsr .logo {
-    position: relative;
-    width: 100%;
-}*/
 
 .four{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+    margin-bottom: 6vh;
     position: relative;
 }
 .sponsorType h2 {
     margin: 0 auto;
     position: relative;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     display: table;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: #c22e5e;
 }
 .sponsorType {
-    padding: 1vh;
+    /*padding: 1vh;*/
+    /*margin-bottom: 2vh;*/
 }
 .sponsorContainer{
-    border: 1px dotted red;
+    /*border: 1px dotted red;*/
     text-align: center;
     width: 100%;
 }
@@ -329,7 +318,8 @@ li a {
     display: inline-block;
     margin: 0 auto;
     position: relative;
-    border: 1px solid yellow;
+    /*border: 1px solid yellow;*/
+    max-height: 20vh;
 }
 .spnsrLogo {
     position: relative;
@@ -344,57 +334,33 @@ li a {
 .goldSponsor .spnsrLink {
     width: 30%;
 }
+.silverSponsor .spnsrLink {
+    width: 30%;
+}
+.platformSponsor .spnsrLink {
+    margin-top: 5vh;
+    width: 30%;
+}
+.patronSponsor .spnsrLink {
+    width: 20%;
+    margin-top: 8vh;
+    margin-left: 2vw; 
+    /*border: 1px solid black;*/
+}
 .sponsorContainer .sponsorLogo {
     position: relative;
-    width: 100%;
-}   
-
-/*.hackster {
-    margin-top: 5vh;
-    margin-bottom: 4vh;
+    max-width: 100%;
+    max-height: 20vh;
+    /*border:1px solid black;*/
 }
 
-.meteor {
-    margin-bottom: 3vh;
-}
 
-.twilio {
-    margin-bottom: 5vh;
-    margin-left: 5vh;
-}
 
-.skillshare{
-    position: relative;
+.patronSponsor .sponsorLogo{
+    max-height: 15vh;
+    /*border: 1px solid blue;*/
+    /*margin-bottom: 2vh;*/
 }
-
-.namecheap {
-    margin-bottom: -3vh;
-}
-
-.hackerearth {
-    position: relative;
-}
-.restdb {
-    position: relative;
-    margin-bottom: 40%;
-}
-.codacy {
-    position: relative;
-    width: 75% !important;
-}
-.jetbrains {
-    position: relative;
-}
-.temboo {
-    position: relative;
-}
-.kpt {
-    position: relative;
-}
-.codeanywhere {
-    width: 150% !important;
-}*/
-
 
 #brochure_link1,
 #brochure_link2 {
