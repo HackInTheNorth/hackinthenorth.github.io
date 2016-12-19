@@ -291,45 +291,69 @@ li a {
     text-align: center;
 }
 
-.hackerearth {
-    position: relative;
-    /*margin-bottom: 40%;*/
-}
-.restdb {
-    position: relative;
-    margin-bottom: 40%;
-}
-.codacy {
-    position: relative;
-    width: 75% !important;
-}
-.jetbrains {
+.four{
+    /*border: 1px solid black;*/
+    margin-bottom: 6vh;
     position: relative;
 }
-.temboo {
+.sponsorType h2 {
+    margin: 0 auto;
     position: relative;
+    /*border: 1px solid blue;*/
+    display: table;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: #c22e5e;
 }
-.kpt {
-    position: relative;
+.sponsorType {
+    /*padding: 1vh;*/
+    /*margin-bottom: 2vh;*/
 }
-.codeanywhere {
-    width: 150% !important;
+.sponsorContainer{
+    /*border: 1px dotted red;*/
+    text-align: center;
+    width: 100%;
 }
 .spnsrLink {
-    display: block;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    /*border: 1px solid yellow;*/
+    max-height: 20vh;
 }
 .spnsrLogo {
     position: relative;
     width: 100%;
 }
-.titlespnsr {
-    position: relative;
+.titleSponsor .spnsrLink, .platinumSponsor .spnsrLink {
     width: 40%;
-    margin: auto;
 }
-.titlespnsr .logo {
+.goldSponsor .spnsrLink, .silverSponsor .spnsrLink {
+    width: 30%;
+}
+.platformSponsor .spnsrLink, .mediaPartner .sponsorLink {
+    margin-top: 5vh;
+    width: 30%;
+}
+.patronSponsor .spnsrLink {
+    width: 20%;
+    margin-top: 8vh;
+    margin-left: 2vw; 
+    /*border: 1px solid black;*/
+}
+.sponsorContainer .sponsorLogo {
     position: relative;
-    width: 100%;
+    max-width: 100%;
+    max-height: 20vh;
+    /*border:1px solid black;*/
+}
+
+
+
+.patronSponsor .sponsorLogo{
+    max-height: 15vh;
+    /*border: 1px solid blue;*/
+    /*margin-bottom: 2vh;*/
 }
 
 #brochure_link1,
@@ -441,53 +465,3 @@ footer {
     text-align: justify;
 }
 
-
-#countdown {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    color: #3d3d3d;
-    font-family: "Oswald";
-    font-weight: 700;
-    font-size: 4em;
-    border-top: .1em solid;
-    border-bottom: .1em solid;
-}
-
-.four .elem {
-    width: 11vw;
-    display: inline-block;
-    margin: 5vh 2vw;
-}
-
-.platspnsr {
-    position: relative;
-    width: 35% !important;
-    margin: auto;
-}
-.platspnsr .logo {
-    position: relative;
-    width: 100%;
-}
-
-.hackster {
-    margin-top: 5vh;
-    margin-bottom: 4vh;
-}
-
-.meteor {
-    margin-bottom: 3vh;
-}
-
-.twilio {
-    margin-bottom: 5vh;
-    margin-left: 5vh;
-}
-
-.skillshare{
-    position: relative;
-}
-
-.namecheap {
-    margin-bottom: -3vh;
-}
