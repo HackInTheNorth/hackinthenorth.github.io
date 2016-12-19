@@ -292,68 +292,84 @@ li a {
 }
 
 .four{
-    /*border: 1px solid black;*/
     margin-bottom: 6vh;
     position: relative;
 }
+
 .sponsorType h2 {
     margin: 0 auto;
     position: relative;
-    /*border: 1px solid blue;*/
     display: table;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
-    color: #c22e5e;
+    color: #85144b;
 }
-.sponsorType {
-    /*padding: 1vh;*/
-    /*margin-bottom: 2vh;*/
-}
+
 .sponsorContainer{
-    /*border: 1px dotted red;*/
     text-align: center;
     width: 100%;
 }
+
 .spnsrLink {
     display: inline-block;
     margin: 0 auto;
     position: relative;
-    /*border: 1px solid yellow;*/
     max-height: 20vh;
 }
+
 .spnsrLogo {
     position: relative;
     width: 100%;
 }
+
 .titleSponsor .spnsrLink, .platinumSponsor .spnsrLink {
     width: 40%;
 }
+
 .goldSponsor .spnsrLink, .silverSponsor .spnsrLink {
     width: 30%;
 }
+
 .platformSponsor .spnsrLink, .mediaPartner .sponsorLink {
     margin-top: 5vh;
     width: 30%;
 }
+
 .patronSponsor .spnsrLink {
     width: 20%;
     margin-top: 8vh;
     margin-left: 2vw; 
-    /*border: 1px solid black;*/
 }
+
 .sponsorContainer .sponsorLogo {
     position: relative;
     max-width: 100%;
     max-height: 20vh;
-    /*border:1px solid black;*/
 }
 
+.temboo, .gitlab {
+    top: -4vh;
+}
 
+.twilio {
+    top: -3vh;
+}
+
+.npm {
+    top: 1vh;
+}
+
+.meteor {
+    top: 1vh;
+}
+
+.jetbrains .sponsorLogo{
+    max-height: 30vh;
+    zoom : 1.3;
+}
 
 .patronSponsor .sponsorLogo{
     max-height: 15vh;
-    /*border: 1px solid blue;*/
-    /*margin-bottom: 2vh;*/
 }
 
 #brochure_link1,
