@@ -376,6 +376,12 @@ li a {
     max-height: 15vh;
 }
 
+#zulip {
+    color: #666;
+    font-size: 25px;
+    font-weight: 600;
+}
+
 #brochure_link1,
 #brochure_link2 {
     max-width: 30vh;
