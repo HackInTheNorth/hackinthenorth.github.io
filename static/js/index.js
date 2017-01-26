@@ -10,6 +10,8 @@ function scrollTo() {
 }
 
 $(document).ready(function() {
+    var currentURL = location.href;
+    
     var sections = $('.section'),
         nav = $('nav'),
         nav_height = nav.outerHeight(),
