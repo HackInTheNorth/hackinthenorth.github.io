@@ -4,12 +4,12 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="static/js/jquery.js"></script>
-    <script src="static/js/jquery.modal.js"></script>
     <script src="static/js/index.js"></script>
+    <script src="static/js/jquery.magnific-popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/magnific-popup.css">
     <link rel="stylesheet" type="text/css" href="static/css/typicons.css">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
     <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="static/css/jquery.modal.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="icon" href="static/images/favicon.jpg">
     <title>Hack In The North 2.0 - India's Biggest Student Hackathon</title>
@@ -66,54 +66,15 @@
                     Apply
                 </a>
                 </div>
-                <!-- <div class="button btn1">
-                    <a href="#modal1" rel="modal:open">
-                        Subscribe for latest updates
+                <div id="trailer-button" class="button btn3">
+                    <a id="trailer-button" href="#trailer">
+                    Play trailer
                     </a>
-                </div> -->
-                <div class="button btn3">
-                    <a href="#modal2" rel="modal:open">
-                    Become a college ambassador
-                </a>
                 </div>
                 <div class="button btn2">
                     <a id="sponsor-link2" href="#sponsors">
                     Sponsor Us
-                </a>
-                </div>
-            </div>
-            <!-- <div class="apply-button ">
-                <div class="button btn3">
-                    <a href="#modal2" rel="modal:open">
-                    Become a college ambassador
-                </a>
-                </div>
-            </div> -->
-            <div id="modal2" class="modal" style="display: none">
-                <div class="modal-header">
-                    <h2>Apply for College Ambassador Program</h2>
-                </div>
-                <div class="modal-body">
-                    <!-- Change the width and height values to suit you best -->
-                    <div class="typeform-widget" data-url="https://hackinthenorth1.typeform.com/to/Aw0tM2" data-text="Campus Ambassador HITN 2.0" style="width:100%;height:100vh;"></div>
-                    <script>
-                    (function() {
-                        var qs, js, q, s, d = document,
-                            gi = d.getElementById,
-                            ce = d.createElement,
-                            gt = d.getElementsByTagName,
-                            id = 'typef_orm',
-                            b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
-                        if (!gi.call(d, id)) {
-                            js = ce.call(d, 'script');
-                            js.id = id;
-                            js.src = b + 'widget.js';
-                            q = gt.call(d, 'script')[0];
-                            q.parentNode.insertBefore(js, q)
-                        }
-                    })()
-                    </script>
-                    <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by<a href="https://www.typeform.com/examples/?utm_campaign=Aw0tM2&amp;utm_source=typeform.com-5096595-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a></div>
+                    </a>
                 </div>
             </div>
             <!-- Subscribe Box Ends -->
@@ -126,8 +87,7 @@
         </div>
         <div class="sub-section about-section-1">
             <div class="sub-section-content justify-text">
-                <p>Hack In The North is the biggest student held hackathon in India. 300 students from all across India will come together in IIIT Allahabad this March and spend 36 hours building projects they are passionate about. 
-                Hack In The North is open for university and high school students.
+                <p>Hack In The North is the biggest student held hackathon in India. 300 students from all across India will come together in IIIT Allahabad this March and spend 36 hours building projects they are passionate about. Hack In The North is open for university and high school students.
                 </p>
             </div>
         </div>
@@ -264,7 +224,7 @@
                 <div class="sponsorContainer ">
                     <a class="spnsrLink" href="https://github.com/" target="_blank" title="Go to github.com">
                         <img class="sponsorLogo" src="static/images/sponsors/github.png">
-                    </a>             
+                    </a>
                 </div>
             </div>
             <div class="four platinumSponsor">
@@ -275,7 +235,7 @@
                     <a class="spnsrLink" href="https://www.hackster.io/" title="Go to hackster.io">
                         <img class="sponsorLogo" src="static/images/sponsors/hackster.png">
                     </a>
-                </div>                
+                </div>
             </div>
             <div class="four goldSponsor">
                 <div class="sponsorType">
@@ -288,9 +248,8 @@
                     <a class="spnsrLink" href="#" title="KPT's next Gen e solution">
                         <img class="sponsorLogo" src="static/images/sponsors/KPT.jpg">
                     </a>
-                </div>                
+                </div>
             </div>
-
             <div class="four silverSponsor">
                 <div class="sponsorType">
                     <h2>SILVER</h2>
@@ -301,7 +260,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="four">
                 <div class="sponsorType">
                     <h2>CHAT</h2>
@@ -313,7 +271,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="four platformSponsor">
                 <div class="sponsorType">
                     <h2>PLATFORM</h2>
@@ -324,7 +281,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="four">
                 <div class="sponsorType">
                     <h2>CLOUD PARTNER</h2>
@@ -335,7 +291,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="four patronSponsor">
                 <div class="sponsorType">
                     <h2>PATRONS</h2>
@@ -355,7 +310,7 @@
                     </a>
                     <a class="spnsrLink" href="https://www.skillshare.com/" target="_blank" title="Go to official website of Skillshare">
                         <img class="sponsorLogo" src="static/images/sponsors/skillshare.svg">
-                    </a> 
+                    </a>
                     <a class="spnsrLink npm" href="https://www.npmjs.com/" target="_blank" title="Go to official website of NPM">
                         <img class="sponsorLogo" src="static/images/sponsors/npm.png">
                     </a>
@@ -381,9 +336,8 @@
                     <a class="spnsrLink">
                         <img class="sponsorLogo" src="">
                     </a>
-
                 </div>
-            </div> 
+            </div>
         </div>
         <div class="sub-section spnsrs-section-3">
             <div class="sub-section-content">
@@ -461,14 +415,10 @@
             <p>
                 Brought with
                 <img id="love-icon" src="static/images/love-emoji.png">to you by
+                <a href="team.html" class="dotted-underline">Team Hack In The North!</a>
             </p>
-            <div id="team-link" class="parallelogram">
-                <div class="reverse-parallelogram">
-                    <a href="team.html">Team Hack In The North!</a>
-                </div>
-            </div>
         </div>
-        <a target="_blank" class="dotted-underline" href="https://hackcodeofconduct.org/371-hack_in_the_north_2017">Code of Conduct</a> | Copyright &copy;<a class="dotted-underline" href="team.html">Team Hack In The North</a> 2016-17
+        <a target="_blank" class="dotted-underline" href="https://hackcodeofconduct.org/371-hack_in_the_north_2017">Code of Conduct</a> | Copyright &copy;<a class="dotted-underline" href="https://github.com/HackInTheNorth">Team Hack In The North</a> 2016-17
     </footer>
 </body>
 

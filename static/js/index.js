@@ -10,8 +10,8 @@ function scrollTo() {
 }
 
 $(document).ready(function() {
-//     var currentURL = location.href;
-    
+    //     var currentURL = location.href;
+
     var sections = $('.section'),
         nav = $('nav'),
         nav_height = nav.outerHeight(),
@@ -38,7 +38,7 @@ $(document).ready(function() {
 
     });
 
-
+    /*update active link on basis of section in current viewport*/
     $(window).on('scroll', function() {
         var cur_pos = $(this).scrollTop();
 
@@ -58,7 +58,17 @@ $(document).ready(function() {
             }
         });
     });
+
+    /*scroll to section on click*/
     nav.find('a').on('click', scrollTo);
     sponsorsSecondLink.on('click', scrollTo);
-    // $('.subscribe-box btn1').on('click', )
+
+    /*play trailer on click*/
+    $("#trailer-button").magnificPopup({
+        items: {
+            src: 'https://drive.google.com/file/d/0B7IJhC8PF-c9RzFLRjZkYXVsdkE/preview?autoplay=1'
+        },
+        type: 'iframe'
+    });
+
 });
