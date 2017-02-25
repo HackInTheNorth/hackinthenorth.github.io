@@ -61,8 +61,7 @@ $(document).ready(function() {
 
     /*scroll to section on click*/
     nav.find('a').on('click', scrollTo);
-    sponsorsSecondLink.on('click', scrollTo);
-
+    
     /*play trailer on click*/
     $("#trailer-button").magnificPopup({
         items: {
