@@ -21,6 +21,7 @@
   "dependencies": {
     "jquery": "^3.1.1",
     "jquery-modal": "file:node_modules\\jquery-modal",
+    "purecss": "^0.6.2",
     "typicons.font": "^2.0.8"
   }
 }
