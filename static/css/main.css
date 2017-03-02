@@ -241,7 +241,7 @@ li a {
     margin: auto;
     margin-top: 7vh;
     font-size: 1.3vw;
-}
+  }
 
 
 /*all rules related to faq section and further descendants*/
@@ -330,7 +330,7 @@ li a {
     width: 30%;
 }
 
-.platformSponsor .spnsrLink {
+.domainSponsor .spnsrLink {
     margin-top: 5vh;
     width: 30%;
 }
