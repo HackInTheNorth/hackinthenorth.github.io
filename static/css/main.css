@@ -364,13 +364,18 @@ li a {
     top: 1vh;
 }
 
+.skillshare {
+    top: -4vh;
+}
+
 .meteor {
-    top: 1vh;
+    top: 0.5vh;
 }
 
 .jetbrains .sponsorLogo{
     max-height: 30vh;
     zoom : 1.3;
+    top: 1vh;
 }
 
 .patronSponsor .sponsorLogo{
