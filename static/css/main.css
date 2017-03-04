@@ -351,9 +351,10 @@ li a {
     padding-bottom: 2vh;
 } 
 
-.temboo, .gitlab {
+.temboo {
     top: -4vh;
 }
+
 
 .twilio {
     top: -3vh;
