@@ -382,6 +382,11 @@ li a {
     max-height: 15vh;
 }
 
+.machineLearningPartner {
+    margin-top: 2vh;
+}
+
+
 #zulip {
     color: #666;
     font-size: 25px;
