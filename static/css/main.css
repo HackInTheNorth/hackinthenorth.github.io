@@ -585,10 +585,12 @@ footer {
 		padding:10px;
 	}
 	p{
-		font-size:4em;
+		font-size:3em;
 	}
 	footer{
-		padding:5px;
+		padding:10px;
+		margin:0px;
+		font-size:0.7em;	
 	}
 	.answer p{
 		margin:0px;
