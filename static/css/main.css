@@ -507,3 +507,95 @@ footer {
     text-align: justify;
 }
 
+
+@media only screen and (max-width: 767px) {
+    .nav-bar{
+		width:100%;
+		font-size:0.75em;
+		padding:0px;
+	}
+	.active{
+		font-size:1em;	
+	}
+	.landing-section{
+		height:80vh;
+		padding:0px;
+		padding-top:20vh;
+	}
+	.about-section{
+		height:90vh;
+		padding:0px;
+		padding-top:10vh;
+	}
+	.faq-section{
+		padding:0px;
+		padding-top:10vh;
+	}
+	.spnsrs-section{
+		padding:0px;
+		padding-top:10vh;
+	}
+	.contact-section{
+		padding:0px;
+		padding-top:10vh;
+	}
+	.sponsorType{
+		font-size:2em;
+	}
+	.faq-content{
+		width:100%;
+		margin:0px;
+	}
+	.footer-content{
+		width:100%;
+		margin:0px;
+	}
+	.footer-content p{
+		font-size:1em;
+	}
+	.sub-section{
+		width:90%;
+		margin:auto;
+	}
+	
+	.contact-section-1,.contact-section-2,.contact-section-3{
+			margin-top:15px;
+	}
+	.contacts{
+		font-size:3em;
+	}
+	.parallelogram,.reverse-parallelogram{
+		transform:none;
+		margin:0px;
+	}
+	.landing-section .centre-box{
+		width:90%;
+		margin:auto;
+	}
+	.location-date{
+		font-size:1em;
+	}
+	.button{
+		width:80%;
+		margin:auto;
+		margin-top:10px;
+		font-size:3em;
+	}
+	li a{
+		padding:10px;
+	}
+	p{
+		font-size:4em;
+	}
+	footer{
+		padding:5px;
+	}
+	.answer p{
+		margin:0px;
+	}
+	.temp p{
+		margin-top:50px;
+	}
+
+	
+}
