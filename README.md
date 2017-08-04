@@ -1,9 +1,9 @@
-![Hack In The North](static/images/logo-with-gh.png)
+![Hack In The North](static/images/logo.png)
 
-##Contributing
+## Contributing
 Feel free to send a pull request that you think makes the website better. We are always open to ideas. Only static files.
 
-##How to run the website
+## How to run the website
 ```bash
 git clone https://github.com/HackInTheNorth/HackInTheNorth.github.io
 cd HackInTheNorth.github.io
