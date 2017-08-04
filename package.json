@@ -1,7 +1,7 @@
 {
   "name": "hack_in_the_north",
-  "version": "2.0.0",
-  "description": "Website for hack in the north version 2",
+  "version": "3.0.0",
+  "description": "Website for hack in the north version 3",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
