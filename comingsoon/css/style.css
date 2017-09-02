@@ -141,6 +141,23 @@
     filter: hue-rotate(360deg);
   }
 }
+
+#hero h1{
+  font-family: 'Montserrat', sans-serif;
+}
+
+body a {
+  color: #fff;
+}
+
+body a:hover {
+  color: #DDDDDD;
+}
+
+.hackathon h {
+    font-size: 4em;
+}
+
 #hero:before {
   content: '';
   position: fixed;
@@ -152,20 +169,6 @@
   opacity: .6;
 }
 
-.hackaton {
-display: inline-block;
-font-family: arial;
-position: relative;
-}
-
-.hackathon h1 {
-position: relative;
-margin: 0 0 0;
-color: #fff;
-z-index: 2;
-font-size: 6em;
-}
-
 .bubbles {
 display: inline-block;
 font-family: arial;
@@ -174,11 +177,8 @@ position: relative;
 
 .bubbles h1 {
 position: relative;
-margin: 2em 0 0.3em;
-margin-left: -200px;
 color: #fff;
 z-index: 2;
-font-size: 6em;
 }
 
 .individual-bubble {
