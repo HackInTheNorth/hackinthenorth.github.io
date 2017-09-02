@@ -1,4 +1,5 @@
 /* HackRU Fall 2017 Custom Stylesheet */
+
 .button {
   -webkit-font-smoothing: antialiased;
   background-color: #222;
@@ -15,14 +16,15 @@
           user-select: none;
   letter-spacing: 1px;
   color: white;
+  left: 10%;
   padding: 20px 40px;
   text-transform: uppercase;
   -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
 }
 .button:hover {
-  background-color: #90feb5;
-  color: #fff;
+  background-color: #fff;
+  color: black;
 }
 .button:active {
   -webkit-transform: scale(0.95);
@@ -38,10 +40,12 @@
   background: none;
 }
 .button--bubble:hover + .button--bubble__effect-container .circle {
-  background: #44fd82;
+  background: #fff;
+  color: black;
 }
 .button--bubble:hover + .button--bubble__effect-container .button {
-  background: #44fd82;
+  background: #fff;
+  color: black;
 }
 .button--bubble:active + .button--bubble__effect-container {
   -webkit-transform: scale(0.95);
@@ -68,10 +72,10 @@
 .button--bubble__effect-container {
   position: absolute;
   display: block;
-  width: 200%;
+  width: 190%;
   height: 400%;
   top: -150%;
-  left: -50%;
+  left: -35%;
   -webkit-filter: url("#goo");
   filter: url("#goo");
   -webkit-transition: all 0.1s ease-out;
@@ -139,10 +143,10 @@
 }
 #hero:before {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  bottom: 96px;
+  bottom: 0;
   left: 0;
   background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
   opacity: .6;
@@ -156,7 +160,7 @@ position: relative;
 
 .hackathon h1 {
 position: relative;
-margin: 1.2em 0 0.4em;
+margin: 0 0 0;
 color: #fff;
 z-index: 2;
 font-size: 6em;
@@ -170,7 +174,7 @@ position: relative;
 
 .bubbles h1 {
 position: relative;
-margin: 1.5em 0 0.3em;
+margin: 2em 0 0.3em;
 margin-left: -200px;
 color: #fff;
 z-index: 2;
@@ -221,8 +225,20 @@ z-index: 1;
   .text-justify-xs {
     text-align: justify; } 
 
+    .hackathon {
+      margin: 3em 0 0;
+    }
+
+    .hackathon h1 {
+  font-size: 4em;
+}
+
     .bubbles h1 {
   font-size: 4em;
+  left: 20%;
+}
+.svgbutton {
+  left: -20%;
 }
   }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -241,8 +257,20 @@ z-index: 1;
   .text-justify-sm {
     text-align: justify; }
 
+    .hackathon {
+      margin: 3em 0 0;
+    }
+
+    .hackathon h1 {
+  font-size: 4em;
+}
+
     .bubbles h1 {
-  font-size: 6em;
+  font-size: 4em;
+  left: 20%;
+}
+.svgbutton {
+  left: -10%;
 }
      }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -260,8 +288,21 @@ z-index: 1;
 
   .text-justify-md {
     text-align: justify; } 
-.bubbles h1 {
-  font-size: 6em;
+  
+  .hackathon {
+      margin: 3em 0 0;
+    }
+
+    .hackathon h1 {
+  font-size: 4em;
+}
+
+    .bubbles h1 {
+  font-size: 4em;
+  left: 20%;
+}
+.svgbutton {
+  left: -10%;
 }
   }
 @media (min-width: 1200px) {
@@ -278,7 +319,34 @@ z-index: 1;
     text-align: right; }
 
   .text-justify-lg {
-    text-align: justify; } }
+    text-align: justify; } 
+  
+  .svgbutton {
+  left: -5%;
+}
+  }
+
+@media (min-width: 1500px) {
+  .text-left-not-lg, .text-center-not-lg, .text-right-not-lg, .text-justify-not-lg {
+    text-align: inherit; }
+
+  .text-left-lg {
+    text-align: left; }
+
+  .text-center-lg {
+    text-align: center; }
+
+  .text-right-lg {
+    text-align: right; }
+
+  .text-justify-lg {
+    text-align: justify; } 
+  
+  .svgbutton {
+  left: -3%;
+}
+  }
+
 html, body {
   overflow-x: hidden; }
 
@@ -459,7 +527,8 @@ a {
 
 .footer {
   height: 10vh;
-  margin-top: -96px;
+  margin-top: 50px;
+  margin-bottom: 25px;
   color: #DC2430;
   background-color: white; }
   .footer .text-vcenter {
