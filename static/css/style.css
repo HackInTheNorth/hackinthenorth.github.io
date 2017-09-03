@@ -154,10 +154,23 @@ body a:hover {
   color: #DDDDDD;
 }
 
-.hackathon h {
+
+
+@media all and (max-width: 1200px) { /* screen size until 1200px */
+    .hackathon h {
     font-size: 4em;
 }
-
+}
+@media all and (max-width: 1000px) { /* screen size until 1000px */
+    .hackathon h {
+    font-size: 3em;
+}
+}
+@media all and (max-width: 500px) { /* screen size until 500px */
+    .hackathon h {
+    font-size: 2em;
+}
+}
 #hero:before {
   content: '';
   position: fixed;
@@ -225,16 +238,13 @@ z-index: 1;
   .text-justify-xs {
     text-align: justify; } 
 
-    .hackathon {
-      margin: 3em 0 0;
-    }
 
     .hackathon h1 {
-  font-size: 4em;
+  /*font-size: 2em;*/
 }
 
     .bubbles h1 {
-  font-size: 4em;
+  /*font-size: 2em;*/
   left: 20%;
 }
 .svgbutton {
@@ -257,16 +267,12 @@ z-index: 1;
   .text-justify-sm {
     text-align: justify; }
 
-    .hackathon {
-      margin: 3em 0 0;
-    }
-
     .hackathon h1 {
-  font-size: 4em;
+  /*font-size: 4em;*/
 }
 
     .bubbles h1 {
-  font-size: 4em;
+  /*font-size: 4em;*/
   left: 20%;
 }
 .svgbutton {
@@ -289,16 +295,12 @@ z-index: 1;
   .text-justify-md {
     text-align: justify; } 
   
-  .hackathon {
-      margin: 3em 0 0;
-    }
-
     .hackathon h1 {
-  font-size: 4em;
+  /*font-size: 4em;*/
 }
 
     .bubbles h1 {
-  font-size: 4em;
+  /*font-size: 4em;*/
   left: 20%;
 }
 .svgbutton {
@@ -386,7 +388,9 @@ html, body {
 
 .bg-splash, #hero {
   background-image: url(../assets/hintbg.jpeg);
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;  
+}
 
 a {
   color: #7B4397; }
@@ -480,43 +484,6 @@ a {
 #hero-img {
   max-width: 90%;
   max-height: 450px; }
-
-.about-icon {
-  width: 90%; }
-
-.about-map {
-  overflow: hidden;
-  height: 100%;
-  border-radius: 5px; }
-
-.about-map-container {
-  padding: 3px;
-  height: 250px;
-  border-radius: 5px; }
-
-.sched-event {
-  color: white;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  font-size: 115%; }
-  .sched-event .sched-time {
-    text-align: center;
-    display: inline-block;
-    width: 125px;
-    color: inherit;
-    padding: 6px 12px;
-    border: 1px solid;
-    border-radius: 5px; }
-  .sched-event .sched-desc {
-    display: inline-block;
-    color: inherit;
-    padding: 6px 12px; }
-
-.faq-a {
-  margin-bottom: 30px; }
-
-.spons-level {
-  text-align: center; }
 
 .splogo {
   width: 100%; }
