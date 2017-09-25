@@ -1,5 +1,7 @@
 /* HackRU Fall 2017 Custom Stylesheet */
-
+img {
+  max-height: 15vh;
+}
 .button {
   -webkit-font-smoothing: antialiased;
   background-color: #222;
