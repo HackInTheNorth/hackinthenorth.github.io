@@ -1,3 +1,11 @@
+.offmargin {
+  margin-top: 2em;
+}
+img.spongrid{
+  max-height: 15vh;
+  min-height: 15vh;
+  max-width: 100%;
+}
 .button {
   -webkit-font-smoothing: antialiased;
   background-color: #222;
