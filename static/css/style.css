@@ -1,5 +1,11 @@
-/* HackRU Fall 2017 Custom Stylesheet */
-
+.offmargin {
+  margin-top: 2em;
+}
+img.spongrid{
+  max-height: 15vh;
+  min-height: 15vh;
+  max-width: 100%;
+}
 .button {
   -webkit-font-smoothing: antialiased;
   background-color: #222;
@@ -240,11 +246,9 @@ z-index: 1;
 
 
     .hackathon h1 {
-  /*font-size: 2em;*/
 }
 
     .bubbles h1 {
-  /*font-size: 2em;*/
   left: 20%;
 }
 .svgbutton {
@@ -268,11 +272,9 @@ z-index: 1;
     text-align: justify; }
 
     .hackathon h1 {
-  /*font-size: 4em;*/
 }
 
     .bubbles h1 {
-  /*font-size: 4em;*/
   left: 20%;
 }
 .svgbutton {
@@ -296,11 +298,9 @@ z-index: 1;
     text-align: justify; } 
   
     .hackathon h1 {
-  /*font-size: 4em;*/
 }
 
     .bubbles h1 {
-  /*font-size: 4em;*/
   left: 20%;
 }
 .svgbutton {
@@ -587,5 +587,3 @@ a {
 .message {
   border: #DC2430 solid 1px;
   padding: 20px; }
-
-/*# sourceMappingURL=style.css.map */
