@@ -3,7 +3,7 @@
 }
 img.spongrid{
   max-height: 15vh;
-  min-height: 15vh;
+  min-height: 10vh;
   max-width: 100%;
 }
 .button {
