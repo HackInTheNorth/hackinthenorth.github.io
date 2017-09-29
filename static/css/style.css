@@ -339,12 +339,6 @@ z-index: 1;
 }
   }
 
-#hero {
-  background:linear-gradient(to bottom right, rgba(0,47,75,0.6),rgba(220,66,37,0.6)),url(../assets/hintbg.jpeg);
-  background-size: cover;
-  background-position: center;  
-}
-
 .full-height {
   height: 100vh; }
 
@@ -356,32 +350,6 @@ z-index: 1;
 
 .min-quarter-height {
   min-height: 25vh; }
-
-.bold-text, .btn, .row-title-box .row-title, .faq-q, .spons-level, .splogo-text, .footer a, .li-nav-bar .nav-item:hover .nav-link, .li-section-title-box .li-section-title, .social-link-card p, .li-footer a, .li-mobile-footer a {
-  font-family: "Circular Std Bold", sans-serif; }
-
-*, input, select {
-  font-family: "Circular Std Book", sans-serif; }
-
-.row-title-box {
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 30px; }
-  .row-title-box .row-title {
-    color: inherit;
-    margin: 0;
-    padding: 10px 20px;
-    display: inline-block;
-    border: 1px solid;
-    border-radius: 10px; }
-
-.row-content-box {
-  color: black; }
-
-#hero {
-  background-size: cover;
-  color: white;
-  overflow: hidden; }
 
 .navbar-toggler:focus {
   outline: none; }
@@ -399,10 +367,49 @@ z-index: 1;
     vertical-align: middle;
     margin: 0; }
   #nav-bar .nav-bar-logo {
-    width: 75%; }
+    width: 75%; } 
+
+/*************************************** LANDING SECTION STYLING *************************/
+
+#hero {
+  background-size: cover;
+  color: white;
+  overflow: hidden; }
+
+#hero {
+  background:linear-gradient(to bottom right, rgba(0,47,75,0.6),rgba(220,66,37,0.6)),url(../assets/hintbg.jpeg);
+  background-size: cover;
+  background-position: center;  
+}
+
+/************************************** SPONSORS SECTION STYLING ************************/
+
+#past-sponsors {
+  padding: 5vh 0 5vh 0;
+  text-align: center;
+}
+
+#all-last-year {
+  margin-top: 5vh;
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/************************************ FOOTER STYLING *********************************/
+
+#footer {
+  background: #3c3d41;
+  color: rgba(255,255,255,1.00);
+  padding:5vh;
+}
 
 .footer {
-  margin-top: 5vh;
+  /*margin-top: 5vh;*/
   padding: 5vh: 
   color: #DC2430;
   background-color: white; }
@@ -496,13 +503,3 @@ z-index: 1;
   border: #DC2430 solid 1px;
   padding: 20px; }
 
-#footer {
-  background: #3c3d41;
-  color: rgba(255,255,255,1.00);
-  padding:5vh 0 0 0;
-}
-
-#all-last-year {
-  max-width:100%;
-  max-height:100%;
-}
