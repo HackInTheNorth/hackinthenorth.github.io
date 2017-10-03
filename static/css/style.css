@@ -30,7 +30,6 @@ img.spongrid{
 }
 .button:hover {
   background-color: #fff;
-  color: black;
 }
 .button:active {
   -webkit-transform: scale(0.95);
@@ -40,10 +39,13 @@ img.spongrid{
   position: relative;
   z-index: 2;
   color: white;
-  background: none;
 }
 .button--bubble:hover {
   background: none;
+  color: black !important; 
+}
+.button--bubble:visited{
+  color: white;
 }
 .button--bubble:hover + .button--bubble__effect-container .circle {
   background: #fff;
