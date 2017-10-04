@@ -391,6 +391,10 @@ z-index: 1;
   text-align: center;
 }
 
+#past-sponsors a {
+  color: blue;
+}
+
 #all-last-year {
   margin-top: 5vh;
   max-width: 100%;
