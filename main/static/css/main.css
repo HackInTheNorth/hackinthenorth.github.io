@@ -107,7 +107,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: #737373;
     letter-spacing: normal;
-    padding-top: 70px; 
+    padding-top: 100px; 
     height: 100%;
 }
 
@@ -203,45 +203,56 @@ li{
     height: 81px;
 }
 
-@media(max-width: 767px){
-    #nav_about_small{
-        display: inline;
-    }
-    #nav_about_big{
-        display: none;
-    }
-    #nav_home_small{
-        display: inline;
-    }
-    #nav_home_big{
-        display: none;
-    }
-}
-
-
 
 /********************************** LANDING ********************************/
-
-#landing {
-    height: 100vh;
-}
-
-
-.landing-content {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.hint-overview {
-    margin: auto;
-}
 
 #big-hint-logo {
     max-width: 100%;
 }
 
+.landing-date-venue {
+    font-family: 'Roboto';
+    /*font-weight: 700;*/
+    font-size: 2em;
+    color: #FD5C63;
+}
+
+.landing-info {
+    font-family: 'Roboto';
+    font-size: 1.5em;
+    color: #737373;
+}
 
 
+
+/********************************** FOOTER ********************************/
+
+
+#footer {
+  background:linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
+  color: #fff; 
+}
+
+#footer i {
+    color: #fff;
+    font-size: 2em;
+    margin-right: 1em;
+}
+
+#footer i:hover {
+    color: #7FDBFF;
+}
+
+#footer .contents {
+    padding: 50px 13%;
+}
+#footer #social {
+    margin-bottom: 15px;
+}
+#footer .socialicon {
+    max-height: 30px;
+    margin: 0px 10px;
+}
 
 
 /* ==========================================================================
