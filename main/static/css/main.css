@@ -209,23 +209,32 @@ li{
     max-width: 100%;
 }
 
-.landing-date-venue {
-    font-family: 'Roboto';
-    /*font-weight: 700;*/
-    font-size: 2em;
-    color: #FD5C63;
+.landing-container .row {
+    /*border: 1px solid black;*/
 }
 
-.landing-info {
-    font-family: 'Roboto';
-    font-size: 1.5em;
-    color: #737373;
+.landing-subtitle {
+    font-size: 1.8em;
 }
 
 #landing {
     margin-bottom: 10vh;
 }
 
+.landing-btn {
+    background: #FD5C63;
+    border: none;
+    color: #fff;
+    border-radius: 0;
+    border: 1px solid #FD5C63;
+    min-width: 10em;
+}
+
+.landing-btn:hover,
+.landing-btn:active {
+    background: #fff;
+    color: #FD5C63;
+}
 
 /********************************** ABOUT ********************************/
 
@@ -237,6 +246,84 @@ li{
 #about {
     margin-bottom: 10vh;
 }
+
+#about {
+    font-family: 'Open Sans';
+}
+
+#about h1,
+#about h2,
+#about h3 {
+    font-family: 'Oswald';
+}
+
+/********************************** FAQ ********************************/
+
+
+#faq {
+  background: linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
+  color:#fff; }
+  #faq .contents {
+    padding: 50px 10%;
+    text-align: center;
+    font-size: 20px; }
+  #faq h3 {
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    margin-bottom: 30px; }
+  #faq .faqcolumn {
+    width: 45%;
+    display: inline-block;
+    margin: 0px 1%;
+    vertical-align: top; }
+  #faq .faqelem {
+    text-align: left;
+    margin-bottom: 20px; }
+  #faq .question {
+    background-color: #fff;
+    color: #737373;
+    padding: 20px 20px 14px 20px;
+    cursor: pointer; }
+  #faq .question:after {
+    color: #536bb1;
+    -webkit-font-smoothing: antialiased;
+    content: ">";
+    position: relative;
+    float: right;
+    font-size: 1em;
+    font-weight: bold;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  #faq .answer {
+    border: 3px solid #fff;
+    padding: 0px 20px;
+    max-height: 0;
+    overflow-y: hidden;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    transition: all .25s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    padding-right: 2em; }
+    #faq .answer a {
+      color: #fff; }
+  #faq .activeanswer {
+    padding: 20px;
+    max-height: 100%; }
+  #faq .flipButton:after {
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg); }
+
+/********************************** SPONSORS ********************************/
+
+
+/********************************** CONTACT ********************************/
+
 
 /********************************** FOOTER ********************************/
 
