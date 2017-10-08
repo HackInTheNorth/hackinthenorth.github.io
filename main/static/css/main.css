@@ -263,7 +263,8 @@ li{
 
 #faq {
   background: linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
-  color:#fff; }
+  color:#fff;
+  margin-bottom: 10vh; }
   #faq .contents {
     padding: 50px 10%;
     text-align: center;
@@ -327,6 +328,10 @@ li{
 }
 
 /********************************** CONTACT ********************************/
+
+#contact {
+    margin-bottom: 10vh;
+}
 
 .contact-title {
     font-size: 3em;
