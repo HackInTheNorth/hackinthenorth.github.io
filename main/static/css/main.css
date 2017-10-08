@@ -107,7 +107,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: #737373;
     letter-spacing: normal;
-    padding-top: 100px; 
+    padding-top: 85px; 
     height: 100%;
 }
 
@@ -228,6 +228,7 @@ li{
     border-radius: 0;
     border: 1px solid #FD5C63;
     min-width: 10em;
+    margin-bottom: 1vh;
 }
 
 .landing-btn:hover,
@@ -321,9 +322,17 @@ li{
 
 /********************************** SPONSORS ********************************/
 
+.last-year-spsr {
+    max-width: 100%;
+}
 
 /********************************** CONTACT ********************************/
 
+.contact-title {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}
 
 /********************************** FOOTER ********************************/
 
@@ -352,6 +361,13 @@ li{
 #footer .socialicon {
     max-height: 30px;
     margin: 0px 10px;
+}
+.footer-team-link {
+    color: white;
+    font-size: 1.2em;
+}
+.footer-team-link:hover {
+    color: #7FDBFF;
 }
 
 
