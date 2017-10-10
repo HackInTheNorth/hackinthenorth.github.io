@@ -321,6 +321,10 @@ li{
     -ms-transform: rotate(270deg);
     transform: rotate(270deg); }
 
+@media screen and (max-width: 968px) {
+  #faq .faqcolumn {
+    width: 100%; } }
+
 /********************************** SPONSORS ********************************/
 
 .last-year-spsr {
