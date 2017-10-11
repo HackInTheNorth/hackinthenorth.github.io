@@ -104,7 +104,7 @@ html {
     overflow-x: hidden;
 }
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Vollkorn', serif;
     color: #737373;
     letter-spacing: normal;
     padding-top: 85px; 
@@ -249,13 +249,13 @@ li{
 }
 
 #about {
-    font-family: 'Open Sans';
+    font-family: 'Vollkorn', serif;;
 }
 
 #about h1,
 #about h2,
 #about h3 {
-    font-family: 'Oswald';
+    font-family: 'Vollkorn', serif;;
 }
 
 /********************************** FAQ ********************************/
