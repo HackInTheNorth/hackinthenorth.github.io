@@ -235,6 +235,11 @@ li{
 .landing-btn:active {
     background: #fff;
     color: #FD5C63;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+
 }
 
 /********************************** ABOUT ********************************/
