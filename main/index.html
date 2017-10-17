@@ -13,10 +13,12 @@
 
         <!-- TO DO : Remove unused fonts imports -->
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Open+Sans:400,500,600,700|Oswald:400,700|Roboto:400,700" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="static/css/main.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link href="static/css/hover-min.css" rel="stylesheet" media="all">
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -57,7 +59,7 @@
                                 <a href="404.html" class="nav-link call-to-action">LIVE</a>
                             </li> -->
                             <li class="sponsors-padding">
-                                <a href="404.html" class="call-to-action">APPLY ></a>
+                                <a href="404.html" class="call-to-action">APPLY</a>
                             </li>
                         </ul>
                     </div>
@@ -69,16 +71,16 @@
         <section id="landing">
             <div class="container-fluid landing-container">
                     <div class="row col-md-8 col-md-offset-2">
-                        <img id="big-hint-logo" src="static/img/logo-color.png">
+                        <img id="big-hint-logo" src="static/img/logo-color.png" class="wow fadeIn">
                     </div>
-                    <div class="row col-md-8 col-md-offset-2 text-center">
+                    <div class="row col-md-8 col-md-offset-2 text-center wow fadeIn" data-wow-delay="0.5s">
                         <h3 class="landing-subtitle">March XX-XX, 2018</h3>
                         <h3 class="landing-subtitle">Indian Institute of Information Technology, Allahabad</h3>
                     </div>
-                    <div class="row col-md-12 text-center">
+                    <div class="row col-md-12 text-center wow fadeIn" data-wow-delay="1s">
                         <h4>Applications are now open.</h4>
                     </div>
-                    <div class="row col-md-12 text-center">
+                    <div class="row col-md-12 text-center wow fadeIn" data-wow-delay="1s">
                         <br>
                         <a class="btn btn-lg landing-btn" href="#">Apply</a>
                         <a class="btn btn-lg landing-btn" href="#">Subscribe</a>
@@ -86,31 +88,35 @@
             </div>
         </section>
 
-        <section id="about">
+         <section id="about">
             <div class="container-fluid">
+                <div class="row text-center">
+                    <h1 class="wow fadeInUp text-center" data-wow-delay="0.2s">ABOUT</h1>
+                </div>
                 <div class="row">
-                    <div class="col-md-4 col-md-offset-1">
-                        <h1>ABOUT</h1>
-                        <h4>Hack In The North is the biggest student held hackathon in India. 300 students from all across India will come together in IIIT Allahabad this March and spend 36 hours building projects they are passionate about. Hack In The North is open for university and high school students.</h4>
-                    </div>
-                    <div class="row col-md-6 text-center">
-                        <img class="about-image" src="static/img/hint1.jpg">
+                    <div class="col-md-6 col-md-offset-3">
+                        <h4 class="wow fadeInUp" data-wow-delay="0.4s">Hack In The North is the biggest student held hackathon in India. 300 students from all across India will come together in IIIT Allahabad this March and spend 36 hours building projects they are passionate about. Hack In The North is open for university and high school students.</h4>
                     </div>
                 </div>
                 <br>
                 <br>
+                <div class="row text-center">
+                    <h1 class="wow fadeInUp" data-wow-delay="0.2s">OUR VALUES</h1>
+                </div>
                 <div class="row">
-                    <div class="col-md-5 col-md-offset-1">
-                        <img class="about-image" src="static/img/guys_with_prizes.jpg">                        
-                    </div>
-                    <div class="col-md-4">
-                        <h1>OUR VALUES</h1>
-                        <h3>INCLUSIVITY</h3>
-                        <h4>We strive to create a welcoming environment for students with all levels of experience irrespective of their caste, creed, race, religion or gender.</h4>
-                        <h3>LEARNING</h3>
-                        <h4>Our team of mentors with diverse development experience is available throughout the duration of the hackathon to clear your queries and share their insights on your projects.</h4>
-                        <h3>COMMUNITY</h3>
-                        <h4>There will be plenty of opportunities of making new friends, interacting with the fellow developers and networking with our sponsors and mentors.</h4>
+                    <div class="container">
+                        <div class="col-md-4">
+                            <h3 class="wow fadeInUp" data-wow-delay="0.4s">INCLUSIVITY</h3>
+                            <h4 class="wow fadeInUp" data-wow-delay="0.6s">We strive to create a welcoming environment for students with all levels of experience irrespective of their caste, creed, race, religion or gender.</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="wow fadeInUp" data-wow-delay="0.4s">LEARNING</h3>
+                            <h4 class="wow fadeInUp" data-wow-delay="0.6s">Our team of mentors with diverse development experience is available throughout the duration of the hackathon to clear your queries and share their insights on your projects.</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="wow fadeInUp" data-wow-delay="0.4s">COMMUNITY</h3>
+                            <h4 class="wow fadeInUp" data-wow-delay="0.6s">There will be plenty of opportunities of making new friends, interacting with the fellow developers and networking with our sponsors and mentors.</h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -120,29 +126,29 @@
             <div class="contents">
                 <h3>FAQ</h3>
                 <div class="faqcolumn">
-                    <div class="faqelem">
+                    <div class="faqelem wow fadeInUp">
                         <div class="question">What is HackInTheNorth?</div>
                         <div class="answer">HackInTheNorth is the annual Hackathon organized at Indian Institute of Information Technology, Allahabad. It is one of the largest student-organized hackathons in India.</div>
                     </div>
-                    <div class="faqelem">
+                    <div class="faqelem wow fadeInUp" data-wow-delay="0.2s">
                         <div class="question">Who can apply?</div>
                         <div class="answer">If you are enrolled in a high school or university, or if you left univeristy during the current year, you are good to go!!</div>
                     </div>
-                    <div class="faqelem">
+                    <div class="faqelem wow fadeInUp" data-wow-delay="0.4s">
                         <div class="question">What do people normally make?</div>
                         <div class="answer">You can make anything you like. Most of the hacks revolve around web or phone apps, or working with hardware.</div>
                     </div>
                 </div>
                 <div class="faqcolumn">
-                    <div class="faqelem">
+                    <div class="faqelem wow fadeInUp">
                         <div class="question">Who runs Hack In The North?</div>
                         <div class="answer">Hack In The North is run by students of IIIT Allahabad.</div>
                     </div>
-                    <div class="faqelem">
+                    <div class="faqelem wow fadeInUp" data-wow-delay="0.2s">
                         <div class="question">What should I bring?</div>
                         <div class="answer">Laptop, Charger and Change of clothes. If you want to hack on Arduino, PI, Oculus Rift or any other hardware we recommend you to bring that too if you have one. You won't need food or drinks; we've got you covered there.</div>
                     </div>
-                    <div class="faqelem">
+                    <div class="faqelem wow fadeInUp" data-wow-delay="0.4s">
                         <div class="question">How to reach IIIT Allahabad?</div>
                         <div class="answer">Allahabad is well connected to all major cities of India by Train. There is also a domestic airport in Allahabad which have daily serice to Delhi. Varansi International Airport is 3 hour drive from Allahabad while Lucknow International Airport is 5 hour away.</div>
                     </div>
@@ -163,6 +169,7 @@
                 </div>
                 <div class="row text-center">
                     <h2>Past Sponsors</h2>
+                    <br>
                 </div>
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
@@ -179,12 +186,12 @@
                 </div>
                 <br>
                 <div class="row">
-                    <div class="col-md-5 col-md-offset-1 text-center">
+                    <div class="col-md-5 col-md-offset-1 text-center hvr-bounce-in">
                         <h4>Faheem Zunjani: +91-7828064086</h4>
                         <h4>Gautham Santhosh: +91-8921997405</h4>
                         <h4>Shubham Padia: +91-9918463021</h4>
                     </div>
-                    <div class="col-md-5 text-center">
+                    <div class="col-md-5 text-center hvr-bounce-in">
                         <h4>Meet our <a href="#">Team</a>!</h4>
                         <h4>Chat with us on <a href="#">Zulip</a>!</h4>
                         <h4>Drop us a mail at <strong>team@hackinthenorth.com</strong></h4>
@@ -225,5 +232,9 @@
             ga('create','UA-72748005-1','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+              new WOW().init();
+        </script>
     </body>
 </html>
