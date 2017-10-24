@@ -3,6 +3,7 @@
   box-shadow: 0px 0px 0px #818181;
   transition: all 0.2s ease 0s;
   -webkit-transform: translateY(0px) translateX(0px);
+  padding: 10px 10px 10px 10px;
 }
 .wrap-card:before,
 .wrap-card:after {
