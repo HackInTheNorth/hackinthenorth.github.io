@@ -19,14 +19,27 @@
         <link rel="stylesheet" href="static/css/main.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link href="static/css/hover-min.css" rel="stylesheet" media="all">
+        <link rel="stylesheet" type="text/css" href="static/css/styling.css">
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript">
+(function($) {          
+    $(document).ready(function(){                    
+        $(window).scroll(function(){                          
+            if ($(this).scrollTop() > 200) {
+                $('#hehe').fadeIn(500);
+            } else {
+                $('#hehe').fadeOut(500);
+            }
+        });
+    });
+})(jQuery);
+</script>
     </head>
     <body>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-
-
-        <nav class="navbar navbar-custom navbar-fixed-top custom-nav-changes" role="navigation">
+<nav class="navbar navbar-custom navbar-fixed-top custom-nav-changes" role="navigation" style="display: none;" id="hehe">
             <div class="container" id="collapse-shadow">
                 <div class="navbar-header">
                         <button id="nav_toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom_collapse">
@@ -67,18 +80,19 @@
             </div>
         </nav>
 
-
-        <section id="landing">
+        
+        <header class="navbar">
+            <section id="landing">
             <div class="container-fluid landing-container">
                     <div class="row col-md-8 col-md-offset-2">
                         <img id="big-hint-logo" src="static/img/logo-color.png" class="wow fadeIn">
                     </div>
                     <div class="row col-md-8 col-md-offset-2 text-center wow fadeIn" data-wow-delay="0.5s">
-                        <h3 class="landing-subtitle">March XX-XX, 2018</h3>
-                        <h3 class="landing-subtitle">Indian Institute of Information Technology, Allahabad</h3>
+                        <h3 class="landing-subtitle" style="color: white;">March XX-XX, 2018</h3>
+                        <h3 class="landing-subtitle" style="color: white;">Indian Institute of Information Technology, Allahabad</h3>
                     </div>
                     <div class="row col-md-12 text-center wow fadeIn" data-wow-delay="1s">
-                        <h4>Applications are now open.</h4>
+                        <h4 style="color: white;">Applications are now open.</h4>
                     </div>
                     <div class="row col-md-12 text-center wow fadeIn" data-wow-delay="1s">
                         <br>
@@ -87,9 +101,16 @@
                     </div>
             </div>
         </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <polygon class="svg--sm" fill="white" points="0,0 30,100 65,21 90,100 100,75 100,100 0,100"/>
+    <polygon class="svg--lg" fill="white" points="0,0 15,100 33,21 45,100 50,75 55,100 72,20 85,100 95,50 100,80 100,100 0,100" />
+  </svg>
+</header>
 
          <section id="about">
             <div class="container-fluid">
+                <div class="wrap-card">
+                    <div class="card">
                 <div class="row text-center">
                     <h1 class="wow fadeInUp text-center" data-wow-delay="0.2s">ABOUT</h1>
                 </div>
@@ -98,6 +119,8 @@
                         <h4 class="wow fadeInUp" data-wow-delay="0.4s">Hack In The North is the biggest student held hackathon in India. 300 students from all across India will come together in IIIT Allahabad this March and spend 36 hours building projects they are passionate about. Hack In The North is open for university and high school students.</h4>
                     </div>
                 </div>
+                </div>
+            </div>
                 <br>
                 <br>
                 <div class="row text-center">
@@ -106,16 +129,28 @@
                 <div class="row">
                     <div class="container">
                         <div class="col-md-4">
+                            <div class="wrap-card">
+                                <div class="card">
                             <h3 class="wow fadeInUp" data-wow-delay="0.4s">INCLUSIVITY</h3>
                             <h4 class="wow fadeInUp" data-wow-delay="0.6s">We strive to create a welcoming environment for students with all levels of experience irrespective of their caste, creed, race, religion or gender.</h4>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-4">
+                            <div class="wrap-card">
+                                <div class="card">
                             <h3 class="wow fadeInUp" data-wow-delay="0.4s">LEARNING</h3>
                             <h4 class="wow fadeInUp" data-wow-delay="0.6s">Our team of mentors with diverse development experience is available throughout the duration of the hackathon to clear your queries and share their insights on your projects.</h4>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-4">
+                            <div class="wrap-card">
+                                <div class="card">
                             <h3 class="wow fadeInUp" data-wow-delay="0.4s">COMMUNITY</h3>
                             <h4 class="wow fadeInUp" data-wow-delay="0.6s">There will be plenty of opportunities of making new friends, interacting with the fellow developers and networking with our sponsors and mentors.</h4>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
