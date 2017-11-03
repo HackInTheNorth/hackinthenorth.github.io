@@ -27,7 +27,7 @@
         <![endif]-->
 
 
-        <nav class="navbar navbar-custom navbar-fixed-top custom-nav-changes" role="navigation" style="transition: all 0.1s ease-in-out;">
+        <nav class="navbar navbar-custom navbar-fixed-top custom-nav-changes transition-nav" role="navigation">
             <div class="container" id="collapse-shadow">
                 <div class="navbar-header">
                         <button id="nav_toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom_collapse">
@@ -215,7 +215,7 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
         <script type="text/javascript">
             $(window).scroll(function(){
-    if ($(window).scrollTop() >= 30) {
+    if ($(window).scrollTop() >= 10) {
        $('nav').addClass('shadow-header');
     }
     else {

@@ -203,6 +203,9 @@ li{
 .shadow-header{
     box-shadow: 0 0 10px #9d9d9d;
 }
+.transition-nav{
+    transition: all 0.1s ease-in-out;
+}
 
 /********************************** LANDING ********************************/
 
