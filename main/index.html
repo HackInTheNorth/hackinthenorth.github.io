@@ -213,6 +213,16 @@
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script type="text/javascript">
+            $(window).scroll(function(){
+    if ($(window).scrollTop() >= 30) {
+       $('nav').addClass('shadow-header');
+    }
+    else {
+       $('nav').removeClass('shadow-header');
+    }
+});
+        </script>
         <script>
               new WOW().init();
         </script>
