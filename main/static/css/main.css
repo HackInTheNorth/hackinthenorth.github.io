@@ -226,11 +226,11 @@ li{
 }
 
 .landing-btn {
-    background: #FD5C63;
+    background: linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
     border: none;
     color: #fff;
     border-radius: 0;
-    border: 1px solid #FD5C63;
+    border: 1px solid #A95179;
     min-width: 10em;
     margin-bottom: 1vh;
 }
@@ -238,7 +238,7 @@ li{
 .landing-btn:hover,
 .landing-btn:active {
     background: #fff;
-    color: #FD5C63;
+    color: #A95179;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
@@ -313,9 +313,9 @@ li{
     padding: 0px 20px;
     max-height: 0;
     overflow-y: hidden;
-    -webkit-transition: all .25s;
-    -moz-transition: all .25s;
-    transition: all .25s;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
     -webkit-transition-timing-function: ease-out;
     -moz-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
