@@ -102,15 +102,15 @@
             </div>-->
             <div class="container-fluid">
             <ul class="cards">
-  <li class="cards__item" style="flex: 0 0 60em;">
+  <li class="cards__item wow rotateInUpLeft" style="flex: 0 0 60em;">
     <div class="card">
       <div class="card__content">
-        <div class="card__title" align="center">About</div><br>
-        <p class="card__text">Hack In The North is the biggest student held hackathon in India. 300 students from all across India will come together in IIIT Allahabad this March and spend 36 hours building projects they are passionate about. Hack In The North is open for university and high school students.</p>
+        <div class="card__title wow fadeInUp" align="center" data-wow-delay="0.5s">About</div><br>
+        <p class="card__text wow fadeInUp" data-wow-delay="0.7s">Hack In The North is the biggest student held hackathon in India. 300 students from all across India will come together in IIIT Allahabad this March and spend 36 hours building projects they are passionate about. Hack In The North is open for university and high school students.</p>
       </div>
     </div>
   </li>
-  <li class="cards__item">
+  <li class="cards__item wow fadeInUp">
       <div class="card__content">
   <img src="static/img/lasso.svg">
  
@@ -234,13 +234,13 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
         <script type="text/javascript">
             $(window).scroll(function(){
-    if ($(window).scrollTop() >= 10) {
-       $('nav').addClass('shadow-header');
-    }
-    else {
-       $('nav').removeClass('shadow-header');
-    }
-});
+                if ($(window).scrollTop() >= 10) {
+                    $('nav').addClass('shadow-header');
+                    }
+                else {
+                    $('nav').removeClass('shadow-header');
+                    }
+            });
         </script>
         <script>
               new WOW().init();

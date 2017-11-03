@@ -313,9 +313,9 @@ li{
     padding: 0px 20px;
     max-height: 0;
     overflow-y: hidden;
-    -webkit-transition: all .25s;
-    -moz-transition: all .25s;
-    transition: all .25s;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
     -webkit-transition-timing-function: ease-out;
     -moz-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
