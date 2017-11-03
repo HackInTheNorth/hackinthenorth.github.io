@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="static/css/main.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link href="static/css/hover-min.css" rel="stylesheet" media="all">
+        <link rel="stylesheet" type="text/css" href="static/css/cards.css">
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -26,7 +27,7 @@
         <![endif]-->
 
 
-        <nav class="navbar navbar-custom navbar-fixed-top custom-nav-changes" role="navigation">
+        <nav class="navbar navbar-custom navbar-fixed-top custom-nav-changes transition-nav" role="navigation">
             <div class="container" id="collapse-shadow">
                 <div class="navbar-header">
                         <button id="nav_toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom_collapse">
@@ -36,31 +37,31 @@
                             <span class="icon-bar"></span>
                         </button>
 
-                        <a id="nav_home" href="#landing" class="nav-link">
+                        <!--<a id="nav_home" href="#landing" class="nav-link">
                             <img class="hint-logo" src="static/img/logo-color-small.png">
-                        </a>
+                        </a>-->
                 </div>
                 <div class="navbar-collapse collapse" id="custom_collapse">
                     <div class=" navbar-right">
                         <ul class="nav navbar-nav">
-                            <li>
+                            <!--<li>
                                 <a id="nav_about" href="#about" class="nav-link">ABOUT</a>
-                            </li>
+                            </li>-->
                             <li>
                                 <a id="nav_faq" href="#faq" class="nav-link">FAQ</a>
                             </li>
                             <li>
                                 <a id="nav_sponsors" href="#sponsors" class="nav-link">SPONSORS</a>
                             </li>
-                            <li>
+                            <!--<li>
                                 <a id="nav_hackers" href="#contact" class="nav-link">CONTACT</a>
-                            </li>
+                            </li>-->
                             <!-- <li>
                                 <a href="404.html" class="nav-link call-to-action">LIVE</a>
                             </li> -->
-                            <li class="sponsors-padding">
+                            <!--<li class="sponsors-padding">
                                 <a href="404.html" class="call-to-action">APPLY</a>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                 </div>
@@ -96,27 +97,6 @@
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <h4 class="wow fadeInUp" data-wow-delay="0.4s">Hack In The North is the biggest student held hackathon in India. 300 students from all across India will come together in IIIT Allahabad this March and spend 36 hours building projects they are passionate about. Hack In The North is open for university and high school students.</h4>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <div class="row text-center">
-                    <h1 class="wow fadeInUp" data-wow-delay="0.2s">OUR VALUES</h1>
-                </div>
-                <div class="row">
-                    <div class="container">
-                        <div class="col-md-4">
-                            <h3 class="wow fadeInUp" data-wow-delay="0.4s">INCLUSIVITY</h3>
-                            <h4 class="wow fadeInUp" data-wow-delay="0.6s">We strive to create a welcoming environment for students with all levels of experience irrespective of their caste, creed, race, religion or gender.</h4>
-                        </div>
-                        <div class="col-md-4">
-                            <h3 class="wow fadeInUp" data-wow-delay="0.4s">LEARNING</h3>
-                            <h4 class="wow fadeInUp" data-wow-delay="0.6s">Our team of mentors with diverse development experience is available throughout the duration of the hackathon to clear your queries and share their insights on your projects.</h4>
-                        </div>
-                        <div class="col-md-4">
-                            <h3 class="wow fadeInUp" data-wow-delay="0.4s">COMMUNITY</h3>
-                            <h4 class="wow fadeInUp" data-wow-delay="0.6s">There will be plenty of opportunities of making new friends, interacting with the fellow developers and networking with our sponsors and mentors.</h4>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -233,6 +213,16 @@
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script type="text/javascript">
+            $(window).scroll(function(){
+    if ($(window).scrollTop() >= 10) {
+       $('nav').addClass('shadow-header');
+    }
+    else {
+       $('nav').removeClass('shadow-header');
+    }
+});
+        </script>
         <script>
               new WOW().init();
         </script>

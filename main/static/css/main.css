@@ -198,10 +198,14 @@ li{
 
 .custom-nav-changes{
     background-color: white;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,.05);
     height: 81px;
 }
-
+.shadow-header{
+    box-shadow: 0 0 10px #9d9d9d;
+}
+.transition-nav{
+    transition: all 0.1s ease-in-out;
+}
 
 /********************************** LANDING ********************************/
 
