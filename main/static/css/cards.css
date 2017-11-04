@@ -24,3 +24,111 @@
   -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
 }
+/*timeline*/
+.timeline {
+  position: relative;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+.timeline:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  border: 1px solid hotpink;
+  right: 40px;
+  top: 0;
+}
+.timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (min-width: 700px) {
+  .timeline {
+    padding: 2rem;
+  }
+  .timeline:before {
+    left: calc(50% - 1px);
+    right: auto;
+  }
+}
+
+.timeline__item {
+  padding: 1rem;
+  border: 2px solid hotpink;
+  border-image: linear-gradient(to right, skyblue 0%, hotpink 100%);
+  border-image-slice: 1;
+  position: relative;
+  margin: 1rem 3rem 1rem 1rem;
+  clear: both;
+}
+.timeline__item:after, .timeline__item:before {
+  content: '';
+  position: absolute;
+}
+.timeline__item:before {
+  right: -10px;
+  top: calc(50% - 5px);
+  border-style: solid;
+  border-color: hotpink hotpink transparent transparent;
+  border-width: 10px;
+  transform: rotate(45deg);
+}
+@media screen and (min-width: 700px) {
+  .timeline__item {
+    width: 44%;
+    margin: 1rem;
+  }
+  .timeline__item:nth-of-type(2n) {
+    float: right;
+    margin: 1rem;
+    border-image: linear-gradient(to right, hotpink 0%, skyblue 100%);
+    border-image-slice: 1;
+  }
+  .timeline__item:nth-of-type(2n):before {
+    right: auto;
+    left: -10px;
+    border-color: transparent transparent hotpink hotpink;
+  }
+}
+
+.timeline__item--year {
+  text-align: center;
+  max-width: 250px;
+  margin: 0 48px 0 auto;
+  font-size: 1.8rem;
+  line-height: 1;
+  border-image: none;
+  padding: .5rem 1rem 1rem;
+  background-color: #fff;
+}
+.timeline__item--year:before {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .timeline__item--year {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .timeline__item--year:nth-of-type(2n) {
+    float: none;
+    margin: 0 auto;
+    border-image: none;
+  }
+  .timeline__item--year:nth-of-type(2n):before {
+    display: none;
+  }
+}
+
+.timeline__title {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+}
+
+.timeline__blurb {
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: .5rem 0 0;
+}
