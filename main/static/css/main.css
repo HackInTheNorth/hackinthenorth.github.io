@@ -226,7 +226,7 @@ li{
 }
 
 .landing-btn {
-    background: linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
+    background: linear-gradient(30deg, #4e469c 0%, #e44527 50%, #f5cc2e 100%);
     border: none;
     color: #fff;
     border-radius: 0;
@@ -271,7 +271,7 @@ li{
 
 
 #faq {
-  background: linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
+  background: linear-gradient(30deg, #4e469c 0%, #e44527 50%, #f5cc2e 100%);
   color:#fff;
   margin-bottom: 10vh; }
   #faq .contents {
@@ -356,7 +356,7 @@ li{
 
 
 #footer {
-  background:linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
+  background:linear-gradient(30deg, #4e469c 0%, #e44527 50%, #f5cc2e 100%);
   color: #fff; 
 }
 
