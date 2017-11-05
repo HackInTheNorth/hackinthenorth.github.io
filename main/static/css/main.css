@@ -215,6 +215,7 @@ li{
 
 .landing-container .row {
     /*border: 1px solid black;*/
+    margin-top: 2vh;
 }
 
 .landing-subtitle {
@@ -222,7 +223,7 @@ li{
 }
 
 #landing {
-    margin-bottom: 10vh;
+    height: 90vh;
 }
 
 .landing-btn {
