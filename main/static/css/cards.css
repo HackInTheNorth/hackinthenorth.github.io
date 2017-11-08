@@ -16,6 +16,10 @@
   width: 50%;
   position: relative;
 }
+.card-panel:hover{
+  -webkit-box-shadow: 0 26px 34px 4px rgba(0, 0, 0, 0.44), 0 16px 40px 10px rgba(0, 0, 0, 0.42), 0 12px 14px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 26px 34px 4px rgba(0, 0, 0, 0.44), 0 16px 40px 10px rgba(0, 0, 0, 0.42), 0 12px 14px -10px rgba(0, 0, 0, 0.4);
+}
 @media (max-width: 600px){
   .card-panel{
     width: 100%;
