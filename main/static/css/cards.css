@@ -10,7 +10,7 @@
   transition: box-shadow .25s;
   transition: box-shadow .25s, -webkit-box-shadow .25s;
   padding: 24px;
-  margin: 25vh auto 2rem auto;
+  margin: 15vh auto 2rem auto;
   border-radius: 5px;
   background-color: #fff;
   width: 50%;
