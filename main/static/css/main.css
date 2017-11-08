@@ -227,19 +227,17 @@ li{
 }
 
 .landing-btn {
-    background: linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
-    border: none;
-    color: #fff;
+    background: #fff;
+    color: #A95179;
     border-radius: 0;
     border: 1px solid #A95179;
     min-width: 10em;
     margin-bottom: 1vh;
 }
 
-.landing-btn:hover,
-.landing-btn:active {
-    background: #fff;
-    color: #A95179;
+.landing-btn:hover{
+    color: #87345a;
+    border: 1px solid #87345a; 
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
@@ -326,6 +324,7 @@ li{
   #faq .activeanswer {
     padding: 20px;
     max-height: 100%; }
+
   #faq .flipButton:after {
     -webkit-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
@@ -360,7 +359,10 @@ li{
   background:linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
   color: #fff; 
 }
-
+#footer .footer-text{
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
 #footer i {
     color: #fff;
     font-size: 2em;
@@ -372,10 +374,10 @@ li{
 }
 
 #footer .contents {
-    padding: 50px 13%;
+    padding: 40px 0%;
 }
-#footer #social {
-    margin-bottom: 15px;
+#footer .social {
+    margin-top: 2em;
 }
 #footer .socialicon {
     max-height: 30px;
