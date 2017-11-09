@@ -15,6 +15,7 @@
 }
 
 .card-panel {
+  /*margin-top: 0;*/
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
   transition: box-shadow .25s;
