@@ -1,3 +1,21 @@
+.custom-col-2{
+  position: relative;
+  min-height: 1px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.custom-margin{
+  margin-left: 13%;
+}
+@media (min-width: 992px) {
+  .custom-col-2{
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.heroku-width{
+  width: 20%;
+}
 .fullpage{
   height: 90vh;
 }
