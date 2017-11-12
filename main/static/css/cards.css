@@ -1,3 +1,18 @@
+.custom-col-2{
+  position: relative;
+  min-height: 1px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.custom-margin{
+  margin-left: 13%;
+}
+@media (min-width: 992px) {
+  .custom-col-2{
+    float: left;
+    width: 16.66666667%;
+  }
+}
 .box{
   border: 3px solid #fff;
 }
@@ -5,7 +20,6 @@
 .box-inner{
   padding: 20px;
 }
-
 .fullpage{
   height: 90vh;
 }
@@ -21,7 +35,7 @@
   transition: box-shadow .25s, -webkit-box-shadow .25s;
   padding: 24px;
   margin: 15vh auto 2rem auto;
-  border-radius: 5px;
+  border-radius:0px;
   background-color: #fff;
   width: 60%;
   height: 50%;
