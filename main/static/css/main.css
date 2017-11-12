@@ -212,7 +212,14 @@ li{
 #big-hint-logo {
     max-width: 100%;
 }
-
+.parallax{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.img1{
+    position: relative;
+}
 .landing-container .row {
     /*border: 1px solid black;*/
     margin-top: 2vh;
