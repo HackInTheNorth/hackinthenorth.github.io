@@ -195,3 +195,10 @@
   font-size: 1rem;
   margin: .5rem 0 0;
 }
+
+#map {
+  width: 600px;
+  height: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
