@@ -4,11 +4,47 @@
 .custom-col-2{
   position: relative;
   min-height: 1px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+.custom-small{
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;  
+}
+.custom-heroku{
+  position: relative;
+  min-height: 1px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.custom-tech{
+  position: relative;
+  min-height: 1px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 .custom-margin{
   margin-left: 13%;
+}
+@media (min-width: 992px) {
+  .custom-tech{
+    float: left;
+    width: 16.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  .custom-small{
+    float: left;
+    width: 16.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  .custom-heroku{
+    float: left;
+    width: 16.66666667%;
+  }
 }
 @media (min-width: 992px) {
   .custom-col-2{
@@ -50,7 +86,7 @@
   box-shadow: 0 26px 34px 4px rgba(0, 0, 0, 0.44), 0 16px 40px 10px rgba(0, 0, 0, 0.42), 0 12px 14px -10px rgba(0, 0, 0, 0.4);
 }
 
-/*@media (max-width: 120px){
+/*@media (max-width: 500px){
   .card-panel{
     width: 100%;
     height: 70vh;
