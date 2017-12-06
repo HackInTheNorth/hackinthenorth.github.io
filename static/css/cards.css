@@ -4,8 +4,14 @@
 .custom-col-2{
   position: relative;
   min-height: 1px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+.custom-small{
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;  
 }
 .custom-heroku{
   position: relative;
@@ -24,6 +30,12 @@
 }
 @media (min-width: 992px) {
   .custom-tech{
+    float: left;
+    width: 16.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  .custom-small{
     float: left;
     width: 16.66666667%;
   }
