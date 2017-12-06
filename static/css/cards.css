@@ -13,8 +13,20 @@
   padding-left: 45px;
   padding-right: 45px;
 }
+.custom-tech{
+  position: relative;
+  min-height: 1px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
 .custom-margin{
   margin-left: 13%;
+}
+@media (min-width: 992px) {
+  .custom-tech{
+    float: left;
+    width: 16.66666667%;
+  }
 }
 @media (min-width: 992px) {
   .custom-heroku{
