@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // Select all links with hashes
-$('a[href*="#"]')
+  $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -10,10 +10,10 @@ $('a[href*="#"]')
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
       && 
       location.hostname == this.hostname
-    ) {
+      ) {
       // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       // Does a scroll target exist?
       if (target.length) {
         // Only prevent default if animation is actually gonna happen
@@ -35,4 +35,28 @@ $('a[href*="#"]')
       }
     }
   });
+
+//navbar shadow on scroll
+$(window).scroll(function(){
+  if ($(window).scrollTop() >= 10) {
+    $('nav').addClass('shadow-header');
+  }
+  else {
+    $('nav').removeClass('shadow-header');
+  }
+});
+
+//initialise wow js
+new WOW().init();
+// faq toggle
+$('.faq li .question').click(function () {
+  $(this).find('.plus-minus-toggle').toggleClass('collapsed');
+  $(this).parent().toggleClass('active');
+});
+
+//change background color of schedule and faq
+$(document).ready(function(){
+  $(".navbar-default").css("background-color", "#fff");
+});
+
 });
