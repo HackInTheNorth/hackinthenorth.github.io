@@ -33,23 +33,37 @@
     float: left;
     width: 16.66666667%;
   }
-}
-@media (min-width: 992px) {
   .custom-small{
     float: left;
     width: 16.66666667%;
   }
-}
-@media (min-width: 992px) {
-  .custom-heroku{
+  .custom-col-2{
     float: left;
     width: 16.66666667%;
   }
 }
+@media (min-width: 768px) {
+  .custom-heroku{
+    margin: auto;
+    width: 50%;
+  }
+}
+@media (max-width: 980px) {
+  .custom-heroku{
+    margin: auto;
+    width: 40%;
+  }
+}
 @media (min-width: 992px) {
-  .custom-col-2{
-    float: left;
+  .custom-heroku{
+    margin :auto;
     width: 16.66666667%;
+  }
+}
+@media (max-width: 500px) {
+  .custom-heroku{
+    margin: auto;
+    width: 70%;
   }
 }
 .box{
@@ -86,22 +100,28 @@
   box-shadow: 0 26px 34px 4px rgba(0, 0, 0, 0.44), 0 16px 40px 10px rgba(0, 0, 0, 0.42), 0 12px 14px -10px rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 500px){
+/*@media (max-width: 500px){
   .card-panel{
     width: 100%;
     height: 70vh;
   }
-  .card-panel h4{
-    font-size: 4vw;
+  .card-panel h1{
+    font-size: 100%;
   }
-}
+  .card-panel h4{
+    font-size: 1em;
+  }
+}*/
 @media (max-width: 1250px){
   .card-panel{
     width: 100%;
     height: 70vh;
   }
+  .card-panel h1{
+    font-size: 100%;
+  }
   .card-panel h4{
-    font-size: 3.5vw;
+    font-size: 100%;
   }
 }
 
