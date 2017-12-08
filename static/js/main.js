@@ -60,8 +60,6 @@ $(document).ready(function(){
 });
 
 //parallax
-console.log("start");
 var scene = document.getElementById('scene');
 var parallaxInstance = new Parallax(scene);
-console.log("end");
 });
