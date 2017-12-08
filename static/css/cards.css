@@ -33,11 +33,19 @@
     float: left;
     width: 16.66666667%;
   }
-}
-@media (min-width: 992px) {
   .custom-small{
     float: left;
     width: 16.66666667%;
+  }
+  .custom-col-2{
+    float: left;
+    width: 16.66666667%;
+  }
+}
+@media (min-width: 768px) {
+  .custom-heroku{
+    margin: auto;
+    width: 50%;
   }
 }
 @media (min-width: 992px) {
@@ -46,10 +54,10 @@
     width: 16.66666667%;
   }
 }
-@media (min-width: 992px) {
-  .custom-col-2{
-    float: left;
-    width: 16.66666667%;
+@media (max-width: 500px) {
+  .custom-heroku{
+    margin: auto;
+    width: 70%;
   }
 }
 .box{
