@@ -116,7 +116,7 @@
     font-size: 1em;
   }
 }*/
-@media (max-width: 2000px){
+@media (max-width: 1250px){
   .fullpage {
     height: 100%;
    }
