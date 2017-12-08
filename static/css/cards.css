@@ -48,6 +48,12 @@
     width: 50%;
   }
 }
+@media (max-width: 980px) {
+  .custom-heroku{
+    margin: auto;
+    width: 40%;
+  }
+}
 @media (min-width: 992px) {
   .custom-heroku{
     margin :auto;
