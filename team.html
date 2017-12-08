@@ -1,43 +1,689 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Team HINT v3.0!</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
+	<meta charset="utf-8">
+	<title>Hint Team</title>
+	<meta name="author" content="">
+	<meta property="og:Hint Team" content="logo.png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="static/css/logo.png">
+	<link rel="stylesheet" href="static/css/normalize.css">
+	<link rel="stylesheet" href="static/css/layout.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		i{
+  margin: 6px;
+}
+i:hover {
+    color: #7FDBFF;
+}
+.fa-facebook  {
+  color: #ffffff;
+  font-size: 2.5em;
+}
+.fa-github  {
+  color: #ffffff;
+  font-size: 2.5em;
+}
+.fa-twitter  {
+  color: #ffffff;
+  font-size: 2.5em;
+}
 
-        <!-- TO DO : Remove unused fonts imports -->
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Open+Sans:400,500,600,700|Oswald:400,700|Roboto:400,700" rel="stylesheet">
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="static/css/team.css">
-    </head>
-    <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+	transition: 0.3s;
+	z-index: 1;
+	
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+	
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+	margin-left: 50px;
+	
+}
+#mySidenav .sidenav {
+	z-index: 1;
+}
+.container {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* Navbar  */
+.navbar {
+  min-height: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 20px;
+  background-color: #ffffff;
+ 
+  background-repeat: repeat-x;
+ 
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+  *zoom: 1;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+/* navbar end */
+#social {
+	margin-left: 25px;	
+}
+
+	</style>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="static/js/jquery.mixitup.min.js"></script>
+	
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.portfolio',
+    			  filter: '.filter'	
+    		  },
+    		  load: {
+      		  filter: '.all'  
+      		}     
+				});								
+			
+			}
+
+		};
+
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+
+</head>
+<body>
+		
+		<div id="mySidenav" class="sidenav">
+			<center>
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="#" class="filter active" data-filter=".all" onclick="closeNav()" >All</a>
+				<a href="#" class="filter" data-filter=".finance" onclick="closeNav()">Finance</a>
+				<a href="#" class="filter" data-filter=".management" onclick="closeNav()">Management</a>
+				<a href="#" class="filter" data-filter=".branding" onclick="closeNav()">Branding</a>
+				<a href="#" class="filter" data-filter=".technical" onclick="closeNav()">Technical</a>
+				<a href="#" class="filter" data-filter=".hospitality" onclick="closeNav()">Hospitality</a>
+			</center>
+			  </div>
+
+<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "100%";
+		}
+		
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+		</script>
+		<div id="header">
+				<div class="jumbotron text-center">
+					<center><img id="logo" src="static/css/logo.gif" style="width :60%;
+					height :auto;">
+				   
+				  <h1><font style="color : rgb(112, 112, 112) ;">Team HINT 3.0</h1></div> 
+				  </center> 
+				</div>
+				<div class="navbar">
+				<div id="span">
+						<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+						<center style="font-size:25px; margin-top :-38px">Team</center>
+						<img id="logo" src="static/css/logo.png" style="width :60px; height :auto; margin-top : -30px;" align="right">
+					</div>
+					
+				</div>
+	<div class="container">
+		
+		<div class="table">
+		<ul id="filters" class="clearfix">
+			
+			<li><span class="filter active" data-filter=".all">All</span></li>
+			<li><span class="filter" data-filter=".finance">Finance</span></li>
+			<li><span class="filter" data-filter=".management">Management</span></li>
+			<li><span class="filter" data-filter=".branding">Branding</span></li>
+			<li><span class="filter" data-filter=".technical">Technical</span></li>
+			<li><span class="filter" data-filter=".hospitality">Hospitality</span></li>
+		</ul>
+	</div>
+		<div id="portfoliolist">
+				
+			<div class="portfolio finance all" data-cat="finance">
+				<div class="portfolio-wrapper" id="wrapper">
+					<div class="image">
+					<img src="team/gautham.jpg" alt="" />
+				</div>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Gautham Santhosh</a>
+							<span class="text-category">Finance</span>
+							<p class="text">
+									<a href="https://www.facebook.com/gauthamzz" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+									<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+									<i class="fa fa-github" aria-hidden="true"></i>
+									
+						</p>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			<div class="portfolio technical all" data-cat="technical">
+					<div class="portfolio-wrapper">	
+							<div class="image">			
+						<img src="team/yash.jpg" alt="" />
+						</div>
+						<div class="label">
+							<div class="label-text">
+								
+								<a class="text-title">Yash sharma</a>
+								<span class="text-category">Technical</span>
+								<p class="text">
+										<a href="https://www.facebook.com/yasharma.95" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<i class="fa fa-github" aria-hidden="true"></i>
+										
+							</p>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+			</div>					
+					<div class="portfolio finance all" data-cat="finance">
+							<div class="portfolio-wrapper">
+									<div class="image">				
+								<img src="team/deora.jpg" alt="" />
+								</div>
+								<div class="label">
+									<div class="label-text">
+										<a class="text-title">Abhishek Deora</a>
+										<span class="text-category">Finance</span>
+										<p class="text">
+												<a href="https://www.facebook.com/abhishek.deora.5" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+												<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+												<i class="fa fa-github" aria-hidden="true"></i>
+												
+									</p>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>	
+						<div class="portfolio hospitality all" data-cat="hospitality">
+								<div class="portfolio-wrapper">
+										<div class="image">				
+									<img src="team/nikhil.jpg" alt="" />
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<a class="text-title">Nikihil Ranjan</a>
+											<span class="text-category">Hospitality</span>
+											<p class="text">
+													<a href="https://www.facebook.com/phoenikx129" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+													<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+													<i class="fa fa-github" aria-hidden="true"></i>														
+										</p>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>	
+							<div class="portfolio hospitality all" data-cat="hospitality">
+									<div class="portfolio-wrapper">	
+											<div class="image">			
+									<img src="team/sulyab.jpg" alt="" />
+									</div>
+									<div class="label">
+									<div class="label-text">
+									<a class="text-title">Sulyab Thottungal</a>
+									<span class="text-category">Hospitality</span>
+									<p class="text">
+										<a href="https://www.facebook.com/sulyabtv" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<i class="fa fa-github" aria-hidden="true"></i>
+									</p>
+									</div>
+								<div class="label-bg"></div>
+								</div>
+								</div>
+							</div>
+							<div class="portfolio management all" data-cat="management">
+									<div class="portfolio-wrapper" id="wrapper">
+										<div class="image">
+										<img src="team/anurag.jpg" alt="" />
+									</div>
+										<div class="label">
+											<div class="label-text">
+												<a class="text-title">Anurag Sharma</a>
+												<span class="text-category">Management</span>
+												<p class="text">
+														<a href="https://www.facebook.com/anurag.dorado" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+														<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+														<i class="fa fa-github" aria-hidden="true"></i>	
+											</p>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>
+							<div class="portfolio finance all" data-cat="finance">
+									<div class="portfolio-wrapper">
+											<div class="image">				
+									<img src="team/faheem.jpg" alt="" />
+									</div>
+									<div class="label">
+									<div class="label-text">
+									<a class="text-title">Faheem Zunjani</a>
+									<span class="text-category">Finance</span>
+									<p class="text">
+										<a href="https://www.facebook.com/faheemzunjani" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<i class="fa fa-github" aria-hidden="true"></i>
+									</p>
+									</div>
+								<div class="label-bg"></div>
+								</div>
+								</div>
+							</div>
+							<div class="portfolio finance all" data-cat="finance">
+									<div class="portfolio-wrapper">		
+											<div class="image">		
+									<img src="team/khare.jpg" alt="" />
+									</div>
+									<div class="label">
+									<div class="label-text">
+									<a class="text-title">Abhinav Khare</a>
+									<span class="text-category">Finance</span>
+									<p class="text">
+										<a href="https://www.facebook.com/khareabhinav" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<i class="fa fa-github" aria-hidden="true"></i>
+									</p>
+									</div>
+								<div class="label-bg"></div>
+								</div>
+								</div>
+							</div>
+							<div class="portfolio branding all" data-cat="branding">
+									<div class="portfolio-wrapper">
+											<div class="image">				
+									<img src="team/chaitanya.jpg" alt="" />
+									</div>
+									<div class="label">
+									<div class="label-text">
+									<a class="text-title">Chaitanya Yadav</a>
+									<span class="text-category">Branding</span>
+									<p class="text">
+										<a href="https://www.facebook.com/cayadav2009" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<i class="fa fa-github" aria-hidden="true"></i>
+									</p>
+									</div>
+								<div class="label-bg"></div>
+								</div>
+								</div>
+							</div>
+							<div class="portfolio hospitality all" data-cat="hospitality">
+									<div class="portfolio-wrapper">
+											<div class="image">				
+									<img src="team/salman.jpg" alt="" />
+									</div>
+									<div class="label">
+									<div class="label-text">
+									<a class="text-title">Salman Naseer</a>
+									<span class="text-category">Hospitality</span>
+									<p class="text">
+										<a href="https://www.facebook.com/SalmanNaseerAhmed" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<i class="fa fa-github" aria-hidden="true"></i>
+									</p>
+									</div>
+								<div class="label-bg"></div>
+								</div>
+								</div>
+							</div>
+							<div class="portfolio hospitality all" data-cat="hospitality">
+									<div class="portfolio-wrapper">	
+											<div class="image">			
+									<img src="team/shubham.jpg" alt="" />
+									</div>
+									<div class="label">
+									<div class="label-text">
+									<a class="text-title">Shubham Padia</a>
+									<span class="text-category">Hospitality</span>
+									<p class="text">
+										<a href="https://www.facebook.com/padiashubham" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<i class="fa fa-github" aria-hidden="true"></i>
+									</p>
+									</div>
+								<div class="label-bg"></div>
+								</div>
+								</div>
+							</div>
+							
+							<div class="portfolio finance all" data-cat="finance">
+									<div class="portfolio-wrapper">
+											<div class="image">				
+									<img src="team/anagh.png" alt="" />
+									</div>
+									<div class="label">
+									<div class="label-text">
+									<a class="text-title">Anagh Rao</a>
+									<span class="text-category">Finance</span>
+									<p class="text">
+										<a href="https://www.facebook.com/anagh.rao" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<i class="fa fa-github" aria-hidden="true"></i>
+									</p>
+									</div>
+								<div class="label-bg"></div>
+								</div>
+								</div>
+							</div>		
+							<div class="portfolio finance all" data-cat="finance">
+									<div class="portfolio-wrapper">		
+											<div class="image">		
+									<img src="team/rishi.jpg" alt="" />
+									</div>
+									<div class="label">
+									<div class="label-text">
+									<a class="text-title">Rishi Shukla</a>
+									<span class="text-category">Finance</span>
+									<p class="text">
+										<a href="https://www.facebook.com/rishishukla5598" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<i class="fa fa-github" aria-hidden="true"></i>
+									</p>
+									</div>
+								<div class="label-bg"></div>
+								</div>
+								</div>
+							</div>
+							<div class="portfolio management all" data-cat="management">
+									<div class="portfolio-wrapper">		
+											<div class="image">		
+									<img src="team/abhishek.jpg" alt="" />
+									</div>
+									<div class="label">
+									<div class="label-text">
+									<a class="text-title">Abhishek Acharya</a>
+									<span class="text-category">Management</span>
+									<p class="text">
+										<a href="https://www.facebook.com/Acharya.Abhishek.4" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<i class="fa fa-github" aria-hidden="true"></i>
+									</p>
+									</div>
+								<div class="label-bg"></div>
+								</div>
+								</div>
+							</div>
+							<div class="portfolio management all" data-cat="management">
+									<div class="portfolio-wrapper">	
+											<div class="image">			
+									<img src="team/gaurav.jpg" alt="" />
+									</div>
+									<div class="label">
+									<div class="label-text">
+									<a class="text-title">Gaurav Tiwari</a>
+									<span class="text-category">Management</span>
+									<p class="text">
+										<a href="https://www.facebook.com/TheLvnGDead" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<i class="fa fa-github" aria-hidden="true"></i>
+									</p>
+									</div>
+								<div class="label-bg"></div>
+								</div>
+								</div>
+							</div>
+							<div class="portfolio management all" data-cat="management">
+									<div class="portfolio-wrapper">
+											<div class="image">				
+									<img src="team/bhanu.jpg" alt="" />
+									</div>
+									<div class="label">
+									<div class="label-text">
+									<a class="text-title">Bhanu Bhandari</a>
+									<span class="text-category">Management</span>
+									<p class="text">
+										<a href="https://www.facebook.com/falafelraider" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<i class="fa fa-github" aria-hidden="true"></i>
+									</p>
+									</div>
+								<div class="label-bg"></div>
+								</div>
+								</div>
+							</div>
+							<div class="portfolio management all" data-cat="management">
+									<div class="portfolio-wrapper">
+											<div class="image">				
+									<img src="team/mansi.jpg" alt="" />
+									</div>
+									<div class="label">
+									<div class="label-text">
+									<a class="text-title">Mansi Choudhary</a>
+									<span class="text-category">Management</span>
+									<p class="text">
+										<a href="https://www.facebook.com/mansichoudhary136" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<i class="fa fa-github" aria-hidden="true"></i>
+									</p>
+									</div>
+								<div class="label-bg"></div>
+								</div>
+								</div>
+							</div>
+							<div class="portfolio hospitality all" data-cat="hospitality">
+									<div class="portfolio-wrapper">
+											<div class="image">				
+									<img src="team/aditya.jpg" alt="" />
+									</div>
+									<div class="label">
+									<div class="label-text">
+									<a class="text-title">Aditya Goel</a>
+									<span class="text-category">Hospitality</span>
+									<p class="text">
+										<a href="https://www.facebook.com/mansichoudhary136" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<i class="fa fa-github" aria-hidden="true"></i>
+									</p>
+									</div>
+								<div class="label-bg"></div>
+								</div>
+								</div>
+							</div>
+							
+							
+							<div class="portfolio branding all" data-cat="branding">
+									<div class="portfolio-wrapper">
+											<div class="image">				
+									<img src="team/gali.jpg" alt="" />
+									</div>
+									<div class="label">
+									<div class="label-text">
+									<a class="text-title">Niharika Gali</a>
+									<span class="text-category">Branding</span>
+									<p class="text">
+										<a href="https://www.facebook.com/niharikagali" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<i class="fa fa-github" aria-hidden="true"></i>
+									</p>
+									</div>
+								<div class="label-bg"></div>
+								</div>
+								</div>
+							</div>
+							<div class="portfolio branding all" data-cat="branding">
+									<div class="portfolio-wrapper">
+											<div class="image">				
+									<img src="team/nabeel.jpg" alt="" />
+									</div>
+									<div class="label">
+									<div class="label-text">
+									<a class="text-title">Nabeel Jawahir</a>
+									<span class="text-category">Branding</span>
+									<p class="text">
+										<a href="https://www.facebook.com/nab331" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<i class="fa fa-github" aria-hidden="true"></i>
+									</p>
+									</div>
+								<div class="label-bg"></div>
+								</div>
+								</div>
+							</div>
+							<div class="portfolio technical all" data-cat="technical">
+									<div class="portfolio-wrapper">
+											<div class="image">				
+										<img src="team/aswanth.jpg" alt="" />
+										</div>
+										
+										<div class="label">
+											<div class="label-text">
+												<a class="text-title">Aswanth Koleri</a>
+												<span class="text-category">Technical</span>
+												<p class="text">
+														<a href="https://www.facebook.com/aswanth9495" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+														<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+														<i class="fa fa-github" aria-hidden="true"></i>
+											</p>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+							</div>
+							<div class="portfolio technical all" data-cat="technical">
+									<div class="portfolio-wrapper">
+											<div class="image">				
+										<img src="team/anupam.jpg" alt="" />
+										</div>
+										
+										<div class="label">
+											<div class="label-text">
+												<a class="text-title">Anupam Dagar</a>
+												<span class="text-category">Technical</span>
+												<p class="text">
+														<a href="https://www.facebook.com/invincible.anupam" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+														<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+														<i class="fa fa-github" aria-hidden="true"></i>
+											</p>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+							</div>
+							<div class="portfolio technical all" data-cat="technical">
+									<div class="portfolio-wrapper">
+											<div class="image">				
+										<img src="team/aswin.jpg" alt="" />
+										</div>
+										
+										<div class="label">
+											<div class="label-text">
+												<a class="text-title">Aswin VB</a>
+												<span class="text-category">Technical</span>
+												<p class="text">
+														<a href="https://www.facebook.com/aswinvb" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+														<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+														<i class="fa fa-github" aria-hidden="true"></i>
+											</p>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+							</div>
+							<div class="portfolio technical all" data-cat="technical">
+									<div class="portfolio-wrapper">
+											<div class="image">				
+										<img src="team/niharika.jpg" alt="" />
+										</div>	
+										<div class="label">
+											<div class="label-text">
+												<a class="text-title">Niharika Shrivastava</a>
+												<span class="text-category">Technical</span>
+												<p class="text">
+														<a href="https://www.facebook.com/NiharikaS25" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+														<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+														<i class="fa fa-github" aria-hidden="true"></i>
+											</p>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+							</div>
 
 
-        <p>Place your content here</p>
+		</div>
+		 
+	</div><!-- container -->
+	<section id="footer">
+			<div class="contents text-center">
+				<div id="social">
+					<center>
+					<a href="https://twitter.com/hintiiita" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="https://www.facebook.com/HackInTheNorth/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+					<a href="https://github.com/HackInTheNorth" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+					<a href="mailto:team@hackinthenorth.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+				</center>
+				</div>
+				<center>
+				©2017 Hack In The North<br/>
+				All other trademarks and logos ® their respective owners.<br />
+				Made with ♥ by <a class="footer-team-link" href="#">Team HINT</a>
+			</center>
+			</div>
+		</section>
 
-
-        <script src="static/js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="static/js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="static/js/plugins.js"></script>
-        <script src="static/js/team.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </body>
+</body>
 </html>
