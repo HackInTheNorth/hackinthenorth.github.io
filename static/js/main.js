@@ -59,4 +59,7 @@ $(document).ready(function(){
   $(".navbar-default").css("background-color", "#fff");
 });
 
+//parallax
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene);
 });
