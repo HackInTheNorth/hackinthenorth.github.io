@@ -50,7 +50,7 @@
 }
 @media (min-width: 992px) {
   .custom-heroku{
-    float: left;
+    margin :auto;
     width: 16.66666667%;
   }
 }
