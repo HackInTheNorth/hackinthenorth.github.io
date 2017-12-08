@@ -66,7 +66,11 @@
 
             <div class="container-fluid" style="padding-bottom: 10%">
                 <div class="row col-md-8 col-md-offset-2">
-                    <img id="big-hint-logo" src="static/img/logo.gif" class="wow fadeIn">
+                    <div id="scene" style="position: relative;">
+                    <img src="static/img/gears.gif" class="parallax-width" data-depth="0.2" style="position: relative;">
+                    <img src="static/img/mountain_shadow.png" class="parallax-width" data-depth="0.4" style="position: absolute;top: 0px;">
+                    <img src="static/img/text_shadow.png" class="parallax-width" data-depth="0.6" style="position: absolute;top: 0px;">
+                    </div>
                 </div>
                 <div class="row col-md-8 col-md-offset-2 text-center wow fadeIn" data-wow-delay="0.5s">
                     <h3 class="landing-subtitle">March 16-18, 2018</h3>
@@ -77,19 +81,19 @@
                 </div>
                 <div class="row col-md-12 text-center wow fadeIn" data-wow-delay="1s">
                     <br>
-                    <a class="btn btn-lg landing-btn" href="#">Apply</a>
-                    <a class="btn btn-lg landing-btn" href="#">Subscribe</a>
+                     <a class="btn btn-lg landing-btn" href="http://hacksociety.tech/attend/hackathon/30" target="_blank">Apply</a>
+                    <a class="btn btn-lg landing-btn" href="https://hint18.zulipchat.com" target="_blank">Chat With Us On Zulip</a>
                 </div>
             </div>
        
             <section id="about" class="fullpage" style="background-image: linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);">
             <div class="container-fluid">
-                <div class="card-panel" style="overflow:auto;">
+                <div class="card-panel">
                     <h1 class="wow fadeInUp text-center" data-wow-delay="0.2s">ABOUT</h1>
                     <br>
-                    <div class="row" style="overflow:auto;">
-                    <div class="col-md-12" style="overflow:auto;">
-                        <h4 class="wow fadeInUp" data-wow-delay="0.4s" style="line-height: 2em;overflow: auto;">Hack In The North is the biggest student-held hackathon in India. Over 300 students from all across India come together at IIIT Allahabad to spend 36 hours building projects that have potential to make life better. We're looking for simple, classy solutions to world problems. We at HINT believe that there exists no limitation on age, and hence we're open for all! Food, travel, somewhere to crash when you run out of energy - it's all on us.
+                    <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="wow fadeInUp" data-wow-delay="0.4s" style="line-height: 2em;">Hack In The North is the biggest student-held hackathon in India. Over 300 students from all across India come together at IIIT Allahabad to spend 36 hours building projects that have potential to make life better. We're looking for simple, classy solutions to world problems. We at HINT believe that there exists no limitation on age, and hence we're open for all! Food, travel, somewhere to crash when you run out of energy - it's all on us.
                         </h4>
                     </div>
             </div>
@@ -308,7 +312,7 @@
                                                 <div class="col-md-6 col-md-offset-3 footer-text">
                                                 <a style="color: white" ref="https://hackcodeofconduct.org/530-hack_in_the_north_2018">Code of Conduct </a>| ©2017 Hack In The North<br/>
                                                 All trademarks and logos are the property of their respective owners.<br />
-                                                Made with <i class="fa fa-heart" aria-hidden="true" style="font-size: 20px;margin-right: 2px;"></i> by <a class="footer-team-link" href="#">Team HINT</a></div>
+                                                Made with <i class="fa fa-heart" aria-hidden="true" style="font-size: 20px;margin-right: 2px;"></i> by <a class="footer-team-link" href="team.html">Team HINT</a></div>
                                                 <div class="social wow fadeInUp col-md-3">
                                                     <a href="https://twitter.com/hintiiita" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                                     <a href="https://www.facebook.com/HackInTheNorth/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
@@ -319,11 +323,13 @@
                                         </section>
 
 
-                                        <script src="static/js/vendor/modernizr-3.5.0.min.js" async></script>
-                                        <script src="static/js/vendor/jquery-3.2.1.min.js" async></script>
+                                        <script src="static/js/vendor/modernizr-3.5.0.min.js"></script>
+                                        <script src="static/js/vendor/jquery-3.2.1.min.js"></script>
+                                        <script type="text/javascript" src="static/js/wow.min.js"></script>
+                                        <script type="text/javascript" src="static/js/parallax.min.js"></script>
                                         <script src="static/js/bootstrap.min.js" async></script>
                                         <script src="static/js/plugins.js" async></script>
-                                        <script src="static/js/main.js" async></script>
+                                        <script src="static/js/main.js"></script>
 
                                         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
                                         <script>
@@ -331,7 +337,6 @@
                                             ga('create','UA-72748005-1','auto');ga('send','pageview')
                                         </script>
                                         <script src="static/js/analytics.js" async defer></script>
-                                        <script type="text/javascript" src="static/js/wow.min.js" async></script>
                                         <script type="text/javascript" src="static/js/faq.js" async></script>
                               </body>
 </html>
