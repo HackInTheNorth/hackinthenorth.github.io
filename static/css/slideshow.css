@@ -7,6 +7,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   max-width: 1000px;
   position: relative;
   margin: auto;
+  border: 2px solid black;
 }
 
 /* Next & previous buttons */
@@ -58,24 +59,6 @@ body {font-family: Verdana,sans-serif;margin:0}
 
 .active, .dot:hover {
   background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
 }
 
 /* On smaller screens, decrease text size */
