@@ -1,67 +1,89 @@
-* {box-sizing:border-box}
-body {font-family: Verdana,sans-serif;margin:0}
-.mySlides {display:none}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+#slider {
+  width: 602px;
+  height: 402px;/* Make it the same size as your images */
+  background: #fff url(loading.gif) no-repeat 50% 50%;
   position: relative;
-  margin: auto;
-  border: 2px solid black;
+  margin: 0 auto;/*make the image slider center-aligned */
+  box-shadow: 0px 1px 5px #999999;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
+#slider img {
   position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
+  border: none;
+  display: none;
+}
+
+/* the link style (if an image is wrapped in a link) */
+
+#slider a.imgLink {
+  z-index: 2;
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Caption styles */
+
+div.mc-caption-bg,
+div.mc-caption-bg2 {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  left: 0px;
+  bottom: 15px;
+  z-index: 3;
+  overflow: hidden;
+  font-size: 0;
+}
+
+div.mc-caption-bg { background-color: black; }
+
+div.mc-caption {
+  font: bold 14px/20px Arial;
+  color: #EEE;
+  z-index: 4;
+  padding: 10px 0;
+  text-align: center;
+}
+
+div.mc-caption a { color: #FB0; }
+
+div.mc-caption a:hover { color: #DA0; }
+
+/* ------ built-in navigation bullets wrapper ------*/
+
+div.navBulletsWrapper {
+  top: 320px;
+  left: 280px; /* Its position is relative to the #slider */
+  width: 150px;
+  background: none;
+  padding-left: 20px;
+  position: relative;
+  z-index: 5;
+  cursor: pointer;
   color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+/* each bullet */
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
+div.navBulletsWrapper div {
+  width: 11px;
+  height: 11px;
+  background: transparent url(images/bullet.png) no-repeat 0 0;
+  float: left;
+  overflow: hidden;
+  vertical-align: middle;
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  margin-right: 11px;/* distance between each bullet*/
+  _position: relative;/*IE6 hack*/
+  color: black;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
+div.navBulletsWrapper div.active { background-position: 0 -11px; }
