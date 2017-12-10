@@ -409,6 +409,11 @@ li{
  * Hide visually and from screen readers
  */
 
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}
+
 .hidden {
     display: none !important;
 }
