@@ -7,9 +7,9 @@
 	<meta name="author" content="">
 	<meta property="og:Hint Team" content="logo.png"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" href="static/css/logo.png">
-	<link rel="stylesheet" href="static/css/normalize.css">
-	<link rel="stylesheet" href="static/css/layout.css">
+	<link rel="shortcut icon" href="css/logo.png">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
 		i{
@@ -109,7 +109,7 @@ i:hover {
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
 	<![endif]-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="static/js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 	
 	<script type="text/javascript">
 	$(function () {
@@ -167,7 +167,7 @@ i:hover {
 		</script>
 		<div id="header">
 				<div class="jumbotron text-center">
-					<center><img id="logo" src="static/css/logo.gif" style="width :60%;
+					<center><img id="logo" src="css/logo.gif" style="width :60%;
 					height :auto;">
 				   
 				  <h1><font style="color : rgb(112, 112, 112) ;">Team HINT 3.0</h1></div> 
@@ -177,7 +177,7 @@ i:hover {
 				<div id="span">
 						<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 						<center style="font-size:25px; margin-top :-38px">Team</center>
-						<img id="logo" src="static/css/logo.png" style="width :60px; height :auto; margin-top : -30px;" align="right">
+						<img id="logo" src="css/logo.png" style="width :60px; height :auto; margin-top : -30px;" align="right">
 					</div>
 					
 				</div>
@@ -196,10 +196,10 @@ i:hover {
 	</div>
 		<div id="portfoliolist">
 				
-			<div class="portfolio finance all" data-cat="finance">
+			<div class="portfolio finance all" data-cat="finance" >
 				<div class="portfolio-wrapper" id="wrapper">
 					<div class="image">
-					<img src="team/gautham.jpg" alt="" />
+					<img src="team/gautham.jpg" onclick="void(0)" alt="" />
 				</div>
 					<div class="label">
 						<div class="label-text">
@@ -219,7 +219,7 @@ i:hover {
 			<div class="portfolio technical all" data-cat="technical">
 					<div class="portfolio-wrapper">	
 							<div class="image">			
-						<img src="team/yash.jpg" alt="" />
+						<img src="team/yash.jpg" onclick="void(0)" alt="" />
 						</div>
 						<div class="label">
 							<div class="label-text">
@@ -240,7 +240,7 @@ i:hover {
 					<div class="portfolio finance all" data-cat="finance">
 							<div class="portfolio-wrapper">
 									<div class="image">				
-								<img src="team/deora.jpg" alt="" />
+								<img src="team/deora.jpg" onclick="void(0)" alt="" />
 								</div>
 								<div class="label">
 									<div class="label-text">
@@ -260,7 +260,7 @@ i:hover {
 						<div class="portfolio hospitality all" data-cat="hospitality">
 								<div class="portfolio-wrapper">
 										<div class="image">				
-									<img src="team/nikhil.jpg" alt="" />
+									<img src="team/nikhil.jpg" onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 										<div class="label-text">
@@ -275,11 +275,30 @@ i:hover {
 										<div class="label-bg"></div>
 									</div>
 								</div>
+							</div>
+							<div class="portfolio hospitality all" data-cat="hospitality">
+								<div class="portfolio-wrapper">
+										<div class="image">				
+									<img src="team/akanshu.jpg" onclick="void(0)" alt="" />
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<a class="text-title">Akanshu Gupta</a>
+											<span class="text-category">Hospitality</span>
+											<p class="text">
+													<a href="https://www.facebook.com/akanshu.gupta.7" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+													<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+													<i class="fa fa-github" aria-hidden="true"></i>														
+										</p>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
 							</div>	
 							<div class="portfolio hospitality all" data-cat="hospitality">
 									<div class="portfolio-wrapper">	
 											<div class="image">			
-									<img src="team/sulyab.jpg" alt="" />
+									<img src="team/sulyab.jpg" onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 									<div class="label-text">
@@ -298,7 +317,7 @@ i:hover {
 							<div class="portfolio management all" data-cat="management">
 									<div class="portfolio-wrapper" id="wrapper">
 										<div class="image">
-										<img src="team/anurag.jpg" alt="" />
+										<img src="team/anurag.jpg" onclick="void(0)" alt="" />
 									</div>
 										<div class="label">
 											<div class="label-text">
@@ -314,19 +333,19 @@ i:hover {
 										</div>
 									</div>
 								</div>
-							<div class="portfolio management all" data-cat="management">
+								<div class="portfolio management all" data-cat="management">
 									<div class="portfolio-wrapper">
 											<div class="image">				
-									<img src="team/mubu.jpg" alt="" />
+									<img src="team/faheem.jpg"  onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 									<div class="label-text">
-									<a class="text-title">Mubaris NK</a>
+									<a class="text-title">Mubaris Hassan</a>
 									<span class="text-category">Management</span>
 									<p class="text">
-										<a href="https://www.facebook.com/nk.mubaris" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-										<a href="https://twitter.com/Mubaris_NK" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-										<a href="https://github.com/mubaris" target = "_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+										<a href="https://www.facebook.com/faheemzunjani" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										<a href="" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<i class="fa fa-github" aria-hidden="true"></i>
 									</p>
 									</div>
 								<div class="label-bg"></div>
@@ -336,7 +355,7 @@ i:hover {
 							<div class="portfolio finance all" data-cat="finance">
 									<div class="portfolio-wrapper">
 											<div class="image">				
-									<img src="team/faheem.jpg" alt="" />
+									<img src="team/faheem.jpg"  onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 									<div class="label-text">
@@ -355,7 +374,7 @@ i:hover {
 							<div class="portfolio finance all" data-cat="finance">
 									<div class="portfolio-wrapper">		
 											<div class="image">		
-									<img src="team/khare.jpg" alt="" />
+									<img src="team/khare.jpg" onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 									<div class="label-text">
@@ -374,7 +393,7 @@ i:hover {
 							<div class="portfolio branding all" data-cat="branding">
 									<div class="portfolio-wrapper">
 											<div class="image">				
-									<img src="team/chaitanya.jpg" alt="" />
+									<img src="team/chaitanya.jpg" onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 									<div class="label-text">
@@ -393,7 +412,7 @@ i:hover {
 							<div class="portfolio hospitality all" data-cat="hospitality">
 									<div class="portfolio-wrapper">
 											<div class="image">				
-									<img src="team/salman.jpg" alt="" />
+									<img src="team/salman.jpg" onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 									<div class="label-text">
@@ -412,7 +431,7 @@ i:hover {
 							<div class="portfolio hospitality all" data-cat="hospitality">
 									<div class="portfolio-wrapper">	
 											<div class="image">			
-									<img src="team/shubham.jpg" alt="" />
+									<img src="team/shubham.jpg"  onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 									<div class="label-text">
@@ -432,7 +451,7 @@ i:hover {
 							<div class="portfolio finance all" data-cat="finance">
 									<div class="portfolio-wrapper">
 											<div class="image">				
-									<img src="team/anagh.png" alt="" />
+									<img src="team/anagh.png" onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 									<div class="label-text">
@@ -451,7 +470,7 @@ i:hover {
 							<div class="portfolio finance all" data-cat="finance">
 									<div class="portfolio-wrapper">		
 											<div class="image">		
-									<img src="team/rishi.jpg" alt="" />
+									<img src="team/rishi.jpg" onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 									<div class="label-text">
@@ -467,10 +486,10 @@ i:hover {
 								</div>
 								</div>
 							</div>
-							<div class="portfolio management all" data-cat="management">
+							<div class="portfolio management all"  data-cat="management">
 									<div class="portfolio-wrapper">		
 											<div class="image">		
-									<img src="team/abhishek.jpg" alt="" />
+									<img src="team/abhishek.jpg" onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 									<div class="label-text">
@@ -489,7 +508,7 @@ i:hover {
 							<div class="portfolio management all" data-cat="management">
 									<div class="portfolio-wrapper">	
 											<div class="image">			
-									<img src="team/gaurav.jpg" alt="" />
+									<img src="team/gaurav.jpg" onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 									<div class="label-text">
@@ -508,7 +527,7 @@ i:hover {
 							<div class="portfolio management all" data-cat="management">
 									<div class="portfolio-wrapper">
 											<div class="image">				
-									<img src="team/bhanu.jpg" alt="" />
+									<img src="team/bhanu.jpg" onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 									<div class="label-text">
@@ -524,10 +543,10 @@ i:hover {
 								</div>
 								</div>
 							</div>
-							<div class="portfolio management all" data-cat="management">
+							<div class="portfolio management all"  data-cat="management">
 									<div class="portfolio-wrapper">
 											<div class="image">				
-									<img src="team/mansi.jpg" alt="" />
+									<img src="team/mansi.jpg" onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 									<div class="label-text">
@@ -546,7 +565,7 @@ i:hover {
 							<div class="portfolio hospitality all" data-cat="hospitality">
 									<div class="portfolio-wrapper">
 											<div class="image">				
-									<img src="team/aditya.jpg" alt="" />
+									<img src="team/aditya.jpg" onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 									<div class="label-text">
@@ -567,7 +586,7 @@ i:hover {
 							<div class="portfolio branding all" data-cat="branding">
 									<div class="portfolio-wrapper">
 											<div class="image">				
-									<img src="team/gali.jpg" alt="" />
+									<img src="team/gali.jpg" onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 									<div class="label-text">
@@ -586,7 +605,7 @@ i:hover {
 							<div class="portfolio branding all" data-cat="branding">
 									<div class="portfolio-wrapper">
 											<div class="image">				
-									<img src="team/nabeel.jpg" alt="" />
+									<img src="team/nabeel.jpg" onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 									<div class="label-text">
@@ -605,7 +624,7 @@ i:hover {
 							<div class="portfolio technical all" data-cat="technical">
 									<div class="portfolio-wrapper">
 											<div class="image">				
-										<img src="team/aswanth.jpg" alt="" />
+										<img src="team/aswanth.jpg" onclick="void(0)" alt="" />
 										</div>
 										
 										<div class="label">
@@ -625,7 +644,7 @@ i:hover {
 							<div class="portfolio technical all" data-cat="technical">
 									<div class="portfolio-wrapper">
 											<div class="image">				
-										<img src="team/anupam.jpg" alt="" />
+										<img src="team/anupam.jpg" onclick="void(0)" alt="" />
 										</div>
 										
 										<div class="label">
@@ -645,7 +664,7 @@ i:hover {
 							<div class="portfolio technical all" data-cat="technical">
 									<div class="portfolio-wrapper">
 											<div class="image">				
-										<img src="team/aswin.jpg" alt="" />
+										<img src="team/aswin.jpg" onclick="void(0)" alt="" />
 										</div>
 										
 										<div class="label">
@@ -665,7 +684,7 @@ i:hover {
 							<div class="portfolio technical all" data-cat="technical">
 									<div class="portfolio-wrapper">
 											<div class="image">				
-										<img src="team/niharika.jpg" alt="" />
+										<img src="team/niharika.jpg" onclick="void(0)" alt="" />
 										</div>	
 										<div class="label">
 											<div class="label-text">

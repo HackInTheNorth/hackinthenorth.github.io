@@ -138,6 +138,8 @@ body{
 			  position: absolute;
 			  top:0;
 			  left:0;
+			  cursor: pointer;
+			  
 		  }
 	  
 		  .portfolio .label-text {
@@ -146,35 +148,40 @@ body{
 			  z-index:500;
 			  padding:5px 8px;
 			  font-size: 20px;
-  
+			  cursor: pointer;
 		  }
 			  
 			  .portfolio .text-category {
 				  display:block;
 				  font-size:15px;
+				  cursor: pointer;
 			  }
 	  
 	  .portfolio:hover .label {
 	  bottom:0;
+		cursor: pointer;
 	}
 	.portfolio .text {
 		position: relative;
 		bottom: 150px;
 		visibility: hidden;
+		cursor: pointer;
 	}
 	.portfolio:hover  .text {
 		
 		visibility: visible;
+		cursor: pointer;
 	} 
 	  .portfolio:hover img {
 		-webkit-filter: blur(2px);
 		filter: blur(2px);
 	  top:-30px;	
-
+	  cursor: pointer;
 	}  
 	.table {
 		display: table;   /* Allow the centering to work */
 		margin: 0 auto;
+		cursor: pointer;
 	}
 	  /* Hover effect */
 	.image {
@@ -194,9 +201,11 @@ body{
 		opacity:0;
 		transition: all 0.5s;
 		-webkit-transition: all 0.5s;
+		cursor: pointer;
 	}
 	.image:hover:after {
 		opacity:1;
+		cursor: pointer;
 	}
 	#span {
 		display: none;
@@ -238,16 +247,19 @@ body{
 	  }	
 	  .image{
 		  width :100%;
+		  cursor: pointer;
 		
 	  }
-	  .portfolio .label-bg {
-		background: #87345a;
-		width: 100%;
-		height:100%;
-		position: absolute;
-		top:0;
-		left:0;
-	}
+	 
+	 .image:after {
+		 display: none;
+		 cursor: pointer;
+	 }
+	 .image:hover:after {
+		 display: none;
+		 cursor: pointer;
+	 }
+	 
 	.portfolio-wrapper {
 		overflow:hidden;
 		width : 100%;
@@ -257,9 +269,9 @@ body{
 	}
 	.table{
 		display: none;
-		visibility: hidden; 
+		visibility: hidden;
+		cursor: pointer;
 	}
-	
 	#span {
 		display: block;
 	}
@@ -269,6 +281,13 @@ body{
 	.navbar{
 		display: block;
 	}
+	.portfolio:hover img {
+		-webkit-filter: blur(2px);
+		filter: blur(2px);
+		top : 0px;
+		cursor: pointer;
+	} 
+
 	  #ads {
 		  display:none;
 	  }
