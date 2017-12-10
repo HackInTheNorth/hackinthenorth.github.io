@@ -292,7 +292,9 @@ body{
 		  display:none;
 	  }
 	  
-	  
+	.back{
+		display: none;
+	}
   }
   
   
@@ -305,7 +307,9 @@ body{
 	  #ads {
 		  display:none;
 	  }
-	  
+	.back{
+		display: none;
+	}  
   }
 
         /* Footer Start */

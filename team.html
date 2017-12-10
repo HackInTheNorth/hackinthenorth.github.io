@@ -5,11 +5,11 @@
 	<meta charset="utf-8">
 	<title>Hint Team</title>
 	<meta name="author" content="">
-	<meta property="og:Hint Team" content="logo.png"/>
+	<meta property="og:Hint Team" content="static/logo.png"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" href="css/logo.png">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/layout.css">
+	<link rel="shortcut icon" href="static/css/logo.png">
+	<link rel="stylesheet" href="static/css/normalize.css">
+	<link rel="stylesheet" href="static/css/layout.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
 		i{
@@ -102,6 +102,15 @@ i:hover {
 #social {
 	margin-left: 25px;	
 }
+.back {
+	
+	margin-top : -24px;
+	margin-left : 20px;
+}
+.back a{
+	color: #A95179;
+	font-size: 22px;
+}
 
 	</style>
 
@@ -109,7 +118,7 @@ i:hover {
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
 	<![endif]-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript" src="static/js/jquery.mixitup.min.js"></script>
 	
 	<script type="text/javascript">
 	$(function () {
@@ -143,9 +152,10 @@ i:hover {
 
 </head>
 <body>
-		
+		<div class="back"><a href="index.html"><h1><i class="fa fa-home" aria-hidden="true"></i></h1></a></div>
 		<div id="mySidenav" class="sidenav">
 			<center>
+				<div class="back-mob"><a href="index.html"><h1><i class="fa fa-home" aria-hidden="true"></i></h1></a></div>
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				<a href="#" class="filter active" data-filter=".all" onclick="closeNav()" >All</a>
 				<a href="#" class="filter" data-filter=".finance" onclick="closeNav()">Finance</a>
@@ -167,8 +177,8 @@ i:hover {
 		</script>
 		<div id="header">
 				<div class="jumbotron text-center">
-					<center><img id="logo" src="css/logo.gif" style="width :60%;
-					height :auto;">
+					<center><a href="index.html"><img id="logo" src="static/css/logo.gif" style="width :60%;
+					height :auto;"></a>
 				   
 				  <h1><font style="color : rgb(112, 112, 112) ;">Team HINT 3.0</h1></div> 
 				  </center> 
@@ -177,7 +187,7 @@ i:hover {
 				<div id="span">
 						<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 						<center style="font-size:25px; margin-top :-38px">Team</center>
-						<img id="logo" src="css/logo.png" style="width :60px; height :auto; margin-top : -30px;" align="right">
+						<a href="index.html"><img id="logo" src="static/css/logo.png" style="width :60px; height :auto; margin-top : -30px;" align="right"></a>
 					</div>
 					
 				</div>
@@ -336,7 +346,7 @@ i:hover {
 								<div class="portfolio management all" data-cat="management">
 									<div class="portfolio-wrapper">
 											<div class="image">				
-									<img src="team/faheem.jpg"  onclick="void(0)" alt="" />
+									<img src="team/mubu.jpg"  onclick="void(0)" alt="" />
 									</div>
 									<div class="label">
 									<div class="label-text">
