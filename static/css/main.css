@@ -277,7 +277,9 @@ li{
 
 
 #faq {
-  background: linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
+  background-image: url(../img/collage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   color:#fff;
   margin-bottom: 10vh; }
   #faq .contents {
