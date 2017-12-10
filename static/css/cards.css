@@ -80,8 +80,10 @@
   height: 90vh;
 }
 
-#about {
+#about{
   text-align: justify;
+  /*background: url('../img/1.jpg');
+  background-size: cover;*/
 }
 
 .card-panel {
@@ -251,3 +253,6 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+
+
