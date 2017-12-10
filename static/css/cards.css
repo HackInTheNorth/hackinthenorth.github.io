@@ -1183,7 +1183,7 @@ fCWicAAAAADLoXP7) format('woff'), url('static/fonts/Avenir-Medium.ttf')  format(
   padding: 20px;
 }
 .fullpage{
-  height: 90vh;
+  height: 100%;
 }
 
 #about{
