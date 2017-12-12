@@ -213,6 +213,10 @@ body{
 	.navbar {
 		display: none;
 	}
+	p.text{
+		
+		margin-top: -50px; 
+	}
   /* Hover effect end */
   
   /* #Tablet (Portrait) */
