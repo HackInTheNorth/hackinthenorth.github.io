@@ -1,3 +1,9 @@
+@media (min-width: 992px) {
+  .custom-offset {
+    margin-left: 29%;
+  }
+}
+
 @font-face {
   font-family: 'Metropolis';
   src: url('../fonts/Metropolis-Medium.eot'); /* IE9 Compat Modes */
