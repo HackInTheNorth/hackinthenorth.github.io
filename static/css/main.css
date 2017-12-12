@@ -19,7 +19,7 @@ html {
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 5px;
 }
  
 ::-webkit-scrollbar-track {
@@ -31,7 +31,8 @@ html {
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: linear-gradient(330deg, #4C4491 0%, #FD5C63 100%); 
+    min-height: 250px;
+    background: linear-gradient(330deg, #5D009C ,#D40062,#E14327, #FCB600); 
 }
 
 /*
