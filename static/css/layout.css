@@ -278,11 +278,9 @@ body{
 	  }
 	 
 	 .image:after {
-		 display: none;
 		 cursor: pointer;
 	 }
 	 .image:hover:after {
-		 display: none;
 		 cursor: pointer;
 	 }
 	 
