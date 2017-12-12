@@ -16,6 +16,25 @@ html {
     line-height: 1.4;
 }
 
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 7px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    min-height: 250px;
+    background: linear-gradient(330deg, #5D009C ,#D40062, #FCB600); 
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
