@@ -277,7 +277,7 @@ li{
 
 
 #faq {
-  background-image: url(../img/collage1.jpg);
+  background: linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
   background-size: cover;
   background-repeat: no-repeat;
   color:#fff;
