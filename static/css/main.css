@@ -16,6 +16,25 @@ html {
     line-height: 1.4;
 }
 
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 7px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    min-height: 250px;
+    background: linear-gradient(330deg, #5D009C ,#D40062, #FCB600); 
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -277,7 +296,7 @@ li{
 
 
 #faq {
-  background: linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
+  background-image: url(../img/faqtry.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color:#fff;
@@ -308,7 +327,7 @@ li{
   #faq .question:after {
     color: #536bb1;
     -webkit-font-smoothing: antialiased;
-    content: "<";
+    content: ">";
     position: relative;
     float: right;
     font-size: 1em;
@@ -317,9 +336,9 @@ li{
     -ms-transform: rotate(0deg);
     transform: rotate(0deg); }
   #faq .question.open:after {
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg); }
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
   #faq .answer {
     border: 3px solid #fff;
     padding: 0px 20px;
