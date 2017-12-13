@@ -13,7 +13,7 @@
        url('../fonts/Metropolis-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 *{
-	font-family: 'Metropolis';
+	font-family: 'Metropolis' !important;
 }
 .parallax-width{
   max-width: 100%;
