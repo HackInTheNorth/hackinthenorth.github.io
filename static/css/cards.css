@@ -3,7 +3,11 @@
     margin-left: 29%;
   }
 }
-
+@media (min-width: 992px) {
+  .custom-offset1 {
+    margin-left: 13%;
+  }
+}
 @font-face {
   font-family: 'Metropolis';
   src: url('../fonts/Metropolis-Medium.eot'); /* IE9 Compat Modes */
