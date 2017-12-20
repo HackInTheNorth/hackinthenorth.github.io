@@ -62,6 +62,22 @@ $(document).ready(function(){
 //parallax
 var scene = document.getElementById('scene');
 var parallaxInstance = new Parallax(scene);
+
+//faq boxes
+var boxes = $('.box');
+  var questions = $('.question')
+  boxes.slideToggle();
+  $(".question").click(function(){
+    $("#box"+$(this).data('box')).slideToggle();
+    $(this).toggleClass('open');
+    for (ques of questions) {
+      if($(ques).data('box')!==$(this).data('box') && $(ques).hasClass('open')){
+        $(ques).toggleClass('open');
+        $("#box"+$(ques).data('box')).slideToggle();
+      }
+    }
+  });
+
 });
 
 $('.not-active').click(function () {return false;});
