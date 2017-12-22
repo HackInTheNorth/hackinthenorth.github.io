@@ -1,4 +1,4 @@
-  <!doctype html>
+<!doctype html>
 <html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
@@ -20,6 +20,208 @@
     <link href="static/css/hover-min.css" rel="stylesheet" media="all">
     <link rel="stylesheet" type="text/css" href="static/css/cards.css">
 </head>
+<style>
+    /* Diversity section for desktop */
+    #diversity-mobile{
+        display: none;
+    }
+    #diversity-desktop{
+            background: rgb(117, 68, 145);
+        }
+        
+        #diversity-desktop  #one {
+            position: relative;
+            height :550px;
+         width :100%;
+         background: rgb(255, 255, 255);
+         -webkit-clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+         clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+        }
+        #diversity-desktop #three{
+         position: relative;
+         height :450px;
+         width :100%;
+         background: rgb(255, 255, 255);
+         -webkit-clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+         clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+     }
+     #diversity-desktop #two{
+         position: relative;
+         height : 300px;
+         width : 100%;
+         background: rgb(117, 68, 145);
+         -webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+         clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+     }
+     
+     #diversity-desktop #one #image {
+         width : 35%;
+         float: left;
+         height: 100%;
+
+     }
+     #diversity-desktop  #one .content  {
+         width : 65%;
+         float : right;
+         height: 100%;
+     }
+     #diversity-desktop #one #image img {
+        width: 100%;
+        height: auto;
+         padding : 60px;
+         padding-top : 30px;
+         padding-bottom: 130px;
+         
+     }
+     #diversity-desktop #one .content #data{
+         font-size : 20px;
+         text-align: justify;
+        width : 100%;
+        height: auto;
+
+         padding-right : 50px;
+         padding-top : 110px;
+         padding-bottom: 130px;
+     }
+     #diversity-desktop #three #image {
+         width : 35%;
+         float: left;
+         height: 100%;
+
+     }
+     #diversity-desktop  #three .content  {
+         width : 65%;
+         float : right;
+         height: 100%;
+     }
+     #diversity-desktop #three #image img {
+        width: 100%;
+        height: auto;
+         padding :60px;
+         padding-top : 80px;
+         padding-bottom: 100px;
+     }
+     #diversity-desktop  #three .content #data{
+         font-size : 20px;
+         text-align: justify;
+        width : 100%;
+        height: 100%;
+         padding-right : 50px;
+         padding-top : 130px;
+         padding-bottom: 130px;
+     }
+     #diversity-desktop #two #image {
+         width : 35%;
+         float: right;
+         height: 100%;
+
+     }
+     #diversity-desktop #two .content  {
+         width : 65%;
+         float : left;
+         height: 100%;
+     }
+     #diversity-desktop #two #image img {
+         width: 100%;
+         height: auto;
+         padding : 70px;
+         padding-top : 0px;
+         padding-bottom: 0px;
+     }
+     #diversity-desktop  #two .content #data{
+         font-size : 20px;
+         color : white;
+         text-align: justify;
+        width : 100%;
+        height: 100%;
+         padding-left : 50px;
+         padding-top : 60px;
+         padding-bottom: 60px;
+     }
+     #diversity-desktop #one .foo {
+         position: absolute;
+         
+         
+     }
+     #diversity-desktop #one .foo #heading {
+            font-size: 50px; 
+             
+            padding : 20px;
+            margin-left: 40%;
+     }
+     #diversity-desktop .foo1 {
+        height: 150px;
+       
+    }
+    #diversity-desktop .foo2 {
+        height: 400px;
+    }
+    #diversity-desktop .foo1 #heading {
+        
+        padding : 60px;
+    }
+    #diversity-desktop .foo1 h1 {
+        font-size: 3.5em;
+    }
+    
+     /* Diversity section for mobile */
+     @media only screen and (max-width: 1023px) {
+         #diversity-mobile {
+             display: block;
+         }
+         #diversity-desktop {
+             display: none;
+         }
+         #diversity-mobile  #one {
+            position: relative;
+            width :100%;
+         }
+         #diversity-mobile  #two {
+            position: relative;
+            color :white; 
+            background: linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
+         width :100%;
+         }
+         #diversity-mobile #three {
+            position: relative;
+           
+         width :100%;
+         }
+         #diversity-mobile #one #image {
+             width :100%;
+         }
+         #diversity-mobile img {
+             width :100%;
+             padding :30px;
+         }
+         #diversity-mobile #data {
+             padding :30px;
+             text-align: justify;
+         }
+         #diversity-mobile #two #image {
+             width :100%;
+         }
+         #diversity-mobile #three #image {
+             width :100%;
+         }
+        
+         
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1134px){
+        #diversity-desktop  #one #image  img  {
+            padding-top :110px;
+            padding-bottom: 0px;
+    }
+        #diversity-desktop  #two #image img {
+            padding-top :60px;
+            padding-bottom: 0px;
+        }
+        #diversity-desktop  #three #image img  {
+            padding-top :130px;
+            padding-bottom: 0px;
+        }
+    }
+</style>
 <body>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -148,6 +350,73 @@
                 </div>       
             </div>
 </section>
+<section id="diversity-desktop">
+    <div id="one">
+    <div class="foo1">
+    <div id="heading">
+        <center><h1>CELEBRATING DIVERSITY</h1></center>
+    </div>
+    </div>
+    <div class="foo2">
+    <div id="image">
+        <img src="static/img/div1.jpg">
+    </div>
+    <div class="content"> <div id="data"> At Hack In The North, we create an environment that brings developers together irrespective of their gender, race, sexual orientation, socioeconomic background or ethnicity. Ever since its inception, Hack In The North has been extremely devoted to the cause of celebrating  diversity among its participants. Over the years, we have strived to make sure that women get a chance to showcase their experience with all fairness - HINT 2.0 had a direct entry to any and all girls’ teams and individual entries. 
+    </div></div>
+    </div> <!--                             <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis est maximus, egestas arcu sit amet, consequat arcu. Vestibulum malesuada neque id sapien ullamcorper rhoncus. Maecenas sollicitudin ante et nibh dapibus eleifend. Cras condimentum vulputate augue vitae gravida. Phasellus volutpat, nisl et dictum posuere, nulla arcu feugiat magna, a volutpat tellus libero sed orci. Vivamus vitae hendrerit eros. Aliquam diam purus, viverra in aliquam vel, pharetra a lorem. Mauris maximus suscipit interdum. Donec mattis magna ut tortor sodales posuere. Fusce convallis sagittis efficitur. Aliquam malesuada turpis quis enim pulvinar, eget mattis sem vulputate. Duis varius sit amet quam sit amet aliquam. Maecenas fermentum lorem odio, eu vestibulum libero gravida sed. Nulla facilisi.div>
+-->                        </div>
+<div id="two">
+    <div id="image">
+        <img src="static/img/div2.jpg">
+    </div>
+    <div class="content"> <div id="data"> In HINT 2.0, the best performing girls’ team received special prizes and swags from our side as a token of appreciation for their remarkable efforts. Continuing this tradition, this year, we plan on going a step further and introduce contests especially for female developers so as to promote their interests, and the larger cause of equality and diversity. 
+    </div></div>
+    </div>
+    <div id="three">
+    <div id="image">
+         <img src="static/img/div3.jpg">
+    </div>
+    <div class="content"> <div id="data">As a part of promotions for Hack In The North 3.0, IIITAHacks 2.0 was conducted on October 28-29, 2017 aiming to increase girl participation and encourage the hackathon culture among the student body at IIIT Allahabad and nearby colleges like Motilal Nehru National Institute of Technology, Allahabad. It was a resounding success, with many more girls’ teams having participated as a result. 
+        For HINT 3.0, we will be considering all teams equally on merit - as we always have. However, we promise that the participation will have equal representation from all demographics - making sure women have considerable representation in this edition  of HINT as well.
+        
+    </div></div>
+<!--  <div class="content"><center><h1>Content</h1></center></div> -->
+    </div>
+
+</section>
+<section id="diversity-mobile">
+    <div id="one">
+        <div class="foo1">
+        <div id="heading">
+            <center><h1>CELEBRATING DIVERSITY</h1></center>
+        </div>
+        </div>
+        <div class="foo2">
+        <div id="image">
+            <img src="static/img/div1.jpg">
+        </div>
+        <div class="content"> <div id="data"> At Hack In The North, we create an environment that brings developers together irrespective of their gender, race, sexual orientation, socioeconomic background or ethnicity. Ever since its inception, Hack In The North has been extremely devoted to the cause of celebrating  diversity among its participants. Over the years, we have strived to make sure that women get a chance to showcase their experience with all fairness - HINT 2.0 had a direct entry to any and all girls’ teams and individual entries. 
+        </div></div>
+        </div> <!--                             <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis est maximus, egestas arcu sit amet, consequat arcu. Vestibulum malesuada neque id sapien ullamcorper rhoncus. Maecenas sollicitudin ante et nibh dapibus eleifend. Cras condimentum vulputate augue vitae gravida. Phasellus volutpat, nisl et dictum posuere, nulla arcu feugiat magna, a volutpat tellus libero sed orci. Vivamus vitae hendrerit eros. Aliquam diam purus, viverra in aliquam vel, pharetra a lorem. Mauris maximus suscipit interdum. Donec mattis magna ut tortor sodales posuere. Fusce convallis sagittis efficitur. Aliquam malesuada turpis quis enim pulvinar, eget mattis sem vulputate. Duis varius sit amet quam sit amet aliquam. Maecenas fermentum lorem odio, eu vestibulum libero gravida sed. Nulla facilisi.div>
+    -->                        </div>
+    <div id="two">
+        <div id="image">
+            <img src="static/img/div2.jpg">
+        </div>
+        <div class="content"> <div id="data"> In HINT 2.0, the best performing girls’ team received special prizes and swags from our side as a token of appreciation for their remarkable efforts. Continuing this tradition, this year, we plan on going a step further and introduce contests especially for female developers so as to promote their interests, and the larger cause of equality and diversity. 
+        </div></div>
+        </div>
+        <div id="three">
+        <div id="image">
+             <img src="static/img/div3.jpg">
+        </div>
+        <div class="content"> <div id="data">As a part of promotions for Hack In The North 3.0, IIITAHacks 2.0 was conducted on October 28-29, 2017 aiming to increase girl participation and encourage the hackathon culture among the student body at IIIT Allahabad and nearby colleges like Motilal Nehru National Institute of Technology, Allahabad. It was a resounding success, with many more girls’ teams having participated as a result. 
+            For HINT 3.0, we will be considering all teams equally on merit - as we always have. However, we promise that the participation will have equal representation from all demographics - making sure women have considerable representation in this edition  of HINT as well.
+            
+        </div></div>
+    <!--  <div class="content"><center><h1>Content</h1></center></div> -->
+        </div>
+    </section>
 
              <section id="faq" style="height: auto;">
                 <div style="background: rgba(0,0,0,0.5);">
@@ -212,6 +481,7 @@
                         </div>
                         </div>
                     </section>
+                    
 <section id="sponsors">
 
 <!-- desktop -->
@@ -219,7 +489,7 @@
                                <section>
                                     <div class="container-fluid">
                                         <div class="row text-center">
-                                            <h1 class="contact-title">SPONSOR</h1>
+                                            <h1 class="contact-title">SPONSORS</h1>
                                         </div>
                                         <br>
                                         <div class="row">
@@ -318,7 +588,7 @@
                              <section id="sponsors">
                                     <div class="container-fluid">
                                         <div class="row text-center">
-                                            <h1 class="contact-title">SPONSOR</h1>
+                                            <h1 class="contact-title">SPONSORS</h1>
                                         </div>
                                         <br>
                                         <div class="row">
