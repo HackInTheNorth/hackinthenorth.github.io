@@ -3,7 +3,7 @@
         display: none;
     }
     #diversity-desktop{
-            background: rgb(117, 68, 145);
+            background: linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
         }
         
         #diversity-desktop  #one {
@@ -24,9 +24,9 @@
      }
      #diversity-desktop #two{
          position: relative;
-         height : 300px;
+         height : 350px;
          width : 100%;
-         background: rgb(117, 68, 145);
+         
          -webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
          clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
      }
@@ -45,7 +45,7 @@
      #diversity-desktop #one #image img {
         width: 100%;
         height: auto;
-         padding : 60px;
+         padding : 80px;
          padding-top : 30px;
          padding-bottom: 130px;
          
@@ -74,7 +74,7 @@
      #diversity-desktop #three #image img {
         width: 100%;
         height: auto;
-         padding :60px;
+         padding :80px;
          padding-top : 80px;
          padding-bottom: 100px;
      }
@@ -197,6 +197,15 @@
             padding-top :130px;
             padding-bottom: 0px;
         }
+        #diversity-desktop  #three .content #data{
+            font-size : 15px;
+        }
+        #diversity-desktop  #two .content #data{
+          font-size : 15px;
+      }
+      #diversity-desktop  #one .content #data{
+        font-size : 15px;
+    }
     }
 
 @media (min-width: 992px) {
