@@ -52,7 +52,7 @@ li{padding-top:30px;padding-left:35px;padding-right:35px;font-size:14px;letter-s
 #about h1,
 #about h2,
 #about h3{font-family:'Open Sans', serif;;}
-#faq{background-image:url(../img/faqtry.jpg);background-size:cover;background-repeat:no-repeat;color:#fff;margin-bottom:10vh;}
+#faq{background-image:url(../img/faqtry.jpg);background-size:cover;background-repeat:no-repeat;background-position: center;color:#fff;margin-bottom:10vh;}
 #faq .contents{padding:50px 10%;text-align:center;font-size:20px;}
 #faq h3{text-align:center;font-size:3em;text-transform:uppercase;letter-spacing:.03em;margin-bottom:30px;}
 #faq .faqcolumn{width:45%;display:inline-block;margin:0px 1%;vertical-align:top;}
