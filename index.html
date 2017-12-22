@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="static/img/logo-color-small.png">
     <!--<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Open+Sans:400,500,600,700|Oswald:400,700|Roboto:400,700" rel="stylesheet">-->
     <link rel="stylesheet" href="static/css/main.css" media="bogus">
-    <!--<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,600" rel="stylesheet">
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/font-awesome.min.css">
     <link rel="stylesheet" href="static/css/main.css">
@@ -20,208 +20,6 @@
     <link href="static/css/hover-min.css" rel="stylesheet" media="all">
     <link rel="stylesheet" type="text/css" href="static/css/cards.css">
 </head>
-<style>
-    /* Diversity section for desktop */
-    #diversity-mobile{
-        display: none;
-    }
-    #diversity-desktop{
-            background: rgb(117, 68, 145);
-        }
-        
-        #diversity-desktop  #one {
-            position: relative;
-            height :550px;
-         width :100%;
-         background: rgb(255, 255, 255);
-         -webkit-clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
-         clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
-        }
-        #diversity-desktop #three{
-         position: relative;
-         height :450px;
-         width :100%;
-         background: rgb(255, 255, 255);
-         -webkit-clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
-         clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
-     }
-     #diversity-desktop #two{
-         position: relative;
-         height : 300px;
-         width : 100%;
-         background: rgb(117, 68, 145);
-         -webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
-         clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
-     }
-     
-     #diversity-desktop #one #image {
-         width : 35%;
-         float: left;
-         height: 100%;
-
-     }
-     #diversity-desktop  #one .content  {
-         width : 65%;
-         float : right;
-         height: 100%;
-     }
-     #diversity-desktop #one #image img {
-        width: 100%;
-        height: auto;
-         padding : 60px;
-         padding-top : 30px;
-         padding-bottom: 130px;
-         
-     }
-     #diversity-desktop #one .content #data{
-         font-size : 20px;
-         text-align: justify;
-        width : 100%;
-        height: auto;
-
-         padding-right : 50px;
-         padding-top : 110px;
-         padding-bottom: 130px;
-     }
-     #diversity-desktop #three #image {
-         width : 35%;
-         float: left;
-         height: 100%;
-
-     }
-     #diversity-desktop  #three .content  {
-         width : 65%;
-         float : right;
-         height: 100%;
-     }
-     #diversity-desktop #three #image img {
-        width: 100%;
-        height: auto;
-         padding :60px;
-         padding-top : 80px;
-         padding-bottom: 100px;
-     }
-     #diversity-desktop  #three .content #data{
-         font-size : 20px;
-         text-align: justify;
-        width : 100%;
-        height: 100%;
-         padding-right : 50px;
-         padding-top : 130px;
-         padding-bottom: 130px;
-     }
-     #diversity-desktop #two #image {
-         width : 35%;
-         float: right;
-         height: 100%;
-
-     }
-     #diversity-desktop #two .content  {
-         width : 65%;
-         float : left;
-         height: 100%;
-     }
-     #diversity-desktop #two #image img {
-         width: 100%;
-         height: auto;
-         padding : 70px;
-         padding-top : 0px;
-         padding-bottom: 0px;
-     }
-     #diversity-desktop  #two .content #data{
-         font-size : 20px;
-         color : white;
-         text-align: justify;
-        width : 100%;
-        height: 100%;
-         padding-left : 50px;
-         padding-top : 60px;
-         padding-bottom: 60px;
-     }
-     #diversity-desktop #one .foo {
-         position: absolute;
-         
-         
-     }
-     #diversity-desktop #one .foo #heading {
-            font-size: 50px; 
-             
-            padding : 20px;
-            margin-left: 40%;
-     }
-     #diversity-desktop .foo1 {
-        height: 150px;
-       
-    }
-    #diversity-desktop .foo2 {
-        height: 400px;
-    }
-    #diversity-desktop .foo1 #heading {
-        
-        padding : 60px;
-    }
-    #diversity-desktop .foo1 h1 {
-        font-size: 3.5em;
-    }
-    
-     /* Diversity section for mobile */
-     @media only screen and (max-width: 1023px) {
-         #diversity-mobile {
-             display: block;
-         }
-         #diversity-desktop {
-             display: none;
-         }
-         #diversity-mobile  #one {
-            position: relative;
-            width :100%;
-         }
-         #diversity-mobile  #two {
-            position: relative;
-            color :white; 
-            background: linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
-         width :100%;
-         }
-         #diversity-mobile #three {
-            position: relative;
-           
-         width :100%;
-         }
-         #diversity-mobile #one #image {
-             width :100%;
-         }
-         #diversity-mobile img {
-             width :100%;
-             padding :30px;
-         }
-         #diversity-mobile #data {
-             padding :30px;
-             text-align: justify;
-         }
-         #diversity-mobile #two #image {
-             width :100%;
-         }
-         #diversity-mobile #three #image {
-             width :100%;
-         }
-        
-         
-    }
-    @media only screen and (min-width: 1024px) and (max-width: 1134px){
-        #diversity-desktop  #one #image  img  {
-            padding-top :110px;
-            padding-bottom: 0px;
-    }
-        #diversity-desktop  #two #image img {
-            padding-top :60px;
-            padding-bottom: 0px;
-        }
-        #diversity-desktop  #three #image img  {
-            padding-top :130px;
-            padding-bottom: 0px;
-        }
-    }
-</style>
 <body>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -291,11 +89,11 @@
                 <div style="background: rgba(0,0,0,0.6);">
             <div class="container-fluid">
                 <div class="card-panel">
-                    <h1 class="wow fadeInUp text-center" data-wow-delay="0.2s" style="font-family: 'Metropolis';">ABOUT</h1>
+                    <h1 class="wow fadeInUp text-center" data-wow-delay="0.2s" style="font-weight: 600;">ABOUT</h1>
                     <br>
                     <div class="row">
                     <div class="col-md-12">
-                        <h4 class="wow fadeInUp" data-wow-delay="0.4s" style="line-height: 2em;font-family: 'Metropolis';">
+                        <h4 class="wow fadeInUp" data-wow-delay="0.4s" style="line-height: 2em;">
                         	<p>Hack in the North, a student-held hackathon in India will host it's third edition this March. We have invited a legion of over 500 hackers over the past two years to collaborate, create and bring to life an idea, in 36 hours. The regions we come from are known for their diversity, scenic beauty and some of the best colleges in India but sadly, not for hackathons. That's where we come in. We aim to inculcate innovative development and provide a medium through which bright minds from everywhere can channel out their true potential. </p>
 
 						<p>Hack in the North started out as a dorm room idea back in 2016 by a few unorthodox driven students of IIIT Allahabad who wanted to move away from the realm of the normal academic routine and organise a hackathon to help expand the thinking of students and show that you don't always need a lifetime to make something extraordinary. Sometimes, you can do it in 36 hours too. Beating it's own stats with every passing year, Hack in the North has undoubtedly grown exponentially over time.</p>
@@ -308,7 +106,7 @@
             </section>
 
 <section id="schedule">
-  <h2 class="timeline__item timeline__item--year">SCHEDULE</h2>
+  <h2 class="timeline__item timeline__item--year" style="font-weight: 600;">SCHEDULE</h2>
   <div class="timeline">
 
 
@@ -354,7 +152,7 @@
     <div id="one">
     <div class="foo1">
     <div id="heading">
-        <center><h1>CELEBRATING DIVERSITY</h1></center>
+        <center><h1 style="font-weight: 600;">CELEBRATING DIVERSITY</h1></center>
     </div>
     </div>
     <div class="foo2">
@@ -363,8 +161,8 @@
     </div>
     <div class="content"> <div id="data"> At Hack In The North, we create an environment that brings developers together irrespective of their gender, race, sexual orientation, socioeconomic background or ethnicity. Ever since its inception, Hack In The North has been extremely devoted to the cause of celebrating  diversity among its participants. Over the years, we have strived to make sure that women get a chance to showcase their experience with all fairness - HINT 2.0 had a direct entry to any and all girls’ teams and individual entries. 
     </div></div>
-    </div> <!--                             <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis est maximus, egestas arcu sit amet, consequat arcu. Vestibulum malesuada neque id sapien ullamcorper rhoncus. Maecenas sollicitudin ante et nibh dapibus eleifend. Cras condimentum vulputate augue vitae gravida. Phasellus volutpat, nisl et dictum posuere, nulla arcu feugiat magna, a volutpat tellus libero sed orci. Vivamus vitae hendrerit eros. Aliquam diam purus, viverra in aliquam vel, pharetra a lorem. Mauris maximus suscipit interdum. Donec mattis magna ut tortor sodales posuere. Fusce convallis sagittis efficitur. Aliquam malesuada turpis quis enim pulvinar, eget mattis sem vulputate. Duis varius sit amet quam sit amet aliquam. Maecenas fermentum lorem odio, eu vestibulum libero gravida sed. Nulla facilisi.div>
--->                        </div>
+    </div>           
+    </div>
 <div id="two">
     <div id="image">
         <img src="static/img/div2.jpg">
@@ -380,7 +178,6 @@
         For HINT 3.0, we will be considering all teams equally on merit - as we always have. However, we promise that the participation will have equal representation from all demographics - making sure women have considerable representation in this edition  of HINT as well.
         
     </div></div>
-<!--  <div class="content"><center><h1>Content</h1></center></div> -->
     </div>
 
 </section>
@@ -388,7 +185,7 @@
     <div id="one">
         <div class="foo1">
         <div id="heading">
-            <center><h1>CELEBRATING DIVERSITY</h1></center>
+            <center><h1 style="font-weight: 600;">CELEBRATING DIVERSITY</h1></center>
         </div>
         </div>
         <div class="foo2">
@@ -397,8 +194,8 @@
         </div>
         <div class="content"> <div id="data"> At Hack In The North, we create an environment that brings developers together irrespective of their gender, race, sexual orientation, socioeconomic background or ethnicity. Ever since its inception, Hack In The North has been extremely devoted to the cause of celebrating  diversity among its participants. Over the years, we have strived to make sure that women get a chance to showcase their experience with all fairness - HINT 2.0 had a direct entry to any and all girls’ teams and individual entries. 
         </div></div>
-        </div> <!--                             <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis est maximus, egestas arcu sit amet, consequat arcu. Vestibulum malesuada neque id sapien ullamcorper rhoncus. Maecenas sollicitudin ante et nibh dapibus eleifend. Cras condimentum vulputate augue vitae gravida. Phasellus volutpat, nisl et dictum posuere, nulla arcu feugiat magna, a volutpat tellus libero sed orci. Vivamus vitae hendrerit eros. Aliquam diam purus, viverra in aliquam vel, pharetra a lorem. Mauris maximus suscipit interdum. Donec mattis magna ut tortor sodales posuere. Fusce convallis sagittis efficitur. Aliquam malesuada turpis quis enim pulvinar, eget mattis sem vulputate. Duis varius sit amet quam sit amet aliquam. Maecenas fermentum lorem odio, eu vestibulum libero gravida sed. Nulla facilisi.div>
-    -->                        </div>
+        </div>                 
+        </div>
     <div id="two">
         <div id="image">
             <img src="static/img/div2.jpg">
@@ -414,14 +211,13 @@
             For HINT 3.0, we will be considering all teams equally on merit - as we always have. However, we promise that the participation will have equal representation from all demographics - making sure women have considerable representation in this edition  of HINT as well.
             
         </div></div>
-    <!--  <div class="content"><center><h1>Content</h1></center></div> -->
         </div>
     </section>
 
              <section id="faq" style="height: auto;">
                 <div style="background: rgba(0,0,0,0.5);">
                     <div class="contents fullpage" style="height: auto;">
-                        <h3>FAQ</h3>
+                        <h3 style="font-weight: 600;">FAQ</h3>
                         <div class="faqcolumn">
                             <div class="faqelem wow fadeInUp">
                                 <div class="question" data-box="1">Who can apply?</div>
@@ -489,7 +285,7 @@
                                <section>
                                     <div class="container-fluid">
                                         <div class="row text-center">
-                                            <h1 class="contact-title">SPONSORS</h1>
+                                            <h1 class="contact-title" style="font-weight: 600;">SPONSORS</h1>
                                         </div>
                                         <br>
                                         <div class="row">
@@ -588,7 +384,7 @@
                              <section id="sponsors">
                                     <div class="container-fluid">
                                         <div class="row text-center">
-                                            <h1 class="contact-title">SPONSORS</h1>
+                                            <h1 class="contact-title" style="font-weight: 600;">SPONSORS</h1>
                                         </div>
                                         <br>
                                         <div class="row">
@@ -674,7 +470,7 @@
 										<section >
                                             <div class="col-md-10 col-md-offset-1" style="border: 2px solid #A95179;">
                                             	<div>
-                                                <h3 class="text-center">Directions to reach us:</h3>
+                                                <h3 class="text-center" style="font-weight: 600;">Directions to reach us:</h3>
                                                 	<p class="text-center">
                                                     <strong><a class="dotted-underline" href="https://www.google.com/maps/dir/Current+Location/IIIT-Allahabad" target="_blank" style="color: black;">Indian Institute of Information Technology<br>Allahabad, Uttar Pradesh<br>India<br>211012</a></strong>
                                                 </p>
