@@ -17,6 +17,7 @@ textarea{resize:vertical;}
 html{background-color:white;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
 body{font-family:'Montserrat', serif;color:#737373;letter-spacing:normal;padding-top:85px;height:100%;}
 nav{margin-bottom:0 !important;z-index:3;}
+.nav-active{height:81px;border-width:0 0 4px;border-style:solid;-moz-border-image:-moz-linear-gradient(top,#3acfd5 0,#3a4ed5 100%);border-image:linear-gradient(330deg,#5D009C ,#D40062,#FCB600);border-image-slice:1}
 a.nav-link{color:#737373;}
 a.nav-link:hover, a.nav-link:focus, a.nav-link:active{color:#FD5C63 !important;text-decoration:none !important;border:none;-webkit-transition:all 0.2s;-moz-transition:all 0.2s;-o-transition:all 0.2s;transition:all 0.2s;cursor:pointer;background:transparent !important;}
 a.call-to-action{color:#66BFBF;font-weight:600;}
