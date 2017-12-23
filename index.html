@@ -26,8 +26,8 @@
         <![endif]-->
 
 
-        <nav class="navbar navbar-custom navbar-fixed-top custom-nav-changes transition-nav" role="navigation">
-            <div class="container" id="collapse-shadow">
+        <nav style="border-width:0" class="navbar navbar-custom navbar-fixed-top custom-nav-changes transition-nav" role="navigation">
+            <div class="container" style="height:81px" id="collapse-shadow">
                 <div class="navbar-header">
                     <button id="nav_toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom_collapse">
                         <span class="sr-only">Toggle navigation</span>
@@ -42,19 +42,19 @@
                     <div class="navbar-collapse collapse" id="custom_collapse">
                         <div class=" navbar-right">
                             <ul class="nav navbar-nav">
-                                <li>
+                                <li class="n-item">
                                     <a id="nav_about" href="#about" class="nav-link">ABOUT</a>
                                 </li>
-                                <li>
+                                <li class="n-item">
                                     <a id="nav_schedule" href="#schedule" class="nav-link">SCHEDULE</a>
                                 </li>
-                                <li>
+                                <li class="n-item">
                                     <a id="nav_faq" href="#faq" class="nav-link">FAQ</a>
                                 </li>
-                                <li>
+                                <li class="n-item">
                                     <a id="nav_sponsors" href="#sponsors" class="nav-link">SPONSORS</a>
                                 </li>
-                                <li>
+                                <li class="n-item">
                                     <a id="nav_contact" href="team.html" class="nav-link">CONTACT</a>
                                 </li>
                         </ul>
@@ -85,7 +85,7 @@
                 </div>
             </div>
        </section>
-            <section id="about" class="img-responsive" style="background-image: url(static/img/hint.jpg);background-repeat: no-repeat;background-size: cover;position: relative;color: white;">
+            <section id="about" class="img-responsive b-item" style="background-image: url(static/img/hint.jpg);background-repeat: no-repeat;background-size: cover;position: relative;color: white;">
                 <div style="background: rgba(0,0,0,0.6);">
             <div class="container-fluid">
                 <div class="card-panel">
@@ -105,7 +105,7 @@
             </div>
             </section>
 
-<section id="schedule">
+<section id="schedule" class="b-item">
   <h2 class="timeline__item timeline__item--year" style="font-weight: 600;">SCHEDULE</h2>
   <div class="timeline">
 
@@ -214,7 +214,7 @@
         </div>
     </section>
 
-             <section id="faq" style="height: auto;">
+             <section id="faq" class="b-item" style="height: auto;">
                 <div style="background: rgba(0,0,0,0.5);">
                     <div class="contents fullpage" style="height: auto;">
                         <h3 style="font-weight: 600;">FAQ</h3>
@@ -278,7 +278,7 @@
                         </div>
                     </section>
                     
-<section id="sponsors">
+<section id="sponsors" class="b-item">
 
 <!-- desktop -->
 <div class="navbar-default hidden-xs">
@@ -512,5 +512,30 @@
                                             ga('create','UA-72748005-1','auto');ga('send','pageview')
                                         </script>
                                         <script src="static/js/analytics.js" async defer></script>
+                                        <script>
+                                            $(document).ready(function(){
+                                              var inactive = 0;
+                                              $(window).scroll(function(){
+                                              var windscroll = $(window).scrollTop();
+                                              // console.log(windscroll);
+                                              $('.b-item').each(function(i) {
+                                              console.log($('.b-item').eq(i).position().top);
+                                                        if ($(this).position().top <= windscroll+160) {
+                                                            if(inactive){
+                                                            $('.n-item.nav-active').removeClass('nav-active');
+                                                            }
+                                                            $('.n-item').eq(i).addClass('nav-active');
+                                                            inactive=1;
+                                                    }
+                                                    else{
+                                                        if(windscroll < $('.b-item').eq(0).position().top && inactive ){
+                                                            $('.n-item.nav-active').removeClass('nav-active');
+                                                            inactive=0;
+                                                        }
+                                                    }
+                                              });
+                                            }); 
+                                        });
+                                        </script>
                               </body>
 </html>
