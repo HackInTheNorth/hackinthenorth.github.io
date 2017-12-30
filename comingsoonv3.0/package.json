@@ -1,0 +1,27 @@
+{
+  "name": "hack_in_the_north",
+  "version": "3.0.0",
+  "description": "Website for hack in the north version 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HITN",
+    "Hack",
+    "In",
+    "The",
+    "North"
+  ],
+  "author": "IIIT-Allahabad, Pradyumna Newalkar",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "jquery-modal": "file:node_modules\\jquery-modal",
+    "purecss": "^0.6.2",
+    "typicons.font": "^2.0.8"
+  }
+}

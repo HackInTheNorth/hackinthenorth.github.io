@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Thanks!!</title>
+    <meta name="author" content="Geekhaven" />
+    <meta name="description" content="Hack In The North: India's biggest student held Hackathon" />
+    <meta name="keywords" content="IIIT-Allahabad, Hackathon" />
+    <meta name="Resource-type" content="Document" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="genericons/genericons.css">
+
+    <link rel="shortcut icon" href="favicon32.png" sizes="16x16" type="image/x-icon" />
+    
+
+    <!--[if IE]-->
+    <!-- gh pages-->
+    <script type="text/javascript">
+        var console = { log: function() {} };
+    </script>
+    <!-- [endif] -->
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.js"></script>
+    <script type="text/javascript" src="js/packery-mode.pkgd.js"></script>
+    <script type="text/javascript">
+        var showText = function (target, message, index, interval) {    
+			if (index < message.length) {
+				$(target).append(message[index++]); 
+				setTimeout(function () { showText(target, message, index, interval); }, interval); 
+			}
+		}
+		
+		$(window).load(function() {
+			$("#loader").fadeOut("slow");
+			setTimeout(function(){showText(".show_text", "Thanks for registering!!", 0, 50);}, 800);
+			setTimeout(function(){showText("#section0-name-1", "}", 0, 50);}, 800);
+		});
+		$(document).ready(function() {
+			$('.collage').isotope({
+				itemSelector: '.coll-word',
+				layoutMode: 'packery',
+				transitionDuration: '1s',
+				stamp: '.stamp'
+			});
+		});
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-72748005-1', 'auto');
+		ga('send', 'pageview');
+    </script>
+</head>
+
+<body class="menu-push">
+
+    <div id="curtains" class="hid">
+    </div>
+
+    <div id="loader">
+    </div>
+
+    <div id="menubtn">
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+    <nav class="menu-right" id="menu">
+        <h3>Menu</h3>
+        <a data-menuanchor="home" href="index.html#home"><b>Home</b></a>
+        <a data-menuanchor="about" href="index.html#about"><b>About</b></a>
+        <a data-menuanchor="faq" href="index.html#faq"><b>FAQ</b></a>
+        <a data-menuanchor="schedule" href="index.html#schedule"><b>Schedule</b></a>
+        <a data-menuanchor="sponsors" href="index.html#sponsors"><b>Sponsors</b></a>
+        <a data-menuanchor="contact" href="index.html#contact"><b>Contact</b></a>
+    </nav>
+
+    <div id="social-media-details">
+        <a class="genericon genericon-facebook-alt" href="https://www.facebook.com/HackInTheNorth/"></a>
+        <a class="genericon genericon-twitter" href="#twitter"></a>
+        <a class="genericon genericon-mail" href="mailto:geekhaven@iiita.ac.in"></a>
+    </div>
+
+    <div id="display-content">
+        <div class="section" id="section_thanks">
+            <div class="container">
+                <div class="row header">
+                </div>
+                <div class="row header">
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-mg-12">
+                        <h1 class="show_text">
+                            
+                        </h1>
+                        <h2 class="hide">
+                            <br>We will be mailing you further instructions within 2-3 days.
+                        </h2>
+                        <h2 >
+                            <center>Just one step more!! Please fill this form<br>
+                            </center>
+                        </h2>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <center>
+                    <a href="https://docs.google.com/forms/d/1Rs6pWW9Bl_8LJOGvCRkPr5DyY89k8RifxeRLv2PhJuc/viewform?c=0&w=1">Complete The Final Step</a>
+                    </center>
+                </div>
+                <div class="row hide">
+                    <center>
+                        <a href=index.html>Home</a>
+                    </center>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/classie.js"></script>
+
+    <script>
+            var menu = document.getElementById( 'menu' ),
+            menubtn = document.getElementById( 'menubtn' ),
+            body = document.body,
+            content = document.getElementById('display-content');
+
+
+            menubtn.onclick = function() {
+                classie.toggle( this, 'on' );
+                classie.toggle( body, 'menu-push-toleft' );
+                classie.toggle( curtains, 'sho')
+                classie.toggle( menu, 'menu-open' );
+            };
+
+            content.onclick = function() {
+                if(classie.has(body, 'menu-push-toleft')) {
+                    classie.toggle( menubtn, 'on' );
+                    classie.toggle( body, 'menu-push-toleft' );
+                    classie.toggle( curtains, 'sho')
+                    classie.toggle( menu, 'menu-open' );        
+                }
+            };
+
+            menu.onclick = function() {
+                if(classie.has(body, 'menu-push-toleft')) {
+                    classie.toggle( menubtn, 'on' );
+                    classie.toggle( body, 'menu-push-toleft' );
+                    classie.toggle( curtains, 'sho')
+                    classie.toggle( menu, 'menu-open' );        
+                }   
+            };
+        </script>
+
+
+</body>
+
+</html>
