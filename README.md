@@ -1,4 +1,4 @@
-![Hack In The North](static/images/logo.png)
+![Hack In The North](static/img/logo.png)
 
 # hackinthenorth.github.io [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 HackInTheNorth is the annual Hackathon organized at Indian Institute of Information Technology, Allahabad. It is one of the largest student-organized hackathons in India.
