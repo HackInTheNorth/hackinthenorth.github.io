@@ -433,11 +433,23 @@
   }
 
   .patron > div {
-    width: 14%;
+    width: 15%;
   }
 
   #why {
-    width: 22%;
+    width: 27%;
+  }
+
+  #jet-brains {
+    width: 12%;
+  }
+
+  #wolframalpha {
+    width: 18%;
+  }
+
+  #skillenza {
+    width: 20%;
   }
 }
 
@@ -447,19 +459,26 @@
     margin: 0 auto;
   }
 
+  .patron {
+    width: 35%;
+    margin: 0 auto;
+  }
+
   #idk {
     width: 35%;
     margin: 0 auto;
   }
 
-  .patron {
-    width: 40%;
-    margin: 0 auto;
-    padding-top: 10%;
-  }
-
   #why {
     width: 100%;
+  }
+
+  #jet-brains {
+    width: 80%;
+  }
+
+  #npm {
+    width: 80%;
   }
 }
 
