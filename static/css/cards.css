@@ -228,78 +228,7 @@
 #footer .contact-margin{
   margin-top: 1em;
 }
-.custom-col-2{
-  position: relative;
-  min-height: 1px;
-  padding-left: 65px;
-  padding-right: 65px;
-}
-.custom-small{
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;  
-}
-.custom-heroku{
-  position: relative;
-  min-height: 1px;
-  padding-left: 45px;
-  padding-right: 45px;
-}
-.custom-tech{
-  position: relative;
-  min-height: 1px;
-  padding-left: 45px;
-  padding-right: 45px;
-}
-.custom-margin{
-  margin-left: 13%;
-}
-@media (min-width: 992px) {
-  .custom-tech{
-    float: left;
-    width: 16.66666667%;
-  }
-  .custom-small{
-    float: left;
-    width: 16.66666667%;
-  }
-  .custom-col-2{
-    float: left;
-    width: 16.66666667%;
-  }
-}
-@media (min-width: 992px) {
-  .custom-tim{
-    float: left;
-    width: 9%;
-    margin-left: 3.3%;
-  }
-}
-@media (min-width: 768px) {
-  .custom-heroku{
-    margin: auto;
-    width: 50%;
-  }
-}
-@media (max-width: 980px) {
-  .custom-heroku{
-    margin: auto;
-    width: 40%;
-  }
-}
-@media (min-width: 992px) {
-  .custom-heroku{
-    margin :auto;
-    width: 16.66666667%;
-  }
-}
-@media (max-width: 500px) {
-  .custom-heroku{
-    margin: auto;
-    width: 70%;
-  }
-}
+
 .box{
   border: 3px solid #fff;
 }
@@ -313,8 +242,6 @@
 
 #about{
   text-align: justify;
-  /*background: url('../img/1.jpg');
-  background-size: cover;*/
 }
 
 .card-panel {
@@ -485,5 +412,74 @@
   margin-left: auto;
 }
 
+ /*sponsors section*/
+
+@media screen and (min-width: 768px) {
+  #platinum > div {
+    width: 45%;
+  }
+
+  #gold {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  #silver > div {
+    width: 23%;
+  }
+
+  #idk > div {
+    width: 20%;
+  }
+
+  .patron > div {
+    width: 15%;
+  }
+
+  #why {
+    width: 27%;
+  }
+
+  #jet-brains {
+    width: 12%;
+  }
+
+  #wolframalpha {
+    width: 18%;
+  }
+
+  #skillenza {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #silver {
+    width: 53%;
+    margin: 0 auto;
+  }
+
+  .patron {
+    width: 35%;
+    margin: 0 auto;
+  }
+
+  #idk {
+    width: 35%;
+    margin: 0 auto;
+  }
+
+  #why {
+    width: 100%;
+  }
+
+  #jet-brains {
+    width: 80%;
+  }
+
+  #npm {
+    width: 80%;
+  }
+}
 
 
