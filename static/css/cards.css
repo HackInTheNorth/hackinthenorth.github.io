@@ -34,8 +34,8 @@
      #diversity-desktop #one #image {
          width : 35%;
          float: left;
-         height: 100%;
-
+         height: 100%;  
+         padding-top: 90px;       
      }
      #diversity-desktop  #one .content  {
          width : 65%;
@@ -64,7 +64,7 @@
          width : 35%;
          float: left;
          height: 100%;
-
+         padding-top: 90px;
      }
      #diversity-desktop  #three .content  {
          width : 65%;
