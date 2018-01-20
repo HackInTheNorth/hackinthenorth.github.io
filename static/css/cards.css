@@ -464,6 +464,10 @@
   #advant {
     width: 11%;
   }
+
+  #hasura {
+    width: 17%;
+  }
 }
 
 @media screen and (max-width: 767px) {
