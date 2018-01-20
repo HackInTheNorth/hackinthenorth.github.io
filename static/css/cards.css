@@ -424,19 +424,28 @@
     margin: 0 auto;
   }
 
-  #silver > div {
-    width: 23%;
+  .silver > div {
+    width: 26%;
+    margin: 0 auto;
+  }
+
+  #arkham {
+    width: 24%;
+  }
+
+  #tech {
+    width: 20%;
   }
 
   #idk > div {
-    width: 20%;
+    width: 23%;
   }
 
   .patron > div {
     width: 15%;
   }
 
-  #why {
+  #producthunt {
     width: 27%;
   }
 
@@ -451,12 +460,20 @@
   #skillenza {
     width: 20%;
   }
+
+  #advant {
+    width: 11%;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  #silver {
+  .silver {
     width: 53%;
     margin: 0 auto;
+  }
+
+  #tech {
+    width: 85%;
   }
 
   .patron {
@@ -469,7 +486,7 @@
     margin: 0 auto;
   }
 
-  #why {
+  #producthunt {
     width: 100%;
   }
 
@@ -479,6 +496,11 @@
 
   #npm {
     width: 80%;
+  }
+
+  #advant {
+    width: 70%;
+    margin-left: 20%;
   }
 }
 
