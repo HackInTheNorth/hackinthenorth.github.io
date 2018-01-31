@@ -3,9 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
     <title>Hack In The North 3.0 - India's Biggest Student Hackathon</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="Team HINT">
+    <meta name="twitter:site" content="https://hackinthenorth.com">
+    <meta name="twitter:title" content="Hack In The North 3.0 - India's Biggest Student Hackathon">
+    <meta name="twitter:description" content="Hack in the North, a student-held hackathon in India will host it's third edition this March. We have invited a 
+    legion of over 500 hackers over the past two years to collaborate, create and bring to life an idea, in 36 hours.">
+    <meta name="twitter:image:src" content="static/img/logo.png">
+    <meta name="twitter:image:width" content="312">
+    <meta name="twitter:image:height" content="141">
+
     <link rel="shortcut icon" href="static/img/logo.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="static/css/main.css" media="bogus">
@@ -62,7 +74,7 @@
             </div>
         </nav>
         <section id="landing">
-            <div class="container-fluid fullpage" style="padding-bottom: 10%;">
+            <div class="container-fluid fullpage" style="padding-bottom: 15%;">
                 <div class="row col-md-8 col-md-offset-2">
                     <div id="scene" style="position: relative;">
                     <img data-src="static/img/gears.gif" class="parallax-width" data-depth="0.1" style="position: relative;">
@@ -82,8 +94,11 @@
                      <a class="btn btn-lg landing-btn" href="https://hackinthenorth.herokuapp.com" target="_blank">Apply</a>
                     <a class="btn btn-lg landing-btn" href="https://hackinthenorth.zulipchat.com" target="_blank">Chat With Us</a>
                     <a class="btn btn-lg landing-btn" href="https://www.youtube.com/watch?v=cTb8lkQQ2yQ&feature=youtu.be" target="_blank">Trailer</a>
+                    <br>
                 </div>
+                <br>
             </div>
+            <br>
        </section>
             <section id="about" class="img-responsive b-item" style="background-image: url(static/img/hint.jpg);background-repeat: no-repeat;background-size: cover;position: relative;color: white;">
                 <div style="background: rgba(0,0,0,0.6);">
@@ -232,7 +247,7 @@
                                 <div class="question" data-box="2">Can we apply as a team?</div>
                                 <div class="box" id="box2">
                                     <div class="box-inner">
-                                   Yes! This hackathon is strictly a team competition (3-5 members). We believe that you’re stronger as a team than you are apart. You can join or create a team once you've started an individual application.</div>
+                                   Yes! This hackathon is strictly a team competition (4 members). We believe that you’re stronger as a team than you are apart. You can join or create a team once you've started an individual application.</div>
                                 </div>
                             </div>
                              <div class="faqelem wow fadeInUp" data-wow-delay="0.4s">
@@ -311,6 +326,11 @@
         <br>
         <br>
 
+        <div class="row" id="title_sponsor">
+            <div class="col-sm-9 col-sm-offset-1">
+                <a href="https://new.consensys.net/"><img data-src="static/sponsors/consensys.png" class="last-year-spsr"></a>
+            </div>
+        </div>
         <div class="row" id="platinum">
         	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="margin-top: 5%;">
         		<a href="https://github.com"><img class="last-year-spsr" data-src="static/sponsors/GitHub_Logo.png"></a>
@@ -357,6 +377,11 @@
                 <a href="https://www.python.org/psf/"><img class="last-year-spsr" data-src="static/sponsors/PSF.png"></a>
             </div>        	
         </div>
+        <div class="row col-sm-offset-4">
+            <div class="col-sm-offset-1 col-xs-8 col-xs-offset-2 col-sm-4 col-md-4 col-lg-4" id="hackster" style="margin-top: 5%;">
+                <a href="https://www.hackster.io/"><img data-src="static/sponsors/hackster.svg" class="last-year-spsr"></a>
+            </div>
+        </div>
         <br>
         <br>
 
@@ -367,8 +392,8 @@
         <br>
 
 		<div class="row patron col-sm-offset-3">
-			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"">
-        		<a href="https://zulip.com/"><img class="last-year-spsr" data-src="static/sponsors/zulip.jpg"></a>
+			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        		<a href="https://zulip.com/"><img class="last-year-spsr" data-src="static/sponsors/zulip.svg"></a>er
         		<div class="partner" style="font-size: 15px;">
                 	Chat Partner
                 </div>
@@ -432,6 +457,12 @@
             </div>
             <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" style="margin-top: 6%;" id="skillenza">
                 <a href="https://www.freecodecamp.org/"><img class="last-year-spsr" data-src="static/sponsors/freeCodeCamp.png"></a>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" style="margin-top: 4.5%;" id="john">
+                <a href="http://www.johnsnowlabs.com/"><img class="last-year-spsr" data-src="static/sponsors/jon.png"></a>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" style="margin-top: 4.5%;" id="john">
+                <a href="https://www.facebook.com/Flow.makemeflow/"><img class="last-year-spsr" data-src="static/sponsors/flow.png"></a>
             </div>          
         </div>
 
@@ -510,7 +541,7 @@
                                               var windscroll = $(window).scrollTop();
                                               // console.log(windscroll);
                                               $('.b-item').each(function(i) {
-                                              console.log($('.b-item').eq(i).position().top);
+                                              //console.log($('.b-item').eq(i).position().top);
                                                         if ($(this).position().top <= windscroll+160) {
                                                             if(inactive){
                                                             $('.n-item.nav-active').removeClass('nav-active');
