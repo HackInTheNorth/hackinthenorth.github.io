@@ -35,8 +35,20 @@
     <link rel="stylesheet" type="text/css" href="static/css/animate.min.css">
     <link href="static/css/hover-min.css" rel="stylesheet" media="all">
     <link rel="stylesheet" type="text/css" href="static/css/cards.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	<script>
+		$(window).load(function() {
+        	$("#status").fadeOut(5000);
+        	$("#preloader").delay(2000).fadeOut("slow");
+		});
+	</script>
 </head>
 <body>
+	<div id="preloader">
+  		<div id="status"></div>
+	</div>
+
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -75,10 +87,10 @@
                                 <li class="n-item">
                                     <a id="nav_contact" href="team.html" class="nav-link">CONTACT</a>
                                 </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                        	</ul>
+                    	</div>
+                	</div>
+           	 	</div>
         </nav>
         <section id="landing">
             <div class="container-fluid fullpage" style="padding-bottom: 15%;">
@@ -332,6 +344,7 @@
         </div>
         <br>
         <br>
+
         <div class="row" id="title_sponsor">
             <div class="col-sm-9 col-sm-offset-1">
                 <a href="https://new.consensys.net/"><img data-src="static/sponsors/consensys.png" class="last-year-spsr"></a>
@@ -565,5 +578,5 @@
                                             }); 
                                         });
                                         </script>
-                              </body>
+    </body>
 </html>
