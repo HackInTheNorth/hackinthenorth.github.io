@@ -1,0 +1,60 @@
+#awards {
+   
+    
+}
+ #awards .container-fluid {
+margin : auto;
+}
+#awards .card {
+    border : 0.2px solid rgb(180, 176, 176);
+    height:320px;
+    width : 300px;
+    display: inline-block;
+    margin: 20px;
+vertical-align: top;
+    -webkit-transition: box-shadow 0.3s ease-out;
+  -moz-transition: box-shadow 0.3s ease-out;
+  -o-transition: box-shadow 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out;
+}
+
+#awards .card:hover {
+    box-shadow: 5px 5px 5px grey;
+}
+
+#awards .row{
+    padding: 20px;
+    text-align: center;
+}
+#awards .logo {
+    /* border : 1px solid rgb(180, 176, 176); */
+     height: 150px;
+     margin: 10px;
+    
+  
+}
+#awards .logo img {
+   width : 130px;
+   height: 130px;
+   padding : 10px;
+
+}
+#awards .descp h3 {
+    text-align: center;
+   margin: 2px;
+   font-size: 40px;
+   font-weight: bold;
+  
+   /* border : 1px solid rgb(180, 176, 176); */
+}
+#awards .descp  {
+    height: 140px;
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;
+    /* border : 1px solid rgb(180, 176, 176); */
+ }
+ #awards h1 {
+     font-size: 50px;
+     font-weight: bold;
+ }
