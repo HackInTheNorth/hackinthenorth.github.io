@@ -81,7 +81,7 @@
 .timeline__blurb{line-height:1.5;font-size:1rem;margin:.5rem 0 0;}
 #map{width:600px;height:500px;margin-right:auto;margin-left:auto;}
 @media screen and (min-width:768px){#platinum > div{width:45%;}
-#gold{width:50%;margin:0 auto;}
+#gold{width:70%;margin:0 auto;}
 .silver > div{width:26%;margin:0 auto;}
 #arkham{width:24%;}
 #tech{width:20%;}
