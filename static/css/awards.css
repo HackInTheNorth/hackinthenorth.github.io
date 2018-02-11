@@ -6,21 +6,17 @@
 margin : auto;
 }
 #awards .card {
-    border : 0.2px solid rgb(180, 176, 176);
+    border : 0.1px solid rgb(180, 176, 176);
     height:320px;
     width : 300px;
     display: inline-block;
     margin: 20px;
 vertical-align: top;
-    -webkit-transition: box-shadow 0.3s ease-out;
-  -moz-transition: box-shadow 0.3s ease-out;
-  -o-transition: box-shadow 0.3s ease-out;
-  transition: box-shadow 0.3s ease-out;
+box-shadow: 5px 5px 5px grey;
+    
 }
 
-#awards .card:hover {
-    box-shadow: 5px 5px 5px grey;
-}
+
 
 #awards .row{
     padding: 20px;
