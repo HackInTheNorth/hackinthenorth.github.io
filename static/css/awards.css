@@ -7,12 +7,13 @@ margin : auto;
 }
 #awards .card {
     border : 0.1px solid rgb(180, 176, 176);
+    border-radius : 2%;
     height:320px;
     width : 300px;
     display: inline-block;
     margin: 20px;
 vertical-align: top;
-box-shadow: 5px 5px 5px grey;
+box-shadow: 2px 2px 2px 2px grey;
     
 }
 
