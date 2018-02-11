@@ -7,13 +7,13 @@ margin : auto;
 }
 #awards .card {
     border : 0.1px solid rgb(180, 176, 176);
-    border-radius : 2%;
+    border-radius : 3px;
     height:320px;
     width : 300px;
     display: inline-block;
     margin: 20px;
 vertical-align: top;
-box-shadow: 2px 2px 2px 2px rgb(185, 184, 184);
+box-shadow: 5px 5px 25px 0 rgba(46,61,73,0.2);
 -webkit-transition: box-shadow 0.3s ease-out;
   -moz-transition: box-shadow 0.3s ease-out;
   -o-transition: box-shadow 0.3s ease-out;
@@ -21,7 +21,7 @@ box-shadow: 2px 2px 2px 2px rgb(185, 184, 184);
 }
 
 #awards .card:hover {
-    box-shadow: 0.8px 0.8px 0.8px 0.8px rgb(185, 184, 184);
+    box-shadow: 10px 10px 10px 0 rgba(46,61,73,0.2);
 }
 
 
