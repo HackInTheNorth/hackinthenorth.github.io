@@ -44,7 +44,7 @@ li{padding-top:30px;padding-left:35px;padding-right:35px;font-size:14px;letter-s
 .img1{position:relative;}
 .landing-container .row{margin-top:2vh;}
 .landing-subtitle{font-size:1.8em;}
-#landing{height:95vh;}
+#landing{height:auto;}
 .landing-btn{background:#fff;color:#A95179;border-radius:0;border:1px solid #A95179;min-width:10em;margin-bottom:1vh;}
 .landing-btn:hover{color:#87345a;border:1px solid #87345a;-webkit-transition:all 0.2s;-moz-transition:all 0.2s;-o-transition:all 0.2s;transition:all 0.2s;}
 .about-image{max-width:100%;}
