@@ -59,6 +59,7 @@ box-shadow: 5px 5px 25px 0 rgba(46,61,73,0.2);
     /* border : 1px solid rgb(180, 176, 176); */
  }
  #awards h1 {
-     font-size: 50px;
+     font-size: 3.5em;
      font-weight: bold;
+     letter-spacing: 0.08em;
  }
