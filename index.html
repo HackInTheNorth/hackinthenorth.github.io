@@ -32,8 +32,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 	<script>
 		$(window).load(function() {
+			$('.navbar').hide();
         	$("#status").fadeOut(5000);
         	$("#preloader").delay(2000).fadeOut("slow");
+        	$('.navbar').show(5000);
 		});
 	</script>
 </head>
