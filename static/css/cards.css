@@ -104,11 +104,21 @@
 #advant{width:70%;margin-left:20%;}
 }
 
-.partner {
+.partner{
 	font-family: 'Poppins' !important;
 	font-weight: bold;
 	text-align: center;
 	background: -webkit-linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.prizes{
+	font-family: 'Poppins' !important;
+	font-weight: bold;
+	text-align: center;
+	background: -webkit-linear-gradient(330deg, #4C4491 0%, rgba(91, 91, 91, 0.6) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
