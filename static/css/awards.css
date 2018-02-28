@@ -20,6 +20,13 @@ box-shadow: 5px 5px 25px 0 rgba(46,61,73,0.2);
   transition: box-shadow 0.3s ease-out;
 }
 
+#awards .card .card-top-bar{
+    font-size: 20px;
+    color: white;
+    background: -webkit-linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
+    font-weight: 450;
+}
+
 #awards .card:hover {
     box-shadow: 2px 4px 8px 0 rgba(46,61,73,0.2)
 }
@@ -63,3 +70,18 @@ box-shadow: 5px 5px 25px 0 rgba(46,61,73,0.2);
      font-weight: bold;
      letter-spacing: 0.08em;
  }
+
+ .descp-top3{
+    font-family: 'Poppins' !important;
+    height: 140px;
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 450;
+	background: -webkit-linear-gradient(330deg, #4C4491 0%, #FD5C63 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+
+
+
