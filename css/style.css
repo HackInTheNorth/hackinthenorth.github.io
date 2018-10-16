@@ -49,7 +49,8 @@ html, body{
 
 @media screen and (min-width: 768px){
     .top-text:hover{
-        font-size: 18px;
+        /* font-size: 18px; */
+        color: blue;
     }
 }
 
@@ -63,6 +64,23 @@ html, body{
 a:link, a:visited, a:hover, a:active{
     text-decoration: none;
     color: white;
+}
+
+
+
+
+@media screen and (min-width: 768px){
+    .my-link:hover{
+        color: blue;
+    }
+
+}
+@media screen and (min-width: 768px){
+    .top-text:hover{
+        /* font-size: 18px; */
+        color: blue;
+    }
+
 }
 
 
@@ -408,7 +426,7 @@ a:link, a:visited, a:hover, a:active{
 @media screen and (max-width: 992px){
     .footer-logo{
         height: inherit;
-        width: 20%;
+        width: 60%;
         position: relative;
         border-bottom: 0px solid white;
     }
