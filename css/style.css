@@ -798,6 +798,18 @@ a:link, a:visited, a:hover, a:active{
     .hint-carousel{
         width: 100%;
     }
+
+    .d-block{
+        height: 500px;
+        /* transition: all 2s; */
+    }
+}
+
+@media screen and (max-width: 768px){
+    .d-block{
+        height: 200px;
+        /* transition: all 2s; */
+    }
 }
 
 
