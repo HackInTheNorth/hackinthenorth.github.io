@@ -445,7 +445,7 @@ a:link, a:visited, a:hover, a:active{
     }
 
     .footer{
-        height: 30vh;
+        height: 40vh;
     }
 
     .code-of-conduct{
@@ -823,5 +823,15 @@ a:link, a:visited, a:hover, a:active{
     }
 }
 
+.social-links{
+    height: 50%;
+}
 
+
+@media screen and (max-width : 768px){
+    .contacts{
+        position: relative; 
+        top: 20px;
+    }
+}
 
