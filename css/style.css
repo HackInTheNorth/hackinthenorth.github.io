@@ -782,15 +782,26 @@ a:link, a:visited, a:hover, a:active{
 
 
 .d-block{
-    height: 900px;
+    height: 600px;
     /* transition: all 2s; */
 }
 
 .hint-carousel{
-    width: 80%;
+    width: 60%;
     position: relative;
     margin: auto;
     transition: all 2s;
+}
+
+@media screen and (max-width : 1400px){
+    /* .hint-carousel{
+        width: 100%;
+    } */
+
+    .d-block{
+        height: 400px;
+        /* transition: all 2s; */
+    }
 }
 
 
