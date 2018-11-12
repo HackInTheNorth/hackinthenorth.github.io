@@ -361,8 +361,8 @@ background-color: #555;
     width: 60%;
     position: relative;
     top: 50%;
-    left: 2%;
-    transform: translate(0%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .winner-timeline-img{
