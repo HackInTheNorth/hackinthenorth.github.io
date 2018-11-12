@@ -143,6 +143,13 @@ background-color: #555;
     font-size: 20px
 }
 
+.pointer-svg{
+    width: 10%;
+}
+
+.calendar-svg{
+    width: 12%;
+}
 
 
 @media screen and (max-width: 992px){
@@ -157,6 +164,14 @@ background-color: #555;
     .nav-item{
         margin-top: 4%;
         font-size: 16px;
+    }
+
+    .pointer-svg{
+        width: 15%;
+    }
+    
+    .calendar-svg{
+        width: 18%;
     }
 }
 
@@ -204,18 +219,18 @@ background-color: #555;
 }
 
 .commitment{
-    padding-top: 15%;
-    padding-bottom: 15%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .timeline{
-  padding-top: 15%;
-  padding-bottom: 15%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .about{
-    padding-top: 15%;
-    padding-bottom: 15%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .faq{
@@ -296,7 +311,6 @@ background-color: #555;
     .landing-info{
         font-size: 14px;
         color: gray;
-        font-weight: 600;
     }
 }
 
@@ -315,7 +329,6 @@ background-color: #555;
     .landing-info{
         font-size: 12px;
         color: gray;
-        font-weight: 600;
     }
 }
 
@@ -348,14 +361,14 @@ background-color: #555;
     width: 60%;
     position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 2%;
+    transform: translate(0%, -50%);
 }
 
 .winner-timeline-img{
   width: 90%;
   position: relative;
-  top: 60%;
+  top: 50%;
   left: 80%;
   transform: translate(-50%, -50%);
 }
@@ -409,7 +422,7 @@ background-color: #555;
 .commitment-contents{
     margin-top: 5%;
     font-size: 20px;
-    font-family: circularStdMedium;
+    font-family: circularStdBook;
     color: #818181;
     line-height: 150%;
 }
@@ -426,7 +439,7 @@ background-color: #555;
 .about-contents{
     margin-top: 5%;
     font-size: 20px;
-    font-family: circularStdMedium;
+    font-family: circularStdBook;
     color: #818181;
     line-height: 150%;
 }
@@ -656,7 +669,6 @@ background-color: #555;
     -webkit-text-fill-color: transparent;
     font-size: 24px;
     font-family: circularStdBook;
-    opacity: 0.8;
 }
 
 .footer-info{
@@ -701,7 +713,7 @@ background-color: #555;
     }
 
     .footer-info, .footer-social-links{
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
