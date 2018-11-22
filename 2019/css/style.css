@@ -44,7 +44,7 @@ button{
 }
 
 .collapsible {
-    background-color: #FBFBFB;
+    background-color: #FFFFFF;
     color: #575757;
     cursor: pointer;
     padding: 18px;
@@ -71,6 +71,7 @@ button{
 
 .faq-collapsible{
     border-bottom: 2px solid #b6b6b6;
+    width: 100%;
 }
 
 a, a:hover, a:after, a:visited, a:active{
@@ -95,6 +96,13 @@ button:hover, .btn:hover, .btn:visited, .btn:active{
     transition: all 0.6s;
 }
 
+.hover-text{
+    position: absolute;
+    font-family: circularStdBook;
+    color: #575757;
+    display: none;
+}
+
 @media screen and (max-width: 992px){
     #mainNav{
         padding-left: 4%; 
@@ -106,6 +114,10 @@ button:hover, .btn:hover, .btn:visited, .btn:active{
         border-top:2px solid rgb(212, 212, 212); 
         padding-bottom: 4%;
         margin-top: 2%;
+    }
+
+    .hover-text{
+        font-size: 14px;
     }
 }
 
@@ -135,6 +147,7 @@ background-color: #555;
     font-family: circularStdBook;
     color: #818181;
     font-size: 18px;
+    text-align: justify;
     /* background-color: #f1f1f1; */
 }
 
@@ -151,6 +164,46 @@ background-color: #555;
     width: 12%;
 }
 
+/* @media screen and (max-width: 1400px){
+    .pointer-svg{
+        width: 5%;
+    }
+
+    .calendar-svg{
+        width: 6%;
+    }
+} */
+
+.navbar-img{
+    width: 200px
+}
+
+/* .navbar-img{
+    width: 80%;
+    min-width: 200px;
+} */
+
+
+@media screen and (max-width:992px){
+    .navbar-brand{
+        width: 60%;
+    }
+
+    .navbar-img{
+        width: 30%;
+        min-width: 0px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .navbar-brand{
+        width: 60%;
+    }
+
+    .navbar-img{
+        width: 60%;
+    }
+}
 
 @media screen and (max-width: 992px){
     .collapsible{
@@ -167,11 +220,11 @@ background-color: #555;
     }
 
     .pointer-svg{
-        width: 15%;
+        width: 10%;
     }
     
     .calendar-svg{
-        width: 18%;
+        width: 12%;
     }
 }
 
@@ -182,6 +235,14 @@ background-color: #555;
 
     .content{
         font-size: 12px;
+    }
+
+    .pointer-svg{
+        width: 12%;
+    }
+    
+    .calendar-svg{
+        width: 14%;
     }
 }
 
@@ -202,7 +263,7 @@ background-color: #555;
 
 .navbar-nav > li{
     margin-left:30px;
-    margin-right:30px;
+    /* margin-right:15px; */
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -216,30 +277,50 @@ background-color: #555;
     height: 100vh;
     width: 100vw;
     min-height: 600px;
+    transition: 2s all;
 }
 
 .commitment{
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 15%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
 }
 
-.timeline{
-  padding-top: 10%;
-  padding-bottom: 10%;
+.commitment-align{
+    padding-left: 10%;
+    padding-right: 10%;
 }
+
+@media screen and (max-width:992px){
+    .commitment-align{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+
 
 .about{
-    padding-top: 10%;
+    padding-top: 15%;
     padding-bottom: 10%;
 }
 
 .faq{
     padding-top: 10%;
     padding-bottom: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+@media screen and (max-width:992px){
+    .faq{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 }
 
 @media screen and (max-width: 768px){
-    .faq, .commitment, .about, .timeline{
+    .faq, .about {
         padding-top: 20%;
         padding-bottom: 20%;
     }
@@ -248,13 +329,17 @@ background-color: #555;
 .landing-contents{
     position: relative;
     top: 50%;
-    transform: translate(0, -50%);
+    transform: translate(0, -32%);
     width: 35%;
 }
 
+.landing-contents-button {
+	margin: 0px 0px;
+	padding: 0px 1px;
+}
 
 .logo-img{
-    width: 100%;
+    width: 107%;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
@@ -276,9 +361,8 @@ background-color: #555;
     color: gray;
     font-family: circularStdMedium;
     margin-top: 10%;
+    padding: 0px 0px;
 }
-
-
 
 @media screen and (max-width: 1400px){
 
@@ -289,7 +373,7 @@ background-color: #555;
 
     .landing-nav-btn{
         font-size: 16px;
-        width: 100%;
+        width: 80%;
     }
 
     .landing-info{
@@ -305,7 +389,7 @@ background-color: #555;
 
     .landing-nav-btn{
         font-size: 14px;
-        width: 100%;
+        width: 80%;
     }
 
     .landing-info{
@@ -358,27 +442,11 @@ background-color: #555;
 
 
 .winner-img{
-    width: 60%;
+    width: 75%;
     position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.winner-timeline-img{
-  width: 90%;
-  position: relative;
-  top: 50%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-}
-
-.timeline-img{
-  width: 100%;
-  position: relative;
-  top: 60%;
-  right: 65%;
-  transform: translate(50%, -50%);
+    /* left: 60%; */
+    transform: translate(0%, -50%);
 }
 
 .woman-img{
@@ -388,31 +456,36 @@ background-color: #555;
 }
 
 .about-img{
-    width: 60%;
+    width: 103%;
     position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 40%;
+	padding-right: 0px;
+	margin-right: 0px;
+    transform: translate(-57%, -50%);
 }
-
 
 .commitment-text{
     text-align: right;
-    margin-right: 10%; 
+    /* margin-right: 20%;  */
     margin-left: 10%;
     position: relative;
     top: 50%;
     transform: translate(0, -50%);
 }
 
-.timeline-text{
-  text-align: right;
-  margin-right: 30%; 
-  margin-left: 5%;
-
+.commitment-image {
+    padding-top: 8%;
+    width: 100%;
 }
 
-.commitment-title, .faq-heading, .about-title, .timeline-title {
+@media screen and (max-width: 992px){
+    .commitment-text{
+        margin-right: 10%; 
+    }
+}
+
+.commitment-title, .faq-heading, .about-title {
     font-size: 45px;
     font-family: circularStd;
     color: #575757;
@@ -430,10 +503,39 @@ background-color: #555;
 .about-text{
     text-align: left;
     margin-right: 10%; 
-    margin-left: 10%;
+    margin-left: 16%;
     position: relative;
     top: 50%;
     transform: translate(0, -50%);
+}
+
+.about-video{
+    width: 40%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 5%;
+    padding: 0.1%;
+    border: 2px solid rgba(41, 41, 41, 0.2);
+    box-shadow: 20px 20px rgba(231, 217, 217, 0.1);
+}
+
+@media screen and (max-width:1400px){
+    .about-video{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .about-video{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:992px){
+    .about-text{
+        margin-left: 10%;
+    }
 }
 
 .about-contents{
@@ -451,12 +553,12 @@ background-color: #555;
 }
 
 .faq-column{
-    margin-right: 30%;
+    /* margin-right: 30%; */
     margin-left: 5%;
 }
 
 .faq-title{
-    margin-left: 30%;
+    /* margin-left: 30%; */
     margin-right: 5%;
 }
 
@@ -467,47 +569,35 @@ background-color: #555;
 }
 
 
+
+
 @media screen and (max-width: 1400px){
     .winner-img{
         width: 80%;
     }
-
-    .timeline-img{
-      width: 110%;
-  }
 }
 
 @media screen and (max-width: 992px){
     .winner-img{
         width: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         /* margin-top: 5%; */
     }
-    
-    .winner-timeline-img {
-        height: 75%;
-        top: 50%;
-        left: 60%;
-        transform: translate(-50%, -40%);
-    }
 
-    .timeline-img {
-      width: 80%;
-      margin-left: 10%;
+    .about-img{
+        width: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-
 
     .commitment-text, .about-text{
         text-align: center;
         /* margin-top: 5%; */
     }
 
-    .timeline-text {
-      text-align: center;
-      margin-left: 10%;
-      margin-right: 10%;
-    }
 
-    .commitment-title, .about-title, .faq-heading, .timeline-title{
+    .commitment-title, .about-title, .faq-heading {
         font-size: 30px;
     }
 
@@ -541,17 +631,12 @@ background-color: #555;
         /* margin-top: 5%; */
     }
 
-    .timeline-img {
-      width: 100%;
-      margin-left: 10%;
-    }
-
-    .commitment-text, .about-text, .timeline-text{
+    .commitment-text, .about-text {
         text-align: center;
         /* margin-top: 5%; */
     }
 
-    .commitment-title, .about-title, .faq-heading, .timeline-title{
+    .commitment-title, .about-title, .faq-heading {
         font-size: 30px;
     }
 
@@ -586,12 +671,37 @@ background-color: #555;
 }
 
 
+
 .sponsor-image{
-    width: 60%;
+    width: 50%;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.title-sponsor-image{
+  width: 75%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.associate-sponsor-image{
+  width: 60%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.platform-sponsor-image{
+  width: 60%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .sponsors{
@@ -604,7 +714,7 @@ background-color: #555;
 .image-column{
     width: 100%;
     overflow: hidden;
-    margin-top: 100px;
+    margin-top: 50px;
     /* margin: auto; */
     display: block;
 }
@@ -615,14 +725,30 @@ background-color: #555;
     font-size: 45px;
 }
 
+.patron-title{
+  padding-top: 10%;
+  font-family: circularStd;
+  color: #575757;
+  font-size: 45px;
+}
 
 @media screen and (max-width: 992px){
-    .sponsor-title{
+    .main-sponsors{
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .sponsor-title, .patron-title {
         font-size: 30px;
     }
 
     .sponsor-us-row{
         font-size: 18px;
+    }
+
+    .platform-sponsor-image {
+      width: 50%;
     }
 
     .sponsor-us{
@@ -632,8 +758,16 @@ background-color: #555;
 }
 
 @media screen and (max-width: 768px){
-    .sponsor-title{
+    .sponsor-title, .patron-title {
         font-size: 30px;
+    }
+
+    .associate-sponsor-image {
+      width: 60%;
+    }
+
+    .sponsor-image {
+      width: 40%;
     }
 
     .sponsor-us-row{
@@ -684,6 +818,10 @@ background-color: #555;
     color: #818181;
 }
 
+.footer-logo-img{
+    width: 40%;
+}
+
 
 
 @media screen and (max-width: 992px){
@@ -693,6 +831,10 @@ background-color: #555;
 
     .footer-info, .footer-social-links{
         font-size: 16px;
+    }
+
+    .footer-logo-img{
+        width: 60%;
     }
 }
 
@@ -714,6 +856,10 @@ background-color: #555;
 
     .footer-info, .footer-social-links{
         font-size: 14px;
+    }
+
+    .footer-logo-img{
+        width: 50%;
     }
 }
 
@@ -826,3 +972,103 @@ background-color: #555;
 }
 
 /*-------- Previous Speakers Section ends  ----------*/
+
+/*-------- Timeline Section starts  ----------*/
+
+.timeline{
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.winner-timeline-img{
+  width: 100%;
+  position: relative;
+  top: 50%;
+  /* left: 80%; */
+  transform: translate(0%, -50%);
+}
+
+.timeline-img{
+  width: 100%;
+  position: relative;
+  top: 60%;
+  right: 65%;
+  transform: translate(50%, -50%);
+}
+
+.timeline-text{
+  text-align: right;
+  /* margin-right: 30%;  */
+  margin-left: 5%;
+}
+
+.timeline-title {
+  font-size: 45px;
+  font-family: circularStd;
+  color: #575757;
+}
+
+@media screen and (max-width: 992px){
+  .timeline{
+    padding-left: 2%;
+    padding-right: 2%;
+  } 
+  
+  .winner-timeline-img {
+      height: 75%;
+      top: 0%;
+      left: 60%;
+      transform: translate(-50%, 0%);
+  }
+
+  .timeline-img {
+    width: 80%;
+    /* margin-left: 10%; */
+    top: 0%;
+    left: 40%;
+    transform: translate(-50%, 0);
+  }
+
+  .timeline-text {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .timeline-title {
+      font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .timeline{
+      padding-top: 20%;
+      padding-bottom: 20%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .timeline-img {
+    width: 100%;
+    margin-left: 10%;
+  }
+
+  .timeline-text{
+      text-align: center;
+      /* margin-top: 5%; */
+  }
+
+  .timeline-title{
+      font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1400px){
+  .timeline-img{
+    width: 110%;
+  }
+}
+
+/*-------- Timeline Section ends  ----------*/

@@ -32,3 +32,24 @@ function scrollFunction() {
     document.getElementById("mainNav").style.paddingBottom = "0%";
   }
 }
+
+function showHoverText(){
+  if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if(window.innerWidth > 768){
+      var hoverText = document.querySelector('.hover-text');
+      hoverText.style.display = "block";
+    }
+   }
+  // if(window.innerWidth > 992){
+  //   var hoverText = document.querySelector('.hover-text');
+  //   hoverText.style.display = "block";
+  // }
+  
+
+}
+
+function hideHoverText(){
+  var hoverText = document.querySelector('.hover-text');
+  hoverText.style.display = "none";
+
+}
