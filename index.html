@@ -72,15 +72,29 @@
           <a href="https://www.flickr.com/photos/ams_iiita/sets/72157689089786250" target="_blank"><button type="button"
               class="btn btn-outline-primary landing-nav-btn" style="border-color:#715EFF; color:#715EFF;">Gallery</button></a>
         </div>
+
         <div class="col-md-4 landing-contents-button">
           <a href="#sponsors"><button type="button" class="btn btn-outline-danger landing-nav-btn"
               style="border-color:#FF6C56; color:#FF6C56;">Sponsor Us</button></a>
         </div>
+
         <div class="col-md-4 landing-contents-button">
+            <button id="hint-apply-now" type="button" class="btn btn-outline-warning landing-nav-btn" onmouseover="showHoverText()"  onmouseout="hideHoverText()"           
+            style="border-color:#FFDB2E; color:#FFDB2E;" title="We're not open yet. Stay in touch with out social!">
+              <svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#FFDB2E" viewBox="0 0 115.46 123.46" style="height:24px;width:24px;">
+                <path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z"/>
+                <path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/>
+              </svg>
+              Apply Now
+            </button>
+        </div>
+        <!-- <div class="col-md-4 landing-contents-button">
           <button type="button" class="btn btn-outline-dark landing-nav-btn" onmouseover="showHoverText()"  onmouseout="hideHoverText()"           
           style="border-color:#E6E6E6; color:#E6E6E6;" title="We're not open yet. Stay in touch with out social!">Apply Now</button>
-        </div>
+        </div> -->
       </div>
+
+
 
       <div class="row justify-content-center text-center landing-icons" style="margin-top: 4%; padding-left: 8%; padding-right: 8%; transition: all 0.6s;">
         <div class="col-12 text-center hover-text">
@@ -518,19 +532,23 @@
 
     <div class="row justify-content-around main-sponsors" style="margin-bottom: 10%;">
       <div class="col-lg-6 image-column">
-        <a href="https://github.com/" target="_blank"><img src="images/sponsors/new_sponsors/GitHub_Logo.png" style="width:60%;" class="title-sponsor-image"></a>
+        <a href="https://github.com/" target="_blank"><img src="images/sponsors/new_sponsors/GitHub_Logo.png" style="width:80%;" class="title-sponsor-image"></a>
       </div>
 
       <div class="col-lg-6 image-column">
-        <a href="https://www.rightmesh.io/" target="_blank"><img src="images/sponsors/new_sponsors/RightMesh.jpeg" style="width:60%;" class="title-sponsor-image"></a>
+        <a href="https://www.rightmesh.io/" target="_blank"><img src="images/sponsors/new_sponsors/RightMesh.jpeg" style="width:80%;" class="title-sponsor-image"></a>
       </div>
       
       <div class="col-lg-6 image-column">
-        <a href="https://www.elastic.co/" target="_blank"><img src="images/sponsors/new_sponsors/elastic-logo-H-full color.png" style="width:60%;" class="title-sponsor-image"></a>
+        <a href="https://www.elastic.co/" target="_blank"><img src="images/sponsors/new_sponsors/elastic-logo-H-full color.png" style="width:80%;" class="title-sponsor-image"></a>
       </div>
 
       <div class="col-lg-6 image-column">
-        <a href="https://devfolio.co/" target="_blank"><img src="images/sponsors/new_sponsors/devfolio.svg" style="width:60%;" class="title-sponsor-image"></a>
+        <a href="https://devfolio.co/" target="_blank"><img src="images/sponsors/new_sponsors/devfolio.svg" style="width:80%;" class="title-sponsor-image"></a>
+      </div>
+
+      <div class="col-lg-12 image-column">
+        <a href="https://www.linode.com/" target="_blank"><img src="images/sponsors/new_sponsors/linode-logo_standard_light_medium.png" style="width:40%;" class="associate-sponsor-image"></a>
       </div>
     
       <div class="col-lg-12 image-column">
@@ -798,6 +816,28 @@
   <script src="js/bootstrap/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let devfolioOptions = {
+            buttonSelector: 'hint-apply-btn',
+            key: 'hint',
+        }
+
+        let script = document.createElement('script');
+        script.src = "https://apply.devfolio.co";
+        document.head.append(script);
+
+        script.onload = function () {
+            new Devfolio(devfolioOptions);
+        }
+
+        script.onerror = function () {
+            document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
+                window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
+            });
+        }
+    });
+  </script>
 
 
 </body>
