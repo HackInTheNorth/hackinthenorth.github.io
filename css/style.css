@@ -356,6 +356,17 @@ background-color: #555;
     font-size: 20px;
 }
 
+.landing-nav-apply-btn{
+  width: 120%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 25px;
+  border-width: 3px;
+  font-family: circularStdMedium;
+  font-size: 20px;
+}
+
 .landing-info{
     font-size: 20px;
     color: gray;
@@ -1072,3 +1083,17 @@ background-color: #555;
 }
 
 /*-------- Timeline Section ends  ----------*/
+
+
+
+#hint-apply-now {
+  fill: #323232;
+  border-color: #323232; 
+  color:#323232;
+}
+
+#hint-apply-now:active:focus {
+  fill: #fff;
+  color: #fff
+} 
+
