@@ -347,13 +347,14 @@ background-color: #555;
 
 .landing-nav-btn{
     width: 90%;
+    height: 100%;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
     border-radius: 25px;
     border-width: 3px;
     font-family: circularStdMedium;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .landing-nav-apply-btn{
@@ -378,13 +379,13 @@ background-color: #555;
 @media screen and (max-width: 1400px){
 
     .landing-contents{
-        width: 40%;
+        width: 50%;
     }
 
 
     .landing-nav-btn{
         font-size: 16px;
-        width: 80%;
+        width: 90%;
     }
 
     .landing-info{
@@ -419,6 +420,7 @@ background-color: #555;
         font-size: 14px;
         width: 80%;
         margin-top: 10px;
+        height: initial;
     }
 
     .landing-info{
