@@ -252,8 +252,8 @@ background-color: #555;
 .navbar-title{
     font-weight: 700;
     background: linear-gradient(to right, #6C63FF 0%, #FF6C56 60%, #FFDB2E 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .bg-light {
@@ -334,8 +334,8 @@ background-color: #555;
 }
 
 .landing-contents-button {
-	margin: 0px 0px;
-	padding: 0px 1px;
+    margin: 0px 0px;
+    padding: 0px 1px;
 }
 
 .logo-img{
@@ -473,8 +473,8 @@ background-color: #555;
     position: relative;
     top: 50%;
     left: 40%;
-	padding-right: 0px;
-	margin-right: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
     transform: translate(-57%, -50%);
 }
 
@@ -812,7 +812,7 @@ background-color: #555;
 .footer-title{
     font-weight: 600;
     background: linear-gradient(to right, #6C63FF 0%, #FF6C56 60%, #FFDB2E 100%);
-	-webkit-background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 24px;
     font-family: circularStdBook;
@@ -876,11 +876,42 @@ background-color: #555;
     }
 }
 
-/*-------- Previous Speakers Section starts ----------*/
+/*-------- Previous Speakers Section starts AND Team Section----------*/
 
 .previous-speakers{
+    padding-bottom: 5%;
+}
+
+.team {
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+.team-title {
+    padding-top: 4%
+}
+
+.team-social {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 1400px){
+    .team-title {
+        padding-top: 8%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .team-title {
+        padding-top: 14%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .team-title {
+        padding-top: 18%;
+    }
 }
 
 .circle{
