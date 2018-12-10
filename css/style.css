@@ -400,7 +400,7 @@ background-color: #555;
     }
 
     .landing-nav-btn{
-        font-size: 14px;
+        font-size: 10px;
         width: 80%;
     }
 
@@ -413,11 +413,11 @@ background-color: #555;
 @media screen and (max-width: 768px){
 
     .landing-contents{
-        width: 60%;
+        width: 70%;
     }
 
     .landing-nav-btn{
-        font-size: 14px;
+        font-size: 10px;
         width: 80%;
         margin-top: 10px;
         height: initial;
