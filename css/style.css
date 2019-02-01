@@ -99,8 +99,8 @@ button:hover, .btn:hover, .btn:visited, .btn:active{
 .hover-text{
     position: absolute;
     font-family: circularStdBook;
-    color: #575757;
-    display: none;
+    color: #b94343;
+    /* display: none; */
 }
 
 @media screen and (max-width: 992px){
