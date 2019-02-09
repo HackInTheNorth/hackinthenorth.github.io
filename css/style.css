@@ -117,7 +117,8 @@ button:hover, .btn:hover, .btn:visited, .btn:active{
     }
 
     .hover-text{
-        font-size: 14px;
+        font-size: 8px;
+        margin-bottom: 10px;
     }
 }
 
