@@ -1133,27 +1133,40 @@ background-color: #555;
 
 
 .prizes{
-    padding-top: 10%;
-    padding-bottom: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .prize-container{
-    height: 320px;
-    width: 300px;
-    border: solid 1px rgba(41, 41, 41, 0.1);
-    box-shadow: 5px 5px 25px 0 rgba(46,61,73,0.2);
+  height: 320px;
+  width: 300px;
+  border: solid 1px rgba(41, 41, 41, 0.1);
+  box-shadow: 5px 5px 25px 0 rgba(46,61,73,0.2);
 }
 
 .image-row{
-    height: 60%;
+  height: 60%;
 }
 
 .prize-image{
-    height: 80%;
-    width: 80%;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  height: 80%;
+  width: 80%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.prizes-row{
+  margin-bottom: 5rem;
+  color: #575757;
+  font-size: 28px;
+  font-family: circularStdBook;
+}
+
+.desc-row{
+  color: #575757;
+  font-size: 24px;
+  font-family: circularStdBook;
 }
 
