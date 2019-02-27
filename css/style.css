@@ -1212,7 +1212,59 @@ background-color: #555;
     -moz-text-fill-color: transparent;
 } */
 
-@supports (mix-blend-mode: lighten) {
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    .image-text{
+        position: relative;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 50px;
+        background: linear-gradient(#6C63FF 0%, #FF6C56 60%, #FFDB2E 100%);
+        background: -webkit-linear-gradient(#6C63FF 0%, #FF6C56 60%, #FFDB2E 100%);
+        background: -moz-linear-gradient(top, #6C63FF 0%, #FF6C56 60%, #FFDB2E 100%);
+        background: -o-linear-gradient(#6C63FF 0%, #FF6C56 60%, #FFDB2E 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -moz-background-clip: text;
+        color: transparent;
+        /* -webkit-text-fill-color: transparent; */
+        /* -webkit-text-fill-color: transparent; */
+        /* -moz-text-fill-color: transparent; */
+    }
+}
+
+@-moz-document url-prefix() {
+    @supports (mix-blend-mode: lighten) {
+        .image-text {
+          display: inline-block;
+          position: relative;
+          left: 50%;
+        top: 45%;
+        font-size: 50px;
+        transform: translate(-50%, -50%);
+          color: #000;
+          background: #fff;
+          mix-blend-mode: multiply;
+        }
+        .image-text::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: linear-gradient(to right,#6C63FF, #FF6C56, rgb(218, 125, 20));
+          pointer-events: none;
+        }
+        .image-text::before {
+          mix-blend-mode: screen;
+        }
+      }
+}
+
+/* @supports (mix-blend-mode: lighten) {
     .image-text {
       display: inline-block;
       position: relative;
@@ -1238,7 +1290,7 @@ background-color: #555;
     .image-text::before {
       mix-blend-mode: screen;
     }
-  }
+  } */
 
   @supports (mix-blend-mode: lighten) {
     .image-text2 {
