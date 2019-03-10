@@ -1476,9 +1476,16 @@ background-color: #555;
     }
 
     .mentor-row{
-        width: 60%;
+        width: 90%;
     }
 
+    .mentor-container{
+        padding: 10%;
+        margin-bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 576){
     .mentor-container{
         padding: 10%;
     }
