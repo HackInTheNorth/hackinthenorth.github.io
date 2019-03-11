@@ -1152,10 +1152,10 @@ background-color: #555;
   border: solid 1px rgba(41, 41, 41, 0.1);
   box-shadow: 5px 5px 25px 0 rgba(46,61,73,0.2);
   margin-bottom: 75px;
-  -webkit-transition: box-shadow 0.3s ease-out;
-  -moz-transition: box-shadow 0.3s ease-out;
-  -o-transition: box-shadow 0.3s ease-out;
-  transition: box-shadow 0.3s ease-out;
+  -webkit-transition: box-shadow 0.4s ease-out;
+  -moz-transition: box-shadow 0.4s ease-out;
+  -o-transition: box-shadow 0.4s ease-out;
+  transition: box-shadow 0.4s ease-out;
 }
 
 .top-prize{
@@ -1390,13 +1390,16 @@ background-color: #555;
     border-right: solid 1px rgba(41, 41, 41, 0.1);
     border-bottom: solid 1px rgba(41, 41, 41, 0.1);
     box-shadow: 5px 5px 25px 0 rgba(46,61,73,0.2);
-    -webkit-transition: box-shadow 0.3s ease-out;
-    -moz-transition: box-shadow 0.3s ease-out;
-    -o-transition: box-shadow 0.3s ease-out;
-    transition: box-shadow 0.3s ease-out;
-    padding: 5%;
-    margin-bottom: 10%;
-    width: 20%;
+    -webkit-transition: padding 0.4s ease-out, width 0.4s ease-out, margin-bottom 0.4s ease-out, margin-top 0.4s ease-out;
+    -moz-transition: padding 0.4s ease-out, width 0.4s ease-out, margin-bottom 0.4s ease-out, margin-top 0.4s ease-out;
+    -o-transition: padding 0.4s ease-out, width 0.4s ease-out, margin-bottom 0.4s ease-out, margin-top 0.4s ease-out;
+    transition: padding 0.4s ease-out, width 0.4s ease-out, margin-bottom 0.4s ease-out, margin-top 0.4s ease-out;
+    margin-bottom: 5%;
+    padding: 2%;
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* .mentor-container:hover{
@@ -1406,8 +1409,8 @@ background-color: #555;
 
 
 .mentor-img{
-    width:250px;
-    height:250px;
+    width:150px;
+    height:150px;
     position: relative;
     top: 50%;
     left: 50%;
@@ -1417,12 +1420,25 @@ background-color: #555;
     -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
     border:4px solid #FFFFFF;
+
+    -webkit-transition:  width 0.4s ease-out, height 0.4s ease-out;
+    -moz-transition: width 0.4s ease-out, height 0.4s ease-out;
+    -o-transition: width 0.4s ease-out, height 0.4s ease-out;
+    transition: width 0.4s ease-out, height 0.4s ease-out;
 }
 
 .mentor-title{
     font-family: circularStdBook;
     color: #575757;
-    margin-bottom: 2%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /* margin-bottom: 2%; */
+
+    -webkit-transition:  top 0.4s ease-out, transform 0.4s ease-out;
+    -moz-transition: top 0.4s ease-out, transform 0.4s ease-out;
+    -o-transition: top 0.4s ease-out, transform 0.4s ease-out;
+    transition: top 0.4s ease-out, transform 0.4s ease-out;
 }
 
 .mentor-name{
@@ -1440,11 +1456,44 @@ background-color: #555;
     color: #575757;
     font-size: 20px;
     text-align: justify;
+    opacity: 0;
+    -webkit-transition:  display 0.4s ease-out, opacity 0.3s ease-in-out, color 2s ease-out;
+    -moz-transition: display 0.4s ease-out, opacity 0.3s ease-in-out, color 2s ease-out;
+    -o-transition: display 0.4s ease-out, opacity 0.3s ease-in-out, color 2s ease-out;
+    transition: display 0.4s ease-out, opacity 0.3s ease-in-out, color 2s ease-out;
+}
+
+.mentor-container:hover .mentor-info{
+    opacity: 1;
+    -webkit-transition:  opacity 1s ease-in-out, color 2s ease-out;
+    -moz-transition: opacity 1s ease-in-out, color 2s ease-out;
+    -o-transition: opacity 1s ease-in-out, color 2s ease-out;
+    transition: opacity 1s ease-in-out, color 2s ease-out;
 }
 
 
+.mentor-container:hover .mentor-img{
+    width:250px;
+    height:250px;
+}
+
+.mentor-container:hover{
+    padding: 5%;
+    width: 100%;
+    /* margin-bottom: 5%;
+    margin-top: 5%; */
+}
+
+.mentor-container:hover .mentor-title{
+    top: 0%;
+    transform: translateY(0);
+    margin-bottom: 2%;
+}
+
+
+
 @media screen and (max-width: 1400px){
-    .mentor-row{
+    .mentor-container{
         width: 80%;
     }
 }
@@ -1476,7 +1525,7 @@ background-color: #555;
         margin-bottom: 10%;
     }
 
-    .mentor-row{
+    .mentor-container{
         width: 90%;
     }
 
