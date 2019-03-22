@@ -1162,8 +1162,8 @@ background-color: #555;
 
 @media screen and (max-width: 992px){
     .prizes{
-        padding-right: 15%;
-        padding-left: 15%;
+        padding-right: 10%;
+        padding-left: 10%;
     }
 }
 
