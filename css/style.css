@@ -1582,3 +1582,17 @@ background-color: #555;
 }
 
 
+
+
+.track-image{
+    height: 40px;
+    width: 40px;
+}
+
+.tracks-list{
+    list-style: none;
+}
+
+.tracks-list > li{
+    margin-bottom: 10px;
+}
