@@ -1307,3 +1307,29 @@ and (min-width: 450px) and (max-width: 850px)
         overflow: hidden;
     }
 }
+
+#patrons
+{
+    width: 100%;
+    margin: 150px 0 0 0px;
+}
+
+.middle
+{
+    width: 100%;
+    text-align: center;
+}
+
+.middle h3{
+    font-size: 5em;
+}
+
+@media screen and (min-width: 992px)
+{
+    #patrons .sp-div
+    {
+        margin-top: 50px;
+    }
+}
+
+
