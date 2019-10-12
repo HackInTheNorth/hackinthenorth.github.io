@@ -1,900 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hack In The North</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hack In The North 5</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css">
+    <script src="https://kit.fontawesome.com/bf2cd612e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 
-  <meta name="description" content="Hack in the North 4 Website.">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="shortcut icon" href="assets/logos/LOGO.png">
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
 
-  <!-- Facebook -->
-  <meta property="og:url" content="https://www.hackinthenorth.com" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Hack In The North 4" />
-  <meta property="og:description" content="India's best student held hackathon" />
-  <meta property="og:image" content="https://github.com/HackInTheNorth/hackinthenorth.github.io/blob/master/images/LOGO_og.png?raw=true"
-  />
+  <style>
+    
+    @font-face {
+    font-family: 'CeraPro-black';
+    src: url(fonts/CeraPro-Black.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:creator" content="Team HINT">
-  <meta name="twitter:site" content="https://hackinthenorth.com">
-  <meta name="twitter:title" content="Hack In The North 4 - India's Biggest Student Hackathon">
-  <meta name="twitter:description" content="Hack in the North, a student-held hackathon in India will host it's third edition this March. We have invited a 
-  legion of over 500 hackers over the past two years to collaborate, create and bring to life an idea, in 36 hours.">
-  <meta name="twitter:image:src" content="images/LOGO.png">
-  <meta name="twitter:image:width" content="312">
-  <meta name="twitter:image:height" content="141">
+@font-face {
+    font-family: 'CeraPro-bold';
+    src: url(fonts/CeraPro-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
 
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
-  <link rel="shortcut icon" href="images/LOGO.png">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72748005-1"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-72748005-1');
-  </script>
+@font-face {
+    font-family: 'CeraPro-regular';
+    src: url(fonts/CeraPro-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CeraPro-Thin';
+    src: url(fonts/CeraPro-Thin.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CeraPro-medium';
+    src: url(fonts/CeraPro-Medium.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+  .coming h2
+  {
+  font-family: 'CeraPro-black';
+  font-weight: 700 !important;
+  }
+
+  .coming h1
+  {
+    font-family: 'CeraPro-black';
+  }
+
+  #diversity .heading h2 , .head h2, #brochure h2, .patron 
+  {
+    font-family: 'CeraPro-bold';
+  }
+
+  #diversity .row p, #brochure h3, .download a, #footer div p, .nav-link
+  {
+    font-family: 'CeraPro-regular';
+  }
+
+  #footer div p
+  {
+    font-family: 'CeraPro-Thin';
+  }
+  
+  </style>
 
 </head>
-
 <body>
 
 
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
-    <div class="container-fluid" style="padding-right:0; padding-left:0%;">
-      <a class="navbar-brand js-scroll-trigger navbar-title" href="#"><img src="images/Text-Logo.png" class="navbar-img"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto navbar-list">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#faq">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#sponsor-target">Sponsors</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="team.html">Team</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="projects.html">Projects</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <div class="landing-page">
-    <div class="container-fluid landing-contents">
-      <div class="row">
-        <div class="col-12">
-          <img src="images/LOGO.png" class="logo-img">
-        </div>
-      </div>
-
-      <div class="row" style="margin-top: 4%;">
-        <div id="gallery-btn" class="col-md-3 landing-contents-button">
-          <a href="https://www.flickr.com/photos/ams_iiita/sets/72157689089786250" target="_blank"><button type="button"
-              class="btn btn-outline-primary landing-nav-btn" style="border-color:#715EFF; color:#715EFF;">Gallery</button></a>
-        </div>
-
-        <div class="col-md-6 landing-contents-button">
-          <button id="hint-apply-now" type="button" class="btn btn-outline-dark landing-nav-btn" onClick=”_gaq.push([‘_trackEvent’, ‘External Link’, ‘Devfolio Link’, ‘Registration’]);”>
-            <svg class="logo" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 115.46 123.46" style="height:24px;width:24px;">
-              <path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z"/>
-              <path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/>
-            </svg>
-            Apply with Devfolio
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top c21" id="mainNav">
+        <div class="container-fluid" style="padding-right:0; padding-left:0%;">
+          <a class="navbar-brand js-scroll-trigger navbar-title" href="#"><img src="./assets/logos/logo_HINT5.svg" class="navbar-img"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation" id="toggler">
+            <span class="navbar-toggler-icon"></span>
           </button>
-        </div>
-
-        <div id="sponsor-btn" class="col-md-3 landing-contents-button">
-          <a href="#sponsors"><button type="button" class="btn btn-outline-danger landing-nav-btn"
-              style="border-color:#FF6C56; color:#FF6C56;">Sponsor Us</button></a>
-        </div>
-      </div>
-
-
-
-      <div class="row justify-content-center text-center landing-icons" style="margin-top: 4%; padding-left: 8%; padding-right: 8%; transition: all 0.6s;">
-        <div class="col-12 text-center hover-text">
-          Applications are closed!
-        </div>
-        <div class="col-6 col-md-6 landing-info" style="display:inline-block">
-          <img src="images/Group 34.svg" class="pointer-svg"> &nbsp IIIT Allahabad
-        </div>
-        <div class="col-6 col-md-6 landing-info">
-          <img src="images/calendar.svg" class="calendar-svg"> &nbsp 29th - 31st March
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="about" id="about" style="background-color: #FBFBFB;">
-    <div class="about-fluid">
-      <div class="row about-row">
-        <div class="col-md-6 col-lg-8 order-2 order-md-1">
-          <div class="row about-text">
-            <div class="col-12 about-title">
-              What is Hack In The North?
-            </div>
-
-            <div class="col-12 about-contents">
-              Hack In The North is the collaboration of programmers, designers and inventors to code,
-              design and build innovative solutions that tackle real world problems.<br><br>
-              We provide a venue for self-expression and creativity through technology.<br><br>
-              It doesn't matter if someone is still making their first app or their 100th one. There are
-              a lot of things to learn.<br><br>
-              The only constraint is time.
-            </div>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto navbar-list">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger link" href="#diversity">Diversity</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger link" href="#sponsor">Past Sponsors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger link" href="#brochure">Brochure</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger link" href="#contact">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 order-1 order-md-2">
-          <img src="images/SVG1.svg" class="about-img">
-        </div>
+      </nav>
+        
+            <div class="home" id="landing">
+                    <div class="bg">
+                            <div class="crane">
+                                <div class="lappy">
+                                </div>
+                            </div>
+                            <img src="assets/logos/logo_HINT5.svg" alt="hint5" id="logo" class="logo">
+                    </div>             
+                    <div class="coming">
+                              <div><h1>5</h1></div>
+                              <h2>COMING<br>SOON!</h2>
+                    </div>    
+                    <div class="gr">
+                        <h2>COMING SOON!</h2>
+                    </div>           
+            </div> 
+            <div id="diversity">
+              <div class="heading">
+                  <h2>Diversity</h2>
+              </div>
+                <div class="row large" >
+                    <div class="col-md-5 col-sm-12" id="lady">
+                        <img src="./assets/ladies.svg" alt="ladies" class="ladies">
+                    </div>
+                    <div class="col-md-7 col-sm-12" id="para"  >
+                        <p>Hack In The North has always been pushing the envelope on making developer environment a more inclusive one, especially for women developrers. The last edition of Hack In The North witnessed Diversity sponsors and partners such as Gitlab and Woman Who Code. Further, there were slots for all-girls teams and prizes for best woman team. This spirit of inclusivity, especially after abolition of section 377, is going to see a lot of growth in next edition of Hack In The North. Stay tuned for more updates on our diversty initiatives!</p>
+                    </div>
+                </div>
 
-      </div>
+                <div class="row small">
+                  <div class="col-md-6 col-sm-12" id="para"  >
+                      <p>Hack In The North has always been pushing the envelope on making developer environment a more inclusive one, especially for women developrers. The last edition of Hack In The North witnessed Diversity sponsors and partners such as Gitlab and Woman Who Code. Further, there were slots for all-girls teams and prizes for best woman team. This spirit of inclusivity, especially after abolition of section 377, is going to see a lot of growth in next edition of Hack In The North. Stay tuned for more updates on our diversty innotiative.   </p>
+                  </div>
+                  <div class="col-md-6 col-sm-12" id="lady"  >
+                    <img src="./assets/ladies.svg" alt="ladies" class="ladies">
+                  </div>
+              </div>
 
-      <div class="row">
-        <div class="col-12">
-          <video src="videos/after movie hint_x264.mp4" controls class="about-video">Cannot Play Video</video>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="commitment" id="commitment">
-    <div class="container-fluid commitment-align">
-      <div class="row commitment-row">
-        <div class="col-md-6">
-          <img src="images/WomanSVG.svg" class="winner-img">
-        </div>
-
-        <div class="col-md-6">
-          <div class="row commitment-text">
-            <div class="col-12 commitment-title">
-              Commitment
             </div>
-
-            <div class="col-12 commitment-contents">
-              At Hack In The North, we create an environment that brings developers together irrespective
-              of their gender, race, sexual orientation, socioeconomic background or ethnicity. <br><br>
-              Ever since its inception, over the years, we have strived to make sure that women get a
-              chance to showcase their experience with all fairness. <br><br>
-              Hack In The North 2.0 had a direct entry to any and all girls’ teams and individual
-              entries. The best performing girls’ team received special prizes and swags In Hack In The
-              North 3.0, We took it a step further and reserved 20% of the seats for female participants.
-              <br><br>
-              <a href="https://hackcodeofconduct.org/769-hack_in_the_north_4_0" target="_blank">See Our
-                Code of Conduct here</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="images/FemalePic.png" class="commitment-image">
-  </div>
-
-
-  <div class="timeline" id="timeline" style="background-color: #FBFBFB;">
-    <div class="container-fluid">
-      <div class="row timeline-row">
-        <div class="col-lg-6">
-          <!-- <br>
-                <br>
-                <br> -->
-          <img src="images/undraw_winners_2yls.svg" class="winner-timeline-img">
-        </div>
-
-        <div class="col-lg-6">
-          <div class="row timeline-text">
-            <div class="col-12 timeline-title">
-              Timeline
-            </div>
-
-            <div class="col-12">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 481.5" class="timeline-img">
-                <defs>
-                  <style>
-                    @font-face {
-                      font-family: CircularStd-Medium;
-                      src: url("./fonts/CircularStd-Medium.otf") format("opentype");
-                    }
-
-                    .cls-1 {
-                      fill: #818181;
-                      font-size: 20px;
-                      font-family: CircularStd-Medium, Circular Std Medium;
-                      font-weight: 500;
-                    }
-
-                    .cls-2 {
-                      fill: #575757;
-                    }
-
-                    .cls-3,
-                    .cls-9 {
-                      fill: none;
-                    }
-
-                    .cls-3,
-                    .cls-5,
-                    .cls-6 {
-                      stroke: #ff6c56;
-                    }
-
-                    .cls-3 {
-                      stroke-linecap: round;
-                      stroke-width: 4px;
-                    }
-
-                    .cls-4,
-                    .cls-6,
-                    .cls-7 {
-                      fill: #ff6c56;
-                    }
-
-                    .cls-4 {
-                      opacity: 0.11;
-                    }
-
-                    .cls-5 {
-                      fill: #fff;
-                    }
-
-                    .cls-5,
-                    .cls-6 {
-                      stroke-width: 3px;
-                    }
-
-                    .cls-8 {
-                      stroke: none;
-                    }
-                  </style>
-                </defs>
-                <g id="Group_49" data-name="Group 49" transform="translate(-558 -4122.5)">
-                  <text id="_16th_Mar_9:00_PM_Opening_Ceremony" data-name="16th Mar 9:00 PM | Opening Ceremony" class="cls-1"
-                    transform="translate(1088 4197)">
-                    <tspan style="fill: #818181;" x="-358.24" y="0">29th Mar 9:00 PM</tspan>
-                    <tspan class="cls-2" y="0" xml:space="preserve"> | Opening Ceremony</tspan>
-                  </text>
-                  <text id="_18th_Mar_12:00_AM_Tshirt_and_goodies_Distribution" data-name="18th Mar 12:00 AM | Tshirt and goodies Distribution"
-                    class="cls-1" transform="translate(1088 4404)">
-                    <tspan style="fill: #818181;" x="-468.9" y="0">31st Mar 12:00 AM</tspan>
-                    <tspan class="cls-2" y="0" xml:space="preserve"> | Tshirt and goodies Distribution</tspan>
-                  </text>
-                  <text id="_18th_Mar_10.30_AM_-_1.30PM_Presentation_and_Evaluation_" data-name="18th Mar 10.30 AM - 1.30PM | Presentation and Evaluation "
-                    class="cls-1" transform="translate(1088 4515)">
-                    <tspan style="fill: #818181;" x="-529.62" y="0">31st Mar 10.30 AM - 1.30PM</tspan>
-                    <tspan class="cls-2" y="0" xml:space="preserve"> | Presentation and Evaluation</tspan>
-                    <tspan y="0"> </tspan>
-                  </text>
-                  <text id="_18th_Mar_5:00_PM_Prize_Distribution_Feedback_Session" data-name="18th Mar 5:00 PM | Prize Distribution &amp; Feedback Session"
-                    class="cls-1" transform="translate(1088 4594)">
-                    <tspan style="fill: #818181;" x="-521.6" y="0">31st Mar 5:00 PM</tspan>
-                    <tspan class="cls-2" y="0" xml:space="preserve"> | Prize Distribution &amp; Feedback Session</tspan>
-                  </text>
-                  <text id="_17th_Mar_12:00_Midnight_Registration" data-name="17th Mar 12:00 Midnight | Registration"
-                    class="cls-1" transform="translate(1088 4267)">
-                    <tspan style="fill: #818181;" x="-346.76" y="0">30th Mar 12:00 Midnight </tspan>
-                    <tspan class="cls-2" y="0">| Registration</tspan>
-                  </text>
-                  <text id="_17th_Mar_11:00_AM_Lunch" data-name="17th Mar 11:00 AM | Lunch" class="cls-1" transform="translate(1088 4299)">
-                    <tspan style="fill: #818181;" x="-238.62" y="0">30th Mar 1:00 PM </tspan>
-                    <tspan class="cls-2" y="0">| Lunch</tspan>
-                  </text>
-                  <text id="_17th_Mar_8:00_PM_Dinner" data-name="17th Mar 8:00 PM | Dinner" class="cls-1" transform="translate(1088 4331)">
-                    <tspan style="fill: #818181;" x="-237.78" y="0">30th Mar 8:00 PM </tspan>
-                    <tspan class="cls-2" y="0">| Dinner</tspan>
-                  </text>
-                  <text id="_18th_Mar_10:00_AM_Breakfast" data-name="18th Mar 10:00 AM | Breakfast" class="cls-1"
-                    transform="translate(1088 4442)">
-                    <tspan style="fill: #818181;" x="-274.84" y="0">31st Mar 10:00 AM</tspan>
-                    <tspan class="cls-2" y="0" xml:space="preserve"> | Breakfast</tspan>
-                  </text>
-                  <g id="Timeline">
-                    <line id="Line_4" data-name="Line 4" class="cls-3" y2="464" transform="translate(1110.5 4124.5)" />
-                    <g id="Group_45" data-name="Group 45" transform="translate(0 250)">
-                      <circle id="Ellipse_28" data-name="Ellipse 28" class="cls-4" cx="17.5" cy="17.5" r="17.5"
-                        transform="translate(1093 3923)" />
-                      <g id="Ellipse_29" data-name="Ellipse 29" class="cls-5" transform="translate(1100 3930)">
-                        <circle class="cls-8" cx="11" cy="11" r="11" />
-                        <circle class="cls-9" cx="11" cy="11" r="9.5" />
-                      </g>
-                    </g>
-                    <g id="Group_46" data-name="Group 46" transform="translate(0 456)">
-                      <circle id="Ellipse_28-2" data-name="Ellipse 28" class="cls-4" cx="17.5" cy="17.5" r="17.5"
-                        transform="translate(1093 3923)" />
-                      <g id="Ellipse_29-2" data-name="Ellipse 29" class="cls-5" transform="translate(1100 3930)">
-                        <circle class="cls-8" cx="11" cy="11" r="11" />
-                        <circle class="cls-9" cx="11" cy="11" r="9.5" />
-                      </g>
-                    </g>
-                    <g id="Group_47" data-name="Group 47" transform="translate(0 567)">
-                      <circle id="Ellipse_28-3" data-name="Ellipse 28" class="cls-4" cx="17.5" cy="17.5" r="17.5"
-                        transform="translate(1093 3923)" />
-                      <g id="Ellipse_29-3" data-name="Ellipse 29" class="cls-5" transform="translate(1100 3930)">
-                        <circle class="cls-8" cx="11" cy="11" r="11" />
-                        <circle class="cls-9" cx="11" cy="11" r="9.5" />
-                      </g>
-                    </g>
-                    <g id="Group_48" data-name="Group 48" transform="translate(0 646)">
-                      <circle id="Ellipse_28-4" data-name="Ellipse 28" class="cls-4" cx="17.5" cy="17.5" r="17.5"
-                        transform="translate(1093 3923)" />
-                      <g id="Ellipse_29-4" data-name="Ellipse 29" class="cls-6" transform="translate(1100 3930)">
-                        <circle class="cls-8" cx="11" cy="11" r="11" />
-                        <circle class="cls-9" cx="11" cy="11" r="9.5" />
-                      </g>
-                    </g>
-                    <circle id="Ellipse_35" data-name="Ellipse 35" class="cls-7" cx="5" cy="5" r="5" transform="translate(1106 4255)" />
-                    <circle id="Ellipse_36" data-name="Ellipse 36" class="cls-7" cx="5" cy="5" r="5" transform="translate(1106 4287)" />
-                    <circle id="Ellipse_37" data-name="Ellipse 37" class="cls-7" cx="5" cy="5" r="5" transform="translate(1106 4319)" />
-                    <circle id="Ellipse_38" data-name="Ellipse 38" class="cls-7" cx="5" cy="5" r="5" transform="translate(1106 4430)" />
-                  </g>
-                </g>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="faq" id="faq">
-    <div class="container-fluid">
-      <div class="row faq-row">
-        <div class="col-md-6">
-          <div class="row faq-title">
-            <div class="col-md-8 col-6">
-              <div>
-                <div class="faq-heading">FAQ</div><br>
-                <div class="faq-text">
-                  Have any more Questions? <br>Reach out to us at any time. <br><br>
-                  <div style="font-family: circularStdBook; color: #818181;"><a href="mailto:hackinthenorth@iiita.ac.in"
-                      target="_top">hackinthenorth@iiita.ac.in</a> <br>
-                    <a href="https://www.facebook.com/HackInTheNorth" target="_blank">facebook.com/HackInTheNorth</a></div>
+            <!--<div id="sponsors">
+              <div class="past">
+                <h2>Past Sponsors</h2>
+              </div>
+              <div class="row" id="r1">
+                <div class="col-md-4 col-sm-12 sp-div" id="linode"  >
+                  <img src="./assets/linode.jpg" alt="logo">
+                </div>
+                <div class="col-md-4 col-sm-12 sp-div"  >
+                    <img src="./assets/tech.png" alt="logo">
+                </div>
+                <div class="col-md-4 col-sm-12 sp-div"  >
+                    <img src="./assets/python.png" alt="logo">
                 </div>
               </div>
-            </div>
-
-            <div class="col-md-4 col-6">
-              <img src="images/undraw_questions_75e0.svg" class="woman-img">
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="row faq-column">
-            <div class="faq-collapsible">
-                <button class="collapsible">What are the tracks this year?</button>
-                <div class="content">
-                  <p>Here they are:
-                    <ul class="tracks-list">
-                      <li>
-                        <span><img src="images/tracks/blockchain.png" class="track-image">&nbsp &nbsp Blockchain</span>
-                      </li>
-
-                      <li>
-                        <span><img src="images/tracks/ai.png" class="track-image">&nbsp &nbsp Artificial Intelligence</span>
-                      </li>
-
-                      <li>
-                        <span><img src="images/tracks/ar-vr.png" class="track-image">&nbsp &nbsp AR/VR</span>
-                      </li>
-
-                      <li>
-                        <span><img src="images/tracks/hardware.png" class="track-image">&nbsp &nbsp Hardware</span>
-                      </li>
-
-                      <li>
-                          <span><img src="images/tracks/game.ico" class="track-image">&nbsp &nbsp Game Development</span>
-                        </li>
-                    </ul>
-                  </p>
+              <div class="row" id="r2">
+                  <div class="col-md-6 col-sm-12"  >
+                    <img src="./assets/upcloud.png" alt="logo">
+                  </div>
+                  <div class="col-md-6 col-sm-12" id="bitalino"  >
+                      <img src="./assets/bitalino.png" alt="logo">
+                  </div>
+              </div>
+              <div class="row" id="r3">
+                <div class="col-md-4 col-sm-12" id="plux"  >
+                  <img src="./assets/plux.png" alt="logo">
+                </div>
+                <div class="col-md-4 col-sm-12" id="product"  >
+                    <img src="./assets/download.png" alt="logo">
+                </div>
+                <div class="col-md-4 col-sm-12" >
+                    <img src="./assets/paytm.jpeg" alt="logo" id="paytm"  >
                 </div>
               </div>
-            <div class="faq-collapsible">
-              <button class="collapsible">What if I’m the only one selected in my team?</button>
-              <div class="content">
-                <p>Acceptances are rolled out individually. If more than 50% of the team is individually
-                  selected, the entire of the team gets selected. If not, please contact us
-                  immediately so that we can review your team again.</p>
+              <div class="row" id="r4">
+                  <div class="col-md-6 col-sm-12" id="hasura"  >
+                    <img src="./assets/hasura.png" alt="logo">
+                  </div>
+                  <div class="col-md-6 col-sm-12" id="sketch"  >
+                      <img src="./assets/sketch.png" alt="logo">
+                  </div>
               </div>
-            </div>
-            <div class="faq-collapsible">
-              <button class="collapsible">What if I don’t want to present my hack?</button>
-              <div class="content">
-                <p>Unfinished or unimpressive (so you think) projects should be presented anyway!
-                  Presenting your hack gives you a chance to be proud of what you’ve done, and a
-                  constructive perspective of where you should be headed next.</p>
+            </div>-->
+
+            <div id="sponsor">
+
+              <div class="head">
+                <h2>Past Sponsors</h2>
               </div>
-            </div>
-            <div class="faq-collapsible">
-              <button class="collapsible">How to reach Hack In The North/IIIT-Allahabad?</button>
-              <div class="content">
-                <p>Allahabad is well connected to all major cities of India by train. The airport at
-                  Allahabad has a daily flight to Delhi. Varansi International Airport is a 3 hour
-                  drive from Allahabad while Lucknow International Airport is 5 hours away.</p>
+
+              <div class="row">
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                      <img src="./assets/GitHub_Logo.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                      <img src="./assets/elastic-logo-H-full color.png" alt="" class="sp-image">
+                  </div>   
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/devfolio.svg" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/bg_logo_bk_high (1).jpg" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                      <img src="./assets/RightMesh.jpeg" alt="" class="sp-image">
+                  </div>           
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                        <img src="./assets/consensys.png" alt="" class="sp-image">
+                  </div>  
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                          <img src="./assets/infotechhub.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                            <img src="./assets/topcoder.png" alt="" class="sp-image">
+                  </div>          
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                              <img src="./assets/heroku.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/zcash.png" alt="" class="sp-image">
+                  </div>   
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/unity.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/balsamiq.png" alt="" class="sp-image">
+                  </div> 
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                      <img src="./assets/name.jpg" alt="" class="sp-image">
+                  </div>   
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/upcloud.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/linode.png" alt="" class="sp-image">
+                  </div> 
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                      <img src="./assets/Matic_Logo.png" alt="" class="sp-image">
+                  </div>   
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/GitKraken.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/Logo_Portrait_Gray.png" alt="" class="sp-image">
+                  </div> 
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                      <img src="./assets/gitlab.png" alt="" class="sp-image">
+                  </div>   
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/hackster.svg" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                      <img src="./assets/restdblogo.png" alt="" class="sp-image">
+                  </div>   
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/python.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/Arkham.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/DO.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/AdvantEdge.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                      <img src="./assets/jetbrains.png" alt="" class="sp-image">
+                  </div>   
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/hasura.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/temboo.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                      <img src="./assets/sitepoint.png" alt="" class="sp-image">
+                  </div>   
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/npm.svg" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                      <img src="./assets/sketch.png" alt="" class="sp-image">
+                  </div>   
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/codepen.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/logo-red-black-text.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                      <img src="./assets/wolfram.png" alt="" class="sp-image">
+                  </div>   
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/tim.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/skillenza.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                      <img src="./assets/kloudless.png" alt="" class="sp-image">
+                  </div>   
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/hackerearth.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/mozilla.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/freeCodeCamp.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                      <img src="./assets/jon.png" alt="" class="sp-image">
+                  </div>   
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/clarifai.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/Glyph.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                      <img src="./assets/stickeryou logo.jpg" alt="" class="sp-image">
+                  </div>   
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/challengerocket.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/du.jpg" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                      <img src="./assets/womenwhocode.png" alt="" class="sp-image">
+                  </div>   
+                  <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                                <img src="./assets/flow.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-4 sp-div"  >
+                      <img src="./assets/sticker-mule.svg" alt="" class="sp-image">
+                  </div>   
+                  <div class="col-sm-12 col-md-4 col-lg-4 sp-div"  >
+                                <img src="./assets/Todoist.png" alt="" class="sp-image">
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-4 sp-div"  >
+                                <img src="./assets/new applop logo.png" alt="" class="sp-image">
+                  </div>
+
               </div>
-            </div>
-            <div class="faq-collapsible">
-              <button class="collapsible">What if I don’t have a team or an idea?</button>
-              <div class="content">
-                <p>Not to worry, most people don’t! We’ll have team formation and ideation events
-                  geared towards helping you find people to work with.</p>
-              </div>
-            </div>
-            <div class="faq-collapsible">
-              <button class="collapsible">What if I've never been to a hackathon before?</button>
-              <div class="content">
-                <p>Then we're so glad HINT will be your first ever! It’s helpful to have some
-                  programming or technical experience, but it’s not a requirement. We’ll have talks,
-                  mentors and workshops to help you with your project.</p>
-              </div>
-            </div>
-            <div class="faq-collapsible">
-              <button class="collapsible">Are there prizes for girl teams?</button>
-              <div class="content">
-                <p>HINT has always been a huge supporter of gender equality and empowerment. We've
-                  treasured swag exclusively for girls to promote and encourage their participation.
-                  Gotta grab em' all girls!</p>
-              </div>
-            </div>
-            <div class="faq-collapsible">
-              <button class="collapsible">Can I start working on my hack before the event?</button>
-              <div class="content">
-                <p>No. In the interest of fairness, students should not be working on their projects
-                  before Hack in the North begins and we do not allow participants to work on
-                  pre-existing projects. However, you can familiarize yourself with all the tools and
-                  technologies you intend to use beforehand!</p>
-              </div>
-            </div>
-            <div class="faq-collapsible">
-              <button class="collapsible">Do we provide travel cost?</button>
-              <div class="content">
-                <p>We can’t guarantee reimbursements for everyone, but we don’t want money to keep you
-                  from experiencing HINT. You’ll get a reimbursement amount along with your
-                  invitation. Let us know if you still need help making your way to Allahabad and
-                  we’ll see what we can do.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
+                  <div id="patrons">
+                    <div class="middle">
+                        <h3 class="patron">patrons</h3>
+                    </div>
 
-  <div class="container-fluid prizes" style="padding-bottom: 0%;">
-    <div class="row" style="margin-bottom: 40px;">
-        <div class="col-12 speaker-title">
-          Prizes
-        </div>
-    </div>
-    <div class="row prizes-row justify-content-center">
-      <div class="col-sm-12 col-lg-4 col-md-6 col-12">
-        <div class="container prize-container top-prize">
-          <div class="image-row" style="height: 70%;">
-            <div class="image-text">
-              ₹30,000
-            </div>
-          </div>
+                    <div class="row">
+
+                        <div class="col-sm-12 col-md-6 col-lg-3 sp-div"  >
+                            <img src="./assets/hasura.png" alt="" class="sp-image">
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3 sp-div"  >
+                                      <img src="./assets/paytm.png" alt="" class="sp-image">
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3 sp-div"  >
+                            <img src="./assets/bitalino.png" alt="" class="sp-image">
+                        </div>   
+                        <div class="col-sm-12 col-md-6 col-lg-3 sp-div"  >
+                                      <img src="./assets/plux.png" alt="" class="sp-image">
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-3 sp-div"  >
+                            <img src="./assets/cblogo.png" alt="" class="sp-image">
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3 sp-div"  >
+                                      <img src="./assets/producthunt.png" alt="" class="sp-image">
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3 sp-div"  >
+                            <img src="./assets/tech.png" alt="" class="sp-image">
+                        </div>   
+                        <div class="col-sm-12 col-md-6 col-lg-3 sp-div"  >
+                                      <img src="./assets/zulip.png" alt="" class="sp-image">
+                        </div>
+
+                    </div>
+                   
+                  </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                <!--<div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                  <img src="./assets/linode.png" alt="" class="sp-image">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                    <img src="./assets/tech.png" alt="" class="sp-image">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 sp-div"  >
+                    <img src="./assets/python.png" alt="" class="sp-image">
+                </div>
+                <div class="col-sm-12 col-md-6 sp-div two"  >
+                  <img src="./assets/bitalino.png" alt="" class="sp-image">
+                </div>
+                <div class="col-sm-12 col-md-6 sp-div two "  >
+                    <img src="./assets/upcloud.png" alt="" class="sp-image">
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 sp-div less"  >
+                    <img src="./assets/plux.png" alt="" class="sp-image">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 sp-div less"  >
+                      <img src="./assets/download.png" alt="" class="sp-image">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 sp-div less"  >
+                      <img src="./assets/paytm.png" alt="" class="sp-image">
+                </div>
+                <div class="col-sm-12 col-md-6 sp-div two less"  >
+                    <img src="./assets/hasura.png" alt="" class="sp-image">
+                </div>
+                <div class="col-sm-12 col-md-6 sp-div two less"  >
+                      <img src="./assets/sketch.png" alt="" class="sp-image">
+                </div>
+              </div>-->
+              
+
           
-          <div class="details-row text-center">
-              <strong>1st Prize</strong>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-lg-4 col-md-6 col-12">
-        <div class="container prize-container top-prize">
-          <div class="image-row" style="height: 70%;">
-            <div class="image-text">
-              ₹20,000
             </div>
-          </div>
-          
-          <div class="details-row text-center">
-              <strong>2nd Prize</strong>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-sm-12 col-lg-4 col-md-6 col-12">
-        <div class="container prize-container top-prize">
-          <div class="image-row" style="height: 70%;">
-            <div class="image-text">
-              ₹10,000
+            <div id="brochure">
+              <h2  >Sponsor Us!</h2>
+              <h3  >Download Sponsorship Brochure</h3>
+              <button class="download"   ><a href="./assets/HINT5_brochure_i2.pdf" download>Download</a></button>
             </div>
-            <div style="position: relative; font-size: 22px; top: 35%; left: 50%; transform: translate(-50%, -50%); text-align: center; ">
-              <span style="background: -webkit-linear-gradient(#6C63FF 0%, #FF6C56 60%, #FFDB2E 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">+</span><br>
-              <span style="background: -webkit-linear-gradient(#6C63FF 0%, #FF6C56 60%, #FFDB2E 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Ghost Anti Theft Bags</span>
-            </div>
-          </div>
-          
-          <div class="details-row text-center">
-              <strong>3rd Prize</strong>
-          </div>
-        </div>
-      </div>
-    <!-- </div> -->
-
-
-    <!-- <div class="row prizes-row justify-content-center"> -->
-      <div class="col-sm-12 col-lg-4 col-md-6 col-12">
-        <div class="container prize-container">
-          <div class="image-row">
-            <img src = 'images/Prizes/41514212_eu_family-stripe_250x170._CB484163430_.png' class = 'prize-image'>
-          </div>
-          <div class="details-row text-center">
-              <strong>4th Prize</strong>
-          </div>
-          <div class="desc-row text-center">Amazon Echo Dots</div>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-lg-4 col-md-6 col-12">
-        <div class="container prize-container">
-          <div class="image-row">
-            <img src = 'images/Prizes/jbl_headphones.png' class = 'prize-image' style="width: initial; height: 80%;">
-          </div>
-          <div class="details-row text-center">
-              <strong>5th Prize</strong>
-          </div>
-          <div class="desc-row text-center">JBL Headphones</div>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-lg-4 col-md-6 col-12">
-        <div class="container prize-container">
-          <div class="image-row">
-            <img src = 'images/Prizes/mi_band.png' class = 'prize-image' style="width: initial; height: 80%;">
-          </div>
-          <div class="details-row text-center">
-              <strong>6th Prize</strong>
-          </div>
-          <div class="desc-row text-center">Mi Bands</div>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-lg-4 col-md-6 col-12">
-        <div class="container prize-container">
-          <div class="image-row">
-            <div class="image-text">₹5,000</div>
-          </div>
-          <div class="details-row text-center">
-              <strong>Best All Girls' Team</strong>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-lg-4 col-md-6 col-12">
-        <div class="container prize-container">
-          <div class="image-row">
-            <img src = 'images/Prizes/iot.png' class = 'prize-image' style="width: 60%; height: initial;">
-          </div>
-          <div class="details-row text-center">
-              <strong>Best Hardware Hack</strong>
-          </div>
-          <div class="desc-row text-center">IOT Kits</div>
-        </div>
-      </div>
-
-    </div>
-    
-  </div>
-
-
-  <div class="container-fluid prizes">
-    <div class="row" style="margin-bottom: 40px;">
-        <div class="col-12 speaker-title">
-          Special Prizes
-        </div>
-    </div>
-
-
-    <div class="row prizes-row justify-content-center">
-      <div class="col-sm-12 col-lg-4 col-md-6 col-12">
-        <div class="container prize-container">
-          <div class="special-image-row">
-            <img src = 'images/sponsors/walmart_labs.png' class = 'prize-image' style="width: initial; height: 60%;">
-          </div>
-          <div class="details-row text-center">
-              <strong>Walmart Labs</strong>
-          </div>
-          <div class="desc-row text-center">Mi Bands for the best implementation of their problem statement.</div>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-lg-4 col-md-6 col-12">
-        <div class="container prize-container">
-          <div class="special-image-row">
-            <img src = 'images/sponsors/new_sponsors/Matic_Logo.png' class = 'prize-image' style="width: 60%; height: initial;">
-          </div>
-          <div class="details-row text-center">
-              <strong>Matic Network</strong>
-          </div>
-          <div class="desc-row text-center">₹5,000 for the best use of their API.</div>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-lg-4 col-md-6 col-12">
-        <div class="container prize-container">
-          <div class="special-image-row">
-            <img src = 'images/sponsors/new_sponsors/tech.png' class = 'prize-image' style="width: 60%; height: initial;">
-          </div>
-          <div class="details-row text-center">
-              <strong>.tech Domain</strong>
-          </div>
-          <div class="desc-row text-center">₹7,500 for the best hack/project hosted on a .tech domain.</div>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-lg-4 col-md-6 col-12">
-        <div class="container prize-container">
-          <div class="special-image-row">
-            <img src = 'images/sponsors/new_sponsors/hasura.jpg' class = 'prize-image' style="width: 50%; height: initial;">
-          </div>
-          <div class="details-row text-center">
-              <strong>Flipkart</strong>
-          </div>
-          <div class="desc-row text-center">₹5,000 Flikart gift cards for the best app built on Hasura GraphQL Engine.</div>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-lg-4 col-md-6 col-12">
-        <div class="container prize-container">
-          <div class="special-image-row">
-            <img src = 'images/sponsors/new_sponsors/zulip.png' class = 'prize-image' style="width: 50%; height: initial;">
-          </div>
-          <div class="details-row text-center">
-              <strong>Zulip</strong>
-          </div>
-          <div class="desc-row text-center">$100 for the best use of Zulip API.</div>
-        </div>
-      </div>
-
-    </div>
-    
-  </div>
-
-  
-
- 
-
-
-
-
-  <div class="container-fluid sponsor-us" id="sponsors">
-    <div class="row text-center sponsor-us-row">
-      <div class="col-12">
-        Want to sponsor Hack In The North 4.0? Shoot us an E-mail
-      </div>
-      <div class="col-12">
-        <a href="mailto:hackinthenorth@iiita.ac.in" target="_top">hackinthenorth@iiita.ac.in</a>
-      </div>
-      <div class="col-12" style="margin-top:1%; text-decoration:underline;">
-        <a href="documents/HINT4-V2.pdf" download>Download Brochure</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid sponsors" id="sponsor-target">
-    <div class="row">
-      <div class="col-12 text-center sponsor-title">
-        Sponsors
-      </div>
-    </div>
-
-    <div class="row justify-content-around main-sponsors" style="margin-bottom: 10%;">
-      <div class="col-lg-6 image-column">
-        <a href="https://github.com/" target="_blank"><img src="images/sponsors/new_sponsors/GitHub_Logo.png" style="width:80%;" class="title-sponsor-image"></a>
-      </div>
-
-      <div class="col-lg-6 image-column">
-        <a href="https://www.rightmesh.io/" target="_blank"><img src="images/sponsors/new_sponsors/RightMesh.jpeg" style="width:80%;" class="title-sponsor-image"></a>
-      </div>
-      
-      <div class="col-lg-6 image-column">
-        <a href="https://www.elastic.co/" target="_blank"><img src="images/sponsors/new_sponsors/elastic-logo-H-full color.png" style="width:80%;" class="title-sponsor-image"></a>
-      </div>
-
-      <div class="col-lg-6 image-column">
-        <a href="https://devfolio.co/" target="_blank"><img src="images/sponsors/new_sponsors/devfolio.svg" style="width:80%;" class="title-sponsor-image"></a>
-      </div>
-
-      <div class="col-lg-6 image-column">
-        <a href="https://www.bitgrit.net/" target="_blank"><img src="images/sponsors/new_sponsors/bg_logo_bk_high (1).jpg" style="width:20%;" class="associate-sponsor-image"></a>
-      </div>
-
-      <div class="col-lg-6 image-column">
-        <a href="https://www.name.com/" target="_blank"><img src="images/sponsors/new_sponsors/name.jpg" style="width:80%;" class="associate-sponsor-image"></a>
-      </div>
-
-      <div class="col-lg-6 image-column">
-        <a href="http://www.upcloud.com" target="_blank"><img src="images/sponsors/new_sponsors/upcloud.png" style="width:80%;" class="associate-sponsor-image" alt="" srcset=""></a>
-      </div>
-
-      <div class="col-lg-5 mx-auto image-column">
-        <a href="https://www.linode.com/" target="_blank"><img src="images/sponsors/new_sponsors/linode-logo_standard_light_medium.png" style="width:80%;" class="associate-sponsor-image"></a>
-      </div>
-
-      <div class="col-lg-3 image-column">
-        <a href="https://matic.network/" target="_blank"><img src="images/sponsors/new_sponsors/Matic_Logo.png" style="width:80%;" class="associate-sponsor-image"></a>
-      </div>
-
-      <div class="col-lg-3 image-column">
-        <a href="https://www.gitkraken.com/" target="_blank"><img src="images/sponsors/new_sponsors/GitKraken.png" style="width:40%;" class="platform-sponsor-image"></a>
-      </div>
-
-      <div class="col-lg-3 image-column">
-        <a href="https://quiknode.io/" target="_blank"><img src="images/sponsors/new_sponsors/Logo_Portrait_Gray.png" style="width:40%;" class="platform-sponsor-image"></a>
-      </div>
-
-      <div class="col-lg-3 image-column">
-        <a href="https://www.python.org/psf/" target="_blank"><img src="images/sponsors/new_sponsors/PSF.png" style="width:60%;" class="platform-sponsor-image"></a>
-      </div>
-    </div>
-
-
-    <div class="row patron-sponsors">
-      <div class="col-12 text-center patron-title">
-        Patrons
-      </div>
-    </div>
-
-    <div class="row justify-content-center" style="margin-bottom: 10%;">
-
-      <div class="col-12 col-md-6 col-lg-3 image-column">
-        <a href="https://zulipchat.com/" target="_blank"><img src="images/sponsors/zulip.svg" style="width:50%;" class="sponsor-image"></a>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 image-column">
-        <a href="https://get.tech/" target="_blank"><img src="images/sponsors/new_sponsors/tech.png" style="width:80%;" class="sponsor-image"></a>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 image-column">
-        <a href="https://paytm.com//" target="_blank"><img src="images/sponsors/Paytm Build For India Logo_500 x 500.png" class="sponsor-image" style="width:80%;"></a>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 image-column">
-        <a href="https://hasura.io/" target="_blank"><img src="images/sponsors/hasura_logo_horizontal_black.png" class="sponsor-image" style="width:80%;"></a>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 image-column">
-        <a href="https://www.producthunt.com/" target="_blank"><img src="images/sponsors/producthunt.png" class="sponsor-image" style="width:80%;"></a>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 image-column">
-          <a href="https://www.sketchapp.com/" target="_blank"><img src="images/sponsors/sketch.png" class="sponsor-image" style="width:70%;"></a>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 image-column">
-          <a href="http://www.bitalino.com/" target="_blank"><img src="images/sponsors/new_sponsors/bitalino_logo_2.0_falpha-00.png" class="sponsor-image"></a>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 image-column">
-        <a href="https://www.plux.info/" target="_blank"><img src="images/sponsors/new_sponsors/logo_bw.png" class="sponsor-image"></a>
-      </div>
-      
-      <div class="col-12 col-md-6 col-lg-3 image-column">
-        <a href="http://advantedge.vc/" target="_blank"><img src="images/sponsors/AdvantEdge.png" class="sponsor-image" style="width:40%"></a>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 image-column">
-        <a href="https://pentesterlab.com/" target="_blank"><img src="images/sponsors/new_sponsors/pentesrlab.png" class="sponsor-image"></a>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 image-column">
-        <a href="https://www.creative-tim.com/" target="_blank"><img src="images/sponsors/tim.png" class="sponsor-image"></a>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 image-column">
-        <a href="https://www.stickeryou.com/" target="_blank"><img src="images/sponsors/SY.png" class="sponsor-image"></a>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3 image-column">
-        <a href="https://codingblocks.com/" target="_blank"><img src="images/sponsors/new_sponsors/cblogo.png" style="width:80%;" class="sponsor-image"></a>
-      </div>	
-    </div>
-  </div>
-
-  <div class="container-fluid footer" id="contact" style="background-color: #FBFBFB;">
-    <div class="row footer-row">
-      <div class="col-12">
-        <a href="#" class="footer-title"><img src="images/Text-Logo.png" class="footer-logo-img"></a>
-      </div>
-    </div>
-
-    <div class="row footer-row footer-info">
-      <div class="col-12">
-        <a href="mailto:hackinthenorth@iiita.ac.in" target="_top">hackinthenorth@iiita.ac.in</a>
-      </div>
-
-      <div class="col-12">
-        <a href="https://hackcodeofconduct.org/769-hack_in_the_north_4_0" target="_blank">Code of Conduct</a>
-      </div>
-
-      <div class="col-12">
-        Copyright © 2018 Hack In The North
-      </div>
-
-      <div class="col-12">
-        <a href="https://aparoksha.org/" target="_blank"><img src="images/apklogo1.svg" style="padding-top: 2em; width: 15%;"></a>
-      </div>
-    </div>
-
-    <div class="row footer-row justify-content-around footer-social-links">
-      <div class="col-sm-4 col-12">
-        <a href="https://www.facebook.com/HackInTheNorth/" target="_blank">Facebook</a>
-      </div>
-
-      <div class="col-sm-4 col-12">
-        <a href="https://twitter.com/hintiiita" target="_blank">Twitter</a>
-      </div>
-
-      <div class="col-sm-4 col-12">
-        <a href="https://www.instagram.com/hackinthenorth/" target="_blank">Instagram</a>
-      </div>
-    </div>
-
-
-  </div>
-
-
-
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="js/bootstrap/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        let devfolioOptions = {
-            buttonSelector: '#hint-apply-now',
-            key: 'hint',
-        }
-
-        let script = document.createElement('script');
-        script.src = "https://apply.devfolio.co";
-        document.head.append(script);
-
-        script.onload = function () {
-            new Devfolio(devfolioOptions);
-        }
-
-        script.onerror = function () {
-            document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
-                window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
-            });
-        }
-    });
-  </script>
-
-
+           <!--<div id="contact">
+              <div class="row" id="footer">
+                <div class="col-md-4 col-sm-12"  >
+                  <img src="assets/logos/logo_HINT5.svg" alt="hint5">
+                </div>
+                <div class="col-md-4 col-sm-12"  >
+                  <p class="bold">Vishal Pani +91-7990826365 <br>Vijeta +91-7376369830</p>
+                  <p> <a class="coc" href="https://hackcodeofconduct.org/769-hack_in_the_north_4_0">Code Of Conduct | 2019 Hack In The North</a> <br> All trademarks and logos <br> are property of thier respective owners</p>
+                </div>
+                <div class="col-md-4 col-sm-12"  >
+                  
+                  <ul class="icons" id="medium">
+                    <li><a href="https://www.facebook.com/HackInTheNorth/" ><i class="fab fa-facebook-square fa-3x"></i></a></li>
+                    <li><a href="https://www.instagram.com/hackinthenorth/" ><i class="fab fa-instagram fa-3x"></i></a></li>
+                    <br><br><br>
+                    <li><a href="https://github.com/HackInTheNorth"><i class="fab fa-github fa-3x"></i></a></li>
+                    <li><a href="https://twitter.com/hintiiita"><i class="fab fa-twitter-square fa-3x"></i></a></li>
+                  </ul>
+
+                  <ul class="icons" id="sl">
+                    <li><a href="https://www.facebook.com/HackInTheNorth/"><i class="fab fa-facebook-square fa-3x"></i></a></li>
+                    <li><a href="https://www.instagram.com/hackinthenorth/"><i class="fab fa-instagram fa-3x"></i></a></li>
+                    <li><a href="https://github.com/HackInTheNorth"><i class="fab fa-github fa-3x"></i></a></li>
+                    <li><a href="https://twitter.com/hintiiita" ><i class="fab fa-twitter-square fa-3x"></i></a></li>
+                  </ul>
+
+                </div>
+
+              </div>
+
+            </div>  -->
+
+            <div class="container-fluid footer" id="contact" style="background-color: #FBFBFB;">
+                <div class="row footer-row">
+                  <div class="col-12">
+                    <a href="#" class="footer-title"><img src="./assets/logos/logo_HINT5.svg" class="footer-logo-img"></a>
+                  </div>
+                </div>
+            
+                <div class="row footer-row footer-info">
+                  <div class="col-12">
+                      <p class="bold">Vishal Pani +91-7990826365 <br>Vijeta +91-7376369830</p>
+                  </div>
+            
+                  <div class="col-12">
+                      <p><a class="coc" href="https://hackcodeofconduct.org/769-hack_in_the_north_4_0">Code Of Conduct | 2019 Hack In The North</a> <br> All trademarks and logos <br> are property of thier respective owners</p>
+                  </div>
+            
+                  
+                </div>
+            
+                <div class="row footer-row justify-content-around footer-social-links">
+                 
+                  <ul class="icons">
+                    <li><a href="https://www.facebook.com/HackInTheNorth/"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                    <li><a href="https://www.instagram.com/hackinthenorth/"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="https://github.com/HackInTheNorth"><i class="fab fa-github fa-2x"></i></a></li>
+                    <li><a href="https://twitter.com/hintiiita" ><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                  </ul>
+            
+            
+                </div>
+
+                </div>
+            
+            
+
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+                
+
+                $(".navbar-toggler").click(function(){
+                  $(".navbar-collapse").toggleClass("show");
+                  $(".navbar-toggler").toggleClass("c1");
+                  $("#mainNav").toggleClass("c22");
+                  $(".nav-item a").toggleClass("c3");
+                  $("#navbarResposive").toggleClass("c4");
+                  $("#mainNav img").toggleClass("c30");
+                });
+    </script>
+
+    <script>
+
+          window.onscroll = function() {scrollFunction()};
+
+          function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  document.getElementById("mainNav").classList.remove("c25");
+                  document.getElementById("mainNav").style.backgroundColor = "#FFFFFF !important";
+                  document.getElementById("mainNav").classList.add("shadowFix");
+                  document.getElementById("mainNav").classList.add("c23");
+                 
+                  $(".nav-item a").addClass("c24");
+                  
+                 } else {
+                  document.getElementById("mainNav").classList.add("c25");
+                  document.getElementById("mainNav").classList.remove("shadowFix");
+                  document.getElementById("mainNav").classList.remove("c23");
+                  $(".nav-item a").removeClass("c24");
+                }
+}
+
+    </script>
 </body>
-
 </html>
