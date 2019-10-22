@@ -1568,3 +1568,11 @@ button.download:hover
     color: black;
     transition: all 0.8s ease;
 }
+
+@media screen and (max-width: 440px)
+{
+    div.container-fluid
+    {
+        overflow: hidden;
+    }
+}
