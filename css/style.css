@@ -1548,3 +1548,31 @@ and (min-width: 440px) and (max-width: 992px)
         opacity: 0;
     }
 }
+
+button.download{
+    color: white;
+    background-color: black;
+    padding: 5px 19px 7px;
+    border: 3px solid black;
+    border-radius: 24px;
+    margin-top: 4px;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 0.75px;
+    outline: none;
+}
+
+button.download:hover
+{
+    background-color:#f3f3f3;
+    color: black;
+    transition: all 0.8s ease;
+}
+
+@media screen and (max-width: 440px)
+{
+    div.container-fluid
+    {
+        overflow: hidden;
+    }
+}

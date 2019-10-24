@@ -459,7 +459,7 @@
             <div id="brochure">
               <h2  >Sponsor Us!</h2>
               <h3  >Download Sponsorship Brochure</h3>
-              <button class="download"   ><a href="./assets/HINT5_brochure_i3.pdf" download>Download</a></button>
+              <a href="./assets/HINT5_brochure_i3.pdf" download> <button class="download" > Download</button></a>
             </div>
            <!--<div id="contact">
               <div class="row" id="footer">
@@ -542,6 +542,12 @@
                   $(".nav-item a").toggleClass("c3");
                   $("#navbarResposive").toggleClass("c4");
                   $("#mainNav img").toggleClass("c30");
+                });
+
+                $(".download").click(function(){
+
+                $(this).addClass("download2");
+
                 });
     </script>
 
