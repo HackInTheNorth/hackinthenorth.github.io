@@ -1349,6 +1349,11 @@ and (min-width: 440px) and (max-width: 992px)
     {
         margin-left: 20px;
     }
+
+    .c30
+    {
+        margin-top: -145px;
+    }
 }
 
 #patrons
@@ -1575,4 +1580,16 @@ button.download:hover
     {
         overflow: hidden;
     }
+
+    .c1
+    {
+        margin-top : 0;
+    }
+
+    .c22 {
+        background-color: rgba(248, 249, 250, 0.95) !important;
+        height: 400px;
+        margin-top: -70px;
+    }
 }
+
