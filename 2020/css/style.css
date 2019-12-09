@@ -99,3 +99,30 @@ a.nav-link
     margin-left: 12%;
 }
 
+#content div
+{
+    max-width: 50%;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#content div h1
+{
+    font-size: 3rem;
+    margin-bottom: 70px;
+}
+
+#content
+{
+    position: absolute;
+    top: 140vh;
+    z-index: 5;
+    width: 100%;
+}
+
+#content div p
+{
+    font-size: 1.2rem;
+   
+}
