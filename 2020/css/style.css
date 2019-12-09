@@ -1,0 +1,101 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-size: 10px;
+    width: 100vw;
+    color:white;
+}
+
+a.nav-link
+{
+    font-size: 1.2rem;
+    color:white !important;
+}
+
+#mainNav
+{
+    padding-right: 60px;
+    padding-top: 30px;
+    background: transparent !important;
+}
+
+.home-page
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: #040a35;
+}
+
+.heading
+{
+    margin: 0 auto;
+    width: 35%;
+    text-align: center;
+    padding-top: 33vh;
+}
+
+.heading h1
+{
+    letter-spacing: 1px;
+    font-size: 4.5rem;
+    margin-bottom: 1.4rem;
+}
+
+.event
+{
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.event li
+{
+    list-style: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#time
+{
+    margin-left: 50px;
+}
+
+.schedule i
+{
+    margin-right: 5px;
+}
+
+.dev
+{
+    background-color: transparent;
+    color: white;
+    padding: 8px 32px 10px;
+    font-size: 1.3rem;
+    /* border: none; */
+    border-radius: 24px;
+    border-color: white;
+    border-width: 1.8px;
+    font-weight: 400;
+}
+
+.about
+{
+    background-color: #0b0d0f;
+    padding-bottom: 100px;
+}
+
+#line img
+{
+    width: 40%;
+}
+
+#triangle img
+{
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 12%;
+}
+
