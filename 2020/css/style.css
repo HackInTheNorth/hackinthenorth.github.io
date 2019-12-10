@@ -5,8 +5,9 @@ html{
 body
 {
     font-size: 10px;
-    width: 100vw;
     color:white;
+    margin: 0;
+    padding: 0;
 }
 
 a.nav-link
@@ -25,24 +26,25 @@ a.nav-link
 .home-page
 {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: #040a35;
 }
 
 .heading
 {
     margin: 0 auto;
-    width: 35%;
+    width: 60%;
     text-align: center;
-    padding-top: 33vh;
+    padding-top: 35vh;
 }
 
 .heading h1
 {
     letter-spacing: 1px;
-    font-size: 4.5rem;
-    margin-bottom: 1.4rem;
+    font-size: 5em;
+    margin-bottom: 0.5em;
 }
+
 
 .event
 {
@@ -54,7 +56,7 @@ a.nav-link
 {
     list-style: none;
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: 1.5em;
     font-weight: 500;
 }
 
@@ -73,7 +75,7 @@ a.nav-link
     background-color: transparent;
     color: white;
     padding: 8px 32px 10px;
-    font-size: 1.3rem;
+    font-size: 1.5em;
     /* border: none; */
     border-radius: 24px;
     border-color: white;
@@ -84,7 +86,8 @@ a.nav-link
 .about
 {
     background-color: #0b0d0f;
-    padding-bottom: 100px;
+    padding-bottom: 500px;
+    width: 100%;
 }
 
 #line img
@@ -99,24 +102,30 @@ a.nav-link
     margin-left: 12%;
 }
 
+#mainNav, #triangle
+{
+    overflow: hidden;
+}
+
 #content div
 {
-    max-width: 50%;
-    width: 60%;
+    max-width: 60%;
     margin: 0 auto;
     text-align: center;
 }
 
+
+
 #content div h1
 {
-    font-size: 3rem;
+    font-size: 4em;
     margin-bottom: 70px;
 }
 
 #content
 {
     position: absolute;
-    top: 140vh;
+    top: 135vh;
     z-index: 5;
     width: 100%;
 }
@@ -124,5 +133,243 @@ a.nav-link
 #content div p
 {
     font-size: 1.2rem;
+    max-width: 90%;
+    margin-left: 5%;
    
 }
+
+.commitment
+{
+    width: 100%;
+    height: 700px;
+    background-color: #F79737;
+}
+
+.up
+{
+    width:100%;
+    margin-bottom: -5px;
+}
+
+.down
+{
+    width: 100%;
+    margin-top: -5px;
+}
+
+.row
+{
+    margin: 0;
+}
+
+
+button.navbar-toggler
+{
+    background-color: white;
+}
+
+.main-commit
+{
+    position: absolute;
+    top: 190vh;
+}
+
+#zigzag img
+{
+    float: right;
+    margin-right: 10%;
+    width: 16%;
+}
+
+#square img
+{
+    width: 90%;
+    margin-top: 7%;
+}
+
+#com-content div
+{
+    max-width: 55%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#com-content div h1
+{
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+#com-content div p
+{
+    font-size: 1.2rem;
+    max-width: 90%;
+    margin-left: 5%;
+   
+}
+
+#com-content
+{
+    position:absolute;
+    top: 60vh;
+    z-index: 5;
+    text-align: center;
+}
+
+@media screen and (min-width: 1300px)
+{
+    #content div p {
+        font-size: 1.2rem;
+        max-width: 75%;
+        margin-left: 12.5%;
+    }
+
+}
+
+@media screen and (max-width: 1300px)
+{
+    #com-content {
+        position: absolute;
+        top: 42vh;
+        z-index: 5;
+        text-align: center;
+    }
+
+    #com-content div {
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #square img {
+        width: 100%;
+        margin-top: 5%;
+    }
+}
+
+
+@media screen and (max-width: 1200px)
+{
+    #content div
+    {
+        max-width: 70%;
+    }
+
+    #square img {
+        width: 100%;
+        margin-top: 14%;
+    }
+}
+
+@media screen and (max-width: 1100px)
+{
+    #square img {
+        width: 110%;
+        margin-top: 24%;
+    }
+
+    #triangle img {
+        width: 100%;
+        margin-top: 140px;
+        margin-left: 0%;
+    }
+
+    #content {
+        position: absolute;
+        top: 127vh;
+        z-index: 5;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    #content div
+    {
+        max-width: 80%;
+    }
+
+    #square img {
+        width: 110%;
+        margin-top: 26%;
+    }
+
+    #com-content {
+        position: absolute;
+        top: 34vh;
+        z-index: 5;
+        text-align: center;
+    }
+
+    #com-content div {
+        max-width: 85%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:768px)
+{
+    #square img {
+        width: 130%;
+        margin-top: 46%;
+    }
+
+    #com-content {
+        position: absolute;
+        top: 34vh;
+        z-index: 5;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .heading {
+        margin: 0 auto;
+        width: 88%;
+        text-align: center;
+        padding-top: 38vh;
+    }
+
+    #content div h1 {
+        font-size: 3.5em;
+        margin-bottom: 40px;
+    }
+
+    #content div
+    {
+        max-width: 100%;
+    }
+
+    #content div p {
+        font-size: 1.6em;
+    }
+}
+
+
+@media screen and (max-width: 500px)
+{
+    #line img {
+        width: 25%;
+    }
+
+    #content {
+        position: absolute;
+        top: 120vh;
+        z-index: 5;
+        width: 100%;
+    }
+
+    #triangle img {
+        width: 80%;
+        margin-top: 165px;
+        margin-left: 22%;
+    }
+}
+
+#com-content div p a
+{
+    color: #ffffff;
+}
+
