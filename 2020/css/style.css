@@ -529,10 +529,27 @@ button.navbar-toggler
     #com-content {
     position: relative;
     top: 0;
-    transform: translate(0%, -104%);
+    transform: translate(0%, -85%);
     z-index: 5;
     text-align: center;
 }
+}
+
+@media screen and (max-width: 500px)
+{
+    #com-content {
+        position: relative;
+        top: 0;
+        transform: translate(0%, -89%);
+        z-index: 5;
+        text-align: center;
+    }
+
+    #square img {
+        width: 81%;
+        margin-top: 40%;
+        margin-left: 13%;
+    }
 }
 
 @media screen and (max-width: 440px)
@@ -582,17 +599,17 @@ button.navbar-toggler
 
     #square img {
         width: 100%;
-        margin-top: 66%;
+        margin-top: 76%;
         margin-left: 0;
     }
 
-    #com-content {
-        position: relative;
-        top: 0;
-        transform: translate(0%, -87%);
-        z-index: 5;
-        text-align: center;
-    }
+   #com-content {
+    position: relative;
+    top: 0;
+    transform: translate(0%, -80%);
+    z-index: 5;
+    text-align: center;
+}
 
     #content {
         position: relative;
@@ -606,6 +623,12 @@ button.navbar-toggler
         width: 95%;
         margin-top: 130px;
         margin-left: 0%;
+    }
+
+    .commitment {
+        width: 100%;
+        background-color: #F79737;
+        height: 124vh;
     }
 }
 
