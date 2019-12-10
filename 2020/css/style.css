@@ -8,6 +8,7 @@ body
     color:white;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 a.nav-link
@@ -30,13 +31,16 @@ a.nav-link
     background-color: #040a35;
 }
 
-.heading
-{
-    margin: 0 auto;
-    width: 60%;
-    text-align: center;
-    padding-top: 35vh;
-}
+
+    .heading {
+        max-width: 60%;
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+    }
+
 
 .heading h1
 {
@@ -86,8 +90,8 @@ a.nav-link
 .about
 {
     background-color: #0b0d0f;
-    padding-bottom: 500px;
     width: 100%;
+    max-height: 120vh;
 }
 
 #line img
@@ -124,9 +128,10 @@ a.nav-link
 
 #content
 {
-    position: absolute;
-    top: 135vh;
-    z-index: 5;
+    position: relative;
+    top:0%;
+    left:50%;
+    transform: translate(-50%, -120%);
     width: 100%;
 }
 
@@ -141,8 +146,8 @@ a.nav-link
 .commitment
 {
     width: 100%;
-    height: 700px;
     background-color: #F79737;
+    height: 100vh;
 }
 
 .up
@@ -166,12 +171,6 @@ a.nav-link
 button.navbar-toggler
 {
     background-color: white;
-}
-
-.main-commit
-{
-    position: absolute;
-    top: 190vh;
 }
 
 #zigzag img
@@ -208,10 +207,19 @@ button.navbar-toggler
    
 }
 
+
+.main-commit
+{
+    position: relative;
+    top: 0;
+    transform: translate(0%, -23%);
+}
+
 #com-content
 {
-    position:absolute;
-    top: 60vh;
+    position: relative;
+    top: 0;
+    transform: translate(0%, -120%);
     z-index: 5;
     text-align: center;
 }
@@ -229,8 +237,6 @@ button.navbar-toggler
 @media screen and (max-width: 1300px)
 {
     #com-content {
-        position: absolute;
-        top: 42vh;
         z-index: 5;
         text-align: center;
     }
@@ -245,48 +251,91 @@ button.navbar-toggler
         width: 100%;
         margin-top: 5%;
     }
-}
 
+    #content
+    {
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -105%);
+        width: 100%;
+    }
 
-@media screen and (max-width: 1200px)
-{
     #content div
     {
-        max-width: 70%;
+        max-width: 65%;
     }
 
-    #square img {
-        width: 100%;
-        margin-top: 14%;
+    .main-commit
+    {
+        position: relative;
+        top: 0;
+        transform: translate(0%, -21%);
     }
+
+    #com-content {
+        position: relative;
+        top: 0;
+        transform: translate(0%, -107%);
+        z-index: 5;
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 1100px)
 {
     #square img {
         width: 110%;
-        margin-top: 24%;
+        margin-top: 10%;
     }
 
-    #triangle img {
+    #content
+    {
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -112%);
         width: 100%;
-        margin-top: 140px;
-        margin-left: 0%;
     }
 
-    #content {
-        position: absolute;
-        top: 127vh;
+    #content div p {
+        font-size: 1.6em;
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    #com-content {
+        position: relative;
+        top: 0;
+        transform: translate(0%, -126%);
         z-index: 5;
-        width: 100%;
+        text-align: center;
     }
+
+    #com-content div p {
+        font-size: 1.6em;
+        max-width: 90%;
+        margin-left: 5%;
+    }
+    
+
+
 }
 
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 992px)
 {
     #content div
     {
-        max-width: 80%;
+        max-width: 75%;
+    }
+
+    #content {
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        width: 100%;
     }
 
     #square img {
@@ -295,42 +344,88 @@ button.navbar-toggler
     }
 
     #com-content {
-        position: absolute;
-        top: 34vh;
         z-index: 5;
         text-align: center;
     }
 
     #com-content div {
-        max-width: 85%;
+        max-width: 75%;
         margin: 0 auto;
         text-align: center;
     }
-}
 
-@media screen and (max-width:768px)
-{
-    #square img {
-        width: 130%;
-        margin-top: 46%;
+    #triangle img {
+        width: 92%;
+        margin-top: 100px;
+        margin-left: 12%;
+    }
+
+    #content div h1 {
+        font-size: 4em;
+        margin-bottom: 40px;
     }
 
     #com-content {
-        position: absolute;
-        top: 34vh;
+        position: relative;
+        top: 0;
+        transform: translate(0%, -116%);
         z-index: 5;
         text-align: center;
     }
 }
 
-@media screen and (max-width: 700px)
+@media screen and (max-width:850px)
 {
-    .heading {
-        margin: 0 auto;
-        width: 88%;
+    #com-content {
+        position: relative;
+        top: 0;
+        transform: translate(0%, -100%);
+        z-index: 5;
         text-align: center;
-        padding-top: 38vh;
     }
+}
+
+@media screen and (max-width:780px)
+{
+    #square img {
+        width: 130%;
+        margin-top: 22%;
+    }
+
+    #content div {
+        max-width: 80%;
+    }
+
+    #com-content {
+        z-index: 5;
+        text-align: center;
+    }
+
+    #content {
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -95%);
+        width: 100%;
+    }
+
+    #triangle img {
+        width: 92%;
+        margin-top: 150px;
+        margin-left: 12%;
+    }
+
+    #com-content {
+        position: relative;
+        top: 0;
+        transform: translate(0%, -101%);
+        z-index: 5;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 640px)
+{
 
     #content div h1 {
         font-size: 3.5em;
@@ -357,8 +452,22 @@ button.navbar-toggler
     }
 
     #square img {
-        width: 146%;
-        margin-top: 82%;
+        width: 118%;
+        margin-top: 63%;
+    }
+
+    #triangle img {
+        width: 100%;
+        margin-top: 150px;
+        margin-left: 12%;
+    }
+
+    #com-content {
+        position: relative;
+        top: 0;
+        transform: translate(0%, -97%);
+        z-index: 5;
+        text-align: center;
     }
 }
 
@@ -369,17 +478,11 @@ button.navbar-toggler
         width: 25%;
     }
 
-    #content {
-        position: absolute;
-        top: 120vh;
-        z-index: 5;
-        width: 100%;
-    }
 
     #triangle img {
-        width: 80%;
-        margin-top: 165px;
-        margin-left: 22%;
+        width: 57%;
+        margin-top: 73px;
+        margin-left: 14%;
     }
 
     #com-content div {
@@ -389,8 +492,6 @@ button.navbar-toggler
     }
 
     #com-content {
-        position: absolute;
-        top: 23vh;
         z-index: 5;
         text-align: center;
     }
@@ -407,26 +508,43 @@ button.navbar-toggler
     }
 
     #square img {
-        width: 60%;
-        margin-top: 25%;
+        width: 69%;
+        margin-top: 32%;
+        margin-left: 18%;
     }
+
     .heading h1
     {
         font-size: 4em;
     }
+
+    #content {
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -106%);
+        width: 100%;
+    }
+
+    #com-content {
+    position: relative;
+    top: 0;
+    transform: translate(0%, -104%);
+    z-index: 5;
+    text-align: center;
+}
 }
 
 @media screen and (max-width: 440px)
 {
-    #line img {
-        width: 25%;
+
+    .heading
+    {
+        max-width: 100%;
     }
 
-    #content {
-        position: absolute;
-        top: 120vh;
-        z-index: 5;
-        width: 100%;
+    #line img {
+        width: 25%;
     }
 
     #triangle img {
@@ -442,8 +560,6 @@ button.navbar-toggler
     }
 
     #com-content {
-        position: absolute;
-        top: 16vh;
         z-index: 5;
         text-align: center;
     }
@@ -466,12 +582,52 @@ button.navbar-toggler
 
     #square img {
         width: 100%;
-        margin-top: 55%;
+        margin-top: 66%;
+        margin-left: 0;
+    }
+
+    #com-content {
+        position: relative;
+        top: 0;
+        transform: translate(0%, -87%);
+        z-index: 5;
+        text-align: center;
+    }
+
+    #content {
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        width: 100%;
+    }
+
+    #triangle img {
+        width: 95%;
+        margin-top: 130px;
+        margin-left: 0%;
     }
 }
 
 #com-content div p a
 {
     color: #ffffff;
+}
+
+.sponsorship
+{
+    padding-top: 300px;
+    height: 1200px;
+}
+
+#female-pic
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#female-pic img
+{
+    width: 80%;
 }
 
