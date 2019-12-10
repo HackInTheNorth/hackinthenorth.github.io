@@ -345,10 +345,78 @@ button.navbar-toggler
     #content div p {
         font-size: 1.6em;
     }
+
+    #com-content div p {
+        font-size: 1.6em;
+    }
+
+    #com-content div {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #square img {
+        width: 146%;
+        margin-top: 82%;
+    }
 }
 
 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 575px)
+{
+    #line img {
+        width: 25%;
+    }
+
+    #content {
+        position: absolute;
+        top: 120vh;
+        z-index: 5;
+        width: 100%;
+    }
+
+    #triangle img {
+        width: 80%;
+        margin-top: 165px;
+        margin-left: 22%;
+    }
+
+    #com-content div {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #com-content {
+        position: absolute;
+        top: 23vh;
+        z-index: 5;
+        text-align: center;
+    }
+
+    #com-content div p {
+        font-size: 1.6em;
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    #zigzag img
+    {
+        display: none;
+    }
+
+    #square img {
+        width: 60%;
+        margin-top: 25%;
+    }
+    .heading h1
+    {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 440px)
 {
     #line img {
         width: 25%;
@@ -391,14 +459,14 @@ button.navbar-toggler
         display: none;
     }
 
-    #square img {
-        width: 100%;
-        margin-top: 35%;
-    }
-
     .heading h1
     {
         font-size: 4em;
+    }
+
+    #square img {
+        width: 100%;
+        margin-top: 55%;
     }
 }
 
