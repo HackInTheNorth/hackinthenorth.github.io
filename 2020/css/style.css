@@ -366,6 +366,40 @@ button.navbar-toggler
         margin-top: 165px;
         margin-left: 22%;
     }
+
+    #com-content div {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #com-content {
+        position: absolute;
+        top: 16vh;
+        z-index: 5;
+        text-align: center;
+    }
+
+    #com-content div p {
+        font-size: 1.6em;
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    #zigzag img
+    {
+        display: none;
+    }
+
+    #square img {
+        width: 100%;
+        margin-top: 35%;
+    }
+
+    .heading h1
+    {
+        font-size: 4em;
+    }
 }
 
 #com-content div p a
