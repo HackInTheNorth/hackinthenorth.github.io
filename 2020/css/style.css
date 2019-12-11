@@ -5,8 +5,11 @@ html{
 body
 {
     font-size: 10px;
-    width: 100vw;
     color:white;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+   
 }
 
 a.nav-link
@@ -25,24 +28,28 @@ a.nav-link
 .home-page
 {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: #040a35;
 }
 
-.heading
-{
-    margin: 0 auto;
-    width: 35%;
-    text-align: center;
-    padding-top: 33vh;
-}
+
+    .heading {
+        max-width: 60%;
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+    }
+
 
 .heading h1
 {
     letter-spacing: 1px;
-    font-size: 4.5rem;
-    margin-bottom: 1.4rem;
+    font-size: 5em;
+    margin-bottom: 0.5em;
 }
+
 
 .event
 {
@@ -54,7 +61,7 @@ a.nav-link
 {
     list-style: none;
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: 1.5em;
     font-weight: 500;
 }
 
@@ -73,7 +80,7 @@ a.nav-link
     background-color: transparent;
     color: white;
     padding: 8px 32px 10px;
-    font-size: 1.3rem;
+    font-size: 1.5em;
     /* border: none; */
     border-radius: 24px;
     border-color: white;
@@ -84,7 +91,8 @@ a.nav-link
 .about
 {
     background-color: #0b0d0f;
-    padding-bottom: 100px;
+    width: 100%;
+    max-height: 120vh;
 }
 
 #line img
@@ -99,30 +107,854 @@ a.nav-link
     margin-left: 12%;
 }
 
+#mainNav, #triangle
+{
+    overflow: hidden;
+}
+
 #content div
 {
-    max-width: 50%;
-    width: 60%;
+    max-width: 60%;
     margin: 0 auto;
     text-align: center;
 }
 
+
+
 #content div h1
 {
-    font-size: 3rem;
+    font-size: 4em;
     margin-bottom: 70px;
 }
 
 #content
 {
-    position: absolute;
-    top: 140vh;
-    z-index: 5;
+    position: relative;
+    top:0%;
+    left:50%;
+    transform: translate(-50%, -120%);
     width: 100%;
 }
 
 #content div p
 {
     font-size: 1.2rem;
+    max-width: 90%;
+    margin-left: 5%;
    
 }
+
+.commitment
+{
+    width: 100%;
+    background-color: #F79737;
+    height: 100vh;
+}
+
+.up
+{
+    width:100%;
+    margin-bottom: -5px;
+}
+
+.down
+{
+    width: 100%;
+    margin-top: -5px;
+}
+
+.row
+{
+    margin: 0;
+}
+
+
+button.navbar-toggler
+{
+    background-color: white;
+}
+
+#zigzag img
+{
+    float: right;
+    margin-right: 10%;
+    width: 16%;
+}
+
+#square img
+{
+    width: 90%;
+    margin-top: 7%;
+}
+
+#com-content div
+{
+    max-width: 55%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#com-content div h1
+{
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+#com-content div p
+{
+    font-size: 1.2rem;
+    max-width: 90%;
+    margin-left: 5%;
+   
+}
+
+
+.main-commit
+{
+    position: relative;
+    top: 0;
+    transform: translate(0%, -23%);
+}
+
+#com-content
+{
+    position: relative;
+    top: 0;
+    transform: translate(0%, -120%);
+    z-index: 5;
+    text-align: center;
+}
+
+.sponsorship
+{
+    width:100%;
+    background-color: black;
+}
+
+#female-pic
+{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#female-pic img
+{
+    max-width: 100%;
+    position: relative;
+    border-radius: 8px;
+    transform: translate(0%, -80%);
+}
+
+#brochure
+{
+    max-width: 100%;
+}
+
+#brochure img.line
+{
+    max-width: 100%;
+    margin-top: -150px;
+}
+
+.brochure-box
+{
+    max-width: 80%;
+    background-color:#4D54EB;
+    margin: 0 auto;
+    border-radius: 8px;
+    position: relative;
+    top:0;
+    transform: translate(0%, -185%);
+    z-index: 5;
+}
+
+.flex-container
+{
+    display: flex;
+}
+
+.flex-container .ribbon
+{
+    width: 20%;
+}
+
+.flex-container .brch
+{
+    width: 80%;
+}
+
+.flex-container .dot
+{
+    width: 20%;
+}
+
+.brochure-box .link
+{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.link p
+{
+    font-size: 3em;
+}
+
+.link a
+{
+    font-size: 2.4em;
+    color:white;
+    text-decoration: underline;
+}
+
+#brochure
+{
+    padding: 0;
+}
+
+.blue-box
+{
+    display: inline-block;
+}
+
+.dot img
+{
+    position: relative;
+    top: 79%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    text-align: center;
+    float: right;
+}
+
+.ribbon img
+{
+    position: relative;
+    top: 46%;
+    left: 50%;
+    transform: translate(-53%, -50%);
+    text-align: center;
+    height: 50%;
+}
+
+
+@media screen and (min-width: 1300px)
+{
+    #content div p {
+        font-size: 1.2rem;
+        max-width: 75%;
+        margin-left: 12.5%;
+    }
+
+}
+
+@media screen and (max-width: 1300px)
+{
+    #com-content {
+        z-index: 5;
+        text-align: center;
+    }
+
+    #com-content div {
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #square img {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    #content
+    {
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -105%);
+        width: 100%;
+    }
+
+    #content div
+    {
+        max-width: 65%;
+    }
+
+    .main-commit
+    {
+        position: relative;
+        top: 0;
+        transform: translate(0%, -21%);
+    }
+
+    #com-content {
+        position: relative;
+        top: 0;
+        transform: translate(0%, -107%);
+        z-index: 5;
+        text-align: center;
+    }
+
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -87.5%);
+    }
+
+    .brochure-box {
+       
+        height: 300px;
+        transform: translate(0%, -146%);
+        z-index: 5;
+    }
+
+    .ribbon img
+    {
+        transform: translate(-47%, -50%);
+        max-width: 172%;
+    }
+
+    .link p
+    {
+        font-size: 2.4em;
+    }
+
+    .link a
+    {
+        font-size: 2em;
+        color:white;
+        text-decoration: underline;
+    }
+
+
+}
+
+@media screen and (max-width: 1100px)
+{
+    #square img {
+        width: 110%;
+        margin-top: 10%;
+    }
+
+    #content
+    {
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -112%);
+        width: 100%;
+    }
+
+    #content div p {
+        font-size: 1.6em;
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    #com-content {
+        position: relative;
+        top: 0;
+        transform: translate(0%, -126%);
+        z-index: 5;
+        text-align: center;
+    }
+
+    #com-content div p {
+        font-size: 1.6em;
+        max-width: 90%;
+        margin-left: 5%;
+    }
+    
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -93%);
+    }
+
+    .brochure-box {
+       
+        height: 250px;
+        transform: translate(0%, -162%);
+        z-index: 5;
+    }
+
+    .link p
+    {
+        font-size: 2em;
+    }
+
+    .link a
+    {
+        font-size: 1.6em;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 992px)
+{
+    #content div
+    {
+        max-width: 75%;
+    }
+
+    #content {
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        width: 100%;
+    }
+
+    #square img {
+        width: 110%;
+        margin-top: 26%;
+    }
+
+    #com-content {
+        z-index: 5;
+        text-align: center;
+    }
+
+    #com-content div {
+        max-width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #triangle img {
+        width: 92%;
+        margin-top: 100px;
+        margin-left: 12%;
+    }
+
+    #content div h1 {
+        font-size: 4em;
+        margin-bottom: 40px;
+    }
+
+    #com-content {
+        position: relative;
+        top: 0;
+        transform: translate(0%, -116%);
+        z-index: 5;
+        text-align: center;
+    }
+
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -100%);
+    }
+
+    .brochure-box {
+       
+        height: 250px;
+        transform: translate(0%, -145%);
+        z-index: 5;
+    }
+
+
+}
+
+@media screen and (max-width:850px)
+{
+    #com-content {
+        position: relative;
+        top: 0;
+        transform: translate(0%, -100%);
+        z-index: 5;
+        text-align: center;
+    }
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -105%);
+    }
+
+    .brochure-box {
+        height: 240px;
+        transform: translate(0%, -129%);
+        z-index: 5;
+    }
+
+    .link a {
+        font-size: 1.5em;
+        
+    }
+
+    .link p {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width:780px)
+{
+
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -110%);
+    }
+
+    #square img {
+        width: 130%;
+        margin-top: 36%;
+    }
+
+    #content div {
+        max-width: 80%;
+    }
+
+    #com-content {
+        z-index: 5;
+        text-align: center;
+    }
+
+    #content {
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -95%);
+        width: 100%;
+    }
+
+    #triangle img {
+        width: 92%;
+        margin-top: 150px;
+        margin-left: 12%;
+    }
+
+    #com-content {
+        position: relative;
+        top: 0;
+        transform: translate(0%, -101%);
+        z-index: 5;
+        text-align: center;
+    }
+
+    .brochure-box {
+        height: 225px;
+        transform: translate(0%, -132%);
+    }
+
+    #brochure img.line {
+        max-width: 100%;
+        margin-top: -90px;
+    }
+
+    .link p
+    {
+        font-size: 1.6em;
+    }
+
+    .link a
+    {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 640px)
+{
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -125%);
+    }
+
+    #content div h1 {
+        font-size: 3.5em;
+        margin-bottom: 40px;
+    }
+
+    #content div
+    {
+        max-width: 100%;
+    }
+
+    #content div p {
+        font-size: 1.6em;
+    }
+
+    #com-content div p {
+        font-size: 1.6em;
+    }
+
+    #com-content div {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #square img {
+        width: 118%;
+        margin-top: 80%;
+    }
+
+    #triangle img {
+        width: 100%;
+        margin-top: 150px;
+        margin-left: 12%;
+    }
+
+    #com-content {
+        position: relative;
+        top: 0;
+        transform: translate(0%, -97%);
+        z-index: 5;
+        text-align: center;
+    }
+
+    .brochure-box {
+        height: 200px;
+        transform: translate(0%, -115%);
+    }
+
+    .link p
+    {
+        font-size: 1.4em;
+    }
+
+    .link a
+    {
+        font-size: 1.2em;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0.8em;
+    }
+}
+
+
+@media screen and (max-width: 575px)
+{
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -136%);
+    }
+
+    #line img {
+        width: 25%;
+    }
+
+
+    #triangle img {
+        width: 57%;
+        margin-top: 73px;
+        margin-left: 14%;
+    }
+
+    #com-content div {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #com-content {
+        z-index: 5;
+        text-align: center;
+    }
+
+    #com-content div p {
+        font-size: 1.6em;
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    #zigzag img
+    {
+        display: none;
+    }
+
+    #square img {
+        width: 69%;
+        margin-top: 32%;
+        margin-left: 18%;
+    }
+
+    .heading h1
+    {
+        font-size: 4em;
+    }
+
+    #content {
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -106%);
+        width: 100%;
+    }
+
+    #com-content {
+    position: relative;
+    top: 0;
+    transform: translate(0%, -85%);
+    z-index: 5;
+    text-align: center;
+    }
+
+    .brochure-box {
+        height: 180px;
+        transform: translate(0%, -115%);
+    }
+}
+}
+
+@media screen and (max-width: 500px)
+{
+    #com-content {
+        position: relative;
+        top: 0;
+        transform: translate(0%, -89%);
+        z-index: 5;
+        text-align: center;
+    }
+
+    #square img {
+        width: 81%;
+        margin-top: 40%;
+        margin-left: 13%;
+    }
+
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -150%);
+    }
+
+    .brochure-box {
+        height: 200px;
+        transform: translate(0%, -105%);
+    }
+}
+
+@media screen and (max-width: 440px)
+{
+
+    .heading
+    {
+        max-width: 100%;
+    }
+
+    #line img {
+        width: 25%;
+    }
+
+    #triangle img {
+        width: 80%;
+        margin-top: 165px;
+        margin-left: 22%;
+    }
+
+    #com-content div {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #com-content {
+        z-index: 5;
+        text-align: center;
+    }
+
+    #com-content div p {
+        font-size: 1.6em;
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    #zigzag img
+    {
+        display: none;
+    }
+
+    .heading h1
+    {
+        font-size: 4em;
+    }
+
+    #square img {
+        width: 100%;
+        margin-top: 76%;
+        margin-left: 0;
+    }
+
+   #com-content {
+    position: relative;
+    top: 0;
+    transform: translate(0%, -80%);
+    z-index: 5;
+    text-align: center;
+}
+
+    #content {
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        width: 100%;
+    }
+
+    #triangle img {
+        width: 95%;
+        margin-top: 130px;
+        margin-left: 0%;
+    }
+
+    .commitment {
+        width: 100%;
+        background-color: #F79737;
+        height: 124vh;
+    }
+
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -200%);
+    }
+
+    .brochure-box {
+        height: 100px;
+        transform: translate(0%, -135%);
+    }
+
+    .link a {
+        font-size: 0.9em;
+        color: white;
+        text-decoration: underline;
+    }
+
+    .link p {
+        font-size: 1.0em;
+    }
+
+    #brochure img.line {
+        max-width: 100%;
+        margin-top: -115px;
+    }
+}
+
+#com-content div p a
+{
+    color: #ffffff;
+}
+
