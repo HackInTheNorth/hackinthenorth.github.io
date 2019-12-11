@@ -29,7 +29,15 @@ a.nav-link
 {
     height: 100vh;
     width: 100%;
-    background-color: #040a35;
+    background: black;
+    position: relative;
+}
+
+#mountain 
+{
+    width: 100%;
+    bottom: 0;
+    
 }
 
 
@@ -40,6 +48,7 @@ a.nav-link
         left: 50%;
         transform: translate(-50%, -50%);
         top: 50%;
+        
     }
 
 
@@ -511,7 +520,7 @@ button.navbar-toggler
     #com-content {
         position: relative;
         top: 0;
-        transform: translate(0%, -107%);
+        transform: translate(0%, -124%);
         z-index: 5;
         text-align: center;
     }
@@ -549,6 +558,17 @@ button.navbar-toggler
     }
 
 
+}
+
+@media screen and (max-width: 1200px)
+{
+    #com-content {
+        position: relative;
+        top: 0;
+        transform: translate(0%, -107%);
+        z-index: 5;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 1100px)
@@ -1070,7 +1090,7 @@ button.navbar-toggler
 
     #brochure img.line {
         max-width: 100%;
-        margin-top: -115px;
+        margin-top: -150px;
     }
 
   
