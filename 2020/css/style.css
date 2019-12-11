@@ -29,7 +29,7 @@ a.nav-link
 {
     height: 100vh;
     width: 100%;
-    background: black;
+    background-color: linear-gradient(180deg, #000000 27.36%, rgba(0, 0, 0, 0) 133.38%), linear-gradient(180deg, #04002C 0%, #001C43 100%);
     position: relative;
 }
 
