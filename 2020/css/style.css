@@ -9,6 +9,7 @@ body
     margin: 0;
     padding: 0;
     background-color: black;
+   
 }
 
 a.nav-link
@@ -224,6 +225,123 @@ button.navbar-toggler
     text-align: center;
 }
 
+.sponsorship
+{
+    width:100%;
+    background-color: black;
+}
+
+#female-pic
+{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#female-pic img
+{
+    max-width: 100%;
+    position: relative;
+    border-radius: 8px;
+    transform: translate(0%, -80%);
+}
+
+#brochure
+{
+    max-width: 100%;
+}
+
+#brochure img.line
+{
+    max-width: 100%;
+    margin-top: -150px;
+}
+
+.brochure-box
+{
+    max-width: 80%;
+    background-color:#4D54EB;
+    margin: 0 auto;
+    border-radius: 8px;
+    position: relative;
+    top:0;
+    transform: translate(0%, -185%);
+    z-index: 5;
+}
+
+.flex-container
+{
+    display: flex;
+}
+
+.flex-container .ribbon
+{
+    width: 20%;
+}
+
+.flex-container .brch
+{
+    width: 80%;
+}
+
+.flex-container .dot
+{
+    width: 20%;
+}
+
+.brochure-box .link
+{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.link p
+{
+    font-size: 3em;
+}
+
+.link a
+{
+    font-size: 2.4em;
+    color:white;
+    text-decoration: underline;
+}
+
+#brochure
+{
+    padding: 0;
+}
+
+.blue-box
+{
+    display: inline-block;
+}
+
+.dot img
+{
+    position: relative;
+    top: 79%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    text-align: center;
+    float: right;
+}
+
+.ribbon img
+{
+    position: relative;
+    top: 46%;
+    left: 50%;
+    transform: translate(-53%, -50%);
+    text-align: center;
+    height: 50%;
+}
+
+
 @media screen and (min-width: 1300px)
 {
     #content div p {
@@ -281,6 +399,39 @@ button.navbar-toggler
         text-align: center;
     }
 
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -87.5%);
+    }
+
+    .brochure-box {
+       
+        height: 300px;
+        transform: translate(0%, -146%);
+        z-index: 5;
+    }
+
+    .ribbon img
+    {
+        transform: translate(-47%, -50%);
+        max-width: 172%;
+    }
+
+    .link p
+    {
+        font-size: 2.4em;
+    }
+
+    .link a
+    {
+        font-size: 2em;
+        color:white;
+        text-decoration: underline;
+    }
+
+
 }
 
 @media screen and (max-width: 1100px)
@@ -319,9 +470,36 @@ button.navbar-toggler
         margin-left: 5%;
     }
     
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -93%);
+    }
 
+    .brochure-box {
+       
+        height: 250px;
+        transform: translate(0%, -162%);
+        z-index: 5;
+    }
+
+    .link p
+    {
+        font-size: 2em;
+    }
+
+    .link a
+    {
+        font-size: 1.6em;
+    }
 
 }
+
+
+
+
+
 
 @media screen and (max-width: 992px)
 {
@@ -349,7 +527,7 @@ button.navbar-toggler
     }
 
     #com-content div {
-        max-width: 75%;
+        max-width: 80%;
         margin: 0 auto;
         text-align: center;
     }
@@ -372,6 +550,22 @@ button.navbar-toggler
         z-index: 5;
         text-align: center;
     }
+
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -100%);
+    }
+
+    .brochure-box {
+       
+        height: 250px;
+        transform: translate(0%, -145%);
+        z-index: 5;
+    }
+
+
 }
 
 @media screen and (max-width:850px)
@@ -383,13 +577,42 @@ button.navbar-toggler
         z-index: 5;
         text-align: center;
     }
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -105%);
+    }
+
+    .brochure-box {
+        height: 240px;
+        transform: translate(0%, -129%);
+        z-index: 5;
+    }
+
+    .link a {
+        font-size: 1.5em;
+        
+    }
+
+    .link p {
+        font-size: 1.8em;
+    }
 }
 
 @media screen and (max-width:780px)
 {
+
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -110%);
+    }
+
     #square img {
         width: 130%;
-        margin-top: 22%;
+        margin-top: 36%;
     }
 
     #content div {
@@ -422,10 +645,36 @@ button.navbar-toggler
         z-index: 5;
         text-align: center;
     }
+
+    .brochure-box {
+        height: 225px;
+        transform: translate(0%, -132%);
+    }
+
+    #brochure img.line {
+        max-width: 100%;
+        margin-top: -90px;
+    }
+
+    .link p
+    {
+        font-size: 1.6em;
+    }
+
+    .link a
+    {
+        font-size: 1.4em;
+    }
 }
 
 @media screen and (max-width: 640px)
 {
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -125%);
+    }
 
     #content div h1 {
         font-size: 3.5em;
@@ -453,7 +702,7 @@ button.navbar-toggler
 
     #square img {
         width: 118%;
-        margin-top: 63%;
+        margin-top: 80%;
     }
 
     #triangle img {
@@ -469,11 +718,38 @@ button.navbar-toggler
         z-index: 5;
         text-align: center;
     }
+
+    .brochure-box {
+        height: 200px;
+        transform: translate(0%, -115%);
+    }
+
+    .link p
+    {
+        font-size: 1.4em;
+    }
+
+    .link a
+    {
+        font-size: 1.2em;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0.8em;
+    }
 }
 
 
 @media screen and (max-width: 575px)
 {
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -136%);
+    }
+
     #line img {
         width: 25%;
     }
@@ -532,6 +808,12 @@ button.navbar-toggler
     transform: translate(0%, -85%);
     z-index: 5;
     text-align: center;
+    }
+
+    .brochure-box {
+        height: 180px;
+        transform: translate(0%, -115%);
+    }
 }
 }
 
@@ -549,6 +831,18 @@ button.navbar-toggler
         width: 81%;
         margin-top: 40%;
         margin-left: 13%;
+    }
+
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -150%);
+    }
+
+    .brochure-box {
+        height: 200px;
+        transform: translate(0%, -105%);
     }
 }
 
@@ -630,27 +924,37 @@ button.navbar-toggler
         background-color: #F79737;
         height: 124vh;
     }
+
+    #female-pic img {
+        max-width: 100%;
+        position: relative;
+        border-radius: 12px;
+        transform: translate(0%, -200%);
+    }
+
+    .brochure-box {
+        height: 100px;
+        transform: translate(0%, -135%);
+    }
+
+    .link a {
+        font-size: 0.9em;
+        color: white;
+        text-decoration: underline;
+    }
+
+    .link p {
+        font-size: 1.0em;
+    }
+
+    #brochure img.line {
+        max-width: 100%;
+        margin-top: -115px;
+    }
 }
 
 #com-content div p a
 {
     color: #ffffff;
-}
-
-.sponsorship
-{
-    padding-top: 300px;
-    height: 1200px;
-}
-
-#female-pic
-{
-    width: 80%;
-    margin: 0 auto;
-}
-
-#female-pic img
-{
-    width: 80%;
 }
 
