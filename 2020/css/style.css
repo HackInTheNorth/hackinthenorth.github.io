@@ -260,6 +260,7 @@ button.navbar-toggler
 {
     max-width: 80%;
     background-color:#4D54EB;
+    height: 300px;
     margin: 0 auto;
     border-radius: 8px;
     position: relative;
@@ -341,6 +342,100 @@ button.navbar-toggler
     height: 50%;
 }
 
+.up-curve img
+{
+    width: 100%;
+    margin-bottom: -15px;
+}
+
+.up-curve
+{
+    padding: 0;
+}
+
+.faq
+{
+    background:  #4D54EB;
+    padding-top: 80px;
+}
+
+.faq-head
+{
+    width: 100%;
+    text-align: center;
+}
+
+#lady
+{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.bandi
+{
+    width: 70%;
+    margin: 0 auto; 
+}
+
+#lady p
+{
+    max-width: 50%;
+    margin: 0 auto;
+    font-size: 1.8em;
+    padding-top: 20px;
+}
+
+.collapsible {
+    background-color: #4D54EB;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: 0;
+    font-size: 15px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-family: circularStdMedium;
+    font-size: 20px;
+    -webkit-appearance: none;
+}
+
+.collapsible:focus{
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.collapsible:before{
+    padding-right: 10%;
+}
+
+.collapsible:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #715EFF;
+    float: right;
+    margin-left: 5px;
+    outline: 0;
+}
+
+.faq-collapsible{
+    border-bottom: 2px solid #b6b6b6;
+    width: 100%;
+}
+
+button .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: circularStdBook;
+    color: #818181;
+    font-size: 18px;
+    text-align: justify;
+    background-color: #f1f1f1;
+}
 
 @media screen and (min-width: 1300px)
 {
