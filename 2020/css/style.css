@@ -8,11 +8,11 @@ body
     color:white;
     margin: 0;
     padding: 0;
-    background-color: #0C0C0C;
+    background-color: black;
    
 }
 
-a.nav-link
+.nav-link
 {
     font-size: 1.2rem;
     color:white !important;
@@ -22,6 +22,11 @@ a.nav-link
 {
     padding-right: 60px;
     padding-top: 30px;
+    
+}
+
+.main-nav
+{
     background: transparent !important;
 }
 
@@ -33,30 +38,40 @@ a.nav-link
     position: relative;
 }
 
-#mountain 
+.mountain
 {
     width: 100%;
+    position: absolute;
     bottom: 0;
-    
+    display:inline-block;
+    height: 50%;
 }
 
 
-    .heading {
+#logo
+{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+
+.heading {
         max-width: 60%;
         text-align: center;
         position: relative;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -65%);
         top: 50%;
-        
-    }
-
-
-.heading h1 {
-    letter-spacing: 1px;
-    font-size: 6.5em;
-    margin-bottom: 0.3em;
 }
+
+
+.heading h1
+{
+    letter-spacing: 1px;
+    font-size: 5em;
+    margin-bottom: 0.5em;
+}
+
 
 .event
 {
@@ -64,10 +79,11 @@ a.nav-link
     margin-bottom: 30px;
 }
 
-.event li {
+.event li
+{
     list-style: none;
     display: inline-block;
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: 500;
 }
 
@@ -90,13 +106,13 @@ a.nav-link
     /* border: none; */
     border-radius: 24px;
     border-color: white;
-    border-width: 2.6px;
+    border-width: 1.8px;
     font-weight: 400;
 }
 
 .about
 {
-    background-color: #0C0C0C;
+    background-color: #0b0d0f;
     width: 100%;
     max-height: 120vh;
 }
@@ -234,7 +250,7 @@ button.navbar-toggler
 .sponsorship
 {
     width:100%;
-    background-color: #0C0C0C;
+    background-color: black;
 }
 
 #female-pic
@@ -259,7 +275,7 @@ button.navbar-toggler
 #brochure img.line
 {
     max-width: 100%;
-    margin-top: -250px;
+    margin-top: -150px;
 }
 
 .brochure-box
@@ -385,10 +401,10 @@ button.navbar-toggler
 
 #lady p
 {
-    max-width: 70%;
+    max-width: 50%;
     margin: 0 auto;
     font-size: 1.8em;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .commitment 
@@ -434,6 +450,11 @@ button.navbar-toggler
     {
         display: none;
     }
+
+    .col-md-7 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 }
 
 @media screen and (max-width: 768px)
@@ -465,6 +486,39 @@ button.navbar-toggler
         font-size: 1.6em;
         padding-top: 50px;
     }
+
+    #logo {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #time {
+        margin-left: 40px;
+    }
+
+    .event li {
+        list-style: none;
+        display: inline-block;
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    .event {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .dev {
+        background-color: transparent;
+        color: white;
+        padding: 8px 32px 10px;
+        font-size: 1.4em;
+        /* border: none; */
+        border-radius: 24px;
+        border-color: white;
+        border-width: 1.8px;
+        font-weight: 500;
+    }
 }
 
 
@@ -475,6 +529,8 @@ button.navbar-toggler
         max-width: 75%;
         margin-left: 12.5%;
     }
+
+    
 
 }
 
@@ -520,7 +576,7 @@ button.navbar-toggler
     #com-content {
         position: relative;
         top: 0;
-        transform: translate(0%, -124%);
+        transform: translate(0%, -107%);
         z-index: 5;
         text-align: center;
     }
@@ -558,17 +614,6 @@ button.navbar-toggler
     }
 
 
-}
-
-@media screen and (max-width: 1200px)
-{
-    #com-content {
-        position: relative;
-        top: 0;
-        transform: translate(0%, -107%);
-        z-index: 5;
-        text-align: center;
-    }
 }
 
 @media screen and (max-width: 1100px)
@@ -802,8 +847,6 @@ button.navbar-toggler
     {
         font-size: 1.4em;
     }
-
-
 }
 
 @media screen and (max-width: 640px)
@@ -983,8 +1026,6 @@ button.navbar-toggler
         height: 200px;
         transform: translate(0%, -105%);
     }
-
-   
 }
 
 @media screen and (max-width: 440px)
@@ -1093,8 +1134,6 @@ button.navbar-toggler
         margin-top: -150px;
     }
 
-  
-
     #lady {
         text-align: center;
         margin-top: 80px;
@@ -1108,20 +1147,35 @@ button.navbar-toggler
         margin-top: 60px;
     }
 
-    .event {
-        padding: 0;
-        margin-bottom: 24px;
+    .faq {
+        background: #4D54EB;
+        padding-top: 80px;
+        margin-top: -4px;
     }
 
-    .event li
-    {
-        font-size: 1.4em;
+    .bottom-curve img {
+        width: 100%;
+        margin-top: -2px;
     }
 
-    .dev
-    {
-        font-size: 1.3em;
+    .later p {
+        max-width: 80%;
+        margin: 0 auto;
+        font-size: 1.6em;
+        padding-top: 50px;
+        margin-bottom: 20px;
     }
+
+    .up-curve img {
+        width: 100%;
+        margin-bottom: -0px;
+    }
+
+    .nav-link {
+        font-size: 1.1em;
+    }
+    
+
 }
 
 #com-content div p a
@@ -1129,3 +1183,24 @@ button.navbar-toggler
     color: #ffffff;
 }
 
+.white
+{
+    background-color: white !important;
+    opacity: 0.92;
+    
+}
+
+.black
+{
+    color: black !important;
+}
+
+.top
+{
+    margin-top: 7%;
+}
+
+.btn-top
+{
+    margin-top: -15px;
+}

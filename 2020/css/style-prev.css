@@ -279,49 +279,10 @@ background-color: #555;
     transition: 2s all;
 }
 
-.commitment{
-    padding-top: 15%;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
-}
-
-.commitment-align{
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
 @media screen and (max-width:992px){
     .commitment-align{
         padding-left: 2%;
         padding-right: 2%;
-    }
-}
-
-
-
-.about{
-    padding-top: 15%;
-    padding-bottom: 10%;
-}
-
-.faq{
-    padding-top: 10%;
-    padding-bottom: 10%;
-    padding-right: 10%;
-    padding-left: 10%;
-}
-
-@media screen and (max-width:992px){
-    .faq{
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-}
-
-@media screen and (max-width: 768px){
-    .faq, .about {
-        padding-top: 20%;
-        padding-bottom: 20%;
     }
 }
 
