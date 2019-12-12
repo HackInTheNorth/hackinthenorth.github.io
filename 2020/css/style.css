@@ -439,7 +439,7 @@ button.navbar-toggler
 #lady
 {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 90px;
 }
 
 .bandi
@@ -501,7 +501,7 @@ button.navbar-toggler
     }
 
     .col-md-7 {
-        margin-top: 100px;
+        margin-top: 60px;
         margin-bottom: 100px;
     }
 }
@@ -1271,7 +1271,7 @@ button.navbar-toggler
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -200%);
+        transform: translate(0%, -175%);
     }
 
     .brochure-box {
@@ -1291,7 +1291,7 @@ button.navbar-toggler
 
     #brochure img.line {
         max-width: 100%;
-        margin-top: -150px;
+        margin-top: -130px;
     }
 
     #lady {
@@ -1335,9 +1335,8 @@ button.navbar-toggler
         font-size: 1.1em;
     }
     
-    #brochure
-    {
-        height: 15vh;
+    #brochure {
+    height: 18vh;
     }
 
     .dot img {
@@ -1364,8 +1363,8 @@ button.navbar-toggler
 
     #com-line {
         position: absolute;
-        top: 0px;
-        right: 10px;
+        top: 5px;
+        right: 20px;
         height: 8%;
     }
 
@@ -1375,18 +1374,19 @@ button.navbar-toggler
     }
 
     #com-content div p {
-        font-size: 1.4em;
+        font-size: 1.5em;
     }
 
     #com-content div h1 {
         font-size: 4em;
         margin-bottom: 30px;
+        margin-top: 20px;
     }
 
     #sq-orange {
         position: absolute;
-        top: 27.5%;
-        left: 3%;
+        top: 28.5%;
+        left: 4%;
         height: 57%;
     }
 
