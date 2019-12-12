@@ -1089,18 +1089,19 @@ line-height: 110%;
         border-radius: 40px;
         height: 250px;
     } */
-    /* .speaker-name{ */
+    /* .speaker-name{
          
         font-size: 14px;;
-        /* 20 */
+        font-size: 20px;
         height: 22px;
-        /* 30 */
+        height: 30px;
+        
     }
-    /* .speaker-about{ */
+    .speaker-about{
         font-size:9px;
         height: 18px;
         bottom: 12%;
-    }
+    } */
 }
 
 @media screen and (max-width: 768px){
