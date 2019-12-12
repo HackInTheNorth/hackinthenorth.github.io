@@ -386,12 +386,30 @@ button.navbar-toggler
 
 .faq
 {
+    position: relative;
     background:  #4D54EB;
     padding-top: 80px;
 }
 
-.faq-head
+.faq-head {
+    width: 100%;
+    text-align: center;
+    height: 200px;
+}
+
+.faq-head #q-mark {
+    position: absolute;
+    top: -80px;
+    right: 50px;
+    height: 120%;
+}
+
+.faq-head h1
 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
 }
@@ -912,6 +930,19 @@ button.navbar-toggler
         height: 110%;
     }
 
+    .faq-head #q-mark {
+        position: absolute;
+        top: -80px;
+        right: 0px;
+        height: 105%;
+    }
+
+    #lady {
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+
 }
 
 @media screen and (max-width: 640px)
@@ -973,12 +1004,12 @@ button.navbar-toggler
 
     .link p
     {
-        font-size: 1.4em;
+        font-size: 1.25em;
     }
 
     .link a
     {
-        font-size: 1.2em;
+        font-size: 1.15em;
     }
 
     p {
@@ -1213,7 +1244,7 @@ button.navbar-toggler
 
     #lady {
         text-align: center;
-        margin-top: 80px;
+        margin-top: 10px;
     }
 
     .bandi {
@@ -1221,7 +1252,7 @@ button.navbar-toggler
     }
 
     .col-md-7 {
-        margin-top: 60px;
+        margin-top: 70px;
     }
 
     .faq {
@@ -1270,6 +1301,13 @@ button.navbar-toggler
         top: -9px;
         left: -17px;
         height: 110%;
+    }
+
+    .faq-head #q-mark {
+        position: absolute;
+        top: -80px;
+        right: 0px;
+        height: 65%;
     }
 
 }
