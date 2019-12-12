@@ -89,10 +89,6 @@ button:hover, .btn:hover, .btn:visited, .btn:active{
     top: 0%;
     left: 0%;
     background-color:white;
-    padding-top: 4%; 
-    padding-left: 10%; 
-    padding-right: 10%;
-    transition: all 0.6s;
 }
 
 .hover-text{
@@ -103,11 +99,7 @@ button:hover, .btn:hover, .btn:visited, .btn:active{
 }
 
 @media screen and (max-width: 992px){
-    #mainNav{
-        padding-left: 4%; 
-        padding-right: 4%;
-    }
-
+   
     .navbar-list{
         border-bottom:2px solid rgb(212, 212, 212); 
         border-top:2px solid rgb(212, 212, 212); 

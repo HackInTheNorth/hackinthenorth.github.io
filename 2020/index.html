@@ -20,7 +20,7 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top main-nav" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top main-nav c25" id="mainNav">
     <div class="container-fluid" style="padding-right:0; padding-left:0%;">
       <!-- <a class="navbar-brand js-scroll-trigger navbar-title" href="#"><img src="images/Text-Logo.png" class="navbar-img"></a> -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
@@ -386,7 +386,30 @@
                   $(".nav-link").toggleClass("black");
                 });
               </script>
-              
+
+              <script>
+
+                  window.onscroll = function() {scrollFunction()};
+
+                  function scrollFunction() {
+                      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                          document.getElementById("mainNav").classList.remove("c25");
+                          document.getElementById("mainNav").style.backgroundColor = "#000000 !important";
+                          document.getElementById("mainNav").classList.add("shadowFix");
+                          document.getElementById("mainNav").classList.add("c23");
+                        
+                          $(".nav-item a").addClass("c24");
+                          
+                        } else {
+                          document.getElementById("mainNav").classList.add("c25");
+                          document.getElementById("mainNav").classList.remove("shadowFix");
+                          document.getElementById("mainNav").classList.remove("c23");
+                          $(".nav-item a").removeClass("c24");
+                        }
+              }
+
+              </script>
+                            
               
               
             </body>
