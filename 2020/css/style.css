@@ -170,12 +170,6 @@ body
    
 }
 
-.commitment
-{
-    width: 100%;
-    background-color: #F79737;
-    height: 100vh;
-}
 
 .up
 {
@@ -213,10 +207,44 @@ button.navbar-toggler
     margin-top: 7%;
 }
 
+.commitment
+{
+    width: 100%;
+    background-color: #F79737;
+    height: 100vh;
+    position: relative;
+}
+
+#com-line
+{
+    position: absolute;
+    top:-30px;
+    right:50px;
+    height: 15%;
+}
+
+#sq-orange {
+    position: absolute;
+    top: 7.5%;
+    left: 0;
+    height: 85%;
+}
+
+#com-content
+{
+    width: 100%;
+    text-align: center;
+}
+
+
 #com-content div
 {
-    max-width: 55%;
-    margin: 0 auto;
+
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
     text-align: center;
 }
 
@@ -229,8 +257,8 @@ button.navbar-toggler
 #com-content div p
 {
     font-size: 1.2rem;
-    max-width: 90%;
-    margin-left: 5%;
+    max-width: 60%;
+    margin: 0 auto;
    
 }
 
@@ -242,14 +270,8 @@ button.navbar-toggler
     transform: translate(0%, -23%);
 }
 
-#com-content
-{
-    position: relative;
-    top: 0;
-    transform: translate(0%, -120%);
-    z-index: 5;
-    text-align: center;
-}
+
+
 
 .sponsorship
 {
@@ -484,100 +506,43 @@ button.navbar-toggler
     }
 }
 
-@media screen and (max-width: 768px)
-{
-    .bandi
-    {
-        width: 50%;
-    }
 
-    #lady p
-    {
-        display: none;
-    }
-
-    .faq-column
-    {
-        margin: 0 auto;
-    }
-
-    .later
-    {
-        text-align: center;
-    }
-
-    .later p
-    {
-        max-width: 80%;
-        margin: 0 auto;
-        font-size: 1.6em;
-        padding-top: 50px;
-    }
-
-    #logo {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    #time {
-        margin-left: 40px;
-    }
-
-    .event li {
-        list-style: none;
-        display: inline-block;
-        font-size: 1.5em;
-        font-weight: 500;
-    }
-
-    .event {
-        padding: 0;
-        margin-bottom: 20px;
-    }
-
-    .dev {
-        background-color: transparent;
-        color: white;
-        padding: 8px 32px 10px;
-        font-size: 1.4em;
-        /* border: none; */
-        border-radius: 24px;
-        border-color: white;
-        border-width: 1.8px;
-        font-weight: 500;
-    }
-
-    
-}
 
 
 @media screen and (min-width: 1300px)
 {
-    #content div p {
+    /* #content div p {
         font-size: 1.2rem;
         max-width: 75%;
         margin-left: 12.5%;
-    }
+    } */
 
     #brochure
     {
         height: 85vh;
     }
 
+    #com-content div p
+    {
+        font-size: 1.2rem;
+        max-width: 55%;
+        margin: 0 auto;
+    }
+
 }
 
 @media screen and (max-width: 1300px)
 {
-    #com-content {
+    /* #com-content {
         z-index: 5;
         text-align: center;
-    }
+    } */
 
-    #com-content div {
+    /* #com-content div {
         max-width: 70%;
         margin: 0 auto;
         text-align: center;
-    }
+    } */
 
     #square img {
         width: 100%;
@@ -603,14 +568,6 @@ button.navbar-toggler
         position: relative;
         top: 0;
         transform: translate(0%, -21%);
-    }
-
-    #com-content {
-        position: relative;
-        top: 0;
-        transform: translate(0%, -107%);
-        z-index: 5;
-        text-align: center;
     }
 
     #female-pic img {
@@ -674,20 +631,20 @@ button.navbar-toggler
         margin-left: 5%;
     }
 
-    #com-content {
+    /* #com-content {
         position: relative;
         top: 0;
         transform: translate(0%, -126%);
         z-index: 5;
         text-align: center;
-    }
+    } */
 
-    #com-content div p {
+    /* #com-content div p {
         font-size: 1.6em;
         max-width: 90%;
         margin-left: 5%;
     }
-    
+     */
     #female-pic img {
         max-width: 100%;
         position: relative;
@@ -732,11 +689,6 @@ button.navbar-toggler
 
 }
 
-
-
-
-
-
 @media screen and (max-width: 992px)
 {
     #content div
@@ -757,16 +709,16 @@ button.navbar-toggler
         margin-top: 26%;
     }
 
-    #com-content {
+    /* #com-content {
         z-index: 5;
         text-align: center;
-    }
+    } */
 
-    #com-content div {
+     /* #com-content div {
         max-width: 80%;
         margin: 0 auto;
         text-align: center;
-    }
+    }  */
 
     #triangle img {
         width: 92%;
@@ -779,13 +731,13 @@ button.navbar-toggler
         margin-bottom: 40px;
     }
 
-    #com-content {
+    /* #com-content {
         position: relative;
         top: 0;
         transform: translate(0%, -116%);
         z-index: 5;
         text-align: center;
-    }
+    } */
 
     #female-pic img {
         max-width: 100%;
@@ -811,18 +763,39 @@ button.navbar-toggler
         margin-bottom: 20px;
     }
 
+    #com-line {
+        position: absolute;
+        top: 0px;
+        right: 50px;
+        height: 15%;
+    }
+
+    #com-content div p
+    {
+        font-size: 1.8em;
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    #sq-orange {
+        position: absolute;
+        top: 12.5%;
+        left: 0;
+        height: 75%;
+    }
 
 }
 
 @media screen and (max-width:850px)
 {
-    #com-content {
+    /* #com-content {
         position: relative;
         top: 0;
         transform: translate(0%, -100%);
         z-index: 5;
         text-align: center;
-    }
+    } */
+
     #female-pic img {
         max-width: 100%;
         position: relative;
@@ -870,10 +843,10 @@ button.navbar-toggler
         max-width: 80%;
     }
 
-    #com-content {
+    /* #com-content {
         z-index: 5;
         text-align: center;
-    }
+    } */
 
     #content {
         position: relative;
@@ -889,13 +862,13 @@ button.navbar-toggler
         margin-left: 12%;
     }
 
-    #com-content {
+    /* #com-content {
         position: relative;
         top: 0;
         transform: translate(0%, -101%);
         z-index: 5;
         text-align: center;
-    }
+    } */
 
     .brochure-box {
         height: 225px;
@@ -945,6 +918,85 @@ button.navbar-toggler
 
 }
 
+@media screen and (max-width: 768px)
+{
+    .bandi
+    {
+        width: 50%;
+    }
+
+    #lady p
+    {
+        display: none;
+    }
+
+    .faq-column
+    {
+        margin: 0 auto;
+    }
+
+    .later
+    {
+        text-align: center;
+    }
+
+    .later p
+    {
+        max-width: 80%;
+        margin: 0 auto;
+        font-size: 1.6em;
+        padding-top: 50px;
+    }
+
+    #logo {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #time {
+        margin-left: 40px;
+    }
+
+    .event li {
+        list-style: none;
+        display: inline-block;
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    .event {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .dev {
+        background-color: transparent;
+        color: white;
+        padding: 8px 32px 10px;
+        font-size: 1.4em;
+        /* border: none; */
+        border-radius: 24px;
+        border-color: white;
+        border-width: 1.8px;
+        font-weight: 500;
+    }
+
+    #com-line {
+        position: absolute;
+        top: 0px;
+        right: 50px;
+        height: 10%;
+    }
+
+    #com-content div p {
+        font-size: 1.6em;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    
+}
+
 @media screen and (max-width: 640px)
 {
     #female-pic img {
@@ -972,11 +1024,11 @@ button.navbar-toggler
         font-size: 1.6em;
     }
 
-    #com-content div {
+    /* #com-content div {
         max-width: 100%;
         margin: 0 auto;
         text-align: center;
-    }
+    } */
 
     #square img {
         width: 118%;
@@ -989,13 +1041,13 @@ button.navbar-toggler
         margin-left: 12%;
     }
 
-    #com-content {
+    /* #com-content {
         position: relative;
         top: 0;
         transform: translate(0%, -97%);
         z-index: 5;
         text-align: center;
-    }
+    } */
 
     .brochure-box {
         height: 200px;
@@ -1046,22 +1098,22 @@ button.navbar-toggler
         margin-left: 14%;
     }
 
-    #com-content div {
+    /* #com-content div {
         max-width: 100%;
         margin: 0 auto;
         text-align: center;
-    }
+    } */
 
-    #com-content {
+    /* #com-content {
         z-index: 5;
         text-align: center;
-    }
+    } */
 
-    #com-content div p {
+    /* #com-content div p {
         font-size: 1.6em;
         max-width: 90%;
         margin-left: 5%;
-    }
+    } */
 
     #zigzag img
     {
@@ -1087,13 +1139,13 @@ button.navbar-toggler
         width: 100%;
     }
 
-    #com-content {
+    /* #com-content {
     position: relative;
     top: 0;
     transform: translate(0%, -85%);
     z-index: 5;
     text-align: center;
-    }
+    } */
 
     .brochure-box {
         height: 180px;
@@ -1109,13 +1161,13 @@ button.navbar-toggler
 
 @media screen and (max-width: 500px)
 {
-    #com-content {
+    /* #com-content {
         position: relative;
         top: 0;
         transform: translate(0%, -89%);
         z-index: 5;
         text-align: center;
-    }
+    } */
 
     #square img {
         width: 81%;
@@ -1154,22 +1206,22 @@ button.navbar-toggler
         margin-left: 22%;
     }
 
-    #com-content div {
+    /* #com-content div {
         max-width: 100%;
         margin: 0 auto;
         text-align: center;
-    }
+    } */
 
-    #com-content {
+    /* #com-content {
         z-index: 5;
         text-align: center;
-    }
+    } */
 
-    #com-content div p {
+    /* #com-content div p {
         font-size: 1.6em;
         max-width: 90%;
         margin-left: 5%;
-    }
+    } */
 
     #zigzag img
     {
@@ -1187,13 +1239,13 @@ button.navbar-toggler
         margin-left: 0;
     }
 
-   #com-content {
+   /* #com-content {
     position: relative;
     top: 0;
     transform: translate(0%, -80%);
     z-index: 5;
     text-align: center;
-    }
+    } */
 
     #content {
         position: relative;
@@ -1310,6 +1362,34 @@ button.navbar-toggler
         height: 65%;
     }
 
+    #com-line {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        height: 8%;
+    }
+
+    #com-content div p {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #com-content div p {
+        font-size: 1.4em;
+    }
+
+    #com-content div h1 {
+        font-size: 4em;
+        margin-bottom: 30px;
+    }
+
+    #sq-orange {
+        position: absolute;
+        top: 27.5%;
+        left: 3%;
+        height: 57%;
+    }
+
 }
 
 #com-content div p a
@@ -1374,4 +1454,10 @@ button.navbar-toggler
         overflow: hidden;
     }
     
+}
+
+.commitment 
+{
+    height: 100vh;
+    position: relative;
 }
