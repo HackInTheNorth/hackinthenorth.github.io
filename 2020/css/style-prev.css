@@ -59,10 +59,10 @@ button{
     -webkit-appearance: none;
 }
 
-.collapsible:focus{
+ .collapsible:focus{
     outline: none;
     -webkit-appearance: none;
-}
+} 
 
 .collapsible:before{
     padding-right: 10%;
@@ -78,11 +78,11 @@ a, a:hover, a:after, a:visited, a:active{
     color: inherit;
 }
 
-button:hover, .btn:hover, .btn:visited, .btn:active{
+/* button:hover, .btn:hover, .btn:visited, .btn:active{
     background-color: inherit;
     color: inherit;
     outline: none;
-}
+} */
 
 #mainNav{
     position: fixed;
@@ -124,7 +124,7 @@ button:hover, .btn:hover, .btn:visited, .btn:active{
 
 .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
-    color: #FF6C56;
+    color: #ffd405;
 }
 
 /* .active, .collapsible:hover {
@@ -136,11 +136,10 @@ background-color: #555;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    font-family: circularStdBook;
-    color: #818181;
+    color: white;
     font-size: 18px;
     text-align: justify;
-    /* background-color: #f1f1f1; */
+    
 }
 
 .nav-item{

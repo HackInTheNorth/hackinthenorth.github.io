@@ -28,7 +28,7 @@ body
 .main-nav
 {
     background: transparent !important;
-    padding-top: 1.5%;
+    padding-top: 1%;
     padding-bottom: 1%;
     transition: all 0.8s ease-in-out;
     
@@ -347,25 +347,30 @@ button.navbar-toggler
     display: inline-block;
 }
 
-.dot img
+.ribbon
 {
     position: relative;
-    top: 79%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    text-align: center;
-    float: right;
 }
 
-.ribbon img
+.ribbon img {
+    position: absolute;
+    top: -28px;
+    left: -50px;
+    height: 110%;
+}
+
+.dot
 {
     position: relative;
-    top: 46%;
-    left: 50%;
-    transform: translate(-53%, -50%);
+}
+
+.dot img
+{
+    position: absolute;
+   bottom:20px;
+   right: 20px;
+    width: 50%;
     text-align: center;
-    height: 50%;
 }
 
 .up-curve img
@@ -523,6 +528,8 @@ button.navbar-toggler
         border-width: 1.8px;
         font-weight: 500;
     }
+
+    
 }
 
 
@@ -534,7 +541,10 @@ button.navbar-toggler
         margin-left: 12.5%;
     }
 
-    
+    #brochure
+    {
+        height: 85vh;
+    }
 
 }
 
@@ -599,12 +609,6 @@ button.navbar-toggler
         z-index: 5;
     }
 
-    .ribbon img
-    {
-        transform: translate(-47%, -50%);
-        max-width: 172%;
-    }
-
     .link p
     {
         font-size: 2.4em;
@@ -615,6 +619,16 @@ button.navbar-toggler
         font-size: 2em;
         color:white;
         text-decoration: underline;
+    }
+
+    #brochure
+    {
+        height: 70vh;
+    }
+
+    #logo {
+        width: 60%;
+        margin-bottom: 20px;
     }
 
 
@@ -670,6 +684,13 @@ button.navbar-toggler
         z-index: 5;
     }
 
+    .ribbon img {
+        position: absolute;
+        top: -23px;
+        left: -44px;
+        height: 110%;
+    }
+
     .link p
     {
         font-size: 2em;
@@ -679,6 +700,17 @@ button.navbar-toggler
     {
         font-size: 1.6em;
     }
+
+    #brochure
+    {
+        height: 60vh;
+    }
+
+    #logo {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
 
 }
 
@@ -751,6 +783,16 @@ button.navbar-toggler
         z-index: 5;
     }
 
+    .container-fluid
+    {
+        margin-top: 20px;
+    }
+
+    #logo {
+        width: 75%;
+        margin-bottom: 20px;
+    }
+
 
 }
 
@@ -783,6 +825,11 @@ button.navbar-toggler
 
     .link p {
         font-size: 1.8em;
+    }
+
+    #brochure
+    {
+        height: 50vh;
     }
 }
 
@@ -851,6 +898,20 @@ button.navbar-toggler
     {
         font-size: 1.4em;
     }
+
+
+    #logo {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .ribbon img {
+        position: absolute;
+        top: -23px;
+        left: -38px;
+        height: 110%;
+    }
+
 }
 
 @media screen and (max-width: 640px)
@@ -923,6 +984,13 @@ button.navbar-toggler
     p {
         margin-top: 0;
         margin-bottom: 0.8em;
+    }
+
+    .ribbon img {
+        position: absolute;
+        top: -20px;
+        left: -36px;
+        height: 110%;
     }
 }
 
@@ -1000,8 +1068,13 @@ button.navbar-toggler
         height: 180px;
         transform: translate(0%, -115%);
     }
+
+    #brochure
+    {
+        height: 40vh;
+    }
 }
-}
+
 
 @media screen and (max-width: 500px)
 {
@@ -1089,7 +1162,7 @@ button.navbar-toggler
     transform: translate(0%, -80%);
     z-index: 5;
     text-align: center;
-}
+    }
 
     #content {
         position: relative;
@@ -1124,13 +1197,13 @@ button.navbar-toggler
     }
 
     .link a {
-        font-size: 0.9em;
+        font-size: 0.8em;
         color: white;
         text-decoration: underline;
     }
 
     .link p {
-        font-size: 1.0em;
+        font-size: 0.9em;
     }
 
     #brochure img.line {
@@ -1179,6 +1252,25 @@ button.navbar-toggler
         font-size: 1.1em;
     }
     
+    #brochure
+    {
+        height: 15vh;
+    }
+
+    .dot img {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 60%;
+        text-align: center;
+    }
+
+    .ribbon img {
+        position: absolute;
+        top: -9px;
+        left: -17px;
+        height: 110%;
+    }
 
 }
 
@@ -1212,6 +1304,11 @@ button.navbar-toggler
 .shadowFix {
     box-shadow: 0 6px 18px 0 rgba(46,61,73,0.1);
 
+}
+
+.yellow
+{
+    color:yellow;
 }
 
 @media screen and (min-width: 992px)
