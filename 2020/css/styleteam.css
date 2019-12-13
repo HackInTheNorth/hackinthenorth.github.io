@@ -205,7 +205,7 @@ background-color: #555;
 }
 
 #mainNav {
-    padding-right: 60px;
+    /* padding-right: 60px; */
     padding-top: 30px;
     margin-left:6%;
     
@@ -985,7 +985,8 @@ background-color: #555;
     margin-top: 30px;
     background-size: 170%;
     background-position: center;
-    border-radius: 77px;
+    border-radius: 50px;
+    border-bottom-left-radius: 77px;
 
     background: linear-gradient(136.09deg, rgba(255, 106, 72, 0.56) 18.06%, rgba(247, 151, 55, 0.56) 87.74%), url(image.png);
     background-blend-mode: darken, normal;
@@ -1071,7 +1072,11 @@ background-color: #555;
     bottom: 18%;
 
 }
-
+.circle-holder .container{
+    width: 245px;
+    margin: 0 auto;
+    padding: 0 !important;
+}
 .speaker-about {
     color: #393939;
     position: absolute;
@@ -1128,10 +1133,10 @@ background-color: #555;
 @media screen and (max-width:580px) {
 
     /* 1 Pic */
-    .speaker-row {
+    /* .speaker-row {
         margin-left: 5%;
 
-    }
+    } */
 
     /* 2 Pics */
     /* .circle-holder{
