@@ -985,7 +985,7 @@ background-color: #555;
     margin-top: 30px;
     background-size: 170%;
     background-position: center;
-    border-radius: 50px;
+    border-radius: 40px;
     border-bottom-left-radius: 77px;
 
     background: linear-gradient(136.09deg, rgba(255, 106, 72, 0.56) 18.06%, rgba(247, 151, 55, 0.56) 87.74%), url(image.png);
@@ -1051,7 +1051,21 @@ background-color: #555;
 }
 
 .speaker-company {
-    color: #575757;
+    color: #393939;
+    position: absolute;
+    text-align: center;
+    margin: 0 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 110%;
+
+    background: #FFFFFF;
+
+    bottom: 4%;
+    padding: 0.25rem 2%;
+    
+    height: 22px;
 }
 
 
