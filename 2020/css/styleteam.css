@@ -6,7 +6,7 @@ body {
     -webkit-tap-highlight-color: rgba(255, 254, 254, 0);
     position: absolute;
     top: 0%;
-    background-color: #000000;
+    background-color: #0c0c0c;
 
 }
 
@@ -111,7 +111,7 @@ button:hover,
     position: fixed;
     top: 0%;
     left: 0%;
-    background-color: white;
+    background-color: #0c0c0c;
     padding-top: 4%;
     padding-left: 10%;
     padding-right: 10%;
@@ -201,17 +201,17 @@ background-color: #555;
 
 .navbar-img {
     width: 320px;
-    padding-left:12.2px;
+    padding-left: 12.2px;
 }
 
 #mainNav {
     /* padding-right: 60px; */
     padding-top: 30px;
-    margin-left:6%;
     
-    padding-left:15px !important ;
+
     
-    background: black !important;
+
+    background: #0c0c0c !important;
 }
 
 .team {
@@ -230,11 +230,13 @@ background-color: #555;
 
     .navbar-img {
         width: 70%;
-        
+
         min-width: 0px;
     }
-    #mainNav{
-        margin: 0%;;
+
+    #mainNav {
+        margin: 0%;
+        ;
     }
 }
 
@@ -243,12 +245,11 @@ background-color: #555;
         width: 60%;
     }
 
-    .navbar-img {        
+    .navbar-img {
         width: 100%;
     }
-    #mainNav{
-        margin-left: 5%;
-    }
+
+    
 }
 
 @media screen and (max-width: 992px) {
@@ -1032,10 +1033,10 @@ background-color: #555;
 }
 
 .speaker-title {
-    font-size:67px;
+    font-size: 67px;
     font-family: CeraPro;
-    color:white;
-    text-align:left;
+    color: white;
+    text-align: left;
 
 
     margin-bottom: 5%;
@@ -1064,7 +1065,7 @@ background-color: #555;
 
     bottom: 4%;
     padding: 0.25rem 2%;
-    
+
     height: 22px;
 }
 
@@ -1086,11 +1087,13 @@ background-color: #555;
     bottom: 18%;
 
 }
-.circle-holder .container{
+
+.circle-holder .container {
     width: 245px;
     margin: 0 auto;
     padding: 0 !important;
 }
+
 .speaker-about {
     color: #393939;
     position: absolute;
