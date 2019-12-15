@@ -771,6 +771,13 @@
                   $(".main-nav").toggleClass("white");
                   $(".nav-link").toggleClass("black");
                 });
+		$('.nav-link').click(function() {
+                  $(".navbar-list").toggleClass("top")
+                  $(".navbar-collapse").toggleClass("show");
+                  $(".main-nav").toggleClass("white");
+                  $(".nav-link").toggleClass("black");
+                  $('.navbar-toggler').toggleClass('btn-top');
+                });
               </script>
 
               <script>
