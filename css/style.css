@@ -1587,6 +1587,7 @@ a, a:hover, a:after, a:visited, a:active{
     top: 40%;
     transform: translate(-50%, -50%);
     width: 30%;
+    text-shadow: 0px 1px 2px rgba(0,0,0, 0.8);
 }
 .hint{
     position: relative;
@@ -2192,7 +2193,7 @@ a, a:hover, a:after, a:visited, a:active{
 .dev {
     font-family: "CeraPro";
     align-items: center;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.7);
     color: white;
     padding: 8px 32px 10px;
     font-size: 1.4em;
@@ -2201,9 +2202,72 @@ a, a:hover, a:after, a:visited, a:active{
     border-color: rgba(255,255,255,1);
     border-width: 1.5px;
     border-style: solid;
+    box-shadow: 0px 5px 3px rgba(0,0,0,0.7);
     font-weight: 500;
     cursor: pointer;
 }
+
+.dev:hover {
+    background-color: rgba(0,0,0,0.2);
+    border-color: rgba(255,255,255,1);
+    cursor: pointer;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.0);
+    animation: pressed 0.2s ease-out;
+    -webkit-animation: pressed 0.2s ease-out;
+    -moz-animation: pressed 0.2s ease-out;
+    -o-animation: pressed 0.2s ease-out;
+}
+
+@keyframes pressed{
+    from {
+        background-color: rgba(0,0,0,0.7);  
+        box-shadow: 0px 5px 3px rgba(0,0,0,0.7);
+    }
+
+    to {
+        background-color: rgba(0,0,0,0.2);
+        box-shadow: 0px 0px 0px rgba(0,0,0,0.0);
+    }
+}
+
+@-webkit-keyframes pressed{
+    from {
+        background-color: rgba(0,0,0,0.7);  
+        box-shadow: 0px 5px 3px rgba(0,0,0,0.7);
+    }
+
+    to {
+        background-color: rgba(0,0,0,0.2);
+        box-shadow: 0px 0px 0px rgba(0,0,0,0.0);
+    }
+}
+
+@-moz-keyframes pressed{
+    from {
+        background-color: rgba(0,0,0,0.7);  
+        box-shadow: 0px 5px 3px rgba(0,0,0,0.7);
+    }
+
+    to {
+        background-color: rgba(0,0,0,0.2);
+        box-shadow: 0px 0px 0px rgba(0,0,0,0.0);
+    }
+}
+
+@-o-keyframes pressed{
+    from {
+        background-color: rgba(0,0,0,0.7);  
+        box-shadow: 0px 5px 3px rgba(0,0,0,0.7);
+    }
+
+    to {
+        background-color: rgba(0,0,0,0.2);
+        box-shadow: 0px 0px 0px rgba(0,0,0,0.0);
+    }
+}
+
+
+
 
 @media screen and (max-width: 768px)
 {
@@ -2234,3 +2298,7 @@ a, a:hover, a:after, a:visited, a:active{
     }
 }
 
+#devfolio-apply-now .logo 
+{
+    fill: white;
+}
