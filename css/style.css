@@ -433,7 +433,7 @@ a, a:hover, a:after, a:visited, a:active{
 }
 
 .up-curve img {
-    width: 102%;
+    width: 100%;
     margin-bottom: -20px;
 }
 
@@ -1720,12 +1720,12 @@ a, a:hover, a:after, a:visited, a:active{
 
   }
 
-  #devf img
+  .platinum img
   {
       width: 60%;
   }
 
-  #devf img
+  .platinum img
   {
       width: 60%;
   }
@@ -2003,7 +2003,7 @@ a, a:hover, a:after, a:visited, a:active{
         font-size: 14px;
     }
 
-    #devf img
+    .platinum img
     {
         width: 100%;
     }
