@@ -2103,11 +2103,22 @@ a, a:hover, a:after, a:visited, a:active{
      animation: wiggle 2s infinite;
  }
 
+@keyframes spin{
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 
 .footer-wheel-img{
     position: absolute;
     left: 10%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
+    animation: spin 4s linear infinite;
     /* left: 10%;
     width: 5%;
     top: 10%;
