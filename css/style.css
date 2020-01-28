@@ -1731,6 +1731,28 @@ a, a:hover, a:after, a:visited, a:active{
       width: 60%;
   }
 
+ 
+
+  
+  @media screen and (min-width: 992px)
+  {
+    #mlh-trust-badge
+    {
+        left: 100px;
+        top: 0;
+    }
+  }
+  
+
+  @media screen and (max-width: 992px)
+  {
+    #mlh-trust-badge
+    {
+        
+        right: 30px;
+        top: 0;
+    }
+  }
   
   .dashed{
     stroke-dasharray: 10;
@@ -2302,3 +2324,4 @@ a, a:hover, a:after, a:visited, a:active{
 {
     fill: white;
 }
+
