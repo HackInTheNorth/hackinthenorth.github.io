@@ -1731,7 +1731,10 @@ a, a:hover, a:after, a:visited, a:active{
       width: 60%;
   }
 
- 
+  #mlh-trust-badge
+  {
+      transition: all 0.6s ease-in-out;
+  }
 
   
   @media screen and (min-width: 992px)
@@ -1752,6 +1755,13 @@ a, a:hover, a:after, a:visited, a:active{
         right: 30px;
         top: 0;
     }
+  }
+
+  .fading
+  {
+      opacity: 0;
+      transition-delay: 0.5s;
+      transition: all 0.6s ease-in-out;
   }
   
   .dashed{

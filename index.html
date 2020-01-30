@@ -822,28 +822,7 @@
                 });
               </script>
 
-              <script>
-
-                  window.onscroll = function() {scrollFunction()};
-
-                  function scrollFunction() {
-                      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                          document.getElementById("mainNav").classList.remove("c25");
-                          document.getElementById("mainNav").style.backgroundColor = "#000000 !important";
-                          document.getElementById("mainNav").classList.add("shadowFix");
-                          document.getElementById("mainNav").classList.add("c23");
-                        
-                          $(".nav-item a").addClass("c24");
-                          
-                        } else {
-                          document.getElementById("mainNav").classList.add("c25");
-                          document.getElementById("mainNav").classList.remove("shadowFix");
-                          document.getElementById("mainNav").classList.remove("c23");
-                          $(".nav-item a").removeClass("c24");
-                        }
-              }
-
-              </script>
+             
 
               <script>
 
@@ -897,6 +876,31 @@
               });
               </script>                      
               
-              <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;width:10%;z-index:10000" href="https://mlh.io/seasons/apac-2020/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-apac-white.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
+              <a id="mlh-trust-badge" style="max-width:100px;min-width:60px;position:fixed;width:10%;z-index:10000" href="https://mlh.io/seasons/apac-2020/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-apac-white.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
+
+              <script>
+
+                window.onscroll = function() {scrollFunction()};
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("mainNav").classList.remove("c25");
+                        document.getElementById("mainNav").style.backgroundColor = "#000000 !important";
+                        document.getElementById("mainNav").classList.add("shadowFix");
+                        document.getElementById("mainNav").classList.add("c23");
+                        document.getElementById("mlh-trust-badge").classList.add("fading");
+                      
+                        $(".nav-item a").addClass("c24");
+                        
+                      } else {
+                        document.getElementById("mainNav").classList.add("c25");
+                        document.getElementById("mainNav").classList.remove("shadowFix");
+                        document.getElementById("mainNav").classList.remove("c23");
+                        document.getElementById("mlh-trust-badge").classList.remove("fading");
+                        $(".nav-item a").removeClass("c24");
+                      }
+            }
+
+            </script>
             </body>
             </html>
