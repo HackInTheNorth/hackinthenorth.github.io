@@ -1723,7 +1723,7 @@ a, a:hover, a:after, a:visited, a:active{
 
   .platinum img
   {
-      width: 60%;
+      width: 100% !important;
   }
 
   .platinum img
@@ -1731,9 +1731,25 @@ a, a:hover, a:after, a:visited, a:active{
       width: 60%;
   }
 
+  
+
+  
+
   #mlh-trust-badge
   {
       transition: all 0.6s ease-in-out;
+  }
+
+  @media screen and (max-width: 992px)
+  {
+      .platinum img
+      {
+          width: 90% !important;
+      }
+
+      .diamond img{
+        width: 100% !important;
+    }
   }
 
   
@@ -1976,7 +1992,7 @@ a, a:hover, a:after, a:visited, a:active{
 .image-column{
     width: 100%;
     overflow: hidden;
-    margin-top: 55px;
+    margin-top: 65px;
     /* margin: auto; */
     display: block;
 }
