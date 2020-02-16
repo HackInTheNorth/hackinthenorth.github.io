@@ -1762,7 +1762,11 @@ a, a:hover, a:after, a:visited, a:active{
     }
   }
   
-
+  .close1
+    {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
   @media screen and (max-width: 992px)
   {
     #mlh-trust-badge
@@ -1770,6 +1774,12 @@ a, a:hover, a:after, a:visited, a:active{
         
         right: 30px;
         top: 0;
+    }
+
+    .close1
+    {
+        font-size: 1.1rem;
+        font-weight: 500;
     }
   }
 
@@ -1779,6 +1789,10 @@ a, a:hover, a:after, a:visited, a:active{
       transition-delay: 0.5s;
       transition: all 0.6s ease-in-out;
   }
+
+  
+
+
   
   .dashed{
     stroke-dasharray: 10;
@@ -2351,8 +2365,4 @@ a, a:hover, a:after, a:visited, a:active{
     fill: white;
 }
 
-.close1
-{
-    font-size: 1.25rem;
-    font-weight: 500;
-}
+
