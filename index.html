@@ -330,12 +330,22 @@
                             </div>
                           </div>
                           <br>
+                          <!-- <div class="close" class="text-center">
+                            <h3>Registration over on 29th Feb</h3>
+                          </div>
+                          <br> -->
+                         
                           <div class="row text-center">
                             <div class="col-12" id="devfolio" style="z-index: 5">
                               <button class="dev" id="devfolio-apply-now" active>Apply with Devfolio</button>
                             </div>
                           </div>
                         </div>
+                         <div class="row text-center" style="margin: 3% 0";>
+                            <div class="col-12 close1" id="closed">
+                              Registration closes on 29th February
+                            </div>
+                          </div>
                         <!-- <ul class="event">
                           <li class="schedule" id="venue"><i class="fas fa-map-marker-alt"></i>IIIT Allahabad</li>
                           <li class="schedule" id="time"><i class="fas fa-calendar-alt"></i>27th-29th March</li>
@@ -783,6 +793,17 @@
                   }
                   
                 });
+              </script>
+
+              <script>
+                let info = document.getElementById("closed");
+                let now = new Date();
+                let regDate = new Date(2020 , 02 , 1 , 12 , 00 , 00);
+
+                if(now >= regDate)
+                {
+                  info.textContent = "Registrations are closed!";
+                }
               </script>
 
               <script>

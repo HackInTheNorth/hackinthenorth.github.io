@@ -2351,3 +2351,8 @@ a, a:hover, a:after, a:visited, a:active{
     fill: white;
 }
 
+.close1
+{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
