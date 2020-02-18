@@ -1753,7 +1753,7 @@ a, a:hover, a:after, a:visited, a:active{
   }
 
   
-  @media screen and (min-width: 992px)
+  @media scre en and (min-width: 992px)
   {
     #mlh-trust-badge
     {
@@ -1796,6 +1796,11 @@ a, a:hover, a:after, a:visited, a:active{
   
   .dashed{
     stroke-dasharray: 10;
+  }
+
+  .dic
+  {
+      width: 35% !important;
   }
   /* .path {
     stroke-dasharray: 1114.6513671875;
@@ -2357,6 +2362,26 @@ a, a:hover, a:after, a:visited, a:active{
         font-weight: 500;
         cursor: pointer;
         margin-top: 5px;
+    }
+
+    .dic
+    {
+        width: 100% !important;
+    }
+
+    .event .image-column
+    {
+        margin-top: 30px;
+    }
+
+    .event
+    {
+        margin-bottom: 20% !important;
+    }
+
+    .invision
+    {
+        margin-top: 30px !important;
     }
 }
 
