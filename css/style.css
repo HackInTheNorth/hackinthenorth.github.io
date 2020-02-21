@@ -1753,7 +1753,7 @@ a, a:hover, a:after, a:visited, a:active{
   }
 
   
-  @media scre en and (min-width: 992px)
+  @media screen and (min-width: 992px)
   {
     #mlh-trust-badge
     {
@@ -1790,10 +1790,7 @@ a, a:hover, a:after, a:visited, a:active{
       transition: all 0.6s ease-in-out;
   }
 
-  
 
-
-  
   .dashed{
     stroke-dasharray: 10;
   }
@@ -1802,6 +1799,102 @@ a, a:hover, a:after, a:visited, a:active{
   {
       width: 35% !important;
   }
+
+  .mlh
+  {
+      width: 40% !important;
+  } 
+
+  #mlh-logo
+  {
+      margin-top: 120px;
+  }
+
+  @media screen and (max-width: 440px)
+  {
+        .mlh
+        {
+            width: 100% !important;
+        } 
+
+        #mlh-logo
+        {
+            margin-top: 60px;
+        }
+  }
+
+  .prize-section
+  {
+      margin: 12.5% 0;
+  }
+
+  .prize-box
+  {
+     background-color: black;
+     height: 360px;
+     max-width: 300px;
+     margin-left: auto;
+     margin-right: auto;
+     box-shadow: 5px 5px 25px 0 rgba(125, 132, 138, 0.2);
+     margin-bottom: 80px;
+  }
+
+  .prize-page
+  {
+      margin: 0 auto;
+  }
+
+  .prize-number
+  {
+      position: relative;
+      top: 5%;
+      left: 50%;
+      transform: translate(-50% , -50%);
+      text-align: center;
+      font-size: 32px;
+      font-weight: 600;
+      color: rgba(255 , 255 , 255 , 0.9);
+  }
+
+  .girls
+  {
+      font-size: 28px;
+  }
+
+  .image-ka-text
+  {
+      position: relative;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50% , -50%);
+      text-align: center;
+      font-size: 50px;
+  }
+
+  .prize-name
+  {
+      font-size: 20px;
+      font-weight: 500;
+      color: rgba(255 , 255 , 255 , 0.8);
+  }
+
+  /* #pololu
+  {
+      font-size: px;
+  } */
+
+  .prize-ka-image
+  {
+      max-width: 100%;
+  }
+
+  #ghost
+  {
+      height: 200px;
+  }
+
+
+
   /* .path {
     stroke-dasharray: 1114.6513671875;
     stroke-dashoffset: 1114.6513671875;
@@ -2004,8 +2097,8 @@ a, a:hover, a:after, a:visited, a:active{
 .sponsors{
     padding-top: 10%;
     padding-bottom: 10%;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .image-column{
