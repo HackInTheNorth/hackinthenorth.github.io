@@ -1908,7 +1908,52 @@ a, a:hover, a:after, a:visited, a:active{
       height: 200px;
   }
 
+  .time-line
+  {
+      width: 100%;
+      margin-left: auto;
+      margin-right:auto;
+  }
 
+  .time-svg img
+  {
+      max-width: 90%;
+  }
+
+  #mobile
+  {
+      display: none;
+      margin-bottom: 10%;
+  }
+
+  .time-head
+  {
+      margin: 5% 0 10% 0;
+      width: 100%;
+  }
+
+  @media screen and (max-width: 440px)
+  {
+      #mobile
+      {
+          display: inline-block;
+      }
+
+      #pc
+      {
+          display: none;
+      }
+
+      .time-head
+      {
+          margin-top: 0;
+      }
+
+      #mobile
+      {
+          margin-bottom: 15%;
+      }
+  }
 
   /* .path {
     stroke-dasharray: 1114.6513671875;
