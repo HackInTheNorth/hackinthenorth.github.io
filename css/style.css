@@ -2381,7 +2381,7 @@ a, a:hover, a:after, a:visited, a:active{
     transform: translate(-50%, -50%); */
 }
 
-@media screen and (max-width: 992px){
+ @media screen and (max-width: 992px){
     .footer-wheel-img{
         width: 10%;
     }
