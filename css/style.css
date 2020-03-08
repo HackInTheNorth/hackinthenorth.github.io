@@ -1805,6 +1805,11 @@ a, a:hover, a:after, a:visited, a:active{
       width: 40% !important;
   } 
 
+  .amul
+  {
+      width: 30% !important;
+  }
+
   #mlh-logo
   {
       margin-top: 120px;
@@ -1820,6 +1825,11 @@ a, a:hover, a:after, a:visited, a:active{
         #mlh-logo
         {
             margin-top: 60px;
+        }
+
+        .amul
+        {
+            width: 90% !important;
         }
   }
 
@@ -2235,6 +2245,11 @@ a, a:hover, a:after, a:visited, a:active{
 @media screen and (max-width: 400px){
     .sponsor-us-row{
         font-size: 12px;
+    }
+
+    .image-column
+    {
+        margin-top: 30px;
     }
 }
   @media screen and (min-width: 440px) and (max-width: 737px) and (orientation: landscape)
