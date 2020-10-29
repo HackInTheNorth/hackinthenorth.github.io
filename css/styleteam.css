@@ -1,6 +1,6 @@
 html,
 body {
-/*     overflow-x: hidden; */
+    overflow-x: hidden;
     width: 100vw;
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: rgba(255, 254, 254, 0);
