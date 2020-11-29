@@ -308,7 +308,7 @@ a, a:hover, a:after, a:visited, a:active{
 {
     position: relative;
     top: 0;
-    margin-top: 35vh;
+    margin-top: 20vh;
 }
 
 .sponsorship
@@ -2006,7 +2006,7 @@ a, a:hover, a:after, a:visited, a:active{
   }
 
   .we-back-img{
-      width: 80%;
+      width: 100%;
       margin-top: 1em;
   }
 
@@ -2016,6 +2016,16 @@ a, a:hover, a:after, a:visited, a:active{
   }
   .heading-hackinthenorth{
         font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 2.5rem;
+    }
+
+    .heading-hackinthenorth svg{
+        margin-bottom: 1rem;
+        overflow: hidden;
+        vertical-align: middle;
+        max-width: 540px;
+        width: 80%;
     }
 
 @media screen and (min-width: 401px)  and (max-width: 1200px){
@@ -2027,7 +2037,7 @@ a, a:hover, a:after, a:visited, a:active{
         margin-top: 70vh;
     }  
     .heading-hackinthenorth{
-        font-size: 30px !important;
+        font-size: 3rem;
     }
 
     .we-are-back-text{
@@ -2045,10 +2055,11 @@ a, a:hover, a:after, a:visited, a:active{
     }
     .main-commit
     {
-        margin-top: 55vh;
+        margin-top: 50vh;
     }
     .heading-hackinthenorth{
         font-size: 2rem !important;
+        margin-bottom: 0;
     }
     .we-are-back-text{
         font-size: 3rem;
