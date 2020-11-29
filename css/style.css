@@ -2013,8 +2013,11 @@ a, a:hover, a:after, a:visited, a:active{
     text-align: center;
     margin-top: 20vh;
   }
+  .heading-hackinthenorth{
+        font-size: 50px;
+    }
 
-@media screen and (min-width: 441px)  and (max-width: 1200px){
+@media screen and (min-width: 401px)  and (max-width: 1200px){
     .dates-div{
         margin-top: 20vh;
     } 
@@ -2022,6 +2025,9 @@ a, a:hover, a:after, a:visited, a:active{
     {
         margin-top: 70vh;
     }  
+    .heading-hackinthenorth{
+        font-size: 30px !important;
+    }
 }
 
 @media screen and (max-width: 400px){
@@ -2037,7 +2043,7 @@ a, a:hover, a:after, a:visited, a:active{
         margin-top: 90vh;
     }
     .heading-hackinthenorth{
-        font-size: 25px;
+        font-size: 25px !important;
     }
     .we-are-back-text{
         font-size: 45px;
