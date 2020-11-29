@@ -198,7 +198,7 @@ a, a:hover, a:after, a:visited, a:active{
 #content div h1
 {
     font-size: 4em;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 
 #content
@@ -215,6 +215,7 @@ a, a:hover, a:after, a:visited, a:active{
     font-size: 1.2rem;
     max-width: 85%;
     margin-left: 7.5%;
+    margin-bottom: 2rem;
 }
 
 .up
@@ -1351,7 +1352,7 @@ a, a:hover, a:after, a:visited, a:active{
         max-width: 100%;
         position: relative;
         border-radius: 12px;
-        transform: translate(0%, -128%);
+        transform: translate(0%, -65%);
     }
 
     .brochure-box {
@@ -1612,7 +1613,7 @@ a, a:hover, a:after, a:visited, a:active{
 @media screen and (max-width: 992px){
     .main-landing-text{
         top: 50%;
-        width: 60%;
+        width: 80%;
     }
 
     .landing-college-name-row{
@@ -1643,7 +1644,7 @@ a, a:hover, a:after, a:visited, a:active{
         left: 50%;
         top: 40%;
         transform: translate(-50%, -50%);
-        width: 35%;
+        width: 80%;
     }
 
     .landing-college-name-row
@@ -1660,7 +1661,7 @@ a, a:hover, a:after, a:visited, a:active{
         left: 50%;
         top: 40%;
         transform: translate(-50%, -50%);
-        width: 40%;
+        width: 80%;
     }
 
     .landing-college-name-row
@@ -2000,6 +2001,7 @@ a, a:hover, a:after, a:visited, a:active{
     font-style: normal;
     font-weight: 900;
     font-size: 180px;
+    background: linear-gradient(180deg, #eaeaea 0%, #3c3333 100%);
     background: linear-gradient(180deg, #3C3C3C 0%, #858585 100%);
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent;
@@ -2024,6 +2026,10 @@ a, a:hover, a:after, a:visited, a:active{
     .heading-hackinthenorth{
         font-size: 30px !important;
     }
+
+    .we-are-back-text{
+        font-size: 75px;
+    }
 }
 
 @media screen and (max-width: 400px){
@@ -2043,6 +2049,7 @@ a, a:hover, a:after, a:visited, a:active{
     }
     .we-are-back-text{
         font-size: 3rem;
+        background: linear-gradient(180deg, #3C3C3C 0%, #858585 100%);
     }
 }
 
