@@ -468,8 +468,8 @@
                       Hacka-demic is a 36-hour long virtual hackathon, where you can code, design, and create meaningful solutions to real-life problems. <br><br> It will be a theme-based event welcoming participants with all skill sets, from beginners to professionals. Participate from the comfort of your homes and build something fun and incredible with us.<br><br>  Dive in to explore the realms of tech with our exciting themes and prizes.
                     </p>
                     <div class="row text-center">
-                      <div class="col-12" id="devfolio" style="z-index: 5">
-                        <a href="https://hackademic.devfolio.co/" class="dev" id="devfolio-apply-now" active>Apply with Devfolio</a>
+                      <div id="devfolio" style="z-index: 4;">
+                        <button class="dev" id="devfolio-apply-now" style="position: relative; left: 50%; transform: translate(-50%, 0); outline: none;">Apply with Devfolio</button>
                       </div>
                     </div>
                   </div>
@@ -1098,7 +1098,7 @@
                 document.addEventListener('DOMContentLoaded', function () {
                   let devfolioOptions = {
                       buttonSelector: '#devfolio-apply-now',
-                      key: 'hint5',
+                      key: 'hackademic',
                   }
 
                   let script = document.createElement('script');
