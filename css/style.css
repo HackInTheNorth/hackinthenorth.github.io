@@ -2537,7 +2537,7 @@ a, a:hover, a:after, a:visited, a:active{
     align-items: center;
     background-color: rgba(0,0,0,0.7);
     color: white;
-    padding: 8px 32px 10px;
+    padding: 16px 32px !important;
     font-size: 1.4em;
     /* border: none; */
     border-radius: 24px;
