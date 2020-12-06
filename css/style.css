@@ -308,7 +308,7 @@ a, a:hover, a:after, a:visited, a:active{
 {
     position: relative;
     top: 0;
-    margin-top: 20vh;
+    margin-top: 200vh;
 }
 
 .sponsorship
@@ -2012,7 +2012,7 @@ a, a:hover, a:after, a:visited, a:active{
 
   .dates-div{
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 10vh;
   }
   .heading-hackinthenorth{
         font-size: 4rem;
@@ -2027,14 +2027,100 @@ a, a:hover, a:after, a:visited, a:active{
         max-width: 540px;
         width: 80%;
     }
+.theme-section{
+    text-align: center;
+    margin-top: 20vh;
+}
+.theme-heading{
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-weight: normal;
+}
+.theme-list{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.theme-rows{
+    margin-top:4rem;
+}
+.theme-list-column{
+    margin: auto;
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+    opacity: 0.8;
+    padding: 30px 10px 10px 10px;
+}
+.theme-background-1{
+    background:url("/images/vector/Frame_4.png") no-repeat 100% 100%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+}
+.theme-background-2{
+    background:url('/images/vector/Frame_5.png') no-repeat 100% 100%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+}
+.theme-background-3{
+    background:url('/images/vector/Frame_6.png') no-repeat 100% 100%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+}
+.theme-background-4{
+    background:url('/images/vector/Frame_7.png') no-repeat 100% 100%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+}
+.theme-list-heading{
+    text-align: left;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.7rem;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+}
+.theme-type-1{
+    background: linear-gradient(90deg, #C146A4 0%, #FFE0F8 100%);
+}
+.theme-type-2{
+    background: linear-gradient(90deg, #FFEBE6 0%, #F79737 100%);
+}
+.theme-type-3{
+    background: linear-gradient(90deg, #FF6A48 0%, #FFEBE6 100%);
+}
+.theme-type-4{
+    background: linear-gradient(268.58deg, #D6DEF6 4.66%, #868DEA 119.05%);
+}
+.theme-list-para{
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9rem;
+    width: 85%;
+}
+.theme-list-image{
+    float: right;
+    width: 7rem;
+}
+.vector-background{
+    position: absolute;
+    max-height: 50%;
+    max-width: 50%;
+}
+.vector-type-1{
+    right: 0;
+    top: 235%;
+    max-height: 90%;
+}
+.vector-type-2{
+    left: 0;
+    top: 205%;
+}
+.vector-type-3{
+    right: 0;
+    top: 140%;
+}
 
-@media screen and (min-width: 401px)  and (max-width: 1200px){
+@media screen and (min-width: 768px)  and (max-width: 1200px){
     .dates-div{
-        margin-top: 20vh;
+        margin-top: 30vh;
     } 
     .main-commit
     {
-        margin-top: 70vh;
+        margin-top: 220vh;
     }  
     .heading-hackinthenorth{
         font-size: 3rem;
@@ -2042,6 +2128,85 @@ a, a:hover, a:after, a:visited, a:active{
 
     .we-are-back-text{
         font-size: 75px;
+    }
+
+    .theme-heading{
+        font-size: 3rem;
+    }
+    .theme-list-heading{
+        font-size: 2rem;
+    }
+    .theme-list-para{
+        font-size: 1.1rem;
+    }
+    .vector-type-1{
+        top: 215%;
+    }
+    .vector-type-2{
+        top: 195%;
+    }
+    .vector-type-3{
+        top: 150%;
+    }
+    .theme-background-1{
+        background-size:30%;
+    }
+    .theme-background-2{
+        background-size:30%;
+    }
+    .theme-background-3{
+        background-size: 30%;
+    }
+    .theme-background-4{
+        background-size: 30%;
+    }
+}
+
+@media screen and (min-width: 401px)  and (max-width: 767px){
+    .dates-div{
+        margin-top: 10vh;
+    } 
+    .main-commit
+    {
+        margin-top: 220vh;
+    }  
+    .heading-hackinthenorth{
+        font-size: 3rem;
+    }
+
+    .we-are-back-text{
+        font-size: 75px;
+    }
+
+    .theme-heading{
+        font-size: 1.7rem;
+    }
+    .theme-list-heading{
+        font-size: 1rem;
+    }
+    .theme-list-para{
+        font-size: 0.7rem;
+    }
+    .vector-type-1{
+        top: 255%;
+    }
+    .vector-type-2{
+        top: 225%;
+    }
+    .vector-type-3{
+        top: 170%;
+    }
+    .theme-background-1{
+        background-size:30%;
+    }
+    .theme-background-2{
+        background-size:30%;
+    }
+    .theme-background-3{
+        background-size: 30%;
+    }
+    .theme-background-4{
+        background-size: 30%;
     }
 }
 
@@ -2055,7 +2220,7 @@ a, a:hover, a:after, a:visited, a:active{
     }
     .main-commit
     {
-        margin-top: 50vh;
+        margin-top: 240vh;
     }
     .heading-hackinthenorth{
         font-size: 2rem !important;
@@ -2069,6 +2234,37 @@ a, a:hover, a:after, a:visited, a:active{
     .we-back-img{
         width: 100%;
         margin-top: 0;
+    }
+
+    .theme-heading{
+        font-size: 1.5rem;
+    }
+    .theme-list-heading{
+        font-size: 1rem;
+    }
+    .theme-list-para{
+        font-size: 0.5rem;
+    }
+    .vector-type-1{
+        top: 255%;
+    }
+    .vector-type-2{
+        top: 225%;
+    }
+    .vector-type-3{
+        top: 170%;
+    }
+    .theme-background-1{
+        background-size:30%;
+    }
+    .theme-background-2{
+        background-size:30%;
+    }
+    .theme-background-3{
+        background-size: 30%;
+    }
+    .theme-background-4{
+        background-size: 30%;
     }
 }
 
