@@ -2107,6 +2107,14 @@ a, a:hover, a:after, a:visited, a:active{
     background-position: 110% 90%, 0% 30%, 100% 0%;
     background-repeat: no-repeat, no-repeat, no-repeat;
     }
+
+    #tri-dark {
+        max-width: 358px;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 90vw;
+    }
 }
 
 
@@ -2285,7 +2293,7 @@ a, a:hover, a:after, a:visited, a:active{
     }
 
     .theme-heading{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .theme-list-heading{
         font-size: 1rem;
