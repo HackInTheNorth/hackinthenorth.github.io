@@ -2029,7 +2029,11 @@ a, a:hover, a:after, a:visited, a:active{
     }
 .theme-section{
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 0;
+    padding: 20vh 0;
+    background: url(/images/vector/vector_1.png), url(/images/vector/vector_2.png), url(/images/vector/vector_3.png), #0C0C0C;
+    background-position: 110% 90%, 0% 30%, 100% -15%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
 }
 .theme-heading{
     font-family: Montserrat;
@@ -2048,7 +2052,8 @@ a, a:hover, a:after, a:visited, a:active{
     border-radius: 10px;
     backdrop-filter: blur(50px);
     opacity: 0.8;
-    padding: 30px 10px 10px 10px;
+    padding: 3%;
+    min-height: 225px;
 }
 .theme-background-1{
     background:url("/images/vector/Frame_4.png") no-repeat 100% 100%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
@@ -2090,6 +2095,7 @@ a, a:hover, a:after, a:visited, a:active{
     font-weight: 500;
     font-size: 0.9rem;
     width: 85%;
+    margin-top: 1.5rem;
 }
 .theme-list-image{
     float: right;
@@ -2113,6 +2119,27 @@ a, a:hover, a:after, a:visited, a:active{
     right: 0;
     top: 140%;
 }
+
+@media screen and (max-width: 768px){
+    .theme-list-para{
+        margin-top: 1rem;
+    }
+
+    .theme-list-column{
+        min-height: 150px;
+        padding: 5%;
+    }
+
+    .theme-section{
+    padding: 10vh 0;
+    background: url(/images/vector/vector_1.png), url(/images/vector/vector_2.png), url(/images/vector/vector_3.png), #0C0C0C;
+    background-size: 70%;
+    background-position: 110% 90%, 0% 30%, 100% 0%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    }
+}
+
+
 
 @media only screen and (min-width: 768px)  and (max-width: 1200px){
     .dates-div{
@@ -2190,7 +2217,10 @@ a, a:hover, a:after, a:visited, a:active{
     .vector-type-1{
         top: 255%;
     }
-    .vector-type-2{
+    .vector-type-2{padding: 10vh 0;
+        background: url(/images/vector/vector_1.png), url(/images/vector/vector_2.png), url(/images/vector/vector_3.png), #0C0C0C;
+        background-size: 70%;
+        background-position: 110% 90%, 0% 30%, 100% 0%;
         top: 225%;
     }
     .vector-type-3{
@@ -2272,12 +2302,9 @@ a, a:hover, a:after, a:visited, a:active{
     #content{
         top: 60%;
     }
-    .theme-section{
-        margin-top: 30vh;
-    }
 }
 
-@media only screen and (max-width: 350px){
+@media only screen and (max-width: 440px){
     .dates-div{
         margin-top: 5vh;
     }
