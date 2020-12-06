@@ -2114,7 +2114,7 @@ a, a:hover, a:after, a:visited, a:active{
     top: 140%;
 }
 
-@media screen and (min-width: 768px)  and (max-width: 1200px){
+@media only screen and (min-width: 768px)  and (max-width: 1200px){
     .dates-div{
         margin-top: 30vh;
     } 
@@ -2162,7 +2162,7 @@ a, a:hover, a:after, a:visited, a:active{
     }
 }
 
-@media screen and (min-width: 401px)  and (max-width: 767px){
+@media only screen and (min-width: 401px)  and (max-width: 767px){
     .dates-div{
         margin-top: 10vh;
     } 
@@ -2208,9 +2208,76 @@ a, a:hover, a:after, a:visited, a:active{
     .theme-background-4{
         background-size: 30%;
     }
+    #content{
+        top: 60%;
+    }
 }
 
-@media screen and (max-width: 400px){
+@media only screen and (min-width:351px) and (max-width: 400px){
+    .dates-div{
+        margin-top: 25vh;
+    }
+    .hackademic-text{
+        font-size: 40px !important;
+        margin-bottom: 0!important;
+    }
+    .main-commit
+    {
+        margin-top: 240vh;
+    }
+    .heading-hackinthenorth{
+        font-size: 2rem !important;
+        margin-bottom: 0;
+    }
+    .we-are-back-text{
+        font-size: 3rem;
+        background: linear-gradient(180deg, #3C3C3C 0%, #858585 100%);
+    }
+
+    .we-back-img{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .theme-heading{
+        font-size: 1.5rem;
+    }
+    .theme-list-heading{
+        font-size: 1rem;
+    }
+    .theme-list-para{
+        font-size: 0.5rem;
+    }
+    .vector-type-1{
+        top: 255%;
+    }
+    .vector-type-2{
+        top: 225%;
+    }
+    .vector-type-3{
+        top: 170%;
+    }
+    .theme-background-1{
+        background-size:30%;
+    }
+    .theme-background-2{
+        background-size:30%;
+    }
+    .theme-background-3{
+        background-size: 30%;
+    }
+    .theme-background-4{
+        background-size: 30%;
+    }
+    #content{
+        top: 60%;
+    }
+    .theme-section{
+        margin-top: 30vh;
+    }
+}
+
+@media only screen and (max-width: 350px){
     .dates-div{
         margin-top: 5vh;
     }
@@ -2265,6 +2332,9 @@ a, a:hover, a:after, a:visited, a:active{
     }
     .theme-background-4{
         background-size: 30%;
+    }
+    #content{
+        top: 60%;
     }
 }
 
