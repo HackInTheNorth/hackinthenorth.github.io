@@ -2006,9 +2006,9 @@ a, a:hover, a:after, a:visited, a:active{
     background-repeat: no-repeat, no-repeat, no-repeat;
 }
 .theme-heading{
-    font-family: Montserrat;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: normal;
+    margin-bottom: 2rem;
 }
 .theme-list{
     text-align: center;
@@ -2026,28 +2026,28 @@ a, a:hover, a:after, a:visited, a:active{
     min-height: 225px;
 }
 .theme-background-1{
-    background:url("/images/vector/Frame_4.png") no-repeat 100% 100%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url("/images/vector/Frame_4.png") no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }
 .theme-background-2{
-    background:url('/images/vector/Frame_5.png') no-repeat 100% 100%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url('/images/vector/Frame_5.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }
 .theme-background-3{
-    background:url('/images/vector/Frame_6.png') no-repeat 100% 100%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url('/images/vector/Frame_6.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }
 .theme-background-4{
-    background:url('/images/vector/Frame_7.png') no-repeat 100% 100%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url('/images/vector/Frame_7.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }
 .theme-list-heading{
     text-align: left;
     font-family: Montserrat;
     font-style: italic;
     font-weight: 900;
-    font-size: 1.7rem;
+    font-size: 2rem;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent;
 }
 .theme-type-1{
-    background: linear-gradient(90deg, #C146A4 0%, #FFE0F8 100%);
+    background: linear-gradient(90deg, #ff00c3 0%, #FFE0F8 100%);
 }
 .theme-type-2{
     background: linear-gradient(90deg, #FFEBE6 0%, #F79737 100%);
@@ -2063,9 +2063,9 @@ a, a:hover, a:after, a:visited, a:active{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     width: 85%;
-    margin-top: 1.5rem;
+    margin-top: 1.65rem;
 }
 .theme-list-image{
     float: right;
@@ -2096,7 +2096,7 @@ a, a:hover, a:after, a:visited, a:active{
     }
 
     .theme-list-column{
-        min-height: 150px;
+        min-height: 200px;
         padding: 7.5% 5%;
     }
 
@@ -2114,6 +2114,15 @@ a, a:hover, a:after, a:visited, a:active{
         top: 5%;
         right: 5%;
         width: 90vw;
+    }
+
+    .theme-heading{
+        margin-bottom: 0;
+    }
+
+    .theme-rows{
+    margin-top: 4rem;
+    padding: 0 5%;
     }
 }
 
@@ -2293,13 +2302,14 @@ a, a:hover, a:after, a:visited, a:active{
     }
 
     .theme-heading{
-        font-size: 2rem;
+        font-size: 2.25rem;
     }
     .theme-list-heading{
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     .theme-list-para{
-        font-size: 0.5rem;
+        font-size: 0.85rem;
+        width: 95%;
     }
     .vector-type-1{
         top: 255%;
@@ -2310,17 +2320,8 @@ a, a:hover, a:after, a:visited, a:active{
     .vector-type-3{
         top: 170%;
     }
-    .theme-background-1{
-        background-size:30%;
-    }
-    .theme-background-2{
-        background-size:30%;
-    }
-    .theme-background-3{
-        background-size: 30%;
-    }
-    .theme-background-4{
-        background-size: 30%;
+    .theme-background-1, .theme-background-2, .theme-background-3, .theme-background-4{
+        background-size:25%;
     }
     #content{
         top: 60%;
