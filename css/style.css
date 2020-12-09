@@ -2002,7 +2002,7 @@ a, a:hover, a:after, a:visited, a:active{
     margin-top: 0;
     padding: 10% 0;
     background: url(/images/vector/vector_1.png), url(/images/vector/vector_2.png), url(/images/vector/vector_3.png), #0C0C0C;
-    background-position: 110% 110%, 0% 30%, 100% -15%;
+    background-position: 110% 110%, 0% 40%, 100% 0%;
     background-repeat: no-repeat, no-repeat, no-repeat;
 }
 .theme-heading{
@@ -2037,6 +2037,9 @@ a, a:hover, a:after, a:visited, a:active{
 .theme-background-4{
     background:url('/images/vector/Frame_7.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }
+.theme-background-5{
+    background:url('/images/vector/pablo-social-distancing-friendship-on-the-phone-stay-home-concept-1\ 1.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+}
 .theme-list-heading{
     text-align: left;
     font-family: Montserrat;
@@ -2057,6 +2060,9 @@ a, a:hover, a:after, a:visited, a:active{
 }
 .theme-type-4{
     background: linear-gradient(268.58deg, #D6DEF6 4.66%, #868DEA 119.05%);
+}
+.theme-type-5{
+    background: linear-gradient(268.58deg, #BEC0FF 15.98%, #F9D53D 119.05%);
 }
 .theme-list-para{
     text-align: left;
@@ -2103,8 +2109,8 @@ a, a:hover, a:after, a:visited, a:active{
     .theme-section{
     padding: 10vh 0;
     background: url(/images/vector/vector_1.png), url(/images/vector/vector_2.png), url(/images/vector/vector_3.png), #0C0C0C;
-    background-size: 70%;
-    background-position: 110% 90%, 0% 30%, 100% 0%;
+    background-size: 75%;
+    background-position: 110% 90%, 0% 40%, 100% 10%;
     background-repeat: no-repeat, no-repeat, no-repeat;
     }
 
@@ -2158,17 +2164,8 @@ a, a:hover, a:after, a:visited, a:active{
     .vector-type-3{
         top: 150%;
     }
-    .theme-background-1{
+    .theme-background-1, .theme-background-2, .theme-background-3, .theme-background-4, .theme-background-5{
         background-size:30%;
-    }
-    .theme-background-2{
-        background-size:30%;
-    }
-    .theme-background-3{
-        background-size: 30%;
-    }
-    .theme-background-4{
-        background-size: 30%;
     }
 }
 
@@ -2205,17 +2202,8 @@ a, a:hover, a:after, a:visited, a:active{
     .vector-type-3{
         top: 170%;
     }
-    .theme-background-1{
+    .theme-background-1, .theme-background-2, .theme-background-3, .theme-background-4, .theme-background-5{
         background-size:30%;
-    }
-    .theme-background-2{
-        background-size:30%;
-    }
-    .theme-background-3{
-        background-size: 30%;
-    }
-    .theme-background-4{
-        background-size: 30%;
     }
     #content{
         top: 60%;
@@ -2262,17 +2250,8 @@ a, a:hover, a:after, a:visited, a:active{
     .vector-type-3{
         top: 170%;
     }
-    .theme-background-1{
+    .theme-background-1, .theme-background-2, .theme-background-3, .theme-background-4, .theme-background-5{
         background-size:30%;
-    }
-    .theme-background-2{
-        background-size:30%;
-    }
-    .theme-background-3{
-        background-size: 30%;
-    }
-    .theme-background-4{
-        background-size: 30%;
     }
     #content{
         top: 60%;
@@ -2320,7 +2299,7 @@ a, a:hover, a:after, a:visited, a:active{
     .vector-type-3{
         top: 170%;
     }
-    .theme-background-1, .theme-background-2, .theme-background-3, .theme-background-4{
+    .theme-background-1, .theme-background-2, .theme-background-3, .theme-background-4, .theme-background-5{
         background-size:25%;
     }
     #content{
