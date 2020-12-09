@@ -151,7 +151,7 @@ a, a:hover, a:after, a:visited, a:active{
 {
     background-color:#0C0C0C;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -166,9 +166,9 @@ a, a:hover, a:after, a:visited, a:active{
 
 #tri-dark {
     position: absolute;
-    top: 10%;
-    right: 6%;
-    height: 80%;
+    top: 0%;
+    right: 9%;
+    width: 35vw;
 }
 
 /* #line img
@@ -201,14 +201,6 @@ a, a:hover, a:after, a:visited, a:active{
     margin-bottom: 20px;
 }
 
-#content
-{
-    position: relative;
-    top:40%;
-    left:50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-}
 
 #content div p
 {
@@ -307,8 +299,6 @@ a, a:hover, a:after, a:visited, a:active{
 .main-commit
 {
     position: relative;
-    top: 0;
-    margin-top: 200vh;
 }
 
 .sponsorship
@@ -617,13 +607,6 @@ a, a:hover, a:after, a:visited, a:active{
     #content div
     {
         max-width: 65%;
-    }
-
-    .main-commit
-    {
-        position: relative;
-        top: 0;
-        transform: translate(0%, -21%);
     }
 
     #female-pic img {
@@ -1477,19 +1460,6 @@ a, a:hover, a:after, a:visited, a:active{
         padding-top: 45px;
     }
 
-    .main-commit {
-        position: relative;
-        top: 0;
-        transform: translate(0%, 0%);
-    }
-
-    #tri-dark {
-        position: absolute;
-        top: 37%;
-        right: 18%;
-        height: 45%;
-    }
-
     .collapsible:before {
          margin-top: 0px;
         /* content: '\02795'; */
@@ -2010,9 +1980,9 @@ a, a:hover, a:after, a:visited, a:active{
       margin-top: 1em;
   }
 
-  .dates-div{
+  .dates-div {
     text-align: center;
-    margin-top: 10vh;
+    padding: 7.5% 0;
   }
   .heading-hackinthenorth{
         font-size: 4rem;
@@ -2029,12 +1999,16 @@ a, a:hover, a:after, a:visited, a:active{
     }
 .theme-section{
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 0;
+    padding: 10% 0;
+    background: url(/images/vector/vector_1.png), url(/images/vector/vector_2.png), url(/images/vector/vector_3.png), #0C0C0C;
+    background-position: 110% 110%, 0% 30%, 100% -15%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
 }
 .theme-heading{
-    font-family: Montserrat;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: normal;
+    margin-bottom: 2rem;
 }
 .theme-list{
     text-align: center;
@@ -2048,7 +2022,8 @@ a, a:hover, a:after, a:visited, a:active{
     border-radius: 10px;
     backdrop-filter: blur(50px);
     opacity: 0.8;
-    padding: 30px 10px 10px 10px;
+    padding: 3%;
+    min-height: 225px;
 }
 /* .animate-theme-list{
     animation: moveRight 2s linear;
@@ -2073,28 +2048,28 @@ a, a:hover, a:after, a:visited, a:active{
     }
 } */
 .theme-background-1{
-    background:url("/images/vector/Frame_4.png") no-repeat 100% 100%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url("/images/vector/Frame_4.png") no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }
 .theme-background-2{
-    background:url('/images/vector/Frame_5.png') no-repeat 100% 100%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url('/images/vector/Frame_5.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }
 .theme-background-3{
-    background:url('/images/vector/Frame_6.png') no-repeat 100% 100%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url('/images/vector/Frame_6.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }
 .theme-background-4{
-    background:url('/images/vector/Frame_7.png') no-repeat 100% 100%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url('/images/vector/Frame_7.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }
 .theme-list-heading{
     text-align: left;
     font-family: Montserrat;
     font-style: italic;
     font-weight: 900;
-    font-size: 1.7rem;
+    font-size: 2rem;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent;
 }
 .theme-type-1{
-    background: linear-gradient(90deg, #C146A4 0%, #FFE0F8 100%);
+    background: linear-gradient(90deg, #ff00c3 0%, #FFE0F8 100%);
 }
 .theme-type-2{
     background: linear-gradient(90deg, #FFEBE6 0%, #F79737 100%);
@@ -2110,8 +2085,9 @@ a, a:hover, a:after, a:visited, a:active{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     width: 85%;
+    margin-top: 1.65rem;
 }
 .theme-list-image{
     float: right;
@@ -2136,14 +2112,48 @@ a, a:hover, a:after, a:visited, a:active{
     top: 140%;
 }
 
+@media screen and (max-width: 768px){
+    .theme-list-para{
+        margin-top: 1rem;
+    }
+
+    .theme-list-column{
+        min-height: 200px;
+        padding: 7.5% 5%;
+    }
+
+    .theme-section{
+    padding: 10vh 0;
+    background: url(/images/vector/vector_1.png), url(/images/vector/vector_2.png), url(/images/vector/vector_3.png), #0C0C0C;
+    background-size: 70%;
+    background-position: 110% 90%, 0% 30%, 100% 0%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    }
+
+    #tri-dark {
+        max-width: 358px;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 90vw;
+    }
+
+    .theme-heading{
+        margin-bottom: 0;
+    }
+
+    .theme-rows{
+    margin-top: 4rem;
+    padding: 0 5%;
+    }
+}
+
+
+
 @media only screen and (min-width: 768px)  and (max-width: 1200px){
     .dates-div{
         margin-top: 30vh;
     } 
-    .main-commit
-    {
-        margin-top: 220vh;
-    }  
     .heading-hackinthenorth{
         font-size: 3rem;
     }
@@ -2188,10 +2198,6 @@ a, a:hover, a:after, a:visited, a:active{
     .dates-div{
         margin-top: 10vh;
     } 
-    .main-commit
-    {
-        margin-top: 220vh;
-    }  
     .heading-hackinthenorth{
         font-size: 3rem;
     }
@@ -2212,7 +2218,10 @@ a, a:hover, a:after, a:visited, a:active{
     .vector-type-1{
         top: 255%;
     }
-    .vector-type-2{
+    .vector-type-2{padding: 10vh 0;
+        background: url(/images/vector/vector_1.png), url(/images/vector/vector_2.png), url(/images/vector/vector_3.png), #0C0C0C;
+        background-size: 70%;
+        background-position: 110% 90%, 0% 30%, 100% 0%;
         top: 225%;
     }
     .vector-type-3{
@@ -2243,10 +2252,6 @@ a, a:hover, a:after, a:visited, a:active{
         font-size: 40px !important;
         margin-bottom: 0!important;
     }
-    .main-commit
-    {
-        margin-top: 240vh;
-    }
     .heading-hackinthenorth{
         font-size: 2rem !important;
         margin-bottom: 0;
@@ -2294,22 +2299,15 @@ a, a:hover, a:after, a:visited, a:active{
     #content{
         top: 60%;
     }
-    .theme-section{
-        margin-top: 30vh;
-    }
 }
 
-@media only screen and (max-width: 350px){
+@media only screen and (max-width: 540px){
     .dates-div{
         margin-top: 5vh;
     }
     .hackademic-text{
         font-size: 40px !important;
         margin-bottom: 0!important;
-    }
-    .main-commit
-    {
-        margin-top: 240vh;
     }
     .heading-hackinthenorth{
         font-size: 2rem !important;
@@ -2326,13 +2324,14 @@ a, a:hover, a:after, a:visited, a:active{
     }
 
     .theme-heading{
-        font-size: 1.5rem;
+        font-size: 2.25rem;
     }
     .theme-list-heading{
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     .theme-list-para{
-        font-size: 0.5rem;
+        font-size: 0.85rem;
+        width: 95%;
     }
     .vector-type-1{
         top: 255%;
@@ -2343,17 +2342,8 @@ a, a:hover, a:after, a:visited, a:active{
     .vector-type-3{
         top: 170%;
     }
-    .theme-background-1{
-        background-size:30%;
-    }
-    .theme-background-2{
-        background-size:30%;
-    }
-    .theme-background-3{
-        background-size: 30%;
-    }
-    .theme-background-4{
-        background-size: 30%;
+    .theme-background-1, .theme-background-2, .theme-background-3, .theme-background-4{
+        background-size:25%;
     }
     #content{
         top: 60%;
@@ -2825,7 +2815,7 @@ a, a:hover, a:after, a:visited, a:active{
     align-items: center;
     background-color: rgba(0,0,0,0.7);
     color: white;
-    padding: 8px 32px 10px;
+    padding: 16px 32px !important;
     font-size: 1.4em;
     /* border: none; */
     border-radius: 24px;
