@@ -2050,6 +2050,28 @@ a, a:hover, a:after, a:visited, a:active{
     opacity: 0.8;
     padding: 30px 10px 10px 10px;
 }
+/* .animate-theme-list{
+    animation: moveRight 2s linear;
+}
+.animate2-theme-list{
+    animation: moveLeft 2s linear;
+}
+@keyframes moveRight {
+    from {
+        margin: 0;
+    }
+    to {
+        margin: auto;
+    }
+}
+@keyframes moveLeft {
+    from {
+        margin: 0;
+    }
+    to {
+        margin: auto;
+    }
+} */
 .theme-background-1{
     background:url("/images/vector/Frame_4.png") no-repeat 100% 100%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }

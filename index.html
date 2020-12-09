@@ -120,6 +120,9 @@
           <a class="nav-link js-scroll-trigger" href="#about">About</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#theme">Theme</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#faq">FAQ</a>
         </li>
         <li class="nav-item">
@@ -488,14 +491,14 @@
                   <img src="./images/vector/dates.png" style="max-height: 60vh;max-width: 95%;">
                 </div>
 
-                <div class="row theme-section" >
+                <div class="row theme-section" id="theme">
                   <h2 class="what hint-text theme-heading" style="margin-bottom: 0;width: 100%;">Themes Released!</h2>
                   <img class="vector-background vector-type-1" src="./images/vector/vector_1.png">
                   <img class="vector-background vector-type-2" src="./images/vector/vector_2.png">
                   <img class="vector-background vector-type-3" src="./images/vector/vector_3.png">
                   <div class="container-fluid theme-rows">
                     
-                    <div class="row theme-list">
+                    <div class="row theme-list" id="theme-list">
                       <div class="col-lg-6 col-10 theme-list-column theme-background-1">
                         <h3 class="theme-list-heading theme-type-1">
                           THE GAMES OR YORE
@@ -547,6 +550,20 @@
                 </div>
               </div>
 
+              <!-- <script>
+                $(document).scroll(function () {
+                  var y = $(this).scrollTop();
+                  var x = $("#theme-list").position();
+
+                  if (y > (x.top - 50)) { // -50 so things don't overlap
+                      $(".theme-list-column").addClass("animate-theme-list");
+                  }
+                  // else {
+                  //     $(".magic").removeClass(
+                  //         "bounceInRight");
+                  // }
+                  });
+              </script> -->
 
               <div class="main-commit">
                 <img src="images/Commitment/curve_what_is_commitment.svg" alt="" class="up">
@@ -680,7 +697,7 @@
                             <div class="faq-collapsible">
                               <button class="collapsible" id="faq-question">Are there going to be themes for hackademic?</button>
                               <div class="content">
-                                <p>This is an open track hackathon, we encourage you to build anything of your choice still, we will be releasing the themes soon to give you an idea of what could be built.</p>
+                                <p>This is an open track hackathon, we encourage you to build anything of your choice. However, we have released the themes to give you an idea of what could be built.</p>
                               </div>
                             </div>
                             <div class="faq-collapsible">
