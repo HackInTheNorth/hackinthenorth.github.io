@@ -1818,6 +1818,12 @@ a, a:hover, a:after, a:visited, a:active{
      transition-duration: 0.6s;
   }
 
+  .special-prize .prize-box{
+      max-width: 320px;
+      padding: 0 0.5rem;
+      margin-bottom: 90px;
+  }
+
   .prize-box:hover
   {
     height:358px;
@@ -1826,6 +1832,13 @@ a, a:hover, a:after, a:visited, a:active{
     transition-duration: 0.6s;
   }
 
+  .special-prize .prize-box:hover{
+    height:358px;
+    max-width:318.3px;
+    box-shadow: 2px 4px 8px 0 rgba(0 , 0 , 0 , 1);
+    transition-duration: 0.6s;
+}
+
   .prize-page
   {
       margin: 0 auto;
@@ -1833,15 +1846,20 @@ a, a:hover, a:after, a:visited, a:active{
 
   .prize-number
   {
-      position: relative;
-      top: 5%;
-      left: 50%;
-      transform: translate(-50% , -50%);
       text-align: center;
       font-size: 32px;
       font-weight: 600;
       color: rgba(225, 209, 209, 0.9);
     }
+
+.special-prize .prize-number{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 1rem;
+    max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+}
 
   .girls
   {
@@ -1876,9 +1894,19 @@ a, a:hover, a:after, a:visited, a:active{
       font-size: px;
   } */
 
+
   .prize-ka-image
   {
       max-width: 100%;
+  }
+
+  .prize-section .col-lg-4.col-md-6.col-sm-12{
+    margin: 0 auto;
+  }
+
+  .new{
+      max-width: 90%;
+      margin: 0% 5%;
   }
 
   #ghost
@@ -2009,6 +2037,16 @@ a, a:hover, a:after, a:visited, a:active{
     font-size: 4rem;
     font-weight: normal;
     margin-bottom: 2rem;
+}
+
+.special-image{
+    width: 100%;
+    max-height: 40%;
+}
+
+.special-image img{
+    max-width: 60%;
+    margin: 3rem 20%;
 }
 .theme-list{
     text-align: center;
