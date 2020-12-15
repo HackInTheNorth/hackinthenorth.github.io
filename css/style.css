@@ -524,7 +524,10 @@ a, a:hover, a:after, a:visited, a:active{
 {
     padding: 0;
 }
-
+.speaker-box{
+    box-shadow: 9px 5px 44px 0 rgba(0 , 0 , 0 , 1);
+    padding: 2.5rem 2rem 1.5rem 2rem;
+}
 @media screen and (min-width: 768px)
 {
     .later
@@ -2029,7 +2032,7 @@ a, a:hover, a:after, a:visited, a:active{
     text-align: center;
     margin-top: 0;
     padding: 10% 0;
-    background: url(/images/vector/vector_1.png), url(/images/vector/vector_2.png), url(/images/vector/vector_3.png), #0C0C0C;
+    background: url(../images/vector/vector_1.png), url(../images/vector/vector_2.png), url(../images/vector/vector_3.png), #0C0C0C;
     background-position: 110% 110%, 0% 40%, 100% 0%;
     background-repeat: no-repeat, no-repeat, no-repeat;
 }
@@ -2064,19 +2067,19 @@ a, a:hover, a:after, a:visited, a:active{
     min-height: 225px;
 }
 .theme-background-1{
-    background:url("/images/vector/Frame_4.png") no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url("../images/vector/Frame_4.png") no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }
 .theme-background-2{
-    background:url('/images/vector/Frame_5.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url('../images/vector/Frame_5.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }
 .theme-background-3{
-    background:url('/images/vector/Frame_6.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url('../images/vector/Frame_6.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }
 .theme-background-4{
-    background:url('/images/vector/Frame_7.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url('../images/vector/Frame_7.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }
 .theme-background-5{
-    background:url('/images/vector/Frame_8.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url('../images/vector/Frame_8.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
     background-size: 20%;
 }
 .theme-list-heading{
@@ -2135,6 +2138,85 @@ a, a:hover, a:after, a:visited, a:active{
     top: 140%;
 }
 
+.youtube-speaker{
+    font-family: 'CeraPro';
+    color:#BCBEFF;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: left !important;
+}
+.dash-speaker{
+    background: #FFBE2E;
+    height: 10px;
+    width: 100%;
+}
+.role-speaker{
+    font-family: 'CeraPro';
+    color:#FFBE2E;
+    font-weight: 500;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: right;
+}
+.des-speaker{
+    font-family: 'CeraPro';
+    color:#FFBE2E;
+    font-weight: 500;
+    font-size: .9rem;
+    text-align: left;
+}
+.youtube-type-1{
+    color:#C8CEE1;
+}
+.dash-type-1{
+    background: #FF6A48;
+}
+.role-type-1{
+    color:#FF6A48;
+}
+.des-type-1{
+    color:#FF6A48;
+}
+
+.youtube-type-2{
+    color:#F39892;
+}
+.dash-type-2{
+    background: #6ABC00;
+}
+.role-type-2{
+    color:#6ABC00;
+}
+.des-type-2{
+    color:#6ABC00;
+}
+
+.youtube-type-3{
+    color:#F2FFA6;
+}
+.dash-type-3{
+    background: #6C63FF;
+}
+.role-type-3{
+    color:#6C63FF;
+}
+.des-type-3{
+    color:#6C63FF;
+}
+
+.youtube-type-4{
+    color:#9BF4FF;
+}
+.dash-type-4{
+    background: #97469E;
+}
+.role-type-4{
+    color:#97469E;
+}
+.des-type-4{
+    color:#97469E;
+}
+
 @media screen and (max-width: 768px){
     .theme-list-para{
         margin-top: 1rem;
@@ -2147,7 +2229,7 @@ a, a:hover, a:after, a:visited, a:active{
 
     .theme-section{
     padding: 10vh 0;
-    background: url(/images/vector/vector_1.png), url(/images/vector/vector_2.png), url(/images/vector/vector_3.png), #0C0C0C;
+    background: url(../images/vector/vector_1.png), url(../images/vector/vector_2.png), url(../images/vector/vector_3.png), #0C0C0C;
     background-size: 75%;
     background-position: 110% 90%, 0% 40%, 100% 10%;
     background-repeat: no-repeat, no-repeat, no-repeat;
@@ -2168,6 +2250,12 @@ a, a:hover, a:after, a:visited, a:active{
     .theme-rows{
     margin-top: 4rem;
     padding: 0 5%;
+    }
+    .des-speaker , .role-speaker{
+        font-size: .5rem;
+    }
+    .youtube-speaker{
+        font-size: 1rem;
     }
 }
 
@@ -2233,7 +2321,7 @@ a, a:hover, a:after, a:visited, a:active{
         top: 255%;
     }
     .vector-type-2{padding: 10vh 0;
-        background: url(/images/vector/vector_1.png), url(/images/vector/vector_2.png), url(/images/vector/vector_3.png), #0C0C0C;
+        background: url(../images/vector/vector_1.png), url(../images/vector/vector_2.png), url(../images/vector/vector_3.png), #0C0C0C;
         background-size: 70%;
         background-position: 110% 90%, 0% 30%, 100% 0%;
         top: 225%;
