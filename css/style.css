@@ -2029,7 +2029,7 @@ a, a:hover, a:after, a:visited, a:active{
     text-align: center;
     margin-top: 0;
     padding: 10% 0;
-    background: url(/images/vector/vector_1.png), url(/images/vector/vector_2.png), url(/images/vector/vector_3.png), #0C0C0C;
+    background: url(./images/vector/vector_1.png), url(./images/vector/vector_2.png), url(./images/vector/vector_3.png), #0C0C0C;
     background-position: 110% 110%, 0% 40%, 100% 0%;
     background-repeat: no-repeat, no-repeat, no-repeat;
 }
@@ -2064,19 +2064,19 @@ a, a:hover, a:after, a:visited, a:active{
     min-height: 225px;
 }
 .theme-background-1{
-    background:url("/images/vector/Frame_4.png") no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url("./images/vector/Frame_4.png") no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }
 .theme-background-2{
-    background:url('/images/vector/Frame_5.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url('./images/vector/Frame_5.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }
 .theme-background-3{
-    background:url('/images/vector/Frame_6.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url('./images/vector/Frame_6.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }
 .theme-background-4{
-    background:url('/images/vector/Frame_7.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url('./images/vector/Frame_7.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
 }
 .theme-background-5{
-    background:url('/images/vector/Frame_8.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
+    background:url('./images/vector/Frame_8.png') no-repeat 98% 98%, linear-gradient(159.83deg, rgba(255, 256, 255, 0.35) 2.19%, rgba(255, 255, 255, 0.35) 112.78%);
     background-size: 20%;
 }
 .theme-list-heading{
@@ -2140,6 +2140,7 @@ a, a:hover, a:after, a:visited, a:active{
     color:#BCBEFF;
     font-weight: 700;
     font-size: 2rem;
+    text-align: left !important;
 }
 .dash-speaker{
     background: #FFBE2E;
@@ -2161,6 +2162,57 @@ a, a:hover, a:after, a:visited, a:active{
     font-size: .9rem;
     text-align: left;
 }
+.youtube-type-1{
+    color:#C8CEE1;
+}
+.dash-type-1{
+    background: #FF6A48;
+}
+.role-type-1{
+    color:#FF6A48;
+}
+.des-type-1{
+    color:#FF6A48;
+}
+
+.youtube-type-2{
+    color:#F39892;
+}
+.dash-type-2{
+    background: #6ABC00;
+}
+.role-type-2{
+    color:#6ABC00;
+}
+.des-type-2{
+    color:#6ABC00;
+}
+
+.youtube-type-3{
+    color:#F2FFA6;
+}
+.dash-type-3{
+    background: #6C63FF;
+}
+.role-type-3{
+    color:#6C63FF;
+}
+.des-type-3{
+    color:#6C63FF;
+}
+
+.youtube-type-4{
+    color:#9BF4FF;
+}
+.dash-type-4{
+    background: #97469E;
+}
+.role-type-4{
+    color:#97469E;
+}
+.des-type-4{
+    color:#97469E;
+}
 
 @media screen and (max-width: 768px){
     .theme-list-para{
@@ -2174,7 +2226,7 @@ a, a:hover, a:after, a:visited, a:active{
 
     .theme-section{
     padding: 10vh 0;
-    background: url(/images/vector/vector_1.png), url(/images/vector/vector_2.png), url(/images/vector/vector_3.png), #0C0C0C;
+    background: url(./images/vector/vector_1.png), url(./images/vector/vector_2.png), url(./images/vector/vector_3.png), #0C0C0C;
     background-size: 75%;
     background-position: 110% 90%, 0% 40%, 100% 10%;
     background-repeat: no-repeat, no-repeat, no-repeat;
@@ -2266,7 +2318,7 @@ a, a:hover, a:after, a:visited, a:active{
         top: 255%;
     }
     .vector-type-2{padding: 10vh 0;
-        background: url(/images/vector/vector_1.png), url(/images/vector/vector_2.png), url(/images/vector/vector_3.png), #0C0C0C;
+        background: url(./images/vector/vector_1.png), url(./images/vector/vector_2.png), url(./images/vector/vector_3.png), #0C0C0C;
         background-size: 70%;
         background-position: 110% 90%, 0% 30%, 100% 0%;
         top: 225%;
