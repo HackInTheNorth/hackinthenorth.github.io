@@ -524,10 +524,9 @@ a, a:hover, a:after, a:visited, a:active{
 {
     padding: 0;
 }
-.speaker-box{
-    box-shadow: 9px 5px 44px 0 rgba(0 , 0 , 0 , 1);
-    padding: 2.5rem 2rem 1.5rem 2rem;
-}
+
+
+
 @media screen and (min-width: 768px)
 {
     .later
@@ -545,6 +544,8 @@ a, a:hover, a:after, a:visited, a:active{
         max-width: 80%;
         margin: 0 auto;
     }
+
+    
 }
 
 
@@ -1061,6 +1062,14 @@ a, a:hover, a:after, a:visited, a:active{
         top: 0%;
         left: 0;
         height: 20%;
+    }
+
+    .speaker-box{
+        box-shadow: 9px 5px 44px 0 rgba(0 , 0 , 0 , 1);
+        padding: 2.5rem 2rem 1.5rem 2rem;
+        position: relative;
+        margin-top: 3rem;
+        max-width: 90%;
     }
 
     
@@ -1941,6 +1950,27 @@ a, a:hover, a:after, a:visited, a:active{
       width: 100%;
   }
 
+  .speaker-section{
+      padding: 5% 3%;
+      margin-top: 5%;
+  }
+
+  .speaker-header-image{
+      max-width: 90%;
+      margin-left: 5%;
+  }
+
+  .speaker-header-container{
+      margin-bottom: 2.5rem;
+  }
+
+  .speaker-box{
+    box-shadow: 9px 5px 44px 0 rgba(0 , 0 , 0 , 1);
+    padding: 2.5rem 2rem 1.5rem 2rem;
+    position: relative !important;
+    margin-top: 6rem;
+}
+
   @media screen and (max-width: 440px)
   {
       #mobile
@@ -2154,7 +2184,7 @@ a, a:hover, a:after, a:visited, a:active{
     font-family: 'CeraPro';
     color:#FFBE2E;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: 100%;
     text-align: right;
 }
@@ -2162,9 +2192,14 @@ a, a:hover, a:after, a:visited, a:active{
     font-family: 'CeraPro';
     color:#FFBE2E;
     font-weight: 500;
-    font-size: .9rem;
+    font-size: 1.2rem;
     text-align: left;
 }
+
+.special-des-speaker{
+    font-size: 2rem;
+}
+
 .youtube-type-1{
     color:#C8CEE1;
 }
@@ -2252,10 +2287,15 @@ a, a:hover, a:after, a:visited, a:active{
     padding: 0 5%;
     }
     .des-speaker , .role-speaker{
-        font-size: .5rem;
+       font-size: 0.65rem;
     }
     .youtube-speaker{
         font-size: 1rem;
+    }
+
+    .speaker-box{
+        margin-top: 1rem;
+        padding: 5% !important;
     }
 }
 
