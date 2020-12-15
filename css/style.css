@@ -524,7 +524,10 @@ a, a:hover, a:after, a:visited, a:active{
 {
     padding: 0;
 }
-
+.speaker-box{
+    box-shadow: 9px 5px 44px 0 rgba(0 , 0 , 0 , 1);
+    padding: 2.5rem 2rem 1.5rem 2rem;
+}
 @media screen and (min-width: 768px)
 {
     .later
@@ -2151,7 +2154,7 @@ a, a:hover, a:after, a:visited, a:active{
     font-family: 'CeraPro';
     color:#FFBE2E;
     font-weight: 500;
-    font-size: .9rem;
+    font-size: 1.2rem;
     width: 100%;
     text-align: right;
 }
