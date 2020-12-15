@@ -2135,6 +2135,33 @@ a, a:hover, a:after, a:visited, a:active{
     top: 140%;
 }
 
+.youtube-speaker{
+    font-family: 'CeraPro';
+    color:#BCBEFF;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.dash-speaker{
+    background: #FFBE2E;
+    height: 10px;
+    width: 100%;
+}
+.role-speaker{
+    font-family: 'CeraPro';
+    color:#FFBE2E;
+    font-weight: 500;
+    font-size: .9rem;
+    width: 100%;
+    text-align: right;
+}
+.des-speaker{
+    font-family: 'CeraPro';
+    color:#FFBE2E;
+    font-weight: 500;
+    font-size: .9rem;
+    text-align: left;
+}
+
 @media screen and (max-width: 768px){
     .theme-list-para{
         margin-top: 1rem;
@@ -2168,6 +2195,12 @@ a, a:hover, a:after, a:visited, a:active{
     .theme-rows{
     margin-top: 4rem;
     padding: 0 5%;
+    }
+    .des-speaker , .role-speaker{
+        font-size: .5rem;
+    }
+    .youtube-speaker{
+        font-size: 1rem;
     }
 }
 
