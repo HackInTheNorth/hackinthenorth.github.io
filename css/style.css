@@ -2254,8 +2254,8 @@ a, a:hover, a:after, a:visited, a:active{
 .owl-carousel .owl-nav .owl-next:after {
     position: absolute;
     content: url(../images/vector/right.png);
-    left: 103%;
-    top: 40%;
+    left: 55%;
+    top: -15%;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
@@ -2263,8 +2263,8 @@ a, a:hover, a:after, a:visited, a:active{
 .owl-carousel .owl-nav .owl-prev:after {
     position: absolute;
     content: url(../images/vector/left.png);
-    left: -8%;
-    top: 40%;
+    left: 45%;
+    top: -15%;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
@@ -2314,6 +2314,14 @@ a, a:hover, a:after, a:visited, a:active{
         margin-top: 1rem;
         padding: 5% !important;
     }
+    .owl-carousel .owl-nav .owl-next:after {
+        left: 60%;
+        top: -18%;
+    }
+    .owl-carousel .owl-nav .owl-prev:after {
+        left: 30%;
+        top: -18%;
+    }    
 }
 
 
@@ -2351,6 +2359,14 @@ a, a:hover, a:after, a:visited, a:active{
     .theme-background-1, .theme-background-2, .theme-background-3, .theme-background-4, .theme-background-5{
         background-size:30%;
     }
+    .owl-carousel .owl-nav .owl-next:after {
+        left: 60%;
+        top: -18%;
+    }
+    .owl-carousel .owl-nav .owl-prev:after {
+        left: 30%;
+        top: -18%;
+    }  
 }
 
 @media only screen and (min-width: 401px)  and (max-width: 767px){
