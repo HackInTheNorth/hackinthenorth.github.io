@@ -1520,6 +1520,55 @@ a, a:hover, a:after, a:visited, a:active{
     margin-top: -15px;
 }
 
+.judge-head h1{
+    font-size: 3.4rem;
+}
+
+.judges-cards-section{
+    width: 100%;
+    max-width: 1254px;
+    margin: 0 auto;
+}
+
+.judge-card{
+    text-align: center;
+    margin: 2rem auto;
+
+}
+
+.judge-card:hover img{
+    transform: scale(0.9);
+}
+
+.judge-card:hover .judge-position{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.judge-position{
+    position: relative;
+    color:rgba(220 , 220 , 220 , 1);
+    font-size: 1rem;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(-50px);
+    z-index: 1;
+    transition: all .6s cubic-bezier(.34,1.56,.64,1);
+}
+
+.judge-card img{
+    position: relative;
+    z-index: 2;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    transition: transform .6s cubic-bezier(.34,1.56,.64,1);
+}
+
+.judge-name{
+    font-size: 1.5rem;
+}
+
 
 .yellow
 {
