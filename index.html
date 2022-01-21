@@ -482,9 +482,15 @@
         </p>
         <div class="row text-center">
           <div id="devfolio" style="z-index: 4;">
-            <button class="dev" id="devfolio-apply-now"
+            <!-- <button class="dev" id="devfolio-apply-now"
               style="position: relative; left: 50%; transform: translate(-50%, 0); outline: none;">Apply with
-              Devfolio</button>
+              Devfolio</button> -->
+              <div 
+	class="apply-button" 
+	data-hackathon-slug="hint-5" 
+	data-button-theme="dark"
+	style="height: 44px; width: 312px"
+></div>
           </div>
         </div>
         <br> <br>
@@ -1607,7 +1613,7 @@
 
   </script>
 
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {
       let devfolioOptions = {
         buttonSelector: '#devfolio-apply-now',
@@ -1628,7 +1634,7 @@
         });
       }
     });
-  </script>
+  </script> -->
 
   <a id="mlh-trust-badge" style="max-width:100px;min-width:60px;position:fixed;width:10%;z-index:10000"
     href="https://mlh.io/seasons/apac-2020/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white"
@@ -1663,5 +1669,6 @@
   <script src="./js/jquery-3.2.1.min.js"></script>
   <script src="./js/owl.carousel.min.js"></script>
   <script src="./js/index.js"></script>
+  <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
 </body>
 </html>
