@@ -8,7 +8,7 @@ body
     color:white;
     margin: 0;
     padding: 0;
-    background-color:#0C0C0C;
+    background-color:#07071C;
    
 }
 
@@ -330,6 +330,12 @@ a, a:hover, a:after, a:visited, a:active{
 {
     max-width: 100%;
     margin-top: -150px;
+}
+
+.what{
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 0.3rem;
 }
 
 .brochure-box
@@ -1777,7 +1783,7 @@ a, a:hover, a:after, a:visited, a:active{
       }
 
       .diamond img{
-        width: 100% !important;
+        width: 80% !important;
     }
   }
 
@@ -1824,19 +1830,147 @@ a, a:hover, a:after, a:visited, a:active{
     stroke-dasharray: 10;
   }
 
+  .event_partners
+  {
+      width: 20%;
+      margin: 2rem;
+  }
+  
+.atl{
+    width: 40% !important;
+}
   .dic
   {
-      width: 35% !important;
+      width: 65% !important;
   }
 
   .mlh
   {
-      width: 40% !important;
+      width: 85% !important;
   } 
 
   .amul
   {
-      width: 30% !important;
+      width: 75% !important;
+  }
+
+  .sponsors_main1{
+    width: 34%;
+    margin-bottom: 5%;
+  }
+  .sponsors_main2{
+    width: 33%;
+    margin-bottom: 5%;
+}
+.sponsors_main3{
+    width: 25%;
+    margin-bottom: 5%;
+}
+.sponsors_main4{
+    width: 100%;
+}
+
+.name
+  {
+      width: 70% !important;
+  }
+  .elast
+  {
+      width: 60% !important;
+  }
+  
+  .git
+  {
+      width: 60% !important;
+  }
+
+  .devf
+  {
+      width: 70% !important;
+  }
+
+  .matic
+  {
+      width: 60% !important;
+  }
+
+  .polu
+  {
+      width: 60% !important;
+  }
+
+  .por
+  {
+      width: 70% !important;
+  }
+  .tezos
+  {
+      width: 70% !important;
+  }
+
+  .echo
+  {
+      width: 25% !important;
+  }
+.patrons_row{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+  .patrons1{
+    width: 21%;
+    margin-bottom: 5%;
+  }
+  .patrons2{
+    width: 17%;
+    margin-bottom: 5%;
+  }
+  .patrons3{
+    width: 25%;
+    margin-bottom: 5%;
+  }
+  .inv
+  {
+      width: 65% !important;
+  }
+  .cblk
+  {
+      width: 75% !important;
+  }
+  .dev1
+  {
+      width: 50% !important;
+  }
+  .progate
+  {
+      width: 105% !important;
+  }
+  .hackr
+  {
+      width: 100% !important;
+  }
+  .zulip
+  {
+      width: 35% !important;
+  }
+  .tim
+  {
+      width: 60% !important;
+  }
+  .rpab
+  {
+      width: 60% !important;
+  }
+  .gocrow
+  {
+      width: 90% !important;
+  }
+  .grad
+  {
+      width: 70% !important;
+  }
+  .sentry
+  {
+      width: 90% !important;
   }
 
   #mlh-logo
@@ -1869,7 +2003,9 @@ a, a:hover, a:after, a:visited, a:active{
 
   .prize-box
   {
-     background-color: black;
+    background: linear-gradient(105.95deg, rgba(255, 255, 255, 0.25) 4.09%, rgba(255, 255, 255, 0) 129.28%);
+    backdrop-filter: blur(80px);
+    border-radius: 16px;
      height: 360px;
      max-width: 300px;
      margin-left: auto;
@@ -1878,7 +2014,61 @@ a, a:hover, a:after, a:visited, a:active{
      margin-bottom: 80px;
      transition-duration: 0.6s;
   }
+  .prizes_box{
+    margin-bottom: 5%;
+}
+.prizes_title{
+    text-transform: capitalize;
+font-feature-settings: 'pnum' on, 'onum' on;
 
+color: #F0F0F0;
+
+text-shadow: 0px 10px 50px rgba(0, 0, 0, 0.25);
+}
+  .prize_logo
+  {
+      margin-top: -3rem !important;
+      width: 40%;
+      
+  }
+  .prize_img
+  {
+    margin-top: -1.5rem !important;
+    width: 40%;
+
+  }
+  .prize_imgp
+  {
+    margin-top: -2rem !important;
+    width: 50%;
+
+  }
+  .prize_logop
+  {
+      margin-top: -3.5rem !important;
+      width: 45%;
+      
+  }
+  /* .prize1
+  {
+      width: 40%;
+      height: 30%;
+      margin-top: -60%;
+      margin-left: 35%;
+      background: #2BBDF7;
+filter: blur(300px);
+border-radius: 200px;
+  } */
+  .special-image
+  {
+      margin-left: 10%;
+
+  }
+  .special-imagep
+  {
+      margin-left: 6%;
+
+  }
   .special-prize .prize-box{
       max-width: 320px;
       padding: 0 0.5rem;
@@ -1954,7 +2144,7 @@ a, a:hover, a:after, a:visited, a:active{
   {
       font-size: px;
   } */
-
+  
 
   .prize-ka-image
   {
@@ -2322,7 +2512,21 @@ a, a:hover, a:after, a:visited, a:active{
     .theme-list-para{
         margin-top: 1rem;
     }
-
+    .what{font-size: 2rem;
+    letter-spacing: 0.2rem;}
+    .atl{width: 20% !important;}
+    .event_partners{
+        width: 25%;
+    }
+    .prizes_box{
+        margin-bottom: 30%;
+    }
+    .prizes_title{
+        font-size: 3rem;
+    }
+    .amul{
+        width: 120% !important;
+    }
     .theme-list-column{
         min-height: 200px;
         padding: 7.5% 5%;
