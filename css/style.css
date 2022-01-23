@@ -2172,7 +2172,9 @@ a, a:hover, a:after, a:visited, a:active{
     
     
 }
-
+.para_invi{
+    display: none;
+}
 .commitment 
 {
     /* height: 100vh; */
@@ -2281,6 +2283,17 @@ a, a:hover, a:after, a:visited, a:active{
     {
         font-size: 1.6em;
     }
+  }
+
+  @media screen and (max-width: 576px){
+    .neo-para{
+        display: none;
+    }
+    .para_invi{
+        display:block;
+        margin:auto;
+    }
+    
   }
   
   @media screen and (max-width: 650px)
