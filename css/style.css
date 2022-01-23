@@ -244,9 +244,24 @@ a, a:hover, a:after, a:visited, a:active{
 .commitment
 {
     width: 100%;
-    background-color: #211B5C;
+    /* background-color: #211B5C; */
     /* height: 100vh; */
     position: relative;
+}
+.commit-row{
+    font-size: 20px; 
+    text-align:left; 
+    align-items: center;
+    justify-content: center;
+}
+
+.commit-row div{
+    margin-top: 40px;
+}
+.neo{
+    text-align: center; 
+    font-size: 35px; 
+    font-weight: bold;
 }
 
 #com-line
@@ -271,7 +286,7 @@ a, a:hover, a:after, a:visited, a:active{
 }
 
 
-#com-content div
+.com
 {
 
     position: relative;
@@ -281,24 +296,53 @@ a, a:hover, a:after, a:visited, a:active{
     width: 100%;
     text-align: center;
 }
-
-#com-content div h1
+.com-head{
+    font-weight: bold;
+    padding-bottom: 120px;
+    position: relative;
+}
+.commit-heading
 {
-    font-size: 4em;
-    margin-bottom: 50px;
+    font-size: 6em;
+    position: absolute;
+    width: 70%;
+    left:15%;
+    top:0;
+    z-index:1;
+    letter-spacing: 4px;
+}
+.commit-shadow{
+    font-size: 6em;
+    position: absolute;
+    width: 70%;
+    left:15.2%;
+    top:2px;
+    letter-spacing: 4px;
+  background: -webkit-linear-gradient(0deg, rgba(151,70,158,1) 20%, rgba(193,70,164,1) 40%, rgba(239,72,156,1) 60%, rgba(255,106,72,1) 80%, rgba(247,151,55,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+  color:#07071C;
+}
+.coc{
+    font-weight: bold;
+    background: -webkit-linear-gradient(0deg, rgba(151,70,158,1) 20%, rgba(193,70,164,1) 40%, rgba(239,72,156,1) 60%, rgba(255,106,72,1) 80%, rgba(247,151,55,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-#com-content div p
+/* #com-content div p
 {
     font-size: 1.2rem;
     max-width: 60%;
     margin: 0 auto;
    
-}
+} */
 
 .main-commit
 {
     position: relative;
+    background-color: #07071C; 
+    font-style: Cera Pro;
 }
 
 .sponsorship
@@ -329,7 +373,8 @@ a, a:hover, a:after, a:visited, a:active{
 #brochure img.line
 {
     max-width: 100%;
-    margin-top: -150px;
+    margin-top: -8%;
+    /* margin-top: -150px; */
 }
 
 .what{
@@ -341,30 +386,63 @@ a, a:hover, a:after, a:visited, a:active{
 .brochure-box
 {
     max-width: 80%;
-    background-color:#211B5C;
-    height: 300px;
+    background: -webkit-linear-gradient(0deg, rgba(33,27,92,0.8018557764902836) 35%, rgba(11,11,46,0.3536765047816002) 100%);
+    backdrop-filter: blur(40px);
+    height: 280px;
     margin: 0 auto;
     border-radius: 8px;
     position: relative;
-    top:0;
+    top:60px;
     transform: translate(0%, -185%);
     z-index: 5;
+}
+.broch-txt1{
+    font-size: 34px;
+    font-weight: bold;
+    top: -10px;
+    position: relative;
+    margin-left: 35px;
+}
+.broch-txt2{
+    font-size: 20px;
+    top: -5px;
+    position: relative;
+    margin-left: 35px;
+}
+
+.broch-btn{
+    font-size: 15px;
+    left: 20%;
+    top: 35px;
+    position: relative;
+}
+.broch-dwn{
+    background: linear-gradient(97.84deg, rgba(255, 255, 255, 0.2) -27.35%, rgba(255, 255, 255, 0.05) 140.59%);
+    border-radius: 8px;
+    color: white;
+    text-shadow: 0px -2px 2px rgba(255, 255, 255, 0.1), 0px 2px 42px rgba(0, 0, 0, 0.25), 0px 8px 40px #000000;
+    border: #001C43;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .flex-container
 {
     display: flex;
 }
+.brch{
+    display: flex;
+}
 
-.flex-container .ribbon
+/* .flex-container .ribbon
 {
     width: 20%;
-}
+} */
 
-.flex-container .brch
+/* .flex-container .brch
 {
     width: 80%;
-}
+} */
 
 .flex-container .dot
 {
@@ -378,30 +456,30 @@ a, a:hover, a:after, a:visited, a:active{
     left:50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
 }
 
-.link p
+/* .link p
 {
     font-size: 3em;
-}
+} */
 
-.link a
+/* .link a
 {
     font-size: 2.4em;
     color:white;
     text-decoration: underline;
-}
+} */
 
 #brochure
 {
     padding: 0;
 }
 
-.blue-box
+/* .blue-box
 {
     display: inline-block;
-}
+} */
 
 .ribbon
 {
@@ -569,22 +647,26 @@ a, a:hover, a:after, a:visited, a:active{
         padding-top: 15%;
     }
 
-    #brochure
+    /* #brochure
     {
         height: 85vh;
-    }
+    } */
 
-    #com-content div p
+    /* #com-content div p
     {
         font-size: 1.2rem;
         max-width: 55%;
         margin: 0 auto;
-    }
+    } */
 
 }
 
 @media screen and (max-width: 1300px)
 {
+
+    .broch-btn{
+        left: 10%;
+    }
     /* #com-content {
         z-index: 5;
         text-align: center;
@@ -626,14 +708,14 @@ a, a:hover, a:after, a:visited, a:active{
         transform: translate(0%, -70%);
     }
 
-    .brochure-box {
+    /* .brochure-box {
        
         height: 300px;
         transform: translate(0%, -146%);
         z-index: 5;
-    }
+    } */
 
-    .link p
+    /* .link p
     {
         font-size: 2.4em;
     }
@@ -643,12 +725,12 @@ a, a:hover, a:after, a:visited, a:active{
         font-size: 2em;
         color:white;
         text-decoration: underline;
-    }
+    } */
 
-    #brochure
+    /* #brochure
     {
         height: 70vh;
-    }
+    } */
 
     #logo {
         width: 60%;
@@ -658,8 +740,77 @@ a, a:hover, a:after, a:visited, a:active{
 
 }
 
+@media screen and (max-width: 1200px){
+    .brochure-box
+    {
+        top:100px;
+    }
+    .broch-txt1{
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    .broch-txt2{
+        font-size: 18px;
+        margin-left: 30px;
+    }
+
+    .broch-btn{
+        font-size: 13px;
+        left: 18%;
+        top: 35px;
+        position: relative;
+    }
+    .broch-dwn{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
 @media screen and (max-width: 1100px)
 {
+
+    .brochure-box
+    {
+        top: 120px;
+        height: 260px;
+    }
+    .broch-txt1{
+        font-size: 25px;
+        margin-left: 28px;
+        top: 20px;
+    }
+    .broch-txt2{
+        font-size: 15px;
+        margin-left: 28px;
+        top: 20px;
+    }
+
+    .broch-btn{
+        left: 18%;
+        top: 50px;
+    }
+
+    .commit-row{
+        font-size: 18px;
+    }
+    
+    .commit-row div{
+        margin-top: 30px;
+    }
+    .neo{
+        font-size: 33px; 
+    }
+
+    .com-head{
+        padding-bottom: 120px;
+    }
+    .commit-heading
+    {
+        font-size: 5.6em;
+    }
+    .commit-shadow{
+        font-size: 5.6em;
+    }
     /* #square img {
         width: 110%;
         margin-top: 10%;
@@ -701,12 +852,12 @@ a, a:hover, a:after, a:visited, a:active{
         transform: translate(0%, -80%);
     }
 
-    .brochure-box {
+    /* .brochure-box {
        
         height: 250px;
         transform: translate(0%, -162%);
         z-index: 5;
-    }
+    } */
 
     .ribbon img {
         position: absolute;
@@ -715,7 +866,7 @@ a, a:hover, a:after, a:visited, a:active{
         height: 110%;
     }
 
-    .link p
+    /* .link p
     {
         font-size: 2em;
     }
@@ -723,12 +874,12 @@ a, a:hover, a:after, a:visited, a:active{
     .link a
     {
         font-size: 1.6em;
-    }
+    } */
 
-    #brochure
+    /* #brochure
     {
         height: 60vh;
-    }
+    } */
 
     #logo {
         width: 70%;
@@ -744,6 +895,50 @@ a, a:hover, a:after, a:visited, a:active{
 
 @media screen and (max-width: 992px)
 {
+    .brochure-box
+    {
+        top: 140px;
+        height: 240px;
+    }
+    .broch-txt1{
+        font-size: 22px;
+        margin-left: 25px;
+    }
+    .broch-txt2{
+        font-size: 13px;
+        margin-left: 25px;
+    }
+
+    .broch-btn{
+        left: 18%;
+        top:47px;
+    }
+    .commit-row{
+        font-size: 16px;
+    }
+    
+    .commit-row div{
+        margin-top: 27px;
+    }
+    .neo{
+        font-size: 28px; 
+    }
+
+    .com-head{
+        padding-bottom: 120px;
+    }
+    .commit-heading
+    {
+        font-size: 5.4em;
+        top:0;
+        letter-spacing: 4px;
+    }
+    .commit-shadow{
+        font-size: 5.4em;
+        top:2px;
+        letter-spacing: 4px;
+    }
+
     #content div
     {
         max-width: 70%;
@@ -810,12 +1005,12 @@ a, a:hover, a:after, a:visited, a:active{
         transform: translate(0%, -87%);
     }
 
-    .brochure-box {
+    /* .brochure-box {
        
         height: 250px;
         transform: translate(0%, -145%);
         z-index: 5;
-    }
+    } */
 
     .container-fluid
     {
@@ -834,12 +1029,12 @@ a, a:hover, a:after, a:visited, a:active{
         height: 15%;
     }
 
-    #com-content div p
+    /* #com-content div p
     {
         font-size: 1.8em;
         max-width: 75%;
         margin: 0 auto;
-    }
+    } */
 
     #sq-orange {
         position: absolute;
@@ -858,6 +1053,51 @@ a, a:hover, a:after, a:visited, a:active{
 
 @media screen and (max-width:850px)
 {
+    .brochure-box
+    {
+        top: 100px;
+        height: 210px;
+    }
+    .broch-txt1{
+        font-size: 20px;
+        margin-left: 12px;
+        top: 8px;
+    }
+    .broch-txt2{
+        font-size: 12px;
+        margin-left: 12px;
+        top: 8px;
+    }
+
+    .broch-btn{
+        font-size: 12px;
+        left: 14%;
+        top:30px;
+    }
+    .commit-row{
+        font-size: 16px;
+    }
+    .commit-row div{
+        margin-top: 27px;
+    }
+    .neo{
+        font-size: 26px; 
+    }
+
+    .com-head{
+        padding-bottom: 120px;
+    }
+    .commit-heading
+    {
+        font-size: 5em;
+        top:0;
+        letter-spacing: 4px;
+    }
+    .commit-shadow{
+        font-size: 5em;
+        top:2px;
+        letter-spacing: 4px;
+    }
     /* #com-content {
         position: relative;
         top: 0;
@@ -877,29 +1117,74 @@ a, a:hover, a:after, a:visited, a:active{
         transform: translate(0%, -95%);
     }
 
-    .brochure-box {
+    /* .brochure-box {
         height: 240px;
         transform: translate(0%, -129%);
         z-index: 5;
-    }
+    } */
 
-    .link a {
+    /* .link a {
         font-size: 1.5em;
         
     }
 
     .link p {
         font-size: 1.8em;
-    }
+    } */
 
-    #brochure
+    /* #brochure
     {
         height: 50vh;
-    }
+    } */
 }
 
 @media screen and (max-width:780px)
 {
+    .brochure-box
+    {
+        top: -5px;
+        height: 200px;
+    }
+    .broch-txt1{
+        font-size: 20px;
+        margin-left: 12px;
+        top: 5px;
+    }
+    .broch-txt2{
+        font-size: 12px;
+        margin-left: 12px;
+        top: 5px;
+    }
+
+    .broch-btn{
+        font-size: 10px;
+        left: 14%;
+        top:28px;
+    }
+    .commit-row{
+        font-size: 15px;
+    }
+    .commit-row div{
+        margin-top: 25px;
+    }
+    .neo{
+        font-size: 25px; 
+    }
+
+    .com-head{
+        padding-bottom: 100px;
+    }
+    .commit-heading
+    {
+        font-size: 5em;
+        top:0;
+        letter-spacing: 4px;
+    }
+    .commit-shadow{
+        font-size: 5em;
+        top:2px;
+        letter-spacing: 4px;
+    }
 
     #female-pic img {
         max-width: 100%;
@@ -945,16 +1230,15 @@ a, a:hover, a:after, a:visited, a:active{
     } */
 
     .brochure-box {
-        height: 225px;
         transform: translate(0%, -132%);
     }
 
-    #brochure img.line {
+    /* #brochure img.line {
         max-width: 100%;
         margin-top: -90px;
-    }
+    } */
 
-    .link p
+    /* .link p
     {
         font-size: 1.6em;
     }
@@ -962,7 +1246,7 @@ a, a:hover, a:after, a:visited, a:active{
     .link a
     {
         font-size: 1.4em;
-    }
+    } */
 
 
     #logo {
@@ -995,6 +1279,51 @@ a, a:hover, a:after, a:visited, a:active{
 @media screen and (max-width: 768px)
 {
 
+    .brochure-box
+    {
+        top: -10px;
+        height: 180px;
+    }
+    .broch-txt1{
+        font-size: 18px;
+        margin-left: 10px;
+        top: -2px;
+    }
+    .broch-txt2{
+        font-size: 12px;
+        margin-left: 10px;
+        top: -2px;
+    }
+
+    .broch-btn{
+        font-size: 8px;
+        left: 12%;
+        top:20px;
+    }
+    .commit-row{
+        font-size: 15px;
+    }
+    .commit-row div{
+        margin-top: 25px;
+    }
+    .neo{
+        font-size: 25px; 
+    }
+
+    .com-head{
+        padding-bottom: 100px;
+    }
+    .commit-heading
+    {
+        font-size: 5em;
+        top:0;
+        letter-spacing: 4px;
+    }
+    .commit-shadow{
+        font-size: 5em;
+        top:2px;
+        letter-spacing: 4px;
+    }
     .sponsor-section {  
         padding-top: 40%;
     }
@@ -1057,11 +1386,11 @@ a, a:hover, a:after, a:visited, a:active{
         height: 10%;
     }
 
-    #com-content div p {
+    /* #com-content div p {
         font-size: 1.6em;
         max-width: 80%;
         margin: 0 auto;
-    }
+    } */
 
     #dot-line {
         position: absolute;
@@ -1083,6 +1412,51 @@ a, a:hover, a:after, a:visited, a:active{
 
 @media screen and (max-width: 640px)
 {
+    .brochure-box
+    {
+        top: -20px;
+        height: 160px;
+    }
+    .broch-txt1{
+        font-size: 17px;
+        margin-left: 8px;
+        top: 2px;
+    }
+    .broch-txt2{
+        font-size: 11px;
+        margin-left: 8px;
+        top: 2px;
+    }
+
+    .broch-btn{
+        font-size: 7px;
+        left: 10%;
+        top:18px;
+    }
+    .commit-row{
+        font-size: 13px;
+    }
+    .commit-row div{
+        margin-top: 20px;
+    }
+    .neo{
+        font-size: 20px; 
+    }
+
+    .com-head{
+        padding-bottom: 80px;
+    }
+    .commit-heading
+    {
+        font-size: 4em;
+        top:0;
+        letter-spacing: 4px;
+    }
+    .commit-shadow{
+        font-size: 4em;
+        top:2px;
+        letter-spacing: 4px;
+    }
     #female-pic img {
         max-width: 100%;
         position: relative;
@@ -1104,9 +1478,9 @@ a, a:hover, a:after, a:visited, a:active{
         font-size: 1.6em;
     }
 
-    #com-content div p {
+    /* #com-content div p {
         font-size: 1.6em;
-    }
+    } */
 
     /* #com-content div {
         max-width: 100%;
@@ -1134,11 +1508,10 @@ a, a:hover, a:after, a:visited, a:active{
     } */
 
     .brochure-box {
-        height: 200px;
         transform: translate(0%, -115%);
     }
 
-    .link p
+    /* .link p
     {
         font-size: 1.25em;
     }
@@ -1146,7 +1519,7 @@ a, a:hover, a:after, a:visited, a:active{
     .link a
     {
         font-size: 1.15em;
-    }
+    } */
 
     p {
         margin-top: 0;
@@ -1165,6 +1538,57 @@ a, a:hover, a:after, a:visited, a:active{
 @media screen and (max-width: 575px)
 {
 
+    .brochure-box
+    {
+        height: 140px;
+    }
+    .broch-txt1{
+        font-size: 13px;
+        margin-left: 5px;
+        top: -15px;
+    }
+    .broch-txt2{
+        font-size: 10px;
+        margin-left: 5px;
+        top: -15px;
+    }
+
+    .broch-btn{
+        font-size: 8px;
+        left: 10%;
+        top:4px;
+    }
+    .commit-row{
+        font-size: 15px;
+    }
+    .com-txt{
+        width: 80%;
+    }
+    .com-txt2{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .commit-row div{
+        margin-top: 25px;
+    }
+    .neo{
+        font-size: 28px; 
+    }
+
+    .com-head{
+        padding-bottom: 100px;
+    }
+    .commit-heading
+    {
+        font-size: 4.5em;
+        top:0;
+        letter-spacing: 3px;
+    }
+    .commit-shadow{
+        font-size: 4.5em;
+        top:2px;
+        letter-spacing: 3px;
+    }
     .sponsor-section {  
         padding-top: 45%;
     }
@@ -1237,7 +1661,6 @@ a, a:hover, a:after, a:visited, a:active{
     } */
 
     .brochure-box {
-        height: 180px;
         transform: translate(0%, -115%);
     }
 
@@ -1250,6 +1673,42 @@ a, a:hover, a:after, a:visited, a:active{
 
 @media screen and (max-width: 500px)
 {
+    .brochure-box
+    {
+        top:-40px;
+        height: 120px;
+    }
+    .broch-txt1{
+        font-size: 12px;
+        margin-left: -2px;
+        top: -20px;
+    }
+    .broch-txt2{
+        font-size: 10px;
+        margin-left: -2px;
+        top: -20px;
+    }
+
+    .broch-btn{
+        font-size: 7px;
+        left: 8%;
+        top:-2px;
+    }
+    .commit-heading
+    {
+        font-size: 4em;
+        top:0;
+        letter-spacing: 2.5px;
+    }
+    .commit-shadow{
+        font-size: 4em;
+        top:2px;
+        letter-spacing: 2.5px;
+    }
+
+    .sponsor-section {  
+        padding-top: 45%;
+    }
     /* #com-content {
         position: relative;
         top: 0;
@@ -1272,7 +1731,6 @@ a, a:hover, a:after, a:visited, a:active{
     }
 
     .brochure-box {
-        height: 200px;
         transform: translate(0%, -105%);
     }
 }
@@ -1283,6 +1741,38 @@ a, a:hover, a:after, a:visited, a:active{
     .heading
     {
         max-width: 100%;
+    }
+    .brochure-box
+    {
+        top:-16px;
+        height: 100px;
+    }
+    .broch-txt1{
+        font-size: 9px;
+        margin-left: -6px;
+        top: -28px;
+    }
+    .broch-txt2{
+        font-size: 9px;
+        margin-left: -6px;
+        top: -28px;
+    }
+
+    .broch-btn{
+        font-size: 7px;
+        left: 10%;
+        top:-20px;
+    }
+    .commit-heading
+    {
+        font-size: 3.5em;
+        top:0;
+        letter-spacing: 2px;
+    }
+    .commit-shadow{
+        font-size: 3.5em;
+        top:2px;
+        letter-spacing: 2px;
     }
 
     /* #line img {
@@ -1357,11 +1847,10 @@ a, a:hover, a:after, a:visited, a:active{
     }
 
     .brochure-box {
-        height: 100px;
         transform: translate(0%, -135%);
     }
 
-    .link a {
+    /* .link a {
         font-size: 0.8em;
         color: white;
         text-decoration: underline;
@@ -1369,12 +1858,12 @@ a, a:hover, a:after, a:visited, a:active{
 
     .link p {
         font-size: 0.9em;
-    }
+    } */
 
-    #brochure img.line {
+    /* #brochure img.line {
         max-width: 100%;
         margin-top: -90px;
-    }
+    } */
 
     #lady {
         text-align: center;
@@ -1418,9 +1907,9 @@ a, a:hover, a:after, a:visited, a:active{
         font-size: 1.1em;
     }
     
-    #brochure {
+    /* #brochure {
     height: 22vh;
-    }
+    } */
 
     .dot img {
         position: absolute;
@@ -1451,7 +1940,7 @@ a, a:hover, a:after, a:visited, a:active{
         height: 8%;
     }
 
-    #com-content div p {
+    /* #com-content div p {
         max-width: 100%;
         margin: 0 auto;
     }
@@ -1464,7 +1953,7 @@ a, a:hover, a:after, a:visited, a:active{
         font-size: 4em;
         margin-bottom: 30px;
         margin-top: 20px;
-    }
+    } */
 
     #sq-orange {
         position: absolute;
