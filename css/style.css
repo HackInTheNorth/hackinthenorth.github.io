@@ -78,6 +78,10 @@ a, a:hover, a:after, a:visited, a:active{
     .mountain{
         width: 1000px;
     }
+    .faq-line{
+        /* height: 200px; */
+        margin-top:-150%;
+    }
 
     /* #front{
         left: 90%;
@@ -376,6 +380,13 @@ a, a:hover, a:after, a:visited, a:active{
     margin-top: -8%;
     /* margin-top: -150px; */
 }
+.faq-line{
+    max-width: 100%;
+    /* position: relative; */
+    z-index: 0;
+    margin-top:-60%;
+}
+
 
 .what{
     font-size: 4rem;
@@ -517,29 +528,51 @@ a, a:hover, a:after, a:visited, a:active{
     padding: 0;
 }
 
-.faq
+/* .faq
 {
     position: relative;
     background:  #211B5C;
     padding-top: 40px;
     padding-bottom: 40px;
-}
+} */
 
-.faq-head {
-    width: 100%;
+.faq-heading {
     text-align: center;
-    height: 200px;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 40px;
+}
+.faq-box{
+    width:70%; 
+    margin:auto; 
+    background: linear-gradient(113.9deg, rgba(255, 255, 255, 0.15) 6.55%, rgba(255, 255, 255, 0) 118.89%, rgba(255, 255, 255, 0) 123.74%);
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+    padding-top: 3%;
+}
+.faques{ 
+    font-family: Cera Pro;
+    font-style: normal;
+    font-size: 32px;
+}
+.text-background-transparent{
+    background: -webkit-linear-gradient(0deg, rgba(151,70,158,1) 20%, rgba(193,70,164,1) 40%, rgba(239,72,156,1) 60%, rgba(255,106,72,1) 80%, rgba(247,151,55,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 
-.faq-head #q-mark {
+
+
+/* .faq-head #q-mark {
     position: absolute;
     top: -80px;
     right: 50px;
     height: 120%;
     animation: wiggle 2s infinite;
-}
+} */
 
-.faq-head h1
+/* .faq-head h1
 {
     position: relative;
     top: 50%;
@@ -547,7 +580,7 @@ a, a:hover, a:after, a:visited, a:active{
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
-}
+} */
 
 #lady
 {
@@ -584,8 +617,8 @@ a, a:hover, a:after, a:visited, a:active{
 }
 
 .collapsible {
-    background-color: #211B5C;
-    color: white;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.44);
 }
 
 .col-md-7
@@ -667,6 +700,10 @@ a, a:hover, a:after, a:visited, a:active{
     .broch-btn{
         left: 10%;
     }
+    /* .faq-line{
+        /* height: 200px; */
+        /* margin-top:-150%; */
+    /* }  */
     /* #com-content {
         z-index: 5;
         text-align: center;
@@ -895,6 +932,13 @@ a, a:hover, a:after, a:visited, a:active{
 
 @media screen and (max-width: 992px)
 {
+    .faq-heading{
+        font-size: 40px
+    }
+    .faq-line{
+        /* height: 200px; */
+        margin-top:-60%;
+    }
     .brochure-box
     {
         top: 140px;
@@ -1053,6 +1097,13 @@ a, a:hover, a:after, a:visited, a:active{
 
 @media screen and (max-width:850px)
 {
+    .faq-heading{
+        font-size: 35px
+    }
+    .faq-line{
+        /* height: 200px; */
+        margin-top:-70%;
+    }
     .brochure-box
     {
         top: 100px;
@@ -1140,6 +1191,10 @@ a, a:hover, a:after, a:visited, a:active{
 
 @media screen and (max-width:780px)
 {
+    .faq-line{
+        /* height: 200px; */
+        margin-top:-100%;
+    }
     .brochure-box
     {
         top: -5px;
@@ -1412,6 +1467,13 @@ a, a:hover, a:after, a:visited, a:active{
 
 @media screen and (max-width: 640px)
 {
+    .faq-heading{
+        font-size: 30px
+    }
+    .faq-line{
+        /* height: 200px; */
+        margin-top:-150%;
+    }
     .brochure-box
     {
         top: -20px;
@@ -1537,6 +1599,9 @@ a, a:hover, a:after, a:visited, a:active{
 
 @media screen and (max-width: 575px)
 {
+    .faq-heading{
+        font-size: 25px
+    }
 
     .brochure-box
     {
@@ -1678,6 +1743,10 @@ a, a:hover, a:after, a:visited, a:active{
         top:-40px;
         height: 120px;
     }
+    .faq-line{
+        /* height: 200px; */
+        margin-top:-200%;
+    }
     .broch-txt1{
         font-size: 12px;
         margin-left: -2px;
@@ -1737,6 +1806,9 @@ a, a:hover, a:after, a:visited, a:active{
 
 @media screen and (max-width: 440px)
 {
+    .faq-heading{
+        font-size: 23px
+    }
 
     .heading
     {
@@ -1997,7 +2069,6 @@ a, a:hover, a:after, a:visited, a:active{
 {
     background-color: black !important;
     opacity: 0.95;
-    
 }
 
 .black
@@ -2067,7 +2138,7 @@ a, a:hover, a:after, a:visited, a:active{
 
 .yellow
 {
-    color:#F9D53D;
+    color:white;
 }
 
 @media screen and (min-width: 992px)
@@ -3841,5 +3912,3 @@ border-radius: 200px;
 {
     fill: white;
 }
-
-
