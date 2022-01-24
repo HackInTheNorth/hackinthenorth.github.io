@@ -310,6 +310,17 @@ a, a:hover, a:after, a:visited, a:active{
   -webkit-text-fill-color: transparent;
 }
 
+.prize-box{
+    position: relative;
+}
+.glow{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 /* #com-content div p
 {
     font-size: 1.2rem;
@@ -517,10 +528,10 @@ a, a:hover, a:after, a:visited, a:active{
 
 .faq-heading {
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
     color: white;
-    font-weight: bold;
     margin-bottom: 40px;
+    font-family: CeraPro-Medium;
 }
 .faq-box{
     width:70%; 
@@ -532,7 +543,7 @@ a, a:hover, a:after, a:visited, a:active{
     font-family: Cera Pro;
 }
 .faques{ 
-    font-family: Cera Pro;
+    font-family: CeraPro;
     font-style: normal;
     font-size: 32px;
     border: none;
