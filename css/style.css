@@ -555,7 +555,8 @@ a, a:hover, a:after, a:visited, a:active{
     font-weight: bold;
 }
 #faq{
-    padding: 20% 0%;
+    padding-top: 20%;
+    padding-bottom: 10%;
     background: url(../images/faq-gradient4.svg),#07071C;
     background-position: -100% -40%;
     background-repeat: no-repeat;
@@ -598,7 +599,7 @@ a, a:hover, a:after, a:visited, a:active{
 }
 
 .collapsible:before{
-    padding-right: 4%;
+    padding-right: 0;
 }
 
 #lady p {
@@ -2085,11 +2086,19 @@ a, a:hover, a:after, a:visited, a:active{
     {
         padding-top: 45px;
     }
-
+    .content{
+        padding: 0;
+        font-family: CeraPro-Medium !important;
+        font-size: 13px;
+    }
+    .collapsible{
+        padding: 0 !important;
+        font-family: CeraPro-Medium !important;
+    }
     .collapsible:before {
          margin-top: 0px;
         /* content: '\02795'; */
-        font-size: 13px;
+        font-size: 13.5px;
         color: #211B5C;
         float: left;
         margin-left: 0px;
@@ -2097,7 +2106,7 @@ a, a:hover, a:after, a:visited, a:active{
     }
 
     .collapsible:before{
-        padding-right: 4%;
+        padding-right: 0;
     }
 
     .active:before {
@@ -2274,6 +2283,14 @@ a, a:hover, a:after, a:visited, a:active{
 @media screen and (max-width: 768px){
     .main-landing-text{
         width: 80%;
+    }
+    .collapsible{
+        text-align: center;
+        font-size: 15px;
+    }
+    .content{
+        text-align: center;
+        font-size: 15px;
     }
 }
 
