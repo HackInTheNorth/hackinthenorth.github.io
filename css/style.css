@@ -2804,12 +2804,25 @@ border-radius: 200px;
   {
       height: 200px;
   }
-
   .time-line
   {
+      margin-top: -10%;
       width: 100%;
+      z-index: 3;
       margin-left: auto;
       margin-right:auto;
+      background: #07071C;
+      ;
+  }
+  .sched_grad
+  {
+      margin-top: -130%;
+      margin-left: 30%;
+      z-index: 1;
+  }
+  .sch{
+      width: 75%;
+      margin-left: 14%;
   }
 
   .time-svg img
