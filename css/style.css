@@ -153,10 +153,12 @@ a, a:hover, a:after, a:visited, a:active{
 
 .about
 {
-    background-color:#0C0C0C;
     width: 100%;
     min-height: 100vh;
     position: relative;
+    background: url(../images/date-gradient2.svg),url(../images/speaker-gradient3.svg);
+    background-position: -50% 10%, 100% 75%;
+    background-repeat: no-repeat, no-repeat;
 }
 
 #dot-line {
@@ -345,8 +347,11 @@ a, a:hover, a:after, a:visited, a:active{
 .main-commit
 {
     position: relative;
-    background-color: #07071C; 
+    padding-top: 5%;
     font-style: Cera Pro;
+    background: url(../images/commit-gradient2.svg);
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
 }
 
 .sponsorship
@@ -549,6 +554,8 @@ a, a:hover, a:after, a:visited, a:active{
     backdrop-filter: blur(40px);
     border-radius: 20px;
     padding-top: 3%;
+    font-family: Cera Pro;
+    font-weight: bold;
 }
 .faques{ 
     font-family: Cera Pro;
@@ -560,6 +567,13 @@ a, a:hover, a:after, a:visited, a:active{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
+}
+#faq{
+    padding: 20% 0%;
+    background: url(../images/faq-gradient4.svg),#07071C;
+    background-position: -100% -40%;
+    background-repeat: no-repeat;
+    font-family: Cera Pro;
 }
 
 
@@ -697,6 +711,9 @@ a, a:hover, a:after, a:visited, a:active{
 @media screen and (max-width: 1300px)
 {
 
+    /* .about{
+        background-position: -80% 10%, 100% 80%;
+    } */
     .broch-btn{
         left: 10%;
     }
@@ -778,6 +795,15 @@ a, a:hover, a:after, a:visited, a:active{
 }
 
 @media screen and (max-width: 1200px){
+    .about{
+        background-position: -80% 10%, 120% 75%;
+    }
+    .main-commit{
+        background-position: 80% -10%;
+    }
+    #faq{
+        background-position: -400% -60%;
+    }
     .brochure-box
     {
         top:100px;
@@ -805,7 +831,12 @@ a, a:hover, a:after, a:visited, a:active{
 
 @media screen and (max-width: 1100px)
 {
-
+    .about{
+        background-position: -150% 15%, 128% 78%;
+    }
+    .main-commit{
+        background-position: 70% -15%;
+    }
     .brochure-box
     {
         top: 120px;
@@ -932,6 +963,15 @@ a, a:hover, a:after, a:visited, a:active{
 
 @media screen and (max-width: 992px)
 {
+    .about{
+        background-position: 200% 10%, 120% 80%;
+    }
+    .main-commit{
+        background-position: 80% -10%;
+    }
+    #faq{
+        background-position: 200% 0%;
+    }
     .faq-heading{
         font-size: 40px
     }
@@ -1191,6 +1231,9 @@ a, a:hover, a:after, a:visited, a:active{
 
 @media screen and (max-width:780px)
 {
+    .about{
+        background-position: 200% 10%, -110% 90%;
+    }
     .faq-line{
         /* height: 200px; */
         margin-top:-100%;
@@ -1333,6 +1376,12 @@ a, a:hover, a:after, a:visited, a:active{
 
 @media screen and (max-width: 768px)
 {
+    .about{
+        background-position: 70% 10%, 40% 94%;
+    }
+    #faq{
+        background-position: 100% -70%;
+    }
 
     .brochure-box
     {
@@ -1806,6 +1855,15 @@ a, a:hover, a:after, a:visited, a:active{
 
 @media screen and (max-width: 440px)
 {
+    .about{
+        background-position: 60% 10%, 30% 100%;
+    }
+    .main-commit{
+        background-position: 40% 0%;
+    }
+    #faq{
+        background-position: 70% -80%;
+    }
     .faq-heading{
         font-size: 23px
     }
