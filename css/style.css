@@ -2875,7 +2875,7 @@ border-radius: 200px;
 
   .fancy_heading
     {
-    font-size: 6em !important;
+    font-size: 7vw !important;
     position: absolute;
     width: 70%;
     left:15%;
@@ -2885,7 +2885,7 @@ border-radius: 200px;
     }
   .fancy_heading_shadow
     {
-    font-size: 6em !important;
+    font-size: 7vw !important;
     position: absolute;
     width: 70%;
     left:15.2%;
@@ -2925,7 +2925,7 @@ border-radius: 200px;
     padding: 7.5% 0;
   }
   .heading-hackinthenorth{
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 700;
         margin-bottom: 2.5rem;
     }
