@@ -519,6 +519,7 @@ a, a:hover, a:after, a:visited, a:active{
     text-align: center;
     font-size: 50px;
     color: white;
+    font-weight: bold;
     margin-bottom: 40px;
 }
 .faq-box{
@@ -527,14 +528,14 @@ a, a:hover, a:after, a:visited, a:active{
     background: linear-gradient(113.9deg, rgba(255, 255, 255, 0.15) 6.55%, rgba(255, 255, 255, 0) 118.89%, rgba(255, 255, 255, 0) 123.74%);
     backdrop-filter: blur(40px);
     border-radius: 20px;
-    padding-top: 3%;
+    padding-top: 5%;
     font-family: Cera Pro;
-    font-weight: bold;
 }
 .faques{ 
     font-family: Cera Pro;
     font-style: normal;
     font-size: 32px;
+    border: none;
 }
 .text-background-transparent{
     background: -webkit-linear-gradient(0deg, rgba(151,70,158,1) 20%, rgba(193,70,164,1) 40%, rgba(239,72,156,1) 60%, rgba(255,106,72,1) 80%, rgba(247,151,55,1) 100%);
@@ -550,6 +551,9 @@ a, a:hover, a:after, a:visited, a:active{
     font-family: Cera Pro;
 }
 
+.iconclass{
+    transform: rotate(0deg);
+}
 
 
 /* .faq-head #q-mark {
@@ -2171,6 +2175,9 @@ a, a:hover, a:after, a:visited, a:active{
 .yellow
 {
     color:white;
+}
+.yellow .iconclass{
+    transform: rotate(90deg);
 }
 
 @media screen and (min-width: 992px)
