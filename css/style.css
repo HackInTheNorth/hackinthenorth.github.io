@@ -316,6 +316,7 @@ a, a:hover, a:after, a:visited, a:active{
 .glow{
     position: absolute;
     width: 100%;
+    border-radius: 16px;
     top: 0;
     left: 0;
     z-index: -1;
