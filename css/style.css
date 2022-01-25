@@ -495,48 +495,46 @@ a:active {
 } */
 
 .faq-heading {
-	text-align: center;
-	font-size: 45px;
-	color: white;
-	margin-bottom: 40px;
-	font-family: CeraPro-Medium;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    margin-bottom: 40px;
+    font-family: CeraPro-Medium;
+}
+.faq-box{
+    width:70%; 
+    margin:auto; 
+    background: linear-gradient(113.9deg, rgba(255, 255, 255, 0.15) 6.55%, rgba(255, 255, 255, 0) 118.89%, rgba(255, 255, 255, 0) 123.74%);
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+    padding-top: 5%;
+    font-family: Cera Pro;
+}
+.faques{ 
+    font-family: CeraPro;
+    font-style: normal;
+    font-size: 32px;
+    border: none;
+}
+.text-background-transparent{
+    background: -webkit-linear-gradient(0deg, rgba(151,70,158,1) 20%, rgba(193,70,164,1) 40%, rgba(239,72,156,1) 60%, rgba(255,106,72,1) 80%, rgba(247,151,55,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+#faq{
+    /* padding-top: 20%; */
+    padding-bottom: 10%;
+    -moz-background: url(../images/faq-gradient4.svg),#07071C;
+    background: url(../images/faq-gradient4.svg),#07071C;
+    -moz-background-position: -700% 90%;
+    background-position: -700% 90%;
+    background-repeat: no-repeat;
+    font-family: Cera Pro;
 }
 
-.faq-box {
-	width: 70%;
-	margin: auto;
-	background: linear-gradient(113.9deg, rgba(255, 255, 255, 0.15) 6.55%, rgba(255, 255, 255, 0) 118.89%, rgba(255, 255, 255, 0) 123.74%);
-	backdrop-filter: blur(40px);
-	border-radius: 20px;
-	padding-top: 5%;
-	font-family: Cera Pro;
-}
-
-.faques {
-	font-family: CeraPro;
-	font-style: normal;
-	font-size: 32px;
-	border: none;
-}
-
-.text-background-transparent {
-	background: -webkit-linear-gradient(0deg, rgba(151, 70, 158, 1) 20%, rgba(193, 70, 164, 1) 40%, rgba(239, 72, 156, 1) 60%, rgba(255, 106, 72, 1) 80%, rgba(247, 151, 55, 1) 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-weight: bold;
-}
-
-#faq {
-	padding-top: 20%;
-	padding-bottom: 10%;
-	background: url(../images/faq-gradient4.svg), #07071C;
-	background-position: -100% -40%;
-	background-repeat: no-repeat;
-	font-family: Cera Pro;
-}
-
-.iconclass {
-	transform: rotate(0deg);
+.iconclass{
+    transform: rotate(0deg);
 }
 
 
@@ -1937,17 +1935,31 @@ a:active {
 	transition: transform .6s cubic-bezier(.34, 1.56, .64, 1);
 }
 
-.circ_gradient {
-	--b: 20px;
-	color: #313149;
-	width: 200px;
-	height: 200px;
-	position: relative;
-	z-index: 3;
+.judge-card img{ 
+    position: relative;
+    z-index: 2;
+    height: 200px;
+    width: 200px;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-width: 10px;
+    /* border-image-source: linear-gradient(90deg, #97469E 20.44%, #C146A4 36.75%, #EF489C 52.96%, #FF6A48 68.52%, #F79737 86.18%); */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    transition: transform .6s cubic-bezier(.34,1.56,.64,1);
 }
 
 
-/* .circ_gradient:after {
+.circ_gradient {
+    --b:10px; 
+    color: #313149;
+    width: 200px;
+    height: 200px;
+    position:relative;
+    z-index:3;
+  }
+  /* .circ_gradient:after {
     content:"";
     display:inline-block;
     padding-top:100%;
