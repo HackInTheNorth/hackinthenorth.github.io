@@ -374,13 +374,31 @@ a:active {
 }
 
 .broch-btn {
-	font-size: 15px;
-	left: 20%;
-	top: 35px;
-	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.broch-dwn {
+.brochure_button {
+	font-family: "CeraPro";
+	align-items: center;
+	color: white;
+	padding: 16px 32px !important;
+	font-size: 0.9em;
+	background: linear-gradient(97.62deg, rgba(255, 255, 255, 0.2) -25.62%, rgba(255, 255, 255, 0.05) 141.02%);
+	border-radius: 10px;
+	font-weight: 500;
+	cursor: pointer;
+	border: none;
+	/* transition:  .3s linear !important; */
+}
+
+.brochure_button:hover {
+	/* background: linear-gradient(97.62deg, rgba(255, 255, 255, 0.05)  -25.62%, rgba(255, 255, 255, 0.2) 141.02%); */
+	/* transition:  .3s linear; */
+}
+
+/* .broch-dwn {
 	background: linear-gradient(97.84deg, rgba(255, 255, 255, 0.2) -27.35%, rgba(255, 255, 255, 0.05) 140.59%);
 	border-radius: 8px;
 	color: white;
@@ -388,7 +406,7 @@ a:active {
 	border: #001C43;
 	padding-top: 10px;
 	padding-bottom: 10px;
-}
+} */
 
 .flex-container {
 	display: flex;
