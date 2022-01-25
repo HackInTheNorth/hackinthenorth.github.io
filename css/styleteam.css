@@ -6,7 +6,7 @@ body {
     -webkit-tap-highlight-color: rgba(255, 254, 254, 0);
     /* position: absolute;
     top: 0%; */
-    background-color: #0c0c0c;
+    background-color: #07071C;
 
 }
 
@@ -111,7 +111,7 @@ button:hover,
     position: fixed;
     top: 0%;
     left: 0%;
-    background-color: rgba(0, 0, 0, .8) ;
+    /* background-color: rgba(0, 0, 0, .8) ; */
     /* padding-top: 4%; */
     padding-left: 10%;
     padding-right: 10%;
@@ -2021,7 +2021,7 @@ background-color: #555;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#0C0C0C;
+    background-color:#07071C;
     width: 100%;
     height: 40vh;
     margin-top: 5%;
@@ -2084,5 +2084,36 @@ background-color: #555;
      /* transform: translate(+25%, 0);  */
 }
 
+
+
+.fancy_heading_container {
+	font-weight: bold;
+	padding-bottom: 90px;
+	position: relative;
+}
+
+.fancy_heading {
+	font-size: 7vw !important;
+	position: absolute;
+	width: 70%;
+	left: 15%;
+	top: 0;
+	z-index: 1;
+	letter-spacing: 4px;
+}
+
+.fancy_heading_shadow {
+	font-size: 7vw !important;
+	position: absolute;
+	width: 70%;
+	left: 15.2%;
+	top: 2px;
+	letter-spacing: 4px;
+	background: -webkit-linear-gradient(0deg, rgba(151, 70, 158, 1) 20%, rgba(193, 70, 164, 1) 40%, rgba(239, 72, 156, 1) 60%, rgba(255, 106, 72, 1) 80%, rgba(247, 151, 55, 1) 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-stroke: 4px transparent;
+	color: #07071C;
+}
 
 /*--------- Projects Section ends  -----------*/
