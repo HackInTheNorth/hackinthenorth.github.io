@@ -199,6 +199,7 @@ background-color: #555;
 } */
 
 .navbar-img {
+    width: 320px;
     max-width: 50vw;
     padding-left: 12.2px;
 }
