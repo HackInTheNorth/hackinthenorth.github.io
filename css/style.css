@@ -1952,7 +1952,7 @@ a:active {
 
 
 .circ_gradient {
-    --b:10px; 
+    --b:5px; 
     color: #313149;
     width: 200px;
     height: 200px;
