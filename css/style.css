@@ -562,10 +562,12 @@ a, a:hover, a:after, a:visited, a:active{
     font-weight: bold;
 }
 #faq{
-    padding-top: 20%;
+    /* padding-top: 20%; */
     padding-bottom: 10%;
+    -moz-background: url(../images/faq-gradient4.svg),#07071C;
     background: url(../images/faq-gradient4.svg),#07071C;
-    background-position: -100% -40%;
+    -moz-background-position: -700% 90%;
+    background-position: -700% 90%;
     background-repeat: no-repeat;
     font-family: Cera Pro;
 }
@@ -2193,7 +2195,7 @@ a, a:hover, a:after, a:visited, a:active{
     z-index: 2;
     height: 200px;
     width: 200px;
-    border: 30px solid;
+    border: 5px solid;
     border-image-slice: 1;
     border-width: 10px;
     /* border-image-source: linear-gradient(90deg, #97469E 20.44%, #C146A4 36.75%, #EF489C 52.96%, #FF6A48 68.52%, #F79737 86.18%); */
@@ -2205,7 +2207,7 @@ a, a:hover, a:after, a:visited, a:active{
 
 
 .circ_gradient {
-    --b:20px; 
+    --b:10px; 
     color: #313149;
     width: 200px;
     height: 200px;
