@@ -2011,19 +2011,6 @@ background-color: #555;
     font-family: circularStdBook;
 }
 
-.hint-4 {
-
-    font-size: 40px;
-    background: linear-gradient(#6C63FF 0%, #FF6C56 60%, #FFDB2E 100%);
-    background: -webkit-linear-gradient(#6C63FF 0%, #FF6C56 60%, #FFDB2E 100%);
-    background: -moz-linear-gradient(top, #6C63FF 0%, #FF6C56 60%, #FFDB2E 100%);
-    background: -o-linear-gradient(#6C63FF 0%, #FF6C56 60%, #FFDB2E 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -moz-background-clip: text;
-    color: transparent;
-}
-
 .shadowFix {
     box-shadow: 0 6px 18px 0 rgba(46, 61, 73, 0.1);
 }
@@ -2040,16 +2027,54 @@ background-color: #555;
     margin-top: 5%;
     padding-bottom: 3%;
     position: relative;
-    padding: 0 10rem;
+    padding: 40px;
     margin-bottom: 20px;
 }
 
-
+@media screen and (max-width: 1400px) {
+    .about-team{
+        padding: 0 10rem;
+    }
+    .about-team .what-content {
+        font-size: 20px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .about-team {
-        padding-top: 48%;
-        padding-bottom: 12%
+        padding-top: 14%;
+    }
+
+}
+@media screen and (max-width: 590px) {
+    .about-team {
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width: 590px) {
+    .about-team .what-content {
+        font-size: 20px;
+    }
+    .about-team{
+        margin-top: 10%;
+        padding: 0 40px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .about-team{
+        padding-top: 30%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .about-team{
+        padding-top: 50%;
+        margin-bottom: 20%;
+    }
+}
+@media screen and (max-width: 300px) {
+    .about-team{
+        padding-top: 70%;
+        margin-bottom: 30%;
     }
 }
 
