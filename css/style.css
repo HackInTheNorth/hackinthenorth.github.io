@@ -401,15 +401,15 @@ a, a:hover, a:after, a:visited, a:active{
 .broch-txt1{
     font-size: 34px;
     font-weight: bold;
-    top: -10px;
+    /* top: -10px; */
     position: relative;
-    margin-left: 35px;
+    /* margin-left: 35px; */
 }
 .broch-txt2{
     font-size: 20px;
-    top: -5px;
+    /* top: -5px; */
     position: relative;
-    margin-left: 35px;
+    /* margin-left: 35px; */
 }
 
 .broch-btn{
@@ -434,6 +434,11 @@ a, a:hover, a:after, a:visited, a:active{
 }
 .brch{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin: 0 !important;
 }
 
 /* .flex-container .ribbon
@@ -453,10 +458,11 @@ a, a:hover, a:after, a:visited, a:active{
 
 .brochure-box .link
 {
-    position: relative;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
+    margin: 0;
+    /* position: relative; */
+    /* top:50%; */
+    /* left:50%; */
+    /* transform: translate(-50%, -50%); */
     width: 100%;
     /* text-align: center; */
 }
@@ -667,7 +673,11 @@ a, a:hover, a:after, a:visited, a:active{
         margin: 0 auto;
     }
 
-    
+    .faq-box{
+        border-radius: 10px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
 }
 
 
@@ -801,11 +811,11 @@ a, a:hover, a:after, a:visited, a:active{
     }
     .broch-txt1{
         font-size: 30px;
-        margin-left: 30px;
+        /* margin-left: 30px; */
     }
     .broch-txt2{
         font-size: 18px;
-        margin-left: 30px;
+        /* margin-left: 30px; */
     }
 
     .broch-btn{
@@ -835,13 +845,13 @@ a, a:hover, a:after, a:visited, a:active{
     }
     .broch-txt1{
         font-size: 25px;
-        margin-left: 28px;
-        top: 20px;
+        /* margin-left: 28px;
+        top: 20px; */
     }
     .broch-txt2{
         font-size: 15px;
-        margin-left: 28px;
-        top: 20px;
+        /* margin-left: 28px;
+        top: 20px; */
     }
 
     .broch-btn{
@@ -977,11 +987,11 @@ a, a:hover, a:after, a:visited, a:active{
     }
     .broch-txt1{
         font-size: 22px;
-        margin-left: 25px;
+        /* margin-left: 25px; */
     }
     .broch-txt2{
         font-size: 13px;
-        margin-left: 25px;
+        /* margin-left: 25px; */
     }
 
     .broch-btn{
@@ -1142,13 +1152,13 @@ a, a:hover, a:after, a:visited, a:active{
     }
     .broch-txt1{
         font-size: 20px;
-        margin-left: 12px;
-        top: 8px;
+        /* margin-left: 12px;
+        top: 8px; */
     }
     .broch-txt2{
         font-size: 12px;
-        margin-left: 12px;
-        top: 8px;
+        /* margin-left: 12px;
+        top: 8px; */
     }
 
     .broch-btn{
@@ -1236,13 +1246,13 @@ a, a:hover, a:after, a:visited, a:active{
     }
     .broch-txt1{
         font-size: 20px;
-        margin-left: 12px;
-        top: 5px;
+        /* margin-left: 12px;
+        top: 5px; */
     }
     .broch-txt2{
         font-size: 12px;
-        margin-left: 12px;
-        top: 5px;
+        /* margin-left: 12px;
+        top: 5px; */
     }
 
     .broch-btn{
@@ -1381,13 +1391,13 @@ a, a:hover, a:after, a:visited, a:active{
     }
     .broch-txt1{
         font-size: 18px;
-        margin-left: 10px;
-        top: -2px;
+        /* margin-left: 10px;
+        top: -2px; */
     }
     .broch-txt2{
         font-size: 12px;
-        margin-left: 10px;
-        top: -2px;
+        /* margin-left: 10px;
+        top: -2px; */
     }
 
     .broch-btn{
@@ -1521,13 +1531,13 @@ a, a:hover, a:after, a:visited, a:active{
     }
     .broch-txt1{
         font-size: 17px;
-        margin-left: 8px;
-        top: 2px;
+        /* margin-left: 8px;
+        top: 2px; */
     }
     .broch-txt2{
         font-size: 11px;
-        margin-left: 8px;
-        top: 2px;
+        /* margin-left: 8px;
+        top: 2px; */
     }
 
     .broch-btn{
@@ -1649,13 +1659,13 @@ a, a:hover, a:after, a:visited, a:active{
     }
     .broch-txt1{
         font-size: 13px;
-        margin-left: 5px;
-        top: -15px;
+        /* margin-left: 5px;
+        top: -15px; */
     }
     .broch-txt2{
         font-size: 10px;
-        margin-left: 5px;
-        top: -15px;
+        /* margin-left: 5px;
+        top: -15px; */
     }
 
     .broch-btn{
@@ -1789,13 +1799,13 @@ a, a:hover, a:after, a:visited, a:active{
     }
     .broch-txt1{
         font-size: 12px;
-        margin-left: -2px;
-        top: -20px;
+        /* margin-left: -2px;
+        top: -20px; */
     }
     .broch-txt2{
         font-size: 10px;
-        margin-left: -2px;
-        top: -20px;
+        /* margin-left: -2px;
+        top: -20px; */
     }
 
     .broch-btn{
@@ -1870,13 +1880,13 @@ a, a:hover, a:after, a:visited, a:active{
     }
     .broch-txt1{
         font-size: 9px;
-        margin-left: -6px;
-        top: -28px;
+        /* margin-left: -6px;
+        top: -28px; */
     }
     .broch-txt2{
         font-size: 9px;
-        margin-left: -6px;
-        top: -28px;
+        /* margin-left: -6px;
+        top: -28px; */
     }
 
     .broch-btn{
@@ -2817,7 +2827,7 @@ border-radius: 200px;
   }
   .sched_grad
   {
-      margin-top: -130%;
+      margin-top: -170%;
       margin-left: 30%;
       z-index: 1;
   }
@@ -3975,8 +3985,18 @@ border-radius: 200px;
     }
 }
 
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+    border: none;
+    outline: none;
+}
 
+.owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover{
+    background-color: transparent;
+}
 
+.prize-number{
+    font-family: 'CeraPro-regular';
+}
 
 @media screen and (max-width: 768px)
 {

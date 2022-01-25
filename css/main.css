@@ -3147,6 +3147,10 @@ footer
     margin-top : -30px;
 }
 
+.Center-content
+{
+    margin-top: 60px;
+}
 
 @media screen and (max-width: 440px)
 {
@@ -3166,9 +3170,4 @@ footer
     {
         margin-top: -100px;
     }
-}
-
-.Center-content
-{
-    margin-top: 60px;
 }
