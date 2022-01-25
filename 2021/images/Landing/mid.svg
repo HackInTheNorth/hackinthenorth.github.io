@@ -1,0 +1,32 @@
+<svg width="1920" height="605" viewBox="0 0 1920 605" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="605">
+<rect width="1920" height="605" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<path d="M1119.5 287L1041 344.5L968 436L1922.5 444V317L1685.5 196.5L1620 118L1527.5 216L1352 317H1308L1268 343L1181 334L1119.5 287Z" fill="url(#paint0_linear)"/>
+<path d="M1515 253.5L1427 274L1528 215.5L1620 118L1686 196.5L1767.5 238L1644 228.5L1579.5 268L1515 253.5Z" fill="#D6DEF6"/>
+<path d="M1682.5 332.5L1647 293L1644.5 315.5L1635.5 337L1679 361.5L1723.5 405L1848.5 423L1768 373.5L1682.5 332.5Z" fill="black" fill-opacity="0.1"/>
+<path d="M1579.5 268.5L1549.5 322L1477 375.5L1402.5 372L1395 351L1462.5 322L1556 262.5L1604.5 182.5L1579.5 268.5Z" fill="black" fill-opacity="0.1"/>
+<path d="M1111 304L1073.5 337L1107.5 329.5V319.5L1111 304Z" fill="black" fill-opacity="0.1"/>
+<path d="M1133.5 313L1140 322H1144L1133.5 313Z" fill="black" fill-opacity="0.1"/>
+<path d="M150.5 276.5L212.5 245.5L249 276.5L289 290L431 385.5H-1.49997V276.5L32.5001 267L83.5 222L114 256.5L150.5 276.5Z" fill="url(#paint1_linear)"/>
+<path d="M38 275L75.5 240.5L46 287L9.5 320L-15 294.5L38 275Z" fill="black" fill-opacity="0.1"/>
+<path d="M222.5 257.5L212.5 245.5L227 282L235.5 312.5L273.5 291.5L238.5 275.5L222.5 257.5Z" fill="black" fill-opacity="0.1"/>
+<path d="M1794.46 263.499L1929 356.5L1916.5 327L1903.68 316.368L1794.46 263.499Z" fill="black" fill-opacity="0.1"/>
+<path d="M1660.5 230L1620.5 118L1685.5 196L1683 207L1770.5 278.5L1690.5 237L1660.5 230Z" fill="black" fill-opacity="0.1"/>
+<path d="M1417.5 293L1502.5 242.5L1489 259.5L1417.5 293Z" fill="black" fill-opacity="0.1"/>
+<path d="M114 256.5L83.5 222.5L94 249.5L102 291.5L106.5 285L111.5 282L106.5 268L108.5 260L114 256.5Z" fill="black" fill-opacity="0.1"/>
+<path d="M48.5 304.5L65 283.5L69.5 276.5L58.5 299L48.5 304.5Z" fill="black" fill-opacity="0.1"/>
+<path d="M187 267L201 259.5L206 256L194 265.5L187 267Z" fill="black" fill-opacity="0.06"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="1445.5" y1="179.5" x2="1445.5" y2="464" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5472D8"/>
+<stop offset="1"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="214.75" y1="222" x2="214.75" y2="385.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#211B5C"/>
+<stop offset="1" stop-color="#242631"/>
+</linearGradient>
+</defs>
+</svg>
