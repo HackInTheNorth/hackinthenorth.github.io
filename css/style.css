@@ -870,16 +870,6 @@ a, a:hover, a:after, a:visited, a:active{
         font-size: 33px; 
     }
 
-    .com-head{
-        padding-bottom: 120px;
-    }
-    .commit-heading
-    {
-        font-size: 5.6em;
-    }
-    .commit-shadow{
-        font-size: 5.6em;
-    }
     /* #square img {
         width: 110%;
         margin-top: 10%;
@@ -956,7 +946,7 @@ a, a:hover, a:after, a:visited, a:active{
     }
 
     #content div {
-        max-width: 58%;
+        max-width: 65%;
     }
 
 
@@ -1584,6 +1574,9 @@ a, a:hover, a:after, a:visited, a:active{
     #content div
     {
         max-width: 100%;
+    }
+    #content  .fancy_heading_container .fancy_heading, #content .fancy_heading_container .fancy_heading_shadow{
+        font-size: 12vw !important;
     }
 
     #content div p {
