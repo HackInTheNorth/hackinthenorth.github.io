@@ -885,14 +885,14 @@ background-color: #555;
 }
 
 .footer-info {
-    font-family: circularStdBook;
+    /* font-family: circularStdBook; */
     font-size: 20px;
     color: #575757;
     line-height: 140%;
 }
 
 .footer-social-links {
-    font-family: circularStdBook;
+    /* font-family: circularStdBook; */
     font-size: 20px;
     color: #818181;
 }
@@ -1108,11 +1108,11 @@ background-color: #555;
     /* transform: translate(-50%, 0); */
 }
 
-@media screen and (min-width: 1400px){
+/* @media screen and (min-width: 1400px){
     .circle-holder .container{
         left: 20%;
     }
-}
+} */
 
 
 .speaker-about {
