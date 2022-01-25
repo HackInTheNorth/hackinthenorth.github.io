@@ -2160,6 +2160,7 @@ a, a:hover, a:after, a:visited, a:active{
 .judges-cards-section{
     width: 100%;
     max-width: 1254px;
+    padding-top: 10px;
     margin: 0 auto;
 }
 
@@ -2184,22 +2185,75 @@ a, a:hover, a:after, a:visited, a:active{
     font-size: 1rem;
     margin: 0;
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-90px);
     z-index: 1;
     transition: all .6s cubic-bezier(.34,1.56,.64,1);
+    padding-top: 10px;
 }
 
-.judge-card img{
+.center{
+    display: flex; align-items: center; justify-content: center;
+}
+
+.judge-card img{ 
     position: relative;
     z-index: 2;
     height: 200px;
     width: 200px;
+    border: 30px solid;
+    border-image-slice: 1;
+    border-width: 10px;
+    /* border-image-source: linear-gradient(90deg, #97469E 20.44%, #C146A4 36.75%, #EF489C 52.96%, #FF6A48 68.52%, #F79737 86.18%); */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
     border-radius: 50%;
     transition: transform .6s cubic-bezier(.34,1.56,.64,1);
 }
 
+
+.circ_gradient {
+    --b:20px; 
+    color: #313149;
+    width: 200px;
+    height: 200px;
+    position:relative;
+    z-index:3;
+  }
+  /* .circ_gradient:after {
+    content:"";
+    display:inline-block;
+    padding-top:100%;
+  } */
+  .circ_gradient:before {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: var(--c,linear-gradient(90deg, #97469E 20.44%, #C146A4 36.75%, #EF489C 52.96%, #FF6A48 68.52%, #F79737 86.18%));
+    padding: var(--b);
+    border-radius:50%;
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+
 .judge-name{
     font-size: 1.5rem;
+}
+
+.speaker_img{
+    border-style: solid;
+    border-width: 5px;
+    -moz-border-image: linear-gradient(90deg, #97469E 20.44%, #C146A4 37.08%, #EF489C 53.17%, #FF6A48 70.63%, #F79737 86.18%);
+    -webkit-border-image: linear-gradient(90deg, #97469E 20.44%, #C146A4 37.08%, #EF489C 53.17%, #FF6A48 70.63%, #F79737 86.18%);
+    border-image: linear-gradient(90deg, #97469E 20.44%, #C146A4 37.08%, #EF489C 53.17%, #FF6A48 70.63%, #F79737 86.18%);
+    border-image-slice: 1;
 }
 
 
