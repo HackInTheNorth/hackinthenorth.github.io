@@ -1,7 +1,7 @@
 $('.owl-carousel').owlCarousel({
     loop:true,
     nav: true,
-    dots: false,
+    dots: true,
     margin: 30,
     // autoplaySpeed:5000,
     center:true,
