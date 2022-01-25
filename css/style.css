@@ -3598,7 +3598,8 @@ border-radius: 200px;
   } */
 
   .footer {
-    background: #262626;
+    background: linear-gradient(113.9deg, rgba(255, 255, 255, 0.15) 6.55%, rgba(255, 255, 255, 0) 118.89%, rgba(255, 255, 255, 0) 123.74%);
+      backdrop-filter: blur(40px);
     color: white;
     font-family: 'CeraPro';
 }
