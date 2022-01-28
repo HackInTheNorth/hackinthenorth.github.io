@@ -3446,6 +3446,20 @@ border-radius: 200px;
 	.main-sponsors {
 		margin-bottom: 10%;
 	}
+	.sponsors_main1 {
+		width: 70%;
+		margin-bottom: 10%;
+	}
+	
+	.sponsors_main2 {
+		width: 50%;
+		margin-bottom: 8%;
+	}
+	
+	.sponsors_main3 {
+		width: 50%;
+		margin-bottom: 8%;
+	}
 }
 
 @media screen and (max-width: 992px) {
