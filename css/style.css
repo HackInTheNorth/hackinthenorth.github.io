@@ -1410,6 +1410,9 @@ a:active {
 	#content .fancy_heading_container .fancy_heading_shadow {
 		font-size: 12vw !important;
 	}
+	.sponsor-prize{
+		padding-bottom: 0%;
+	}
 	#content div p {
 		font-size: 1.6em;
 	}
@@ -2399,6 +2402,20 @@ a:active {
 	margin: 12.5% 0;
 }
 
+.prize1-box {
+	background: linear-gradient(105.95deg, rgba(255, 255, 255, 0.25) 4.09%, rgba(255, 255, 255, 0) 129.28%);
+	backdrop-filter: blur(80px);
+	border-radius: 16px;
+	height: 300px;
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, 1);
+	margin-bottom: 80px;
+	transition-duration: 0.6s;
+	color: white;
+}
+
 .prize-box {
 	background: linear-gradient(105.95deg, rgba(255, 255, 255, 0.25) 4.09%, rgba(255, 255, 255, 0) 129.28%);
 	backdrop-filter: blur(80px);
@@ -2487,11 +2504,18 @@ border-radius: 200px;
 	margin: 0 auto;
 }
 
+.prize1-number {
+	text-align: center;
+	font-size: 29px !important;
+	font-weight: 600;
+	color: white;
+}
+
 .prize-number {
 	text-align: center;
 	font-size: 32px;
 	font-weight: 600;
-	color: rgba(225, 209, 209, 0.9);
+	color: white;
 }
 
 .special-prize .prize-number {
@@ -2641,6 +2665,10 @@ border-radius: 200px;
 	font-family: 'CeraPro-Thin';
 	letter-spacing: 2px;
 	padding-bottom: 20px;
+}
+
+.sponsor-prize{
+	padding-bottom: 10%;
 }
 
 .fancy_heading_container {
@@ -3682,17 +3710,23 @@ border-radius: 200px;
 	color: white;
 	padding: 16px 32px !important;
 	font-size: 1.4em;
-	background: linear-gradient(97.62deg, rgba(255, 255, 255, 0.2) -25.62%, rgba(255, 255, 255, 0.05) 141.02%);
+	background: linear-gradient(97.62deg, var(--c1, rgba(255, 255, 255, 0.2)), var(--c2, rgba(255, 255, 255, 0.05)))var(--x, 0)/ 200%;
 	border-radius: 10px;
 	font-weight: 500;
 	cursor: pointer;
 	border: none;
+	transition: 0.5s;
 	/* transition:  .3s linear !important; */
 }
 
 .dev:hover {
-	/* background: linear-gradient(97.62deg, rgba(255, 255, 255, 0.05)  -25.62%, rgba(255, 255, 255, 0.2) 141.02%); */
-	/* transition:  .3s linear; */
+	/* background: linear-gradient(97.62deg, rgba(255, 255, 255, 0.05)  -25.62%, rgba(255, 255, 255, 0.2) 141.02%);
+	transition:  .8s linear; */
+	--x: 100%;
+}
+.dev-btn{
+	--c1: rgba(255, 255, 255, 0.2);
+  	--c2: rgba(255, 255, 255, 0.05);
 }
 
 @keyframes pressed {
