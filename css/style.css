@@ -2890,7 +2890,7 @@ border-radius: 200px;
 
 .role-speaker {
 	font-family: 'CeraPro';
-	color: #FFBE2E;
+	color: #fff;
 	font-weight: 500;
 	font-size: 1.4rem;
 	width: 100%;
@@ -2899,7 +2899,7 @@ border-radius: 200px;
 
 .des-speaker {
 	font-family: 'CeraPro';
-	color: #FFBE2E;
+	color: #fff;
 	font-weight: 500;
 	font-size: 1.2rem;
 	text-align: left;
@@ -2918,11 +2918,11 @@ border-radius: 200px;
 }
 
 .role-type-1 {
-	color: #FF6A48;
+	color: #fff;
 }
 
 .des-type-1 {
-	color: #FF6A48;
+	color: #fff;
 }
 
 .youtube-type-2 {
@@ -2934,11 +2934,11 @@ border-radius: 200px;
 }
 
 .role-type-2 {
-	color: #6ABC00;
+	color: #fff;
 }
 
 .des-type-2 {
-	color: #6ABC00;
+	color: #fff;
 }
 
 .youtube-type-3 {
@@ -2950,11 +2950,11 @@ border-radius: 200px;
 }
 
 .role-type-3 {
-	color: #6C63FF;
+	color: #fff;
 }
 
 .des-type-3 {
-	color: #6C63FF;
+	color: #fff;
 }
 
 .youtube-type-4 {
@@ -2966,11 +2966,11 @@ border-radius: 200px;
 }
 
 .role-type-4 {
-	color: #97469E;
+	color: #fff;
 }
 
 .des-type-4 {
-	color: #97469E;
+	color: #fff;
 }
 
 .owl-carousel .owl-nav .owl-next:after {
