@@ -399,10 +399,10 @@ a:active {
 	/* transition:  .3s linear !important; */
 }
 
-.brochure_button:hover {
+/* .brochure_button:hover { */
 	/* background: linear-gradient(97.62deg, rgba(255, 255, 255, 0.05)  -25.62%, rgba(255, 255, 255, 0.2) 141.02%); */
 	/* transition:  .3s linear; */
-}
+/* } */
 
 /* .broch-dwn {
 	background: linear-gradient(97.84deg, rgba(255, 255, 255, 0.2) -27.35%, rgba(255, 255, 255, 0.05) 140.59%);
@@ -2653,6 +2653,7 @@ border-radius: 200px;
 	font-weight: bold;
 	padding-bottom: 90px;
 	position: relative;
+	padding-bottom: 120px;
 }
 
 .fancy_heading {
@@ -2694,6 +2695,7 @@ border-radius: 200px;
 	background: linear-gradient(180deg, #eaeaea 0%, #3c3333 100%);
 	background: linear-gradient(180deg, #3C3C3C 0%, #858585 100%);
 	-webkit-background-clip: text !important;
+	background-clip: text !important;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -3237,7 +3239,16 @@ border-radius: 200px;
 	}
 }
 
-
+@media screen and (min-width: 1400px) {
+	.fancy_heading_container {
+	  padding-bottom: 150px ;
+	}
+  }
+  @media screen and (min-width: 1600px) {
+	.fancy_heading_container {
+	  padding-bottom: 200px ;
+	}
+  }
 /* .path {
     stroke-dasharray: 1114.6513671875;
     stroke-dashoffset: 1114.6513671875;
@@ -3259,13 +3270,7 @@ border-radius: 200px;
 	background-color: #F9D53D;
 	border-radius: 50%;
 	opacity: 1.0;
-	offset-path: path('M0 40\
-          C20.5 80.5 18.5 161 205 226\
-          M205 226\
-          C336 274.5 396.356 169.5 359.5 116\
-          C326.089 67.5 205 74.4 205 226\
-          ZM205 226\
-          C208.667 288.333 251.7 408.2 394.5 389');
+	offset-path: path('M0 40\ C20.5 80.5 18.5 161 205 226\ M205 226\ C336 274.5 396.356 169.5 359.5 116\ C326.089 67.5 205 74.4 205 226\ ZM205 226\ C208.667 288.333 251.7 408.2 394.5 389');
 	-webkit-animation: glow 1s ease-in-out infinite alternate;
 	-moz-animation: glow 1s ease-in-out infinite alternate;
 	animation: glow 1s ease-in-out infinite alternate;
@@ -3281,7 +3286,6 @@ border-radius: 200px;
 		box-shadow: 0 0 10px #F9D53D, 0 0 15px #F9D53D, 0 0 20px #F9D53D, 0 0 30px #F9D53D, 0 0 40px #F9D53D, 0 0 50px #F9D53D, 0 0 60px #F9D53D;
 	}
 }
-
 @-moz-document url-prefix() {
 	.ball {
 		display: none;
@@ -3290,13 +3294,7 @@ border-radius: 200px;
 		background-color: #F9D53D;
 		border-radius: 50%;
 		opacity: 1.0;
-		offset-path: path('M0 40\
-              C20.5 80.5 18.5 161 205 226\
-              M205 226\
-              C336 274.5 396.356 169.5 359.5 116\
-              C326.089 67.5 205 74.4 205 226\
-              ZM205 226\
-              C208.667 288.333 251.7 408.2 394.5 389');
+		offset-path: path('M0 40\ C20.5 80.5 18.5 161 205 226\ M205 226\ C336 274.5 396.356 169.5 359.5 116\ C326.089 67.5 205 74.4 205 226\ ZM205 226\ C208.667 288.333 251.7 408.2 394.5 389');
 		-webkit-animation: glow 1s ease-in-out infinite alternate;
 		-moz-animation: glow 1s ease-in-out infinite alternate;
 		animation: glow 1s ease-in-out infinite alternate;
