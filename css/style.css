@@ -3286,7 +3286,7 @@ border-radius: 200px;
 		box-shadow: 0 0 10px #F9D53D, 0 0 15px #F9D53D, 0 0 20px #F9D53D, 0 0 30px #F9D53D, 0 0 40px #F9D53D, 0 0 50px #F9D53D, 0 0 60px #F9D53D;
 	}
 }
-@-moz-document url-prefix() {
+@document url() {
 	.ball {
 		display: none;
 		width: 10px;
