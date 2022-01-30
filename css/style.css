@@ -2866,13 +2866,14 @@ border-radius: 200px;
 	background: #FFBE2E;
 	height: 10px;
 	width: 100%;
+	/* display: none; */
 }
 
 .role-speaker {
 	font-family: 'CeraPro';
 	color: #fff;
 	font-weight: 500;
-	font-size: 1.4rem;
+	font-size: 1.7rem;
 	width: 100%;
 	text-align: right;
 }
@@ -3236,6 +3237,14 @@ border-radius: 200px;
 	}
 	#content {
 		top: 60%;
+	}
+	.dash-speaker {
+		display: none;
+	}	
+}
+@media only screen and (min-width: 540px) {
+	.des-speaker-container{
+		padding-left: 15px !important;
 	}
 }
 
