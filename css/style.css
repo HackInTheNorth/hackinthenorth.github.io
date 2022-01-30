@@ -267,6 +267,15 @@ a:active {
 	text-align: center;
 }
 
+.neo-img{
+	width: 50%; 
+	margin-left: 25%;
+}
+
+.coc-above{
+	margin-right: 10%;
+}
+
 .coc {
 	font-weight: bold;
 	background: -webkit-linear-gradient(0deg, rgba(151, 70, 158, 1) 20%, rgba(193, 70, 164, 1) 40%, rgba(239, 72, 156, 1) 60%, rgba(255, 106, 72, 1) 80%, rgba(247, 151, 55, 1) 100%);
@@ -304,6 +313,7 @@ a:active {
 	background-position: 100% 0%;
 	background-repeat: no-repeat;
 }
+
 
 .sponsorship {
 	width: 100%;
@@ -361,16 +371,12 @@ a:active {
 .broch-txt1 {
 	font-size: 34px;
 	font-weight: bold;
-	/* top: -10px; */
 	position: relative;
-	/* margin-left: 35px; */
 }
 
 .broch-txt2 {
 	font-size: 20px;
-	/* top: -5px; */
 	position: relative;
-	/* margin-left: 35px; */
 }
 
 .broch-btn {
@@ -754,11 +760,9 @@ a:active {
 	}
 	.broch-txt1 {
 		font-size: 30px;
-		/* margin-left: 30px; */
 	}
 	.broch-txt2 {
-		font-size: 18px;
-		/* margin-left: 30px; */
+		font-size: 20px;
 	}
 	.broch-btn {
 		font-size: 13px;
@@ -785,13 +789,9 @@ a:active {
 	}
 	.broch-txt1 {
 		font-size: 25px;
-		/* margin-left: 28px;
-        top: 20px; */
 	}
 	.broch-txt2 {
-		font-size: 15px;
-		/* margin-left: 28px;
-        top: 20px; */
+		font-size: 18px;
 	}
 	.broch-btn {
 		left: 18%;
@@ -899,11 +899,6 @@ a:active {
 	}
 	.broch-txt1 {
 		font-size: 22px;
-		/* margin-left: 25px; */
-	}
-	.broch-txt2 {
-		font-size: 13px;
-		/* margin-left: 25px; */
 	}
 	.broch-btn {
 		left: 18%;
@@ -1028,7 +1023,6 @@ a:active {
 		font-size: 35px
 	}
 	.faq-line {
-		/* height: 200px; */
 		margin-top: -70%;
 	}
 	.brochure-box {
@@ -1037,13 +1031,6 @@ a:active {
 	}
 	.broch-txt1 {
 		font-size: 20px;
-		/* margin-left: 12px;
-        top: 8px; */
-	}
-	.broch-txt2 {
-		font-size: 12px;
-		/* margin-left: 12px;
-        top: 8px; */
 	}
 	.broch-btn {
 		font-size: 12px;
@@ -1121,13 +1108,6 @@ a:active {
 	}
 	.broch-txt1 {
 		font-size: 20px;
-		/* margin-left: 12px;
-        top: 5px; */
-	}
-	.broch-txt2 {
-		font-size: 12px;
-		/* margin-left: 12px;
-        top: 5px; */
 	}
 	.broch-btn {
 		font-size: 10px;
@@ -1244,13 +1224,9 @@ a:active {
 	}
 	.broch-txt1 {
 		font-size: 18px;
-		/* margin-left: 10px;
-        top: -2px; */
 	}
 	.broch-txt2 {
-		font-size: 12px;
-		/* margin-left: 10px;
-        top: -2px; */
+		font-size: 16px;
 	}
 	.broch-btn {
 		font-size: 8px;
@@ -1357,14 +1333,10 @@ a:active {
 		height: 160px;
 	}
 	.broch-txt1 {
-		font-size: 17px;
-		/* margin-left: 8px;
-        top: 2px; */
+		font-size: 16px;
 	}
-	.broch-txt2 {
-		font-size: 11px;
-		/* margin-left: 8px;
-        top: 2px; */
+	.broch-txt2{
+		font-size: 14px;
 	}
 	.broch-btn {
 		font-size: 7px;
@@ -1473,14 +1445,10 @@ a:active {
 		height: 140px;
 	}
 	.broch-txt1 {
-		font-size: 13px;
-		/* margin-left: 5px;
-        top: -15px; */
+		font-size: 14px;
 	}
 	.broch-txt2 {
-		font-size: 10px;
-		/* margin-left: 5px;
-        top: -15px; */
+		font-size: 14px;
 	}
 	.broch-btn {
 		font-size: 8px;
@@ -1495,8 +1463,14 @@ a:active {
 	}
 	.com-txt2 {
 		width: 80%;
-		margin-left: 10%;
+		margin-left: 0%;
+		margin-right: 0%;
 	}
+	.neo-img{
+		width: 70%; 
+		margin-left: 15%;
+	}
+	
 	.commit-row div {
 		margin-top: 25px;
 	}
@@ -1593,14 +1567,10 @@ a:active {
 		margin-top: -200%;
 	}
 	.broch-txt1 {
-		font-size: 12px;
-		/* margin-left: -2px;
-        top: -20px; */
+		font-size: 13px;
 	}
 	.broch-txt2 {
-		font-size: 10px;
-		/* margin-left: -2px;
-        top: -20px; */
+		font-size: 13px;
 	}
 	.broch-btn {
 		font-size: 7px;
@@ -1664,14 +1634,10 @@ a:active {
 		height: 100px;
 	}
 	.broch-txt1 {
-		font-size: 9px;
-		/* margin-left: -6px;
-        top: -28px; */
+		font-size: 12px;
 	}
 	.broch-txt2 {
-		font-size: 9px;
-		/* margin-left: -6px;
-        top: -28px; */
+		font-size: 12px;
 	}
 	.broch-btn {
 		font-size: 7px;
@@ -1874,6 +1840,18 @@ a:active {
 	.active:before {
 		/* content: "\2796"; Unicode character for "minus" sign (-) */
 		color: #ffd405;
+	}
+}
+
+@media screen and (max-width: 290px){
+	.broch-txt1{
+		font-size: 10px;
+	}
+	.broch-txt2{
+		font-size: 10px;
+	}
+	.brochure-box{
+		top: 8px;
 	}
 }
 
