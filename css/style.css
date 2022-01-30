@@ -136,7 +136,7 @@ a:active {
 	width: 100%;
 	min-height: 100vh;
 	position: relative;
-	background: url(../images/date-gradient2.svg), url(../images/speaker-gradient3.svg);
+	background: url(../images/date-gradient.svg), url(../images/speaker-gradient.svg);
 	background-position: -50% 10%, 100% 75%;
 	background-repeat: no-repeat, no-repeat;
 }
@@ -309,7 +309,7 @@ a:active {
 	position: relative;
 	padding-top: 5%;
 	font-style: Cera Pro;
-	background: url(../images/commit-gradient2.svg);
+	background: url(../images/commit-gradient.svg);
 	background-position: 100% 0%;
 	background-repeat: no-repeat;
 }
@@ -549,10 +549,10 @@ a:active {
 #faq{
     /* padding-top: 20%; */
     padding-bottom: 10%;
-    -moz-background: url(../images/faq-gradient4.svg),#07071C;
-    background: url(../images/faq-gradient4.svg),#07071C;
+    /* -moz-background: url(../images/faq-gradient.svg),#07071C;
+    background: url(../images/faq-gradient.svg),#07071C;
     -moz-background-position: -700% 90%;
-    background-position: -700% 90%;
+    background-position: -700% 90%; */
     background-repeat: no-repeat;
     font-family: Cera Pro;
 }
