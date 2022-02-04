@@ -885,27 +885,5 @@
             </div>
          </div>
       </div>
-      <script>
-         window.onscroll = function () {
-           scrollFunction()
-         };
-         
-         function scrollFunction() {
-           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-             document.getElementById("mainNav").classList.remove("c25");
-             document.getElementById("mainNav").style.backgroundColor = "#000000 !important";
-             document.getElementById("mainNav").classList.add("shadowFix");
-             document.getElementById("mainNav").classList.add("c23");
-         
-             $(".nav-item a").addClass("c24");
-         
-           } else {
-             document.getElementById("mainNav").classList.add("c25");
-             document.getElementById("mainNav").classList.remove("shadowFix");
-             document.getElementById("mainNav").classList.remove("c23");
-             $(".nav-item a").removeClass("c24");
-           }
-         }
-      </script>
    </body>
 </html>
