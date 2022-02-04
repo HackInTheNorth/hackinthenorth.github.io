@@ -2087,6 +2087,117 @@ background-color: #555;
 
 
 
+/* ===================TEAM CARDS====================== */
+.member-head h1 {
+	font-size: 3.4rem;
+}
+
+.members-cards-section {
+	width: 100%;
+	max-width: 1254px;
+	padding-top: 10px;
+	margin: 0 auto;
+}
+
+.member-card {
+	text-align: center;
+	margin: 2rem auto;
+}
+
+.member-card:hover img {
+	transform: scale(0.9);
+}
+
+.member-card:hover .member-number {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.member-number {
+	position: relative;
+	color: rgba(220, 220, 220, 1);
+	font-size: 1rem;
+	margin: 0;
+	opacity: 0;
+	transform: translateY(-90px);
+	z-index: 1;
+	transition: all .6s cubic-bezier(.34, 1.56, .64, 1);
+	padding-top: 10px;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.member-card img {
+	position: relative;
+	z-index: 2;
+	height: 200px;
+	width: 200px;
+	border: 30px solid;
+	border-image-slice: 1;
+	border-width: 10px;
+	/* border-image-source: linear-gradient(90deg, #97469E 20.44%, #C146A4 36.75%, #EF489C 52.96%, #FF6A48 68.52%, #F79737 86.18%); */
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	transition: transform .6s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+.member-card img{ 
+    position: relative;
+    z-index: 2;
+    height: 200px;
+    width: 200px;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-width: 10px;
+    /* border-image-source: linear-gradient(90deg, #97469E 20.44%, #C146A4 36.75%, #EF489C 52.96%, #FF6A48 68.52%, #F79737 86.18%); */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    transition: transform .6s cubic-bezier(.34,1.56,.64,1);
+}
+
+
+.circ_gradient {
+    --b:5px; 
+    color: #313149;
+    width: 200px;
+    height: 200px;
+    position:relative;
+    z-index:3;
+  }
+  /* .circ_gradient:after {
+    content:"";
+    display:inline-block;
+    padding-top:100%;
+  } */
+
+.circ_gradient:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: var(--c, linear-gradient(90deg, #97469E 20.44%, #C146A4 36.75%, #EF489C 52.96%, #FF6A48 68.52%, #F79737 86.18%));
+	padding: var(--b);
+	border-radius: 50%;
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+	mask-composite: exclude;
+}
+
+.member-name {
+	font-size: 1.5rem;
+    color: #fff;
+}
+
+
 
 
 /*--------- Projects Section ends  -----------*/
