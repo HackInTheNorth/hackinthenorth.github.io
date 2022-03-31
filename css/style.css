@@ -777,6 +777,20 @@ a:active {
 }
 
 @media screen and (max-width: 1100px) {
+
+	.sch{
+		display: none;
+	}
+	#tim-mobile{
+		display: inline-block !important;
+	}
+	.sch-mob{
+		width: 50%;
+		margin-left: 20%;
+	}
+	#tim-mobile{
+		display: inline-block;
+	}
 	.about {
 		background-position: -150% 15%, 128% 78%;
 	}
@@ -877,6 +891,7 @@ a:active {
 }
 
 @media screen and (max-width: 992px) {
+	
 	.about {
 		background-position: 200% 10%, 120% 80%;
 	}
@@ -2569,17 +2584,17 @@ border-radius: 200px;
 }
 
 .sch {
-	width: 75%;
-	margin-left: 14%;
+	width: 90%;
+	margin-left: 5%;
 }
 
 .time-svg img {
 	max-width: 90%;
 }
 
-#mobile {
+#tim-mobile {
 	display: none;
-	margin-bottom: 10%;
+	/* margin-bottom: 10%; */
 }
 
 .time-head {
@@ -2609,18 +2624,18 @@ border-radius: 200px;
 }
 
 @media screen and (max-width: 440px) {
-	#mobile {
+	/* #mobile {
 		display: inline-block;
-	}
+	} */
 	#pc {
 		display: none;
 	}
 	.time-head {
 		margin-top: 0;
 	}
-	#mobile {
+	/* #mobile {
 		margin-bottom: 15%;
-	}
+	} */
 }
 
 .hint-text {
