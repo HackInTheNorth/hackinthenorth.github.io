@@ -413,12 +413,17 @@ button:hover,
     height: 200px;
     position:relative;
     z-index:3;
-  }
-  /* .circ_gradient:after {
-    content:"";
-    display:inline-block;
-    padding-top:100%;
-  } */
+}
+
+.circ_gradient img{
+    object-fit: contain;
+}
+
+/* .circ_gradient:after {
+content:"";
+display:inline-block;
+padding-top:100%;
+} */
 
 .circ_gradient:before {
 	content: "";
