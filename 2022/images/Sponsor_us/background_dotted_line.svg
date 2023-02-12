@@ -1,0 +1,20 @@
+<svg width="1920" height="859" viewBox="0 0 1920 859" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+    <style type="text/css">
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 400;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        .path {
+            stroke-dashoffset: 0;
+            animation: dash 10s linear infinite;
+        }
+    </style>
+</defs>
+
+<path class="path" d="M1958.5 2C1711.67 17.5 1151.4 123.9 885 425.5C730.5 600.414 490.2 924.1 -39 844.5" stroke="white" stroke-width="4" stroke-dasharray="10 10"/>
+</svg>
