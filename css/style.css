@@ -96,6 +96,34 @@ a:active {
 	text-align: center;
 }
 
+.back{
+	opacity: 1;
+	/* border: 2px solid blue; */
+	display: block;
+	font-size: 20vw;
+	font-family: 'CeraPro';
+	width: 100%;
+	text-align: center;
+	/* border: solid 2px red; */
+	
+}
+
+.front{
+	font-family: 'CeraPro';
+	/* border: 2px solid red; */
+	display: block;
+	position: relative;
+	/* left: -150px; */
+	/* top:-2vw; */
+	bottom:19vw;
+	font-size: 6vw;
+	text-align: center;
+	/* margin-bottom: 0px; */
+	/* opacity: 0.51; */
+}
+
+
+
 .heading {
 	max-width: 60%;
 	text-align: center;
@@ -110,6 +138,39 @@ a:active {
 	letter-spacing: 1px;
 	font-size: 5em;
 	margin-bottom: 0.5em;
+}
+
+.schedule-heading{
+	
+	width: 100%;
+	font-size: 60px;
+	text-align: center;
+	
+}
+
+.schedule-heading p{
+	margin-right: 40px;
+	margin-top: -10px;
+	position:relative;
+	top:auto;
+	bottom: auto;
+}
+
+.schedule-heading::before{
+	content: "SCHEDULE";
+	font-size: 190px;
+	position: relative;
+	top: 150px;
+	left: 0px;
+	right: 10px;
+	/*  */
+	border-color: white;
+	border: solid;
+	/*  */
+	/* color: #2a2a48; */
+	color: #FFFFFF;
+	opacity: 0.05;
+	z-index: -1;
 }
 
 .event {
@@ -1403,6 +1464,15 @@ a:active {
 	#content div p {
 		font-size: 1.6em;
 	}
+
+	.schedule-heading {
+		font-size: 20px !important;
+	}
+
+	.schedule-heading::before {
+		font-size: 58px !important;
+		top: 58px !important;
+	}
 	/* #com-content div p {
         font-size: 1.6em;
     } */
@@ -1440,10 +1510,10 @@ a:active {
     {
         font-size: 1.15em;
     } */
-	p {
+	/* p {
 		margin-top: 0;
 		margin-bottom: 0.8em;
-	}
+	} */
 	.ribbon img {
 		position: absolute;
 		top: -20px;
@@ -2584,13 +2654,23 @@ border-radius: 200px;
 }
 
 .sch {
+	
 	width: 90%;
-	margin-left: 5%;
+	display: block;
+	position: relative;
+	text-align: center;
+	top: -7vw;
+	left: 5.5vw;
+	/* margin-left: ; */
 }
 
 .time-svg img {
+
 	max-width: 90%;
 }
+
+
+
 
 #tim-mobile {
 	display: none;
