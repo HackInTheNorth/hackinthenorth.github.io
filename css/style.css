@@ -140,38 +140,7 @@ a:active {
 	margin-bottom: 0.5em;
 }
 
-.schedule-heading{
-	
-	width: 100%;
-	font-size: 60px;
-	text-align: center;
-	
-}
 
-.schedule-heading p{
-	margin-right: 40px;
-	margin-top: -10px;
-	position:relative;
-	top:auto;
-	bottom: auto;
-}
-
-.schedule-heading::before{
-	content: "SCHEDULE";
-	font-size: 190px;
-	position: relative;
-	top: 150px;
-	left: 0px;
-	right: 10px;
-	/*  */
-	border-color: white;
-	border: solid;
-	/*  */
-	/* color: #2a2a48; */
-	color: #FFFFFF;
-	opacity: 0.05;
-	z-index: -1;
-}
 
 .event {
 	margin: auto;
@@ -1465,14 +1434,7 @@ a:active {
 		font-size: 1.6em;
 	}
 
-	.schedule-heading {
-		font-size: 20px !important;
-	}
 
-	.schedule-heading::before {
-		font-size: 58px !important;
-		top: 58px !important;
-	}
 	/* #com-content div p {
         font-size: 1.6em;
     } */
