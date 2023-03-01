@@ -96,7 +96,7 @@ a:active {
 	text-align: center;
 }
 
-.back{
+.schedule-back{
 	opacity: 1;
 	/* border: 2px solid blue; */
 	display: block;
@@ -108,7 +108,7 @@ a:active {
 	
 }
 
-.front{
+.schedule-front{
 	font-family: 'CeraPro';
 	/* border: 2px solid red; */
 	display: block;
