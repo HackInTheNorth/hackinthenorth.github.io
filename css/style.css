@@ -96,6 +96,34 @@ a:active {
 	text-align: center;
 }
 
+.schedule-back{
+	opacity: 1;
+	/* border: 2px solid blue; */
+	display: block;
+	font-size: 20vw;
+	font-family: 'CeraPro';
+	width: 100%;
+	text-align: center;
+	/* border: solid 2px red; */
+	
+}
+
+.schedule-front{
+	font-family: 'CeraPro';
+	/* border: 2px solid red; */
+	display: block;
+	position: relative;
+	/* left: -150px; */
+	/* top:-2vw; */
+	bottom:19vw;
+	font-size: 6vw;
+	text-align: center;
+	/* margin-bottom: 0px; */
+	/* opacity: 0.51; */
+}
+
+
+
 .heading {
 	max-width: 60%;
 	text-align: center;
@@ -111,6 +139,8 @@ a:active {
 	font-size: 5em;
 	margin-bottom: 0.5em;
 }
+
+
 
 .event {
 	margin: auto;
@@ -778,16 +808,16 @@ a:active {
 
 @media screen and (max-width: 1100px) {
 
-	.sch{
+	/* .sch{
 		display: none;
-	}
+	} */
 	#tim-mobile{
 		display: inline-block !important;
 	}
-	.sch-mob{
+	/* .sch-mob{
 		width: 50%;
 		margin-left: 20%;
-	}
+	} */
 	#tim-mobile{
 		display: inline-block;
 	}
@@ -1403,6 +1433,8 @@ a:active {
 	#content div p {
 		font-size: 1.6em;
 	}
+
+
 	/* #com-content div p {
         font-size: 1.6em;
     } */
@@ -1440,10 +1472,10 @@ a:active {
     {
         font-size: 1.15em;
     } */
-	p {
+	/* p {
 		margin-top: 0;
 		margin-bottom: 0.8em;
-	}
+	} */
 	.ribbon img {
 		position: absolute;
 		top: -20px;
@@ -2584,13 +2616,23 @@ border-radius: 200px;
 }
 
 .sch {
+	
 	width: 90%;
-	margin-left: 5%;
+	display: block;
+	position: relative;
+	text-align: center;
+	top: -7vw;
+	left: 5.5vw;
+	/* margin-left: ; */
 }
 
 .time-svg img {
+
 	max-width: 90%;
 }
+
+
+
 
 #tim-mobile {
 	display: none;
