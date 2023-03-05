@@ -98,6 +98,34 @@ a:active {
 	text-align: center;
 }
 
+.schedule-back{
+	opacity: 1;
+	/* border: 2px solid blue; */
+	display: block;
+	font-size: 20vw;
+	font-family: 'CeraPro';
+	width: 100%;
+	text-align: center;
+	/* border: solid 2px red; */
+	
+}
+
+.schedule-front{
+	font-family: 'CeraPro';
+	/* border: 2px solid red; */
+	display: block;
+	position: relative;
+	/* left: -150px; */
+	/* top:-2vw; */
+	bottom:19vw;
+	font-size: 6vw;
+	text-align: center;
+	/* margin-bottom: 0px; */
+	/* opacity: 0.51; */
+}
+
+
+
 .heading {
 	max-width: 60%;
 	text-align: center;
@@ -113,6 +141,8 @@ a:active {
 	font-size: 5em;
 	margin-bottom: 0.5em;
 }
+
+
 
 .event {
 	margin: auto;
@@ -384,10 +414,45 @@ a:active {
 	margin-top: -60%;
 }
 
+.fadetext h1{
+	/* font-size: 100vw; */
+}
 .what {
 	font-size: 4rem;
 	font-weight: 300;
 	letter-spacing: 0.3rem;
+}
+.what-par{
+	
+	position: relative;
+}
+
+.atlassian{
+	display: flex;
+	justify-content: center;
+	/* width: 80%; */
+}
+
+.event-partner{
+	top: 5%;
+	font-size: 4rem;
+	display: flex;
+	justify-content: center;
+}
+
+.fadetext{
+	position: absolute;
+	width: 100%;
+	user-select: none;
+	text-align: center;
+	top: -90%;
+
+}
+.fadetext div{
+	opacity: 5%;
+	font-stretch: ultra-expanded;
+	font-size: 9vw;
+	font-weight: bold;
 }
 
 .brochure-box {
@@ -854,6 +919,7 @@ a:active {
 
 @media screen and (max-width: 1100px) {
 
+
 	.sch {
 		display: none;
 	}
@@ -868,6 +934,7 @@ a:active {
 	}
 
 	#tim-mobile {
+
 		display: inline-block;
 	}
 
@@ -1604,7 +1671,6 @@ a:active {
 	#content div p {
 		font-size: 1.6em;
 	}
-
 	/* #com-content div p {
         font-size: 1.6em;
     } */
@@ -1643,11 +1709,10 @@ a:active {
     {
         font-size: 1.15em;
     } */
-	p {
+	/* p {
 		margin-top: 0;
 		margin-bottom: 0.8em;
-	}
-
+	} */
 	.ribbon img {
 		position: absolute;
 		top: -20px;
@@ -2874,13 +2939,23 @@ border-radius: 200px;
 }
 
 .sch {
+	
 	width: 90%;
-	margin-left: 5%;
+	display: block;
+	position: relative;
+	text-align: center;
+	top: -7vw;
+	left: 5.5vw;
+	/* margin-left: ; */
 }
 
 .time-svg img {
+
 	max-width: 90%;
 }
+
+
+
 
 #tim-mobile {
 	display: none;
