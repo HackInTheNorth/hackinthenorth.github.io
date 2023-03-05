@@ -564,11 +564,28 @@ a:active {
 .faq-box {
 	width: 70%;
 	margin: auto;
-	background: linear-gradient(113.9deg, rgba(255, 255, 255, 0.15) 6.55%, rgba(255, 255, 255, 0) 118.89%, rgba(255, 255, 255, 0) 123.74%);
+	/* background: linear-gradient(113.9deg, rgba(255, 255, 255, 0.15) 6.55%, rgba(255, 255, 255, 0) 118.89%, rgba(255, 255, 255, 0) 123.74%); */
 	backdrop-filter: blur(40px);
+	border: 2px solid;
 	border-radius: 20px;
 	padding-top: 5%;
 	font-family: Cera Pro;
+}
+
+.after-faq {
+	height: 15vh;
+}
+
+.after-faq::after {
+	content: "FAQ";
+	font-size: 177px;
+	font-family: CeraPro;
+	color: rgb(22 22 80);
+	position: relative;
+	left: 12px;
+	top: -200px;
+	opacity: .3;
+
 }
 
 .faques {
@@ -1130,8 +1147,6 @@ a:active {
 		width: 102%;
 		margin-top: -15px;
 	}
-
-
 }
 
 @media screen and (max-width:850px) {
@@ -2664,7 +2679,6 @@ a:active {
 	.amul {
 		width: 90% !important;
 	}
-
 }
 
 .prize-section {
@@ -2951,20 +2965,29 @@ border-radius: 200px;
 }
 
 .fancy_heading {
-	font-size: 7vw !important;
+	font-size: 6vw !important;
 	position: absolute;
-	width: 70%;
-	left: 15%;
+	width: 67%;
+	left: 9%;
 	top: 0;
 	z-index: 1;
 	letter-spacing: 4px;
 }
 
+#before-heading::before {
+	content: "SPEAKERS";
+	font-size: 177px;
+	color: #101039;
+	position: relative;
+	left: 222px;
+	top: -85px;
+}
+
 .fancy_heading_shadow {
-	font-size: 7vw !important;
+	font-size: 6vw !important;
 	position: absolute;
-	width: 70%;
-	left: 15.2%;
+	width: 67%;
+	left: 9.2%;
 	top: 2px;
 	letter-spacing: 4px;
 	background: -webkit-linear-gradient(0deg, rgba(151, 70, 158, 1) 20%, rgba(193, 70, 164, 1) 40%, rgba(239, 72, 156, 1) 60%, rgba(255, 106, 72, 1) 80%, rgba(247, 151, 55, 1) 100%);
@@ -3617,7 +3640,6 @@ border-radius: 200px;
 	.dash-speaker {
 		display: none;
 	}
-
 }
 
 @media only screen and (min-width: 540px) {
@@ -4243,4 +4265,61 @@ border-radius: 200px;
 
 #devfolio-apply-now .logo {
 	fill: white;
+}
+
+
+
+
+.item-box1 {
+	border: 2px solid #4bc2e2;
+	padding: 7px;
+}
+
+
+
+.item-box2 {
+	border: 2px solid #6c63ff;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.item-images {
+	display: flex;
+	width: 95%;
+	justify-content: space-around;
+	margin: 50px 0;
+}
+
+.item-image-name {
+	width: 50%;
+}
+
+.item-image-dp {
+	width: 30%;
+}
+
+.item-role {
+	width: 5%;
+}
+
+.item-text {
+	width: 100%;
+	font-size: 15px;
+}
+
+.item-role p {
+	transform: rotate(-90deg);
+	position: relative;
+	font-weight: 700;
+	font-size: 20px;
+	top: 80px;
+	left: 25px;
+	letter-spacing: 3px;
+}
+
+.item-timeline {
+	font-size: 31px;
+	text-transform: uppercase;
+	font-weight: 600;
 }
