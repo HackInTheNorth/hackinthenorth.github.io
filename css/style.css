@@ -379,11 +379,11 @@ a:active {
 	margin-top: -60%;
 }
 
-/* .what {
-	font-size: 4rem; 
-	font-weight: 300; 
-	letter-spacing: 0.3rem;
-} */
+.what {
+	font-size: 4vw; 
+	/* font-weight: 300;  */
+	letter-spacing: 0.rem;
+}
 
 .brochure-box {
 	max-width: 80%;
@@ -3051,7 +3051,7 @@ border-radius: 200px;
 		margin-top: 1rem;
 	}
 	.what {
-		font-size: 6vw;
+		font-size: 5vw;
 		letter-spacing: 0.2rem;
 	}
 	.atl {
