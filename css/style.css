@@ -379,45 +379,10 @@ a:active {
 	margin-top: -60%;
 }
 
-.fadetext h1{
-	/* font-size: 100vw; */
-}
 .what {
-	font-size: 4rem;
-	font-weight: 300;
-	letter-spacing: 0.3rem;
-}
-.what-par{
-	
-	position: relative;
-}
-
-.atlassian{
-	display: flex;
-	justify-content: center;
-	/* width: 80%; */
-}
-
-.event-partner{
-	top: 5%;
-	font-size: 4rem;
-	display: flex;
-	justify-content: center;
-}
-
-.fadetext{
-	position: absolute;
-	width: 100%;
-	user-select: none;
-	text-align: center;
-	top: -90%;
-
-}
-.fadetext div{
-	opacity: 5%;
-	font-stretch: ultra-expanded;
-	font-size: 9vw;
-	font-weight: bold;
+	font-size: 4vw; 
+	/* font-weight: 300;  */
+	letter-spacing: 0.rem;
 }
 
 .brochure-box {
@@ -3086,7 +3051,7 @@ border-radius: 200px;
 		margin-top: 1rem;
 	}
 	.what {
-		font-size: 2rem;
+		font-size: 5vw;
 		letter-spacing: 0.2rem;
 	}
 	.atl {
