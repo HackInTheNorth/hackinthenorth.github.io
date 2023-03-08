@@ -257,6 +257,7 @@ a:active {
 .commitment-text-box1 {
 	width: 50%;
 	top: 38%;
+        padding-left: 30px;
 	position: absolute;
 	font-family: 'Cera Pro';
 	font-style: normal;
